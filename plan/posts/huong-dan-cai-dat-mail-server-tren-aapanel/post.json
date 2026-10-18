@@ -1,0 +1,23 @@
+{
+  "name": "Hướng Dẫn Cài Đặt Mail Server Trên aaPanel Từ A–Z (Chi Tiết 2026)",
+  "slug": "huong-dan-cai-dat-mail-server-tren-aapanel",
+  "description": "Hướng dẫn cài đặt Mail Server trên aaPanel chi tiết từng bước: chuẩn bị VPS, cấu hình DNS (MX, SPF, DKIM, DMARC, PTR), cài RoundCube Webmail, bật SSL, mở port và gửi email theo tên miền riêng không vào spam.",
+  "seo_title": "Cài Đặt Mail Server Trên aaPanel Từ A–Z (Chi Tiết 2026)",
+  "seo_description": "Hướng dẫn cài đặt mail server trên aaPanel từ A–Z: cấu hình DNS MX, SPF, DKIM, DMARC, cài RoundCube webmail, bật SSL và gửi mail không vào spam.",
+  "focus_keyword": "mail server trên aapanel",
+  "category": {
+    "name": "Hosting & VPS",
+    "slug": "hosting-vps",
+    "description": "Kiến thức, thủ thuật và hướng dẫn quản trị Hosting, VPS, aaPanel, Mail Server, bảo mật và tối ưu máy chủ cho website doanh nghiệp từ đội ngũ TeamDevDesign.",
+    "seo_title": "Hosting & VPS – Hướng Dẫn Quản Trị Máy Chủ | TeamDevDesign",
+    "seo_description": "Tổng hợp hướng dẫn quản trị Hosting, VPS, aaPanel, Mail Server và bảo mật máy chủ dễ hiểu, cập nhật mới nhất từ TeamDevDesign."
+  },
+  "tags": ["aaPanel", "Mail Server", "RoundCube", "VPS", "Email tên miền"],
+  "featured_image": {
+    "file": "images/featured.jpg",
+    "alt": "Hướng dẫn cài đặt Mail Server trên aaPanel từ A–Z"
+  },
+  "is_featured": 0,
+  "status": "published",
+  "translation_en": "copy"
+}

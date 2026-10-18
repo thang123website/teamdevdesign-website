@@ -3,13 +3,13 @@
         <div class="text-center mb-8">
             @if ($subtitle = $shortcode->subtitle)
                 <div class="d-flex align-items-center position-relative z-2 justify-content-center bg-primary-soft d-inline-flex rounded-pill border border-2 border-white px-3 py-1">
-                    <img src="{{ Theme::asset()->url('images/icons/dots.png') }}" alt="dots" />
+                    <img src="{{ Theme::asset()->url('images/icons/dots.png') }}" alt="" aria-hidden="true" />
                     <span class="tag-spacing fs-7 fw-bold text-linear-2 ms-2 text-primary">{!! BaseHelper::clean($subtitle) !!}</span>
                 </div>
             @endif
 
             @if ($title = $shortcode->title)
-                <h3 class="ds-3 my-3 fw-bold">{!! BaseHelper::clean($title) !!}</h3>
+                <{{ $titleTag = infinia_title_tag($shortcode, 'h3') }} class="ds-3 my-3 fw-bold">{!! infinia_clean_title($title) !!}</{{ $titleTag }}>
             @endif
 
             @if ($description = $shortcode->description)
@@ -35,7 +35,7 @@
                     ])>
                         @if($package->is_popular)
                             <div class="position-absolute top-0 end-0 z-0">
-                                <img src="{{ Theme::asset()->url('images/shapes/bg-line.png') }}" alt="line">
+                                <img src="{{ Theme::asset()->url('images/shapes/bg-line.png') }}" alt="" aria-hidden="true">
                             </div>
 
                             <div class="position-relative z-1">
@@ -79,7 +79,7 @@
                                     @php
                                         $checkIconImage = $package->is_popular ? 'images/icons/check-white.png' : 'images/icons/check-primary.png';
                                     @endphp
-                                    <img src="{{ Theme::asset()->url($feature['is_available'] ? $checkIconImage : 'images/icons/check-secondary.png') }}" alt="check">
+                                    <img src="{{ Theme::asset()->url($feature['is_available'] ? $checkIconImage : 'images/icons/check-secondary.png') }}" alt="" aria-hidden="true">
                                     <strong @class(['d-block fs-6 mb-0 ms-2', 'text-white' => $package->is_popular])>{{ $feature['value'] }}</strong>
                                 </li>
                             @endforeach

@@ -16,7 +16,7 @@
 >
     <div class="container">
         @if ($title = $shortcode->title)
-            <h5 class="text-500 mb-5 text-center">{!! BaseHelper::clean($title) !!}</h5>
+            <{{ $titleTag = infinia_title_tag($shortcode, 'h5') }} class="text-500 mb-5 text-center">{!! infinia_clean_title($title) !!}</{{ $titleTag }}>
         @endif
 
         @if($rightPartners)

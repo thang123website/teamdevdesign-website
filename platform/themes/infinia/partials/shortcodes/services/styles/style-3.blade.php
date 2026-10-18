@@ -4,7 +4,7 @@
     <div class="container">
         <div class="text-center">
             @if ($title = $shortcode->title)
-                <h5 class="ds-5">{!! BaseHelper::clean($title) !!}</h5>
+                <{{ $titleTag = infinia_title_tag($shortcode, 'h5') }} class="ds-5">{!! infinia_clean_title($title) !!}</{{ $titleTag }}>
             @endif
 
             @if ($description = $shortcode->description)
@@ -18,7 +18,7 @@
                         <div class="icon-flip position-relative icon-shape icon-xxl rounded-3 mb-4">
                             <div class="icon">
                                 @if($iconImage = $service->getMetaData('icon_image', true))
-                                    <img src="{{ RvMedia::getImageUrl($iconImage) }}" alt="icon" class="service-icon ">
+                                    <img src="{{ RvMedia::getImageUrl($iconImage) }}" alt="" aria-hidden="true" class="service-icon ">
                                 @elseif($icon = $service->getMetaData('icon', true))
                                     <x-core::icon :name="$icon" class="service-icon filter-invert" />
                                 @endif

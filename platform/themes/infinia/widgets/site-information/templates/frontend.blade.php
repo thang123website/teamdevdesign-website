@@ -1,4 +1,10 @@
-<div class="col-lg-4 pe-10">
+@php
+    $colClass = 'col-lg-3';
+    if (!empty($config['show_logo']) || !empty($config['about'])) {
+        $colClass = 'col-lg-4';
+    }
+@endphp
+<div class="{{ $colClass }} col-md-6 col-12 mb-4 mb-lg-0 pe-lg-10">
     @if ($config['show_logo'])
         <a href="{{ BaseHelper::getHomepageUrl() }}">
             {{ Theme::getLogoImage(['class' => 'logo-dark'], 'logo', $config['logo_height'] ?: 35, Arr::get($config, 'logo')) }}

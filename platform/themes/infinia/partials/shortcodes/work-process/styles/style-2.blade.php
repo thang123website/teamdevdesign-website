@@ -7,7 +7,7 @@
                 <div class="col-lg-6">
                     <div class="position-relative d-inline-block mt-lg-0 mt-8">
                         <div class="position-relative z-1 d-inline-block zoom-img rounded-4 border-5 border-white border">
-                            {{ RvMedia::image($image, __('Image')) }}
+                            {{ RvMedia::image($image, infinia_image_alt($shortcode)) }}
                         </div>
                         <div class="square position-absolute rounded-4 bg-linear-1 w-100 h-100 z-0"></div>
                     </div>

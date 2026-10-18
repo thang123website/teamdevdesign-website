@@ -1,0 +1,216 @@
+<?php
+
+return [
+    'title' => 'ライブチャット',
+    'messages' => 'メッセージ',
+    'visitor_name' => '訪問者名',
+    'visitor_email' => '訪問者のメール',
+    'visitor_phone' => '電話番号',
+    'visitor_info' => '訪問者情報',
+    'ip_address' => 'IPアドレス',
+    'current_page' => '現在のページ',
+    'browser' => 'ブラウザ',
+    'last_message' => '最後のメッセージ',
+    'close_conversation' => '閉じる',
+    'delete_conversation' => '会話を削除',
+    'conversation_closed' => '会話は閉じられました。',
+    'conversation_deleted' => '会話は削除されました。',
+    'conversation_is_closed' => 'この会話は閉じられています。',
+    'conversation_with' => ':name との会話',
+    'confirm_close' => 'この会話を閉じてもよろしいですか？',
+    'confirm_delete' => 'この会話を削除してもよろしいですか？この操作は取り消せません。',
+    'type_reply' => '返信を入力...',
+    'reply_sent' => '返信が送信されました。',
+    'no_conversation' => 'アクティブな会話が見つかりません。新しいチャットを開始してください。',
+    'no_conversations' => 'まだ会話はありません',
+    'chat_started' => 'チャットが正常に開始されました。',
+    'message_sent' => 'メッセージが送信されました。',
+    'select_conversation' => '会話を選択',
+    'select_conversation_hint' => '一覧から会話を選択してチャットを開始してください。',
+    'all' => 'すべて',
+    'timeline' => 'タイムライン',
+    'total_messages' => '総メッセージ数',
+    'just_now' => 'たった今',
+    'test_sound' => 'クリックしてサウンドをテスト',
+    'back_to_list' => '会話リストに戻る',
+    'no_messages_yet' => 'まだメッセージはありません',
+    'start_conversation_hint' => 'メッセージを送信して会話を開始してください',
+    'notifications_enabled' => 'ブラウザ通知が有効になりました！',
+    'enable_notifications' => 'ブラウザ通知を有効にする',
+    'new_conversation' => '新しい会話',
+    'new_message' => '新着メッセージ',
+    'no_conversations_hint' => '訪問者がチャットを開始すると、ここに会話が表示されます。',
+    'open_chat' => 'チャットを開く',
+    'close' => '閉じる',
+    'chat_title' => 'ライブチャット',
+    'online' => 'オンライン',
+    'start_message' => 'こんにちは！本日どのようにお手伝いできますか？',
+    'your_name' => 'お名前',
+    'your_email' => 'あなたのメールアドレス',
+    'your_email_optional' => 'メールアドレス（任意）',
+    'your_phone' => 'あなたの電話',
+    'start_chat' => 'チャットを開始',
+    'type_message' => 'メッセージを入力...',
+    'send' => '送信',
+    'default_admin_name' => 'サポート',
+    'default_welcome_message' => 'こんにちは！お問い合わせありがとうございます。本日どのようにお手伝いできますか？',
+    'conversation_statuses' => [
+        'open' => 'オープン',
+        'closed' => 'クローズ',
+    ],
+    'settings' => [
+        'title' => 'ライブチャット',
+        'description' => 'ウェブサイトに表示されるフローティングライブチャットウィジェットを設定し、リアルタイムのカスタマーサポートを提供します。',
+        'form' => [
+            'enabled' => 'ライブチャットを有効化',
+            'enabled_help' => '有効にすると、ウェブサイトにチャットウィジェットが表示されます。訪問者はサポートチームと会話を開始できます。',
+            'widget_title' => 'ウィジェットタイトル',
+            'widget_title_help' => 'チャットウィジェットのヘッダー上部に表示されるタイトル。',
+            'widget_title_placeholder' => 'ライブチャット',
+            'welcome_message' => 'ウェルカムメッセージ',
+            'welcome_message_help' => 'チャットウィジェットを開いたときに訪問者が最初に見るメッセージ。空欄にすると既定のメッセージが使われます。',
+            'welcome_message_placeholder' => 'こんにちは！お問い合わせありがとうございます。本日どのようにお手伝いできますか？',
+            'admin_name' => '管理者名',
+            'admin_name_help' => 'チャットウィジェットで管理者の返信に表示される名前。',
+            'admin_name_placeholder' => 'サポート',
+            'random_admin_names_enabled' => 'ランダムな管理者名を使用する',
+            'random_admin_names_enabled_help' => '有効にすると、新しい各会話に以下のリストからランダムな管理者名が割り当てられます。',
+            'random_admin_names' => 'ランダムな管理者名',
+            'random_admin_names_help' => '1行に1つの名前を入力してください。新しい各会話にランダムな名前が割り当てられます。',
+            'random_admin_names_placeholder' => 'Sarah
+Mike
+Emma
+John',
+            'primary_color' => 'メインカラー',
+            'primary_color_help' => 'チャットウィジェットのボタンとヘッダーの主な色。ブランドに合った色を選択してください。',
+            'position' => 'ウィジェット位置',
+            'position_help' => '画面上でチャットウィジェットのボタンが表示される位置。',
+            'position_right' => '右下',
+            'position_left' => '左下',
+            'email_required' => 'メール必須',
+            'email_required_help' => '有効にすると、訪問者はチャット開始前にメールアドレスを入力する必要があります。フォローアップの連絡に便利です。',
+            'display_fields' => '表示フィールド',
+            'mandatory_fields' => '必須フィールド',
+            'poll_interval' => 'ポーリング間隔（ms）',
+            'poll_interval_help' => '新しいメッセージを確認する間隔（ミリ秒）。値が小さいほど更新は速くなりますがサーバーへの要求が増えます。推奨: 3000-5000ms。',
+            'poll_interval_placeholder' => '3000',
+            'online_status' => 'オンラインステータス',
+            'working_hours_enabled' => '営業時間を有効にする',
+            'working_hours_enabled_help' => '有効にすると、営業時間外はチャットステータスが自動的にオフラインに切り替わります。営業時間は、設定→一般で構成されたタイムゾーンに基づいています。',
+            'working_hours_start' => '開始時間',
+            'working_hours_end' => '終了時間',
+            'working_days' => '営業日',
+            'avatar_image' => 'アバター画像',
+            'avatar_image_help' => 'チャットヘッダーのカスタムアバター画像。デフォルトのアイコンを使用する場合は空のままにします。',
+            'primary_hover_color' => 'ホバー色',
+            'primary_hover_color_help' => 'チャットボタンにカーソルを合わせたときの色。',
+            'position_bottom_right' => '右下',
+            'position_bottom_left' => '左下',
+            'position_center_right' => '右中央',
+            'position_center_left' => '左中央',
+            'offset_x' => 'オフセット X (px)',
+            'offset_x_help' => '画面端からの水平方向のオフセット（ピクセル単位）。',
+            'offset_y' => 'オフセット Y (px)',
+            'offset_y_help' => '画面端からの垂直方向のオフセット（ピクセル単位）。',
+            'display_on_mobile' => 'モバイルで表示',
+            'display_on_mobile_help' => 'モバイルデバイスでチャットウィジェットを表示するかどうかを制御します。',
+            'display_on_mobile_always' => '常に表示',
+            'display_on_mobile_hide' => 'モバイルで非表示',
+        ],
+    ],
+    'email' => [
+        'title' => 'ライブチャットメール',
+        'description' => 'ライブチャットイベントのメール通知',
+        'templates' => [
+            'new_conversation_title' => '新規会話通知',
+            'new_conversation_description' => '訪問者が新しい会話を開始したときに管理者に送信されるメール',
+            'new_conversation_subject' => '{{ visitor_name }} からの新しいチャット会話',
+            'visitor_name' => '訪問者名',
+            'visitor_email' => '訪問者メール',
+            'visitor_phone' => '訪問者電話',
+            'visitor_ip' => '訪問者IPアドレス',
+            'current_page' => '現在のページURL',
+            'conversation_url' => '管理パネルの会話へのリンク',
+        ],
+    ],
+    'email_settings' => [
+        'title' => 'メール通知',
+        'description' => '新しいチャット会話のメール通知を設定します。訪問者が新しい会話を開始したときに1通のメールのみ送信されます。',
+        'enable_email_notification' => 'メール通知を有効にする',
+        'enable_email_notification_help' => '訪問者が新しいチャット会話を開始したときにメール通知を送信する',
+        'notification_emails' => '通知メールアドレス',
+        'notification_emails_help' => 'カンマ区切りのメールアドレスリスト。空白の場合はデフォルトの管理者メールを使用します。',
+    ],
+    'email_templates' => [
+        'new_conversation_title' => '新しいライブチャット会話',
+        'new_conversation_greeting' => '訪問者があなたのウェブサイトで新しいライブチャット会話を開始しました。',
+        'visitor_details' => '訪問者詳細',
+        'field_name' => '名前：',
+        'field_email' => 'メール：',
+        'field_phone' => '電話：',
+        'field_ip' => 'IPアドレス：',
+        'field_page' => '現在のページ：',
+        'respond_instruction' => '下のボタンをクリックしてこの会話に返信してください。',
+        'view_conversation_button' => '会話を表示',
+    ],
+    'webhook' => [
+        'title' => 'Webhook設定',
+        'description' => 'チャットイベント発生時に通知を受け取るためのWebhookを設定します。Webhookは指定されたURLにイベントデータを含むHTTP POSTリクエストを送信します。',
+        'enable_webhooks' => 'Webhookを有効にする',
+        'enable_webhooks_help' => 'ライブチャットイベントのWebhook通知を有効にする',
+        'message_received_url' => 'メッセージ受信Webhook URL',
+        'message_received_url_help' => '訪問者がチャットで新しいメッセージを送信したときにトリガーされます',
+        'conversation_started_url' => '会話開始Webhook URL',
+        'conversation_started_url_help' => '訪問者が新しい会話を開始したときにトリガーされます',
+        'view_sample_data' => 'サンプルデータを表示',
+        'test_button' => 'テストWebhookを送信',
+        'testing' => '送信中...',
+        'test_success' => 'Webhookが正常に送信されました！',
+        'test_failed' => 'Webhookテストに失敗しました。',
+        'status_code' => 'ステータスコード',
+        'please_enter_url' => '最初にWebhook URLを入力してください',
+        'error_occurred' => 'Webhookのテスト中にエラーが発生しました',
+        'usage_instructions_title' => 'Webhookの使い方',
+        'usage_instructions' => '<p><strong>Webhook</strong>を使用すると、ライブチャットでイベントが発生したときにリアルタイム通知を受け取ることができます。イベントがトリガーされると、設定したURLにJSONペイロードを含むHTTP POSTリクエストが送信されます。</p>
+<h6>HTTPヘッダー</h6>
+<ul>
+<li><code>Content-Type: application/json</code></li>
+<li><code>X-Webhook-Event</code> - イベントタイプ（例：<code>message.received</code>、<code>conversation.started</code>）</li>
+<li><code>X-Webhook-Timestamp</code> - Webhook送信時のISO 8601タイムスタンプ</li>
+<li><code>X-Webhook-Test: true</code> - テストWebhookの場合のみ存在</li>
+</ul>
+<h6>エンドポイント要件</h6>
+<ul>
+<li>HTTP POSTリクエストを受け入れる必要があります</li>
+<li>10秒以内に応答する必要があります（タイムアウト制限）</li>
+<li>成功時はHTTP 2xxステータスコードを返す必要があります</li>
+<li>公開アクセス可能である必要があります（HTTPS推奨）</li>
+</ul>
+<h6>連携チュートリアル</h6>
+<ul>
+<li><strong>Slack:</strong> <a href="https://api.slack.com/messaging/webhooks" target="_blank">Incoming Webhooksガイド</a></li>
+<li><strong>Discord:</strong> <a href="https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks" target="_blank">Webhooks入門</a></li>
+<li><strong>Telegram:</strong> <a href="https://core.telegram.org/bots/webhooks" target="_blank">Bot Webhooks</a>（<a href="https://core.telegram.org/bots/api#sendmessage" target="_blank">sendMessage API</a>と併用）</li>
+<li><strong>n8n:</strong> <a href="https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.webhook/" target="_blank">Webhook Node</a></li>
+<li><strong>Zapier:</strong> <a href="https://zapier.com/apps/webhook/integrations" target="_blank">Webhooks by Zapier</a></li>
+<li><strong>Make (Integromat):</strong> <a href="https://www.make.com/en/help/tools/webhooks" target="_blank">Webhooksモジュール</a></li>
+</ul>
+<h6>使用例</h6>
+<ul>
+<li>Slack、Discord、Telegramに通知を送信</li>
+<li>ヘルプデスクシステム（Zendesk、Freshdesk）でチケットを作成</li>
+<li>外部CRMに会話を記録</li>
+<li>n8nやZapierで自動応答をトリガー</li>
+</ul>',
+    ],
+    'offline' => 'Offline',
+    'days' => [
+        'monday' => '月曜日',
+        'tuesday' => '火曜日',
+        'wednesday' => '水曜日',
+        'thursday' => '木曜日',
+        'friday' => '金曜日',
+        'saturday' => '土曜日',
+        'sunday' => '日曜日',
+    ],
+];

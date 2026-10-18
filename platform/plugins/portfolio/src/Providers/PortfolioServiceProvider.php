@@ -13,6 +13,7 @@ use Botble\Portfolio\Models\CustomField;
 use Botble\Portfolio\Models\CustomFieldOption;
 use Botble\Portfolio\Models\Package;
 use Botble\Portfolio\Models\Project;
+use Botble\Portfolio\Models\ProjectCategory;
 use Botble\Portfolio\Models\Service;
 use Botble\Portfolio\Models\ServiceCategory;
 use Botble\SeoHelper\Facades\SeoHelper;
@@ -68,6 +69,14 @@ class PortfolioServiceProvider extends ServiceProvider
                     'name' => 'plugins/portfolio::portfolio.service_category.name',
                     'permissions' => ['portfolio.service-categories.index'],
                     'url' => route('portfolio.service-categories.index'),
+                ])
+                ->registerItem([
+                    'id' => 'cms-core-portfolio-project-categories',
+                    'priority' => 2,
+                    'parent_id' => 'cms-core-portfolio',
+                    'name' => 'plugins/portfolio::portfolio.project_category.name',
+                    'permissions' => ['portfolio.project-categories.index'],
+                    'url' => route('portfolio.project-categories.index'),
                 ])
                 ->registerItem([
                     'id' => 'cms-core-portfolio-services',
@@ -126,15 +135,17 @@ class PortfolioServiceProvider extends ServiceProvider
     protected function registerSlugHelper(): self
     {
         SlugHelper::registering(function (): void {
-            SlugHelper::registerModule(ServiceCategory::class, fn () => trans('plugins/portfolio::portfolio.service_categories'));
-            SlugHelper::registerModule(Service::class, fn () => trans('plugins/portfolio::portfolio.services'));
-            SlugHelper::registerModule(Package::class, fn () => trans('plugins/portfolio::portfolio.packages'));
-            SlugHelper::registerModule(Project::class, fn () => trans('plugins/portfolio::portfolio.projects'));
+            SlugHelper::registerModule(ServiceCategory::class, fn() => trans('plugins/portfolio::portfolio.service_categories'));
+            SlugHelper::registerModule(Service::class, fn() => trans('plugins/portfolio::portfolio.services'));
+            SlugHelper::registerModule(Package::class, fn() => trans('plugins/portfolio::portfolio.packages'));
+            SlugHelper::registerModule(Project::class, fn() => trans('plugins/portfolio::portfolio.projects'));
+            SlugHelper::registerModule(ProjectCategory::class, fn() => trans('plugins/portfolio::portfolio.project_categories'));
 
             SlugHelper::setPrefix(ServiceCategory::class, 'service-categories');
             SlugHelper::setPrefix(Service::class, 'services');
             SlugHelper::setPrefix(Package::class, 'packages');
             SlugHelper::setPrefix(Project::class, 'projects');
+            SlugHelper::setPrefix(ProjectCategory::class, 'project-categories');
         });
 
         return $this;
@@ -146,13 +157,14 @@ class PortfolioServiceProvider extends ServiceProvider
         SeoHelper::registerModule(Service::class);
         SeoHelper::registerModule(Package::class);
         SeoHelper::registerModule(Project::class);
+        SeoHelper::registerModule(ProjectCategory::class);
 
         return $this;
     }
 
     protected function registerLanguage(): self
     {
-        if (! defined('LANGUAGE_MODULE_SCREEN_NAME') || ! defined('LANGUAGE_ADVANCED_MODULE_SCREEN_NAME')) {
+        if (!defined('LANGUAGE_MODULE_SCREEN_NAME') || !defined('LANGUAGE_ADVANCED_MODULE_SCREEN_NAME')) {
             return $this;
         }
 
@@ -160,6 +172,11 @@ class PortfolioServiceProvider extends ServiceProvider
             'name',
             'description',
             'content',
+        ]);
+
+        LanguageAdvancedManager::registerModule(ProjectCategory::class, [
+            'name',
+            'description',
         ]);
 
         LanguageAdvancedManager::registerModule(ServiceCategory::class, [
@@ -200,7 +217,7 @@ class PortfolioServiceProvider extends ServiceProvider
             if ($data instanceof CustomField) {
                 $options = $request->input('options', []);
 
-                if (! $options) {
+                if (!$options) {
                     return;
                 }
 
@@ -212,7 +229,7 @@ class PortfolioServiceProvider extends ServiceProvider
                 ]);
 
                 foreach ($options as $value) {
-                    if (! isset($value['id'])) {
+                    if (!isset($value['id'])) {
                         continue;
                     }
 

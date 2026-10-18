@@ -3,15 +3,15 @@
         <div class="text-center">
             @if ($subtitle = $shortcode->subtitle)
                 <div class="d-flex align-items-center justify-content-center bg-primary-soft border border-2 border-white d-inline-flex rounded-pill px-4 py-2" data-aos="zoom-in" data-aos-delay="50">
-                    <img src="{{ Theme::asset()->url('images/icons/dots.png') }}" alt="infinia">
+                    <img src="{{ Theme::asset()->url('images/icons/dots.png') }}" alt="" aria-hidden="true">
                     <span class="tag-spacing fs-7 fw-bold text-linear-2 ms-2 text-primary">{!! BaseHelper::clean($subtitle) !!}</span>
                 </div>
             @endif
 
             @if ($title = $shortcode->title)
-                <h3 class="ds-3 my-3 fw-regular">
-                    {!! BaseHelper::clean($title) !!}
-                </h3>
+                <{{ $titleTag = infinia_title_tag($shortcode, 'h3') }} class="ds-3 my-3 fw-regular">
+                    {!! infinia_clean_title($title) !!}
+                </{{ $titleTag }}>
             @endif
         </div>
 
@@ -50,7 +50,7 @@
                                 <div class="row align-items-center rounded-3 bg-white p-5">
                                     @if ($tabImage = Arr::get($tab, 'image'))
                                         <div class="col-lg-5 mb-lg-0 mb-5">
-                                            {{ RvMedia::image($tabImage, __('Image'), attributes: ['class' => 'rounded-3']) }}
+                                            {{ RvMedia::image($tabImage, infinia_image_alt($shortcode), attributes: ['class' => 'rounded-3']) }}
                                         </div>
                                     @endif
 
@@ -78,7 +78,7 @@
                                                     <div class="bg-primary-soft icon-flip position-relative icon-shape icon-xxl rounded-3 mb-4">
                                                         @if(! empty($featureIconImage))
                                                             <div class="icon">
-                                                                <img src="{{ RvMedia::getImageUrl($featureIconImage) }}" alt="icon" class="icon-image" style="max-width: 150px;">
+                                                                <img src="{{ RvMedia::getImageUrl($featureIconImage) }}" alt="" aria-hidden="true" class="icon-image" style="max-width: 150px;">
                                                             </div>
                                                         @elseif($featureIcon)
                                                             <x-core::icon :name="$featureIcon" class="hover-up" style="width: 48px; height: 48px; stroke-width: 1" />

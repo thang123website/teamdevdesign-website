@@ -1,0 +1,216 @@
+<?php
+
+return [
+    'title' => 'Ћаскање уживо',
+    'messages' => 'Поруке',
+    'visitor_name' => 'Име посетиоца',
+    'visitor_email' => 'Е-мејл посетиоца',
+    'visitor_phone' => 'Телефон',
+    'visitor_info' => 'Информације о посетиоцу',
+    'ip_address' => 'IP адреса',
+    'current_page' => 'Тренутна страница',
+    'browser' => 'Прегледач',
+    'last_message' => 'Последња порука',
+    'close_conversation' => 'Затвори',
+    'delete_conversation' => 'Обриши разговор',
+    'conversation_closed' => 'Разговор је затворен.',
+    'conversation_deleted' => 'Разговор је обрисан.',
+    'conversation_is_closed' => 'Овај разговор је затворен.',
+    'conversation_with' => 'Разговор са :name',
+    'confirm_close' => 'Да ли сте сигурни да желите да затворите овај разговор?',
+    'confirm_delete' => 'Да ли сте сигурни да желите да обришете овај разговор? Ова радња се не може поништити.',
+    'type_reply' => 'Унесите свој одговор...',
+    'reply_sent' => 'Одговор је успешно послат.',
+    'no_conversation' => 'Није пронађен активан разговор. Молимо започните нови чат.',
+    'no_conversations' => 'Још нема разговора',
+    'chat_started' => 'Чат је успешно започет.',
+    'message_sent' => 'Порука је послата.',
+    'select_conversation' => 'Изаберите разговор',
+    'select_conversation_hint' => 'Изаберите разговор са листе да бисте започели ћаскање.',
+    'all' => 'Све',
+    'timeline' => 'Временска линија',
+    'total_messages' => 'Укупно порука',
+    'just_now' => 'Малопре',
+    'test_sound' => 'Кликните за тестирање звука',
+    'back_to_list' => 'Назад на разговоре',
+    'no_messages_yet' => 'Још нема порука',
+    'start_conversation_hint' => 'Пошаљите поруку да започнете разговор',
+    'notifications_enabled' => 'Обавештења прегледача омогућена!',
+    'enable_notifications' => 'Омогући обавештења прегледача',
+    'new_conversation' => 'Нови разговор',
+    'new_message' => 'Нова порука',
+    'no_conversations_hint' => 'Разговори ће се појавити овде када посетиоци почну да ћаскају.',
+    'open_chat' => 'Отвори чат',
+    'close' => 'Затвори',
+    'chat_title' => 'Ћаскање уживо',
+    'online' => 'Онлајн',
+    'start_message' => 'Здраво! Како можемо да вам помогнемо данас?',
+    'your_name' => 'Ваше име',
+    'your_email' => 'Ваша е-пошта',
+    'your_email_optional' => 'Ваш е-мејл (опционо)',
+    'your_phone' => 'Ваш телефон',
+    'start_chat' => 'Започни чат',
+    'type_message' => 'Унесите поруку...',
+    'send' => 'Пошаљи',
+    'default_admin_name' => 'Подршка',
+    'default_welcome_message' => 'Здраво! Хвала што сте нас контактирали. Како могу да вам помогнем данас?',
+    'conversation_statuses' => [
+        'open' => 'Отворено',
+        'closed' => 'Затворено',
+    ],
+    'settings' => [
+        'title' => 'Ћаскање уживо',
+        'description' => 'Подесите плутајући виджет ћаскања уживо који се појављује на вашем сајту за подршку корисницима у реалном времену.',
+        'form' => [
+            'enabled' => 'Омогући ћаскање уживо',
+            'enabled_help' => 'Укључите да бисте приказали виджет ћаскања на вашем сајту. Посетиоци могу да започну разговоре са вашим тимом подршке.',
+            'widget_title' => 'Наслов виджета',
+            'widget_title_help' => 'Наслов који се приказује на врху заглавља виджета за ћаскање.',
+            'widget_title_placeholder' => 'Ћаскање уживо',
+            'welcome_message' => 'Порука добродошлице',
+            'welcome_message_help' => 'Прва порука коју посетиоци виде када отворе виджет за ћаскање. Оставите празно да бисте користили подразумевану поруку.',
+            'welcome_message_placeholder' => 'Здраво! Хвала што сте нас контактирали. Како могу да вам помогнем данас?',
+            'admin_name' => 'Име администратора',
+            'admin_name_help' => 'Име приказано за одговоре администратора у виџету за ћаскање.',
+            'admin_name_placeholder' => 'Подршка',
+            'random_admin_names_enabled' => 'Koristi nasumična imena administratora',
+            'random_admin_names_enabled_help' => 'Kada je omogućeno, svakom novom razgovoru biće dodeljeno nasumično ime administratora sa liste ispod.',
+            'random_admin_names' => 'Nasumična imena administratora',
+            'random_admin_names_help' => 'Unesite jedno ime po redu. Nasumično ime biće dodeljeno svakom novom razgovoru.',
+            'random_admin_names_placeholder' => 'Sarah
+Mike
+Emma
+John',
+            'primary_color' => 'Примарна боја',
+            'primary_color_help' => 'Главна боја дугмета и заглавља виджета за ћаскање. Изаберите боју која одговара вашем бренду.',
+            'position' => 'Положај виджета',
+            'position_help' => 'Где се на екрану појављује дугме виджета за ћаскање.',
+            'position_right' => 'Доле десно',
+            'position_left' => 'Доле лево',
+            'email_required' => 'Захтевај е-мејл',
+            'email_required_help' => 'Када је омогућено, посетиоци морају да унесу своју е-мејл адресу пре почетка ћаскања. Корисно за накнадну комуникацију.',
+            'display_fields' => 'Прикажи поља',
+            'mandatory_fields' => 'Обавезна поља',
+            'poll_interval' => 'Интервал провере (мс)',
+            'poll_interval_help' => 'Колико често проверавати нове поруке у милисекундама. Мање вредности значе бржа ажурирања али више захтева серверу. Препоручено: 3000-5000ms.',
+            'poll_interval_placeholder' => '3000',
+            'online_status' => 'Status na mreži',
+            'working_hours_enabled' => 'Omogući radno vreme',
+            'working_hours_enabled_help' => 'Kada je omogućeno, status ćaskanja će se automatski prebaciti na van mreže van radnog vremena. Radno vreme se zasniva na vremenskoj zoni unetoj u Podešavanja → Opšte.',
+            'working_hours_start' => 'Vreme početka',
+            'working_hours_end' => 'Vreme završetka',
+            'working_days' => 'Radni dani',
+            'avatar_image' => 'Slika avatara',
+            'avatar_image_help' => 'Prilagođena slika avatara za zaglavlje ćaskanja. Ostavite prazno da biste koristili podrazumevanu ikonu.',
+            'primary_hover_color' => 'Boja pri prelasku',
+            'primary_hover_color_help' => 'Boja kada se mišem pređe preko dugmeta za ćaskanje.',
+            'position_bottom_right' => 'Dole desno',
+            'position_bottom_left' => 'Dole levo',
+            'position_center_right' => 'Sredina desno',
+            'position_center_left' => 'Sredina levo',
+            'offset_x' => 'Pomeraj X (px)',
+            'offset_x_help' => 'Horizontalni pomeraj od ivice ekrana u pikselima.',
+            'offset_y' => 'Pomeraj Y (px)',
+            'offset_y_help' => 'Vertikalni pomeraj od ivice ekrana u pikselima.',
+            'display_on_mobile' => 'Prikaži na mobilnom',
+            'display_on_mobile_help' => 'Kontrolišite da li se vidžet za ćaskanje prikazuje na mobilnim uređajima.',
+            'display_on_mobile_always' => 'Uvek prikaži',
+            'display_on_mobile_hide' => 'Sakrij na mobilnom',
+        ],
+    ],
+    'email' => [
+        'title' => 'Live Chat Email',
+        'description' => 'Email notifications for live chat events',
+        'templates' => [
+            'new_conversation_title' => 'New Conversation Notification',
+            'new_conversation_description' => 'Email sent to admin when a visitor starts a new conversation',
+            'new_conversation_subject' => 'New Live Chat Conversation from {{ visitor_name }}',
+            'visitor_name' => 'Visitor name',
+            'visitor_email' => 'Visitor email',
+            'visitor_phone' => 'Visitor phone',
+            'visitor_ip' => 'Visitor IP address',
+            'current_page' => 'Current page URL',
+            'conversation_url' => 'Link to conversation in admin panel',
+        ],
+    ],
+    'email_settings' => [
+        'title' => 'Email Notifications',
+        'description' => 'Configure email notifications for new chat conversations. Only one email is sent when a visitor starts a new conversation.',
+        'enable_email_notification' => 'Enable Email Notifications',
+        'enable_email_notification_help' => 'Send an email notification when a visitor starts a new chat conversation',
+        'notification_emails' => 'Notification Email Addresses',
+        'notification_emails_help' => 'Comma-separated list of email addresses to receive notifications. Leave empty to use the default admin email.',
+    ],
+    'email_templates' => [
+        'new_conversation_title' => 'New Live Chat Conversation',
+        'new_conversation_greeting' => 'A visitor has started a new live chat conversation on your website.',
+        'visitor_details' => 'Visitor Details',
+        'field_name' => 'Name:',
+        'field_email' => 'Email:',
+        'field_phone' => 'Phone:',
+        'field_ip' => 'IP Address:',
+        'field_page' => 'Current Page:',
+        'respond_instruction' => 'Click the button below to respond to this conversation.',
+        'view_conversation_button' => 'View Conversation',
+    ],
+    'webhook' => [
+        'title' => 'Подешавања Webhook-а',
+        'description' => 'Конфигуришите webhook-ове да примате обавештења када се догоде догађаји у ћаскању. Webhook-ови шаљу HTTP POST захтеве на ваше наведене URL адресе са подацима о догађајима.',
+        'enable_webhooks' => 'Омогући Webhook-ове',
+        'enable_webhooks_help' => 'Омогућите слање webhook обавештења за догађаје у ћаскању уживо',
+        'message_received_url' => 'URL Webhook-а за примљену поруку',
+        'message_received_url_help' => 'Активира се када посетилац пошаље нову поруку у ћаскању',
+        'conversation_started_url' => 'URL Webhook-а за започети разговор',
+        'conversation_started_url_help' => 'Активира се када посетилац започне нови разговор',
+        'view_sample_data' => 'Прикажи примере података',
+        'test_button' => 'Пошаљи тестни Webhook',
+        'testing' => 'Слање...',
+        'test_success' => 'Webhook успешно послат!',
+        'test_failed' => 'Тест webhook-а није успео.',
+        'status_code' => 'Статусни код',
+        'please_enter_url' => 'Молимо прво унесите URL webhook-а',
+        'error_occurred' => 'Дошло је до грешке приликом тестирања webhook-а',
+        'usage_instructions_title' => 'How to Use Webhooks',
+        'usage_instructions' => '<p><strong>Webhooks</strong> allow you to receive real-time notifications when events occur in Live Chat. When an event is triggered, an HTTP POST request is sent to your configured URL with JSON payload.</p>
+<h6>HTTP Headers</h6>
+<ul>
+<li><code>Content-Type: application/json</code></li>
+<li><code>X-Webhook-Event</code> - Event type (e.g., <code>message.received</code>, <code>conversation.started</code>)</li>
+<li><code>X-Webhook-Timestamp</code> - ISO 8601 timestamp when webhook was sent</li>
+<li><code>X-Webhook-Test: true</code> - Only present for test webhooks</li>
+</ul>
+<h6>Your Endpoint Requirements</h6>
+<ul>
+<li>Must accept HTTP POST requests</li>
+<li>Must respond within 10 seconds (timeout limit)</li>
+<li>Should return HTTP 2xx status code for success</li>
+<li>Must be publicly accessible (HTTPS recommended)</li>
+</ul>
+<h6>Integration Tutorials</h6>
+<ul>
+<li><strong>Slack:</strong> <a href="https://api.slack.com/messaging/webhooks" target="_blank">Incoming Webhooks Guide</a></li>
+<li><strong>Discord:</strong> <a href="https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks" target="_blank">Intro to Webhooks</a></li>
+<li><strong>Telegram:</strong> <a href="https://core.telegram.org/bots/webhooks" target="_blank">Bot Webhooks</a> (use with <a href="https://core.telegram.org/bots/api#sendmessage" target="_blank">sendMessage API</a>)</li>
+<li><strong>n8n:</strong> <a href="https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.webhook/" target="_blank">Webhook Node</a></li>
+<li><strong>Zapier:</strong> <a href="https://zapier.com/apps/webhook/integrations" target="_blank">Webhooks by Zapier</a></li>
+<li><strong>Make (Integromat):</strong> <a href="https://www.make.com/en/help/tools/webhooks" target="_blank">Webhooks Module</a></li>
+</ul>
+<h6>Example Use Cases</h6>
+<ul>
+<li>Send notifications to Slack, Discord, or Telegram</li>
+<li>Create tickets in helpdesk systems (Zendesk, Freshdesk)</li>
+<li>Log conversations to external CRM</li>
+<li>Trigger automated responses via n8n or Zapier</li>
+</ul>',
+    ],
+    'offline' => 'Offline',
+    'days' => [
+        'monday' => 'Ponedeljak',
+        'tuesday' => 'Utorak',
+        'wednesday' => 'Sreda',
+        'thursday' => 'Četvrtak',
+        'friday' => 'Petak',
+        'saturday' => 'Subota',
+        'sunday' => 'Nedelja',
+    ],
+];

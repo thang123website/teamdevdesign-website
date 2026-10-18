@@ -1,0 +1,42 @@
+{
+  "id": 4,
+  "slug": "bao-tri-quan-tri-website",
+  "name": "Bảo trì & Quản trị Website",
+  "category": "Dịch vụ Bảo trì & Nâng cấp Website",
+  "category_id": 4,
+  "description": "Theo dõi, cập nhật và xử lý sự cố website để đảm bảo hoạt động ổn định, bảo mật và tốc độ cao.",
+  "image": "services/service_4_featured.jpg",
+  "images": [],
+  "is_featured": false,
+  "order": 0,
+  "status": "published",
+  "seo": {
+    "seo_title": "Dịch Vụ Bảo Trì & Quản Trị Website Toàn Diện | TeamDevDesign",
+    "seo_description": "Nhận bảo trì, quản trị website chuyên nghiệp: backup dữ liệu, quét mã độc, fix lỗi plugin, tối ưu tốc độ và cập nhật bài viết định kỳ. Chi phí tối ưu!",
+    "seo_image": "services/service_4_featured.jpg",
+    "index": "index"
+  },
+  "meta": {
+    "icon_image": "icons/icon-9.png"
+  },
+  "faqs": [
+    {
+      "category_id": 8,
+      "category": "FAQ - Bảo Trì Website",
+      "items": [
+        {
+          "question": "Dịch vụ quản trị website bao gồm những gì?",
+          "answer": "Dịch vụ bao gồm việc theo dõi hệ thống 24/7, sao lưu dữ liệu (backup) định kỳ, cập nhật bài viết/hình ảnh mới, vá lỗi bảo mật, và quét mã độc (malware)."
+        },
+        {
+          "question": "Website không do TeamDevDesign thiết kế có nhận bảo trì không?",
+          "answer": "Có. Tuy nhiên, đội ngũ kỹ thuật của chúng tôi sẽ cần kiểm tra và đánh giá lại chất lượng mã nguồn (source code) hiện tại trước khi tiếp nhận bảo trì để đảm bảo tính an toàn."
+        },
+        {
+          "question": "Chi phí bảo trì website tính như thế nào?",
+          "answer": "Chi phí thường được tính theo gói hàng tháng hoặc hàng năm, phụ thuộc vào tần suất cập nhật nội dung và quy mô lưu trữ dữ liệu của website. Vui lòng liên hệ để nhận báo giá chi tiết."
+        }
+      ]
+    }
+  ]
+}

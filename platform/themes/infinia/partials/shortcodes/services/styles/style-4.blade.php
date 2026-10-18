@@ -6,15 +6,15 @@
             <div class="text-center mb-8">
                 @if ($subtitle = $shortcode->subtitle)
                     <div class="d-flex align-items-center justify-content-center bg-primary-soft d-inline-flex rounded-pill border-white border px-3 py-1" data-aos="zoom-in" data-aos-delay="100">
-                        <img src="{{ Theme::asset()->url('images/icons/dots.png') }}" alt="dots">
+                        <img src="{{ Theme::asset()->url('images/icons/dots.png') }}" alt="" aria-hidden="true">
                         <span class="tag-spacing fs-7 fw-bold text-linear-2 ms-2 text-primary">{!! BaseHelper::clean($subtitle) !!}</span>
                     </div>
                 @endif
 
                 @if ($title = $shortcode->title)
-                    <h3 class="ds-3 my-3 fw-regular">
-                        {!! BaseHelper::clean($title) !!}
-                    </h3>
+                    <{{ $titleTag = infinia_title_tag($shortcode, 'h3') }} class="ds-3 my-3 fw-regular">
+                        {!! infinia_clean_title($title) !!}
+                    </{{ $titleTag }}>
                 @endif
 
             </div>
@@ -23,7 +23,7 @@
                     <div class="col-lg-3 col-md-6 mt-4 mt-lg-0" data-aos="fade-zoom-in" data-aos-delay="0">
                         <div @class(['card-service bg-white p-5 rounded-4 hover-up', 'mt-lg-6' => $loop->odd])>
                             @if($iconImage = $service->getMetaData('icon_image', true))
-                                <img src="{{ RvMedia::getImageUrl($iconImage) }}" alt="icon" class="service-icon filter-invert">
+                                <img src="{{ RvMedia::getImageUrl($iconImage) }}" alt="" aria-hidden="true" class="service-icon filter-invert">
                             @elseif($icon = $service->getMetaData('icon', true))
                                 <x-core::icon :name="$icon" class="service-icon filter-invert" />
                             @endif
@@ -87,7 +87,7 @@
 
     @if($shortcode->background_image)
         <div class="position-absolute top-50 start-50 translate-middle z-0">
-            {{ RvMedia::image($shortcode->background_image, __('Image')) }}
+            {{ RvMedia::image($shortcode->background_image, infinia_image_alt($shortcode)) }}
         </div>
     @endif
 </section>

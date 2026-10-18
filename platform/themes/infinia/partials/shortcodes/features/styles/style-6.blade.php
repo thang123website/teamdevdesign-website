@@ -10,7 +10,7 @@
                 <div class="col-lg-6 text-lg-start text-center">
                     <div class="position-relative z-1 d-inline-block mb-lg-0 mb-8">
                         @if ($image = $shortcode->image)
-                            {{ RvMedia::image($image, __('Image'), attributes: ['class' => 'rounded-4 position-relative z-1']) }}
+                            {{ RvMedia::image($image, infinia_image_alt($shortcode), attributes: ['class' => 'rounded-4 position-relative z-1']) }}
                         @endif
 
                         <div class="position-absolute bottom-0 start-md-100 start-0 translate-middle-md-x mb-md-8 backdrop-filter rounded-4 px-7 py-4 text-center z-1">
@@ -20,12 +20,12 @@
 
                             @if($floatingCardImage)
                                 <div class="d-flex align-items-center justify-content-center py-4">
-                                    {{ RvMedia::image($floatingCardImage, __('Image'), attributes: ['style' => 'max-width: 10.5rem']) }}
+                                    {{ RvMedia::image($floatingCardImage, infinia_image_alt($shortcode), attributes: ['style' => 'max-width: 10.5rem']) }}
                                 </div>
                             @endif
                         </div>
                         <div class="position-absolute top-0 start-0 translate-middle z-0 pt-5">
-                            <img class="alltuchtopdown" src="{{ Theme::asset()->url('images/shapes/vector-2.png') }}" alt="vector">
+                            <img class="alltuchtopdown" src="{{ Theme::asset()->url('images/shapes/vector-2.png') }}" alt="" aria-hidden="true">
                         </div>
                     </div>
                 </div>
@@ -33,7 +33,7 @@
 
                 <div class="col-lg-6 mt-lg-0 mt-5">
                     @if ($title = $shortcode->title)
-                        <h5 class="ds-5">{!! BaseHelper::clean($title) !!}</h5>
+                        <{{ $titleTag = infinia_title_tag($shortcode, 'h2') }} class="ds-5">{!! infinia_clean_title($title) !!}</{{ $titleTag }}>
                     @endif
 
                     @if ($description = $shortcode->description)

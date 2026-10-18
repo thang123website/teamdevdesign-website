@@ -1,0 +1,216 @@
+<?php
+
+return [
+    'title' => 'צ\'אט חי',
+    'messages' => 'הודעות',
+    'visitor_name' => 'שם המבקר',
+    'visitor_email' => 'אימייל המבקר',
+    'visitor_phone' => 'טלפון',
+    'visitor_info' => 'פרטי המבקר',
+    'ip_address' => 'כתובת IP',
+    'current_page' => 'הדף הנוכחי',
+    'browser' => 'דפדפן',
+    'last_message' => 'הודעה אחרונה',
+    'close_conversation' => 'סגור',
+    'delete_conversation' => 'מחק שיחה',
+    'conversation_closed' => 'השיחה נסגרה.',
+    'conversation_deleted' => 'השיחה נמחקה.',
+    'conversation_is_closed' => 'השיחה הזו סגורה.',
+    'conversation_with' => 'שיחה עם :name',
+    'confirm_close' => 'האם אתה בטוח שברצונך לסגור את השיחה הזו?',
+    'confirm_delete' => 'האם אתה בטוח שברצונך למחוק את השיחה הזו? לא ניתן לבטל פעולה זו.',
+    'type_reply' => 'הקלד את תשובתך...',
+    'reply_sent' => 'התשובה נשלחה בהצלחה.',
+    'no_conversation' => 'לא נמצאה שיחה פעילה. אנא התחל צ\'אט חדש.',
+    'no_conversations' => 'עדיין אין שיחות',
+    'chat_started' => 'הצ\'אט התחיל בהצלחה.',
+    'message_sent' => 'ההודעה נשלחה.',
+    'select_conversation' => 'בחר שיחה',
+    'select_conversation_hint' => 'בחר שיחה מהרשימה כדי להתחיל לשוחח.',
+    'all' => 'הכל',
+    'timeline' => 'ציר זמן',
+    'total_messages' => 'סך כל ההודעות',
+    'just_now' => 'זה עתה',
+    'test_sound' => 'לחץ לבדיקת צליל',
+    'back_to_list' => 'חזרה לשיחות',
+    'no_messages_yet' => 'אין הודעות עדיין',
+    'start_conversation_hint' => 'שלח הודעה כדי להתחיל את השיחה',
+    'notifications_enabled' => 'התראות הדפדפן הופעלו!',
+    'enable_notifications' => 'הפעל התראות דפדפן',
+    'new_conversation' => 'שיחה חדשה',
+    'new_message' => 'הודעה חדשה',
+    'no_conversations_hint' => 'השיחות יופיעו כאן כאשר המבקרים יתחילו לשוחח.',
+    'open_chat' => 'פתח צ\'אט',
+    'close' => 'סגור',
+    'chat_title' => 'צ\'אט חי',
+    'online' => 'מחובר',
+    'start_message' => 'שלום! איך נוכל לעזור לך היום?',
+    'your_name' => 'השם שלך',
+    'your_email' => 'האימייל שלך',
+    'your_email_optional' => 'האימייל שלך (אופציונלי)',
+    'your_phone' => 'הטלפון שלך',
+    'start_chat' => 'התחל צ\'אט',
+    'type_message' => 'הקלד הודעה...',
+    'send' => 'שלח',
+    'default_admin_name' => 'תמיכה',
+    'default_welcome_message' => 'שלום! תודה שפנית אלינו. איך אוכל לעזור לך היום?',
+    'conversation_statuses' => [
+        'open' => 'פתוח',
+        'closed' => 'סגור',
+    ],
+    'settings' => [
+        'title' => 'צ\'אט חי',
+        'description' => 'הגדר את ווידג\'ט הצ\'אט החי הצף שמופיע באתר שלך לתמיכת לקוחות בזמן אמת.',
+        'form' => [
+            'enabled' => 'הפעל צ\'אט חי',
+            'enabled_help' => 'הפעל כדי להציג את ווידג\'ט הצ\'אט באתר שלך. מבקרים יכולים להתחיל שיחות עם צוות התמיכה שלך.',
+            'widget_title' => 'כותרת הווידג\'ט',
+            'widget_title_help' => 'הכותרת שמוצגת בראש כותרת הווידג\'ט של הצ\'אט.',
+            'widget_title_placeholder' => 'צ\'אט חי',
+            'welcome_message' => 'הודעת ברוך הבא',
+            'welcome_message_help' => 'ההודעה הראשונה שמבקרים רואים כאשר הם פותחים את ווידג\'ט הצ\'אט. השאר ריק כדי להשתמש בהודעה המוגדרת כברירת מחדל.',
+            'welcome_message_placeholder' => 'שלום! תודה שפנית אלינו. איך אוכל לעזור לך היום?',
+            'admin_name' => 'שם מנהל',
+            'admin_name_help' => 'השם המוצג לתגובות המנהל בווידג\'ט הצ\'אט.',
+            'admin_name_placeholder' => 'תמיכה',
+            'random_admin_names_enabled' => 'השתמש בשמות מנהל אקראיים',
+            'random_admin_names_enabled_help' => 'כאשר מופעל, לכל שיחה חדשה יוקצה שם מנהל אקראי מהרשימה למטה.',
+            'random_admin_names' => 'שמות מנהל אקראיים',
+            'random_admin_names_help' => 'הזן שם אחד בכל שורה. שם אקראי יוקצה לכל שיחה חדשה.',
+            'random_admin_names_placeholder' => 'Sarah
+Mike
+Emma
+John',
+            'primary_color' => 'צבע ראשי',
+            'primary_color_help' => 'הצבע הראשי של כפתור וכותרת הווידג\'ט של הצ\'אט. בחר צבע שתואם למותג שלך.',
+            'position' => 'מיקום הווידג\'ט',
+            'position_help' => 'היכן מופיע כפתור הווידג\'ט של הצ\'אט על המסך.',
+            'position_right' => 'למטה מימין',
+            'position_left' => 'למטה משמאל',
+            'email_required' => 'דרוש אימייל',
+            'email_required_help' => 'כאשר מופעל, המבקרים חייבים להזין את כתובת האימייל שלהם לפני התחלת צ\'אט. שימושי לתקשורת המשך.',
+            'display_fields' => 'הצג שדות',
+            'mandatory_fields' => 'שדות חובה',
+            'poll_interval' => 'מרווח בדיקה (מ"ש)',
+            'poll_interval_help' => 'כל כמה זמן לבדוק הודעות חדשות במילישניות. ערכים נמוכים יותר פירושם עדכונים מהירים יותר אך יותר בקשות לשרת. מומלץ: 3000-5000ms.',
+            'poll_interval_placeholder' => '3000',
+            'online_status' => 'סטטוס מקוון',
+            'working_hours_enabled' => 'אפשר שעות פעילות',
+            'working_hours_enabled_help' => 'כאשר מופעל, סטטוס הצ\'אט יעבור אוטומטית ללא מקוון מחוץ לשעות הפעילות. שעות הפעילות מבוססות על אזור הזמן שהוגדר בהגדרות → כללי.',
+            'working_hours_start' => 'שעת התחלה',
+            'working_hours_end' => 'שעת סיום',
+            'working_days' => 'ימי עבודה',
+            'avatar_image' => 'תמונת אווטאר',
+            'avatar_image_help' => 'תמונת אווטאר מותאמת אישית לכותרת הצ\'אט. השאר ריק לשימוש באייקון ברירת המחדל.',
+            'primary_hover_color' => 'צבע במעבר עכבר',
+            'primary_hover_color_help' => 'הצבע כאשר עוברים עם העכבר על כפתור הצ\'אט.',
+            'position_bottom_right' => 'ימין למטה',
+            'position_bottom_left' => 'שמאל למטה',
+            'position_center_right' => 'מרכז ימין',
+            'position_center_left' => 'מרכז שמאל',
+            'offset_x' => 'היסט X (px)',
+            'offset_x_help' => 'היסט אופקי מקצה המסך בפיקסלים.',
+            'offset_y' => 'היסט Y (px)',
+            'offset_y_help' => 'היסט אנכי מקצה המסך בפיקסלים.',
+            'display_on_mobile' => 'הצג בנייד',
+            'display_on_mobile_help' => 'שלוט אם ווידג\'ט הצ\'אט יופיע במכשירים ניידים.',
+            'display_on_mobile_always' => 'הצג תמיד',
+            'display_on_mobile_hide' => 'הסתר בנייד',
+        ],
+    ],
+    'email' => [
+        'title' => 'Live Chat Email',
+        'description' => 'Email notifications for live chat events',
+        'templates' => [
+            'new_conversation_title' => 'New Conversation Notification',
+            'new_conversation_description' => 'Email sent to admin when a visitor starts a new conversation',
+            'new_conversation_subject' => 'New Live Chat Conversation from {{ visitor_name }}',
+            'visitor_name' => 'Visitor name',
+            'visitor_email' => 'Visitor email',
+            'visitor_phone' => 'Visitor phone',
+            'visitor_ip' => 'Visitor IP address',
+            'current_page' => 'Current page URL',
+            'conversation_url' => 'Link to conversation in admin panel',
+        ],
+    ],
+    'email_settings' => [
+        'title' => 'Email Notifications',
+        'description' => 'Configure email notifications for new chat conversations. Only one email is sent when a visitor starts a new conversation.',
+        'enable_email_notification' => 'Enable Email Notifications',
+        'enable_email_notification_help' => 'Send an email notification when a visitor starts a new chat conversation',
+        'notification_emails' => 'Notification Email Addresses',
+        'notification_emails_help' => 'Comma-separated list of email addresses to receive notifications. Leave empty to use the default admin email.',
+    ],
+    'email_templates' => [
+        'new_conversation_title' => 'New Live Chat Conversation',
+        'new_conversation_greeting' => 'A visitor has started a new live chat conversation on your website.',
+        'visitor_details' => 'Visitor Details',
+        'field_name' => 'Name:',
+        'field_email' => 'Email:',
+        'field_phone' => 'Phone:',
+        'field_ip' => 'IP Address:',
+        'field_page' => 'Current Page:',
+        'respond_instruction' => 'Click the button below to respond to this conversation.',
+        'view_conversation_button' => 'View Conversation',
+    ],
+    'webhook' => [
+        'title' => 'הגדרות Webhook',
+        'description' => 'הגדר webhooks לקבלת התראות כאשר מתרחשים אירועי צ\'אט. Webhooks שולחים בקשות HTTP POST לכתובות ה-URL שציינת עם נתוני האירוע.',
+        'enable_webhooks' => 'הפעל Webhooks',
+        'enable_webhooks_help' => 'הפעל שליחת התראות webhook לאירועי צ\'אט חי',
+        'message_received_url' => 'כתובת URL של Webhook הודעה התקבלה',
+        'message_received_url_help' => 'מופעל כאשר מבקר שולח הודעה חדשה בצ\'אט',
+        'conversation_started_url' => 'כתובת URL של Webhook שיחה החלה',
+        'conversation_started_url_help' => 'מופעל כאשר מבקר מתחיל שיחה חדשה',
+        'view_sample_data' => 'הצג נתונים לדוגמה',
+        'test_button' => 'שלח Webhook לבדיקה',
+        'testing' => 'שולח...',
+        'test_success' => 'Webhook נשלח בהצלחה!',
+        'test_failed' => 'בדיקת Webhook נכשלה.',
+        'status_code' => 'קוד סטטוס',
+        'please_enter_url' => 'אנא הזן קודם כתובת URL של webhook',
+        'error_occurred' => 'אירעה שגיאה בעת בדיקת ה-webhook',
+        'usage_instructions_title' => 'How to Use Webhooks',
+        'usage_instructions' => '<p><strong>Webhooks</strong> allow you to receive real-time notifications when events occur in Live Chat. When an event is triggered, an HTTP POST request is sent to your configured URL with JSON payload.</p>
+<h6>HTTP Headers</h6>
+<ul>
+<li><code>Content-Type: application/json</code></li>
+<li><code>X-Webhook-Event</code> - Event type (e.g., <code>message.received</code>, <code>conversation.started</code>)</li>
+<li><code>X-Webhook-Timestamp</code> - ISO 8601 timestamp when webhook was sent</li>
+<li><code>X-Webhook-Test: true</code> - Only present for test webhooks</li>
+</ul>
+<h6>Your Endpoint Requirements</h6>
+<ul>
+<li>Must accept HTTP POST requests</li>
+<li>Must respond within 10 seconds (timeout limit)</li>
+<li>Should return HTTP 2xx status code for success</li>
+<li>Must be publicly accessible (HTTPS recommended)</li>
+</ul>
+<h6>Integration Tutorials</h6>
+<ul>
+<li><strong>Slack:</strong> <a href="https://api.slack.com/messaging/webhooks" target="_blank">Incoming Webhooks Guide</a></li>
+<li><strong>Discord:</strong> <a href="https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks" target="_blank">Intro to Webhooks</a></li>
+<li><strong>Telegram:</strong> <a href="https://core.telegram.org/bots/webhooks" target="_blank">Bot Webhooks</a> (use with <a href="https://core.telegram.org/bots/api#sendmessage" target="_blank">sendMessage API</a>)</li>
+<li><strong>n8n:</strong> <a href="https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.webhook/" target="_blank">Webhook Node</a></li>
+<li><strong>Zapier:</strong> <a href="https://zapier.com/apps/webhook/integrations" target="_blank">Webhooks by Zapier</a></li>
+<li><strong>Make (Integromat):</strong> <a href="https://www.make.com/en/help/tools/webhooks" target="_blank">Webhooks Module</a></li>
+</ul>
+<h6>Example Use Cases</h6>
+<ul>
+<li>Send notifications to Slack, Discord, or Telegram</li>
+<li>Create tickets in helpdesk systems (Zendesk, Freshdesk)</li>
+<li>Log conversations to external CRM</li>
+<li>Trigger automated responses via n8n or Zapier</li>
+</ul>',
+    ],
+    'offline' => 'Offline',
+    'days' => [
+        'monday' => 'יום שני',
+        'tuesday' => 'יום שלישי',
+        'wednesday' => 'יום רביעי',
+        'thursday' => 'יום חמישי',
+        'friday' => 'יום שישי',
+        'saturday' => 'יום שבת',
+        'sunday' => 'יום ראשון',
+    ],
+];

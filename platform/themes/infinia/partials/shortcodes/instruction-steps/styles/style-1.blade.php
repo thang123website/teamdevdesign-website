@@ -3,13 +3,13 @@
         <div class="text-center mb-8">
             @if ($subtitle = $shortcode->subtitle)
                 <div class="d-flex align-items-center position-relative z-2 justify-content-center bg-primary-soft d-inline-flex rounded-pill border border-2 border-white px-3 py-1" data-aos="zoom-in" data-aos-delay="100">
-                    <img src="{{ Theme::asset()->url('images/icons/dots.png') }}" alt="dots">
+                    <img src="{{ Theme::asset()->url('images/icons/dots.png') }}" alt="" aria-hidden="true">
                     <span class="tag-spacing fs-7 fw-bold text-linear-2 ms-2 text-primary">{!! BaseHelper::clean($subtitle) !!}</span>
                 </div>
             @endif
 
             @if ($title = $shortcode->title)
-                <h3 class="ds-3 my-3 fw-regular" data-aos="fade-zoom-in" data-aos-delay="50">{!! BaseHelper::clean($title) !!}</h3>
+                <{{ $titleTag = infinia_title_tag($shortcode, 'h3') }} class="ds-3 my-3 fw-regular" data-aos="fade-zoom-in" data-aos-delay="50">{!! infinia_clean_title($title) !!}</{{ $titleTag }}>
             @endif
 
             @if ($description = $shortcode->description)

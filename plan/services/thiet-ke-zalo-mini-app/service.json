@@ -1,0 +1,42 @@
+{
+  "slug": "thiet-ke-zalo-mini-app",
+  "id": 9,
+  "name": "Thiết Kế Zalo Mini App Trọn Gói",
+  "category_id": 5,
+  "category": "Dịch vụ phát triển",
+  "description": "Giải pháp tiếp cận 80 triệu người dùng Zalo với Zalo Mini App. Tích hợp thanh toán ZaloPay, thông báo ZNS, thẻ thành viên Loyalty.",
+  "image": "services/service_zalo_mini_app_featured.jpg",
+  "images": [],
+  "is_featured": true,
+  "order": 0,
+  "status": "published",
+  "seo": {
+    "seo_title": "Thiết kế Zalo Mini App chuyên nghiệp, chuẩn UI/UX từ Zalo",
+    "seo_description": "Báo giá thiết kế Zalo Mini App 2026 trọn gói từ 6 triệu. Ứng dụng tích điểm, ZNS, bán hàng trực tiếp trên Zalo không cần tải app, tiếp cận 80 triệu khách hàng.",
+    "seo_image": "services/service_zalo_mini_app_featured.jpg",
+    "index": "index"
+  },
+  "meta": {
+    "icon_image": "icons/icon-6.png"
+  },
+  "faqs": [
+    {
+      "category_id": 13,
+      "category": "FAQ - Zalo Mini App",
+      "items": [
+        {
+          "question": "Zalo có thu phí phát hành Mini App không?",
+          "answer": "Không, Zalo không thu phí đăng ký tài khoản Zalo for Developers hay phí phát hành Mini App. Bạn chỉ cần trả chi phí lập trình cho đội ngũ kỹ thuật."
+        },
+        {
+          "question": "Dung lượng Zalo Mini App có bị giới hạn không?",
+          "answer": "Có. Để đảm bảo trải nghiệm siêu tốc, Zalo giới hạn dung lượng của Mini App không được vượt quá 10MB."
+        },
+        {
+          "question": "Thời gian xét duyệt Zalo Mini App là bao lâu?",
+          "answer": "Sau khi lập trình xong, quy trình gửi duyệt trên hệ thống Zalo thường mất từ 3 đến 7 ngày làm việc."
+        }
+      ]
+    }
+  ]
+}

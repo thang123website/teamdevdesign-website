@@ -11,13 +11,13 @@
     <div class="text-center container">
         @if ($subtitle = $shortcode->subtitle)
             <div class="d-flex align-items-center justify-content-center bg-primary-soft border border-2 border-white d-inline-flex rounded-pill px-4 py-2" data-aos="zoom-in" data-aos-delay="50">
-                <img src="{{ Theme::asset()->url('images/icons/dots.png') }}" alt="dots" />
+                <img src="{{ Theme::asset()->url('images/icons/dots.png') }}" alt="" aria-hidden="true" />
                 <span class="tag-spacing fs-7 fw-bold text-linear-2 ms-2 text-primary">{!! BaseHelper::clean($subtitle) !!}</span>
             </div>
         @endif
 
         @if ($title = $shortcode->title)
-            <h5 class="ds-5 mb-3 mt-4">{!! BaseHelper::clean($title) !!}</h5>
+            <{{ $titleTag = infinia_title_tag($shortcode, 'h5') }} class="ds-5 mb-3 mt-4">{!! infinia_clean_title($title) !!}</{{ $titleTag }}>
         @endif
 
         @if ($description = $shortcode->description)
@@ -34,7 +34,7 @@
                 <div class="d-flex">
                     @if ($image)
                         <div class="zoom-img rounded-3 me-2">
-                            {{ RvMedia::image($image, __('Image')) }}
+                            {{ RvMedia::image($image, infinia_image_alt($shortcode)) }}
                         </div>
                     @endif
 

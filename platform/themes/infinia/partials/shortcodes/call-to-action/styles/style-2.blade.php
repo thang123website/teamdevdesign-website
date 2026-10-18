@@ -21,7 +21,7 @@
 
                     @if ($image = $shortcode->image)
                         <div class="position-relative mt-lg-0 mt-8">
-                            {{ RvMedia::image($image, __('Image'), attributes: ['class' => 'rounded-2']) }}
+                            {{ RvMedia::image($image, infinia_image_alt($shortcode), attributes: ['class' => 'rounded-2']) }}
                             <div class="position-absolute rectangle-banner3 bg-primary rounded-2"></div>
                         </div>
                     @endif

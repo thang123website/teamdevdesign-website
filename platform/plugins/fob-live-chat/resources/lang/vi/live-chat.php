@@ -1,0 +1,216 @@
+<?php
+
+return [
+    'title' => 'Trò chuyện trực tuyến',
+    'messages' => 'Tin nhắn',
+    'visitor_name' => 'Tên khách truy cập',
+    'visitor_email' => 'Email khách truy cập',
+    'visitor_phone' => 'Điện thoại',
+    'visitor_info' => 'Thông tin khách truy cập',
+    'ip_address' => 'Địa chỉ IP',
+    'current_page' => 'Trang hiện tại',
+    'browser' => 'Trình duyệt',
+    'last_message' => 'Tin nhắn cuối',
+    'close_conversation' => 'Đóng',
+    'delete_conversation' => 'Xóa cuộc trò chuyện',
+    'conversation_closed' => 'Cuộc trò chuyện đã được đóng.',
+    'conversation_deleted' => 'Cuộc trò chuyện đã bị xóa.',
+    'conversation_is_closed' => 'Cuộc trò chuyện này đã đóng.',
+    'conversation_with' => 'Trò chuyện với :name',
+    'confirm_close' => 'Bạn có chắc muốn đóng cuộc trò chuyện này không?',
+    'confirm_delete' => 'Bạn có chắc muốn xóa cuộc trò chuyện này không? Hành động này không thể hoàn tác.',
+    'type_reply' => 'Nhập phản hồi của bạn...',
+    'reply_sent' => 'Phản hồi đã được gửi thành công.',
+    'no_conversation' => 'Không tìm thấy cuộc trò chuyện đang hoạt động. Vui lòng bắt đầu một cuộc trò chuyện mới.',
+    'no_conversations' => 'Chưa có cuộc trò chuyện nào',
+    'no_conversations_hint' => 'Cuộc trò chuyện sẽ xuất hiện khi khách truy cập bắt đầu chat.',
+    'chat_started' => 'Bắt đầu trò chuyện thành công.',
+    'message_sent' => 'Đã gửi tin nhắn.',
+    'select_conversation' => 'Chọn một cuộc trò chuyện',
+    'select_conversation_hint' => 'Chọn cuộc trò chuyện từ danh sách để bắt đầu.',
+    'all' => 'Tất cả',
+    'timeline' => 'Dòng thời gian',
+    'total_messages' => 'Tổng số tin nhắn',
+    'just_now' => 'Vừa xong',
+    'new_message' => 'Tin nhắn mới',
+    'new_conversation' => 'Cuộc trò chuyện mới',
+    'enable_notifications' => 'Bật thông báo trình duyệt',
+    'notifications_enabled' => 'Đã bật thông báo trình duyệt!',
+    'test_sound' => 'Click để test âm thanh',
+    'back_to_list' => 'Quay lại danh sách',
+    'no_messages_yet' => 'Chưa có tin nhắn',
+    'start_conversation_hint' => 'Gửi tin nhắn để bắt đầu cuộc trò chuyện',
+    'open_chat' => 'Mở chat',
+    'close' => 'Đóng',
+    'chat_title' => 'Trò chuyện trực tuyến',
+    'online' => 'Trực tuyến',
+    'start_message' => 'Xin chào! Chúng tôi có thể giúp gì cho bạn hôm nay?',
+    'your_name' => 'Tên của bạn',
+    'your_email' => 'Email của bạn',
+    'your_email_optional' => 'Email của bạn (tùy chọn)',
+    'your_phone' => 'Điện thoại của bạn',
+    'start_chat' => 'Bắt đầu chat',
+    'type_message' => 'Nhập tin nhắn...',
+    'send' => 'Gửi',
+    'default_admin_name' => 'Hỗ trợ',
+    'default_welcome_message' => 'Xin chào! Cảm ơn bạn đã liên hệ. Tôi có thể giúp gì cho bạn hôm nay?',
+    'conversation_statuses' => [
+        'open' => 'Mở',
+        'closed' => 'Đóng',
+    ],
+    'settings' => [
+        'title' => 'Trò chuyện trực tuyến',
+        'description' => 'Cấu hình widget chat nổi hiển thị trên website của bạn để hỗ trợ khách hàng theo thời gian thực.',
+        'form' => [
+            'enabled' => 'Bật trò chuyện trực tuyến',
+            'enabled_help' => 'Bật để hiển thị widget chat trên website của bạn. Khách truy cập có thể bắt đầu trò chuyện với đội hỗ trợ.',
+            'widget_title' => 'Tiêu đề widget',
+            'widget_title_help' => 'Tiêu đề hiển thị ở đầu phần tiêu đề của widget chat.',
+            'widget_title_placeholder' => 'Trò chuyện trực tuyến',
+            'welcome_message' => 'Tin nhắn chào mừng',
+            'welcome_message_help' => 'Tin nhắn đầu tiên khách truy cập nhìn thấy khi mở widget chat. Để trống để dùng tin nhắn mặc định.',
+            'welcome_message_placeholder' => 'Xin chào! Cảm ơn bạn đã liên hệ. Tôi có thể giúp gì cho bạn hôm nay?',
+            'admin_name' => 'Tên quản trị viên',
+            'admin_name_help' => 'Tên hiển thị cho phản hồi của quản trị viên trong widget chat.',
+            'admin_name_placeholder' => 'Hỗ trợ',
+            'random_admin_names_enabled' => 'Sử dụng tên quản trị viên ngẫu nhiên',
+            'random_admin_names_enabled_help' => 'Khi được bật, mỗi cuộc trò chuyện mới sẽ được gán một tên quản trị viên ngẫu nhiên từ danh sách bên dưới.',
+            'random_admin_names' => 'Tên quản trị viên ngẫu nhiên',
+            'random_admin_names_help' => 'Nhập một tên trên mỗi dòng. Một tên ngẫu nhiên sẽ được gán cho mỗi cuộc trò chuyện mới.',
+            'random_admin_names_placeholder' => 'Sarah
+Mike
+Emma
+John',
+            'primary_color' => 'Màu chính',
+            'primary_color_help' => 'Màu chính cho nút và tiêu đề của widget chat. Chọn màu phù hợp với thương hiệu của bạn.',
+            'position' => 'Vị trí widget',
+            'position_help' => 'Vị trí nút widget chat xuất hiện trên màn hình.',
+            'position_right' => 'Góc dưới bên phải',
+            'position_left' => 'Góc dưới bên trái',
+            'email_required' => 'Yêu cầu email',
+            'email_required_help' => 'Khi bật, khách truy cập phải nhập email trước khi bắt đầu chat. Hữu ích cho liên lạc tiếp theo.',
+            'display_fields' => 'Hiển thị trường',
+            'mandatory_fields' => 'Trường bắt buộc',
+            'poll_interval' => 'Khoảng thời gian thăm dò (ms)',
+            'poll_interval_help' => 'Tần suất kiểm tra tin nhắn mới tính bằng mili giây. Giá trị thấp hơn nghĩa là cập nhật nhanh hơn nhưng nhiều yêu cầu tới máy chủ hơn. Khuyến nghị: 3000-5000ms.',
+            'poll_interval_placeholder' => '3000',
+            'online_status' => 'Trạng thái trực tuyến',
+            'working_hours_enabled' => 'Bật giờ làm việc',
+            'working_hours_enabled_help' => 'Khi bật, trạng thái trò chuyện sẽ tự động chuyển sang ngoại tuyến ngoài giờ làm việc. Giờ làm việc dựa trên múi giờ được cấu hình trong Cài đặt → Chung.',
+            'working_hours_start' => 'Giờ bắt đầu',
+            'working_hours_end' => 'Giờ kết thúc',
+            'working_days' => 'Ngày làm việc',
+            'avatar_image' => 'Ảnh đại diện',
+            'avatar_image_help' => 'Ảnh đại diện tùy chỉnh cho tiêu đề trò chuyện. Để trống để sử dụng biểu tượng mặc định.',
+            'primary_hover_color' => 'Màu khi di chuột',
+            'primary_hover_color_help' => 'Màu khi di chuột qua nút trò chuyện.',
+            'position_bottom_right' => 'Góc dưới bên phải',
+            'position_bottom_left' => 'Góc dưới bên trái',
+            'position_center_right' => 'Giữa bên phải',
+            'position_center_left' => 'Giữa bên trái',
+            'offset_x' => 'Khoảng cách X (px)',
+            'offset_x_help' => 'Khoảng cách ngang từ cạnh màn hình tính bằng pixel.',
+            'offset_y' => 'Khoảng cách Y (px)',
+            'offset_y_help' => 'Khoảng cách dọc từ cạnh màn hình tính bằng pixel.',
+            'display_on_mobile' => 'Hiển thị trên di động',
+            'display_on_mobile_help' => 'Kiểm soát việc hiển thị widget trò chuyện trên thiết bị di động.',
+            'display_on_mobile_always' => 'Luôn hiển thị',
+            'display_on_mobile_hide' => 'Ẩn trên di động',
+        ],
+    ],
+    'email' => [
+        'title' => 'Email Trò chuyện trực tuyến',
+        'description' => 'Thông báo email cho các sự kiện trò chuyện trực tuyến',
+        'templates' => [
+            'new_conversation_title' => 'Thông báo cuộc trò chuyện mới',
+            'new_conversation_description' => 'Email gửi cho quản trị viên khi khách truy cập bắt đầu cuộc trò chuyện mới',
+            'new_conversation_subject' => 'Cuộc trò chuyện mới từ {{ visitor_name }}',
+            'visitor_name' => 'Tên khách truy cập',
+            'visitor_email' => 'Email khách truy cập',
+            'visitor_phone' => 'Điện thoại khách truy cập',
+            'visitor_ip' => 'Địa chỉ IP khách truy cập',
+            'current_page' => 'URL trang hiện tại',
+            'conversation_url' => 'Liên kết đến cuộc trò chuyện trong trang quản trị',
+        ],
+    ],
+    'email_settings' => [
+        'title' => 'Thông báo Email',
+        'description' => 'Cấu hình thông báo email cho cuộc trò chuyện mới. Chỉ một email được gửi khi khách truy cập bắt đầu cuộc trò chuyện mới.',
+        'enable_email_notification' => 'Bật thông báo Email',
+        'enable_email_notification_help' => 'Gửi thông báo email khi khách truy cập bắt đầu cuộc trò chuyện mới',
+        'notification_emails' => 'Địa chỉ Email nhận thông báo',
+        'notification_emails_help' => 'Danh sách địa chỉ email cách nhau bằng dấu phẩy để nhận thông báo. Để trống để sử dụng email quản trị mặc định.',
+    ],
+    'email_templates' => [
+        'new_conversation_title' => 'Cuộc trò chuyện mới',
+        'new_conversation_greeting' => 'Một khách truy cập đã bắt đầu cuộc trò chuyện mới trên website của bạn.',
+        'visitor_details' => 'Thông tin khách truy cập',
+        'field_name' => 'Tên:',
+        'field_email' => 'Email:',
+        'field_phone' => 'Điện thoại:',
+        'field_ip' => 'Địa chỉ IP:',
+        'field_page' => 'Trang hiện tại:',
+        'respond_instruction' => 'Nhấn nút bên dưới để trả lời cuộc trò chuyện này.',
+        'view_conversation_button' => 'Xem cuộc trò chuyện',
+    ],
+    'webhook' => [
+        'title' => 'Cài đặt Webhook',
+        'description' => 'Cấu hình webhook để nhận thông báo khi có sự kiện chat xảy ra. Webhook gửi yêu cầu HTTP POST đến URL được chỉ định với dữ liệu sự kiện.',
+        'enable_webhooks' => 'Bật Webhook',
+        'enable_webhooks_help' => 'Bật gửi thông báo webhook cho các sự kiện trò chuyện trực tuyến',
+        'message_received_url' => 'URL Webhook nhận tin nhắn',
+        'message_received_url_help' => 'Được kích hoạt khi khách truy cập gửi tin nhắn mới trong chat',
+        'conversation_started_url' => 'URL Webhook bắt đầu cuộc trò chuyện',
+        'conversation_started_url_help' => 'Được kích hoạt khi khách truy cập bắt đầu cuộc trò chuyện mới',
+        'view_sample_data' => 'Xem dữ liệu mẫu',
+        'test_button' => 'Gửi Webhook thử nghiệm',
+        'testing' => 'Đang gửi...',
+        'test_success' => 'Webhook đã gửi thành công!',
+        'test_failed' => 'Kiểm tra webhook thất bại.',
+        'status_code' => 'Mã trạng thái',
+        'please_enter_url' => 'Vui lòng nhập URL webhook trước',
+        'error_occurred' => 'Đã xảy ra lỗi khi kiểm tra webhook',
+        'usage_instructions_title' => 'Cách sử dụng Webhook',
+        'usage_instructions' => '<p><strong>Webhook</strong> cho phép bạn nhận thông báo thời gian thực khi có sự kiện xảy ra trong Live Chat. Khi một sự kiện được kích hoạt, một yêu cầu HTTP POST sẽ được gửi đến URL đã cấu hình với dữ liệu JSON.</p>
+<h6>HTTP Headers</h6>
+<ul>
+<li><code>Content-Type: application/json</code></li>
+<li><code>X-Webhook-Event</code> - Loại sự kiện (vd: <code>message.received</code>, <code>conversation.started</code>)</li>
+<li><code>X-Webhook-Timestamp</code> - Dấu thời gian ISO 8601 khi webhook được gửi</li>
+<li><code>X-Webhook-Test: true</code> - Chỉ có khi test webhook</li>
+</ul>
+<h6>Yêu cầu Endpoint</h6>
+<ul>
+<li>Phải chấp nhận yêu cầu HTTP POST</li>
+<li>Phải phản hồi trong vòng 10 giây (giới hạn timeout)</li>
+<li>Phải trả về mã trạng thái HTTP 2xx khi thành công</li>
+<li>Phải có thể truy cập công khai (khuyến nghị HTTPS)</li>
+</ul>
+<h6>Hướng dẫn tích hợp</h6>
+<ul>
+<li><strong>Slack:</strong> <a href="https://api.slack.com/messaging/webhooks" target="_blank">Hướng dẫn Incoming Webhooks</a></li>
+<li><strong>Discord:</strong> <a href="https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks" target="_blank">Giới thiệu về Webhooks</a></li>
+<li><strong>Telegram:</strong> <a href="https://core.telegram.org/bots/webhooks" target="_blank">Bot Webhooks</a> (sử dụng với <a href="https://core.telegram.org/bots/api#sendmessage" target="_blank">sendMessage API</a>)</li>
+<li><strong>n8n:</strong> <a href="https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.webhook/" target="_blank">Webhook Node</a></li>
+<li><strong>Zapier:</strong> <a href="https://zapier.com/apps/webhook/integrations" target="_blank">Webhooks by Zapier</a></li>
+<li><strong>Make (Integromat):</strong> <a href="https://www.make.com/en/help/tools/webhooks" target="_blank">Webhooks Module</a></li>
+</ul>
+<h6>Ví dụ sử dụng</h6>
+<ul>
+<li>Gửi thông báo đến Slack, Discord hoặc Telegram</li>
+<li>Tạo ticket trong hệ thống hỗ trợ (Zendesk, Freshdesk)</li>
+<li>Ghi log cuộc hội thoại vào CRM bên ngoài</li>
+<li>Kích hoạt phản hồi tự động qua n8n hoặc Zapier</li>
+</ul>',
+    ],
+    'offline' => 'Offline',
+    'days' => [
+        'monday' => 'Thứ Hai',
+        'tuesday' => 'Thứ Ba',
+        'wednesday' => 'Thứ Tư',
+        'thursday' => 'Thứ Năm',
+        'friday' => 'Thứ Sáu',
+        'saturday' => 'Thứ Bảy',
+        'sunday' => 'Chủ Nhật',
+    ],
+];

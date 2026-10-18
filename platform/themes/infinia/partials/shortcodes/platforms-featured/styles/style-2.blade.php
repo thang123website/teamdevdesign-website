@@ -13,7 +13,7 @@
             <div class="row align-items-start pb-5 pt-lg-5 pt-0">
                 <div class="col-lg-5 order-2 order-lg-1 mt-lg-0 mt-10 pt-lg-0 pt-5">
                     @if ($title = $shortcode->title)
-                        <h4 class="ds-4 fw-regular">{!! BaseHelper::clean($title) !!}</h4>
+                        <{{ $titleTag = infinia_title_tag($shortcode, 'h4') }} class="ds-4 fw-regular">{!! infinia_clean_title($title) !!}</{{ $titleTag }}>
                     @endif
 
                     @if ($description = $shortcode->description)
@@ -34,7 +34,7 @@
                 <div class="col-lg-6 offset-lg-1 order-1 order-lg-2 mt-5 text-lg-end text-center">
                     <div class="photo-description position-relative rounded-4 d-inline-block">
                         @if ($image = $shortcode->image)
-                            {{ RvMedia::image($image, __('Image'), attributes: ['class' => 'rounded-4 border border-2 border-white position-relative z-1']) }}
+                            {{ RvMedia::image($image, infinia_image_alt($shortcode), attributes: ['class' => 'rounded-4 border border-2 border-white position-relative z-1']) }}
                         @endif
 
                         <div class="position-absolute top-50 start-50 translate-middle z-0">
@@ -42,7 +42,7 @@
                             </div>
                         </div>
                         @if ($image1 = $shortcode->image_1)
-                            {{ RvMedia::image($image1, __('Image'), attributes: ['class' => 'position-absolute top-100 start-0 d-none d-md-block translate-middle rounded-4 border border-2 border-white position-relative z-1']) }}
+                            {{ RvMedia::image($image1, infinia_image_alt($shortcode), attributes: ['class' => 'position-absolute top-100 start-0 d-none d-md-block translate-middle rounded-4 border border-2 border-white position-relative z-1']) }}
                         @endif
                     </div>
                 </div>
@@ -60,7 +60,7 @@
                                 <div class="compatible hover-up">
                                     <a href="{{ Arr::get($tab, 'url') }}">
                                         @if ($iconImage = Arr::get($tab, 'icon_image'))
-                                            {{ RvMedia::image($iconImage, __('Image'), attributes: ['class' => 'rounded-4']) }}
+                                            {{ RvMedia::image($iconImage, infinia_image_alt($shortcode), attributes: ['class' => 'rounded-4']) }}
                                         @endif
 
                                         <p class="text-900 mt-3 mb-0">{!! BaseHelper::clean($tabTitle) !!}</p>

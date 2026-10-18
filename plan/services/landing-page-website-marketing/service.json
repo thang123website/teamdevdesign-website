@@ -1,0 +1,42 @@
+{
+  "slug": "landing-page-website-marketing",
+  "id": 3,
+  "name": "Landing Page & Website Marketing",
+  "category_id": 3,
+  "category": "Website Tin tức / Blog / Cổng thông tin",
+  "description": "Thiết kế Landing Page chuẩn CRO, tốc độ tải trang cực nhanh giúp x3 tỷ lệ chuyển đổi, tối ưu quảng cáo Facebook/Google Ads.",
+  "image": "services/service_landing_featured.jpg",
+  "images": [],
+  "is_featured": false,
+  "order": 0,
+  "status": "published",
+  "seo": {
+    "seo_title": "Thiết kế Landing Page chuẩn SEO, tăng gấp 3 tỷ lệ chuyển đổi",
+    "seo_description": "Báo giá thiết kế Landing Page 2026. Chuẩn Core Web Vitals, cấu trúc CRO tối ưu hóa chuyển đổi, tích hợp Facebook Pixel, Google Tag Manager.",
+    "seo_image": "services/service_landing_featured.jpg",
+    "index": "index"
+  },
+  "meta": {
+    "icon_image": "icons/icon-8.png"
+  },
+  "faqs": [
+    {
+      "category_id": 7,
+      "category": "FAQ - Landing Page",
+      "items": [
+        {
+          "question": "Landing page khác gì với website thông thường?",
+          "answer": "Landing page là một trang đơn lẻ được thiết kế tập trung duy nhất vào một mục tiêu chuyển đổi (như điền form, đăng ký, mua hàng), không có menu điều hướng phức tạp để tránh làm phân tâm người dùng."
+        },
+        {
+          "question": "Tốc độ tải trang có thực sự quan trọng không?",
+          "answer": "Rất quan trọng. Core Web Vitals (LCP < 2.5s) là tiêu chuẩn hiện tại. Mỗi giây chậm trễ có thể làm giảm khoảng 7% tỷ lệ chuyển đổi và tăng chi phí chạy Ads."
+        },
+        {
+          "question": "Tôi nên dùng WordPress, LadiPage hay Next.js?",
+          "answer": "LadiPage phù hợp triển khai cực nhanh. WordPress phù hợp tùy biến cao, nhiều plugin. Next.js phù hợp cho dự án cần tốc độ siêu tốc và hiệu ứng phức tạp cao cấp."
+        }
+      ]
+    }
+  ]
+}

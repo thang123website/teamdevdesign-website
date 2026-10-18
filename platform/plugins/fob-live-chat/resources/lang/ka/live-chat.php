@@ -1,0 +1,216 @@
+<?php
+
+return [
+    'title' => 'ცოცხალი ჩატი',
+    'messages' => 'შეტყობინებები',
+    'visitor_name' => 'ვიზიტორის სახელი',
+    'visitor_email' => 'ვიზიტორის ელ.ფოსტა',
+    'visitor_phone' => 'ტელეფონი',
+    'visitor_info' => 'ვიზიტორის ინფორმაცია',
+    'ip_address' => 'IP მისამართი',
+    'current_page' => 'მიმდინარე გვერდი',
+    'browser' => 'ბრაუზერი',
+    'last_message' => 'ბოლო შეტყობინება',
+    'close_conversation' => 'დახურვა',
+    'delete_conversation' => 'საუბრის წაშლა',
+    'conversation_closed' => 'საუბარი დახურულია.',
+    'conversation_deleted' => 'საუბარი წაშლილია.',
+    'conversation_is_closed' => 'ეს საუბარი დახურულია.',
+    'conversation_with' => 'საუბარი მომხმარებელთან :name',
+    'confirm_close' => 'დარწმუნებული ხართ, რომ გსურთ ამ საუბრის დახურვა?',
+    'confirm_delete' => 'დარწმუნებული ხართ, რომ გსურთ ამ საუბრის წაშლა? ეს ქმედება ვერ გაუქმდება.',
+    'type_reply' => 'შეიყვანეთ თქვენი პასუხი...',
+    'reply_sent' => 'პასუხი წარმატებით გაიგზავნა.',
+    'no_conversation' => 'აქტიური საუბარი ვერ მოიძებნა. გთხოვთ, დაიწყეთ ახალი ჩატი.',
+    'no_conversations' => 'ჯერ არ არის საუბრები',
+    'chat_started' => 'ჩატი წარმატებით დაიწყო.',
+    'message_sent' => 'შეტყობინება გაიგზავნა.',
+    'select_conversation' => 'აირჩიეთ საუბარი',
+    'select_conversation_hint' => 'აირჩიეთ საუბარი სიიდან ჩატის დასაწყებად.',
+    'all' => 'ყველა',
+    'timeline' => 'დროის ხაზი',
+    'total_messages' => 'შეტყობინებების რაოდენობა',
+    'just_now' => 'ახლახან',
+    'test_sound' => 'დააწკაპუნეთ ხმის შესამოწმებლად',
+    'back_to_list' => 'საუბრებზე დაბრუნება',
+    'no_messages_yet' => 'ჯერ არ არის შეტყობინებები',
+    'start_conversation_hint' => 'გაგზავნეთ შეტყობინება საუბრის დასაწყებად',
+    'notifications_enabled' => 'ბრაუზერის შეტყობინებები ჩართულია!',
+    'enable_notifications' => 'ბრაუზერის შეტყობინებების ჩართვა',
+    'new_conversation' => 'ახალი საუბარი',
+    'new_message' => 'ახალი შეტყობინება',
+    'no_conversations_hint' => 'საუბრები აქ გამოჩნდება, როცა ვიზიტორები ჩატს დაიწყებენ.',
+    'open_chat' => 'ჩატის გახსნა',
+    'close' => 'დახურვა',
+    'chat_title' => 'ცოცხალი ჩატი',
+    'online' => 'ონლაინ',
+    'start_message' => 'გამარჯობა! როგორ შეგვიძლია დღეს დაგეხმაროთ?',
+    'your_name' => 'თქვენი სახელი',
+    'your_email' => 'თქვენი ელფოსტა',
+    'your_email_optional' => 'თქვენი ელ.ფოსტა (არასავალდებულო)',
+    'your_phone' => 'თქვენი ტელეფონი',
+    'start_chat' => 'ჩატის დაწყება',
+    'type_message' => 'შეტყობინების შეყვანა...',
+    'send' => 'გაგზავნა',
+    'default_admin_name' => 'მხარდაჭერა',
+    'default_welcome_message' => 'გამარჯობა! მადლობა, რომ დაგვიკავშირდით. როგორ შემიძლია დღეს დაგეხმაროთ?',
+    'conversation_statuses' => [
+        'open' => 'ღია',
+        'closed' => 'დახურული',
+    ],
+    'settings' => [
+        'title' => 'ცოცხალი ჩატი',
+        'description' => 'მოარგეთ მცურავი ცოცხალი ჩატის ვიჯეტი, რომელიც გამოჩნდება თქვენს ვებგვერდზე რეალურ დროში მხარდაჭერისთვის.',
+        'form' => [
+            'enabled' => 'ცოცხალი ჩატის ჩართვა',
+            'enabled_help' => 'ჩართეთ, რათა გამოჩნდეს ჩატის ვიჯეტი თქვენს ვებგვერდზე. ვიზიტორებს შეუძლიათ დაიწყონ საუბრები თქვენს მხარდაჭერის გუნდთან.',
+            'widget_title' => 'ვიჯეტის სათაური',
+            'widget_title_help' => 'სათაური, რომელიც ჩანს ჩატის ვიჯეტის სათაურის ზედა ნაწილში.',
+            'widget_title_placeholder' => 'ცოცხალი ჩატი',
+            'welcome_message' => 'მისასალმებელი შეტყობინება',
+            'welcome_message_help' => 'პირველი შეტყობინება, რომელსაც ვიზიტორები ხედავენ ჩატის ვიჯეტის გახსნისას. დატოვეთ ცარიელი ნაგულისხმები შეტყობინების გამოსაყენებლად.',
+            'welcome_message_placeholder' => 'გამარჯობა! მადლობა, რომ დაგვიკავშირდით. როგორ შემიძლია დღეს დაგეხმაროთ?',
+            'admin_name' => 'ადმინისტრატორის სახელი',
+            'admin_name_help' => 'ჩატის ვიჯეტში ადმინისტრატორის პასუხებისთვის ნაჩვენები სახელი.',
+            'admin_name_placeholder' => 'მხარდაჭერა',
+            'random_admin_names_enabled' => 'გამოიყენეთ ადმინისტრატორის შემთხვევითი სახელები',
+            'random_admin_names_enabled_help' => 'ჩართვის შემთხვევაში, ყოველი ახალი საუბრისთვის მინიჭებული იქნება ადმინისტრატორის შემთხვევითი სახელი ქვემოთ მოცემული სიიდან.',
+            'random_admin_names' => 'ადმინისტრატორის შემთხვევითი სახელები',
+            'random_admin_names_help' => 'შეიყვანეთ ერთი სახელი თითო სტრიქონზე. შემთხვევითი სახელი მიენიჭება თითოეულ ახალ საუბარს.',
+            'random_admin_names_placeholder' => 'Sarah
+Mike
+Emma
+John',
+            'primary_color' => 'ძირითადი ფერი',
+            'primary_color_help' => 'ჩატის ვიჯეტის ღილაკისა და სათაურის მთავარი ფერი. აირჩიეთ ფერი, რომელიც შეესაბამება თქვენს ბრენდს.',
+            'position' => 'ვიჯეტის მდებარეობა',
+            'position_help' => 'სად გამოჩნდება ჩატის ვიჯეტის ღილაკი ეკრანზე.',
+            'position_right' => 'ქვედა მარჯვენა',
+            'position_left' => 'ქვედა მარცხენა',
+            'email_required' => 'ელ.ფოსტის მოთხოვნა',
+            'email_required_help' => 'როცა ჩართულია, ვიზიტორებმა უნდა შეიყვანონ ელ.ფოსტის მისამართი ჩატის დაწყებამდე. გამოსადეგია შემდგომი კომუნიკაციისთვის.',
+            'display_fields' => 'ველების ჩვენება',
+            'mandatory_fields' => 'სავალდებულო ველები',
+            'poll_interval' => 'გამოკითხვის ინტერვალი (მწ)',
+            'poll_interval_help' => 'რამდენად ხშირად უნდა შემოწმდეს ახალი შეტყობინებები მილიწამებში. დაბალი მნიშვნელობები ნიშნავს უფრო სწრაფ განახლებას, მაგრამ უფრო მეტ სერვერის მოთხოვნას. რეკომენდებულია: 3000-5000ms.',
+            'poll_interval_placeholder' => '3000',
+            'online_status' => 'ონლაინ სტატუსი',
+            'working_hours_enabled' => 'სამუშაო საათების ჩართვა',
+            'working_hours_enabled_help' => 'ჩართვის შემთხვევაში, ჩატის სტატუსი ავტომატურად გადავა ოფლაინზე სამუშაო საათების გარეშე. სამუშაო საათები ეფუძნება პარამეტრებში → ზოგადი კონფიგურირებულ დროის სარტყელს.',
+            'working_hours_start' => 'დაწყების დრო',
+            'working_hours_end' => 'დასრულების დრო',
+            'working_days' => 'სამუშაო დღეები',
+            'avatar_image' => 'ავატარის სურათი',
+            'avatar_image_help' => 'მორგებული ავატარის სურათი ჩატის სათაურისთვის. დატოვეთ ცარიელი ნაგულისხმევი ხატულას გამოსაყენებლად.',
+            'primary_hover_color' => 'გადატარების ფერი',
+            'primary_hover_color_help' => 'ფერი ჩატის ღილაკზე მაუსის გადატარებისას.',
+            'position_bottom_right' => 'ქვედა მარჯვენა',
+            'position_bottom_left' => 'ქვედა მარცხენა',
+            'position_center_right' => 'ცენტრი მარჯვენა',
+            'position_center_left' => 'ცენტრი მარცხენა',
+            'offset_x' => 'გადახრა X (px)',
+            'offset_x_help' => 'ჰორიზონტალური გადახრა ეკრანის კიდიდან პიქსელებში.',
+            'offset_y' => 'გადახრა Y (px)',
+            'offset_y_help' => 'ვერტიკალური გადახრა ეკრანის კიდიდან პიქსელებში.',
+            'display_on_mobile' => 'მობილურზე ჩვენება',
+            'display_on_mobile_help' => 'მართეთ, გამოჩნდეს თუ არა ჩატის ვიჯეტი მობილურ მოწყობილობებზე.',
+            'display_on_mobile_always' => 'ყოველთვის ჩვენება',
+            'display_on_mobile_hide' => 'მობილურზე დამალვა',
+        ],
+    ],
+    'email' => [
+        'title' => 'Live Chat Email',
+        'description' => 'Email notifications for live chat events',
+        'templates' => [
+            'new_conversation_title' => 'New Conversation Notification',
+            'new_conversation_description' => 'Email sent to admin when a visitor starts a new conversation',
+            'new_conversation_subject' => 'New Live Chat Conversation from {{ visitor_name }}',
+            'visitor_name' => 'Visitor name',
+            'visitor_email' => 'Visitor email',
+            'visitor_phone' => 'Visitor phone',
+            'visitor_ip' => 'Visitor IP address',
+            'current_page' => 'Current page URL',
+            'conversation_url' => 'Link to conversation in admin panel',
+        ],
+    ],
+    'email_settings' => [
+        'title' => 'Email Notifications',
+        'description' => 'Configure email notifications for new chat conversations. Only one email is sent when a visitor starts a new conversation.',
+        'enable_email_notification' => 'Enable Email Notifications',
+        'enable_email_notification_help' => 'Send an email notification when a visitor starts a new chat conversation',
+        'notification_emails' => 'Notification Email Addresses',
+        'notification_emails_help' => 'Comma-separated list of email addresses to receive notifications. Leave empty to use the default admin email.',
+    ],
+    'email_templates' => [
+        'new_conversation_title' => 'New Live Chat Conversation',
+        'new_conversation_greeting' => 'A visitor has started a new live chat conversation on your website.',
+        'visitor_details' => 'Visitor Details',
+        'field_name' => 'Name:',
+        'field_email' => 'Email:',
+        'field_phone' => 'Phone:',
+        'field_ip' => 'IP Address:',
+        'field_page' => 'Current Page:',
+        'respond_instruction' => 'Click the button below to respond to this conversation.',
+        'view_conversation_button' => 'View Conversation',
+    ],
+    'webhook' => [
+        'title' => 'Webhook პარამეტრები',
+        'description' => 'დააკონფიგურირეთ webhook-ები ჩატის მოვლენების შეტყობინებების მისაღებად. Webhook-ები აგზავნიან HTTP POST მოთხოვნებს თქვენს მითითებულ URL-ებზე მოვლენის მონაცემებით.',
+        'enable_webhooks' => 'Webhook-ების ჩართვა',
+        'enable_webhooks_help' => 'ჩართეთ webhook შეტყობინებების გაგზავნა პირდაპირი ჩატის მოვლენებისთვის',
+        'message_received_url' => 'შეტყობინების მიღების Webhook URL',
+        'message_received_url_help' => 'ააქტიურდება, როდესაც ვიზიტორი აგზავნის ახალ შეტყობინებას ჩატში',
+        'conversation_started_url' => 'საუბრის დაწყების Webhook URL',
+        'conversation_started_url_help' => 'ააქტიურდება, როდესაც ვიზიტორი იწყებს ახალ საუბარს',
+        'view_sample_data' => 'ნიმუშის მონაცემების ნახვა',
+        'test_button' => 'სატესტო Webhook-ის გაგზავნა',
+        'testing' => 'იგზავნება...',
+        'test_success' => 'Webhook წარმატებით გაიგზავნა!',
+        'test_failed' => 'Webhook ტესტი ვერ მოხერხდა.',
+        'status_code' => 'სტატუსის კოდი',
+        'please_enter_url' => 'გთხოვთ, ჯერ შეიყვანოთ webhook URL',
+        'error_occurred' => 'Webhook-ის ტესტირებისას მოხდა შეცდომა',
+        'usage_instructions_title' => 'How to Use Webhooks',
+        'usage_instructions' => '<p><strong>Webhooks</strong> allow you to receive real-time notifications when events occur in Live Chat. When an event is triggered, an HTTP POST request is sent to your configured URL with JSON payload.</p>
+<h6>HTTP Headers</h6>
+<ul>
+<li><code>Content-Type: application/json</code></li>
+<li><code>X-Webhook-Event</code> - Event type (e.g., <code>message.received</code>, <code>conversation.started</code>)</li>
+<li><code>X-Webhook-Timestamp</code> - ISO 8601 timestamp when webhook was sent</li>
+<li><code>X-Webhook-Test: true</code> - Only present for test webhooks</li>
+</ul>
+<h6>Your Endpoint Requirements</h6>
+<ul>
+<li>Must accept HTTP POST requests</li>
+<li>Must respond within 10 seconds (timeout limit)</li>
+<li>Should return HTTP 2xx status code for success</li>
+<li>Must be publicly accessible (HTTPS recommended)</li>
+</ul>
+<h6>Integration Tutorials</h6>
+<ul>
+<li><strong>Slack:</strong> <a href="https://api.slack.com/messaging/webhooks" target="_blank">Incoming Webhooks Guide</a></li>
+<li><strong>Discord:</strong> <a href="https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks" target="_blank">Intro to Webhooks</a></li>
+<li><strong>Telegram:</strong> <a href="https://core.telegram.org/bots/webhooks" target="_blank">Bot Webhooks</a> (use with <a href="https://core.telegram.org/bots/api#sendmessage" target="_blank">sendMessage API</a>)</li>
+<li><strong>n8n:</strong> <a href="https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.webhook/" target="_blank">Webhook Node</a></li>
+<li><strong>Zapier:</strong> <a href="https://zapier.com/apps/webhook/integrations" target="_blank">Webhooks by Zapier</a></li>
+<li><strong>Make (Integromat):</strong> <a href="https://www.make.com/en/help/tools/webhooks" target="_blank">Webhooks Module</a></li>
+</ul>
+<h6>Example Use Cases</h6>
+<ul>
+<li>Send notifications to Slack, Discord, or Telegram</li>
+<li>Create tickets in helpdesk systems (Zendesk, Freshdesk)</li>
+<li>Log conversations to external CRM</li>
+<li>Trigger automated responses via n8n or Zapier</li>
+</ul>',
+    ],
+    'offline' => 'Offline',
+    'days' => [
+        'monday' => 'ორშაბათი',
+        'tuesday' => 'სამშაბათი',
+        'wednesday' => 'ოთხშაბათი',
+        'thursday' => 'ხუთშაბათი',
+        'friday' => 'პარასკევი',
+        'saturday' => 'შაბათი',
+        'sunday' => 'კვირა',
+    ],
+];

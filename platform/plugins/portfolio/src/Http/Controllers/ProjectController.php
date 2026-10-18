@@ -36,20 +36,42 @@ class ProjectController extends BaseController
 
     public function store(ProjectRequest $request): BaseHttpResponse
     {
+        $categories = collect($request->input('categories', []))->flatten()->all();
+
         $form = ProjectForm::create();
-        $form
-            ->setRequest($request)
-            ->save();
+        $form->setRequest($request);
+
+        if (!empty($categories)) {
+            $form->getModel()->category_id = (int) $categories[0];
+        }
+
+        $form->save();
+
+        $project = $form->getModel();
+        $project->categories()->sync($categories);
 
         return $this
             ->httpResponse()
-            ->setNextUrl(route('portfolio.projects.edit', $form->getModel()))
+            ->setNextUrl(route('portfolio.projects.edit', $project))
             ->setMessage(trans('core/base::notices.create_success_message'));
     }
 
     public function update(Project $project, ProjectRequest $request): BaseHttpResponse
     {
-        ProjectForm::createFromModel($project)->setRequest($request)->save();
+        $categories = collect($request->input('categories', []))->flatten()->all();
+
+        $form = ProjectForm::createFromModel($project);
+        $form->setRequest($request);
+
+        if (!empty($categories)) {
+            $project->category_id = (int) $categories[0];
+        } else {
+            $project->category_id = null;
+        }
+
+        $form->save();
+
+        $project->categories()->sync($categories);
 
         return $this
             ->httpResponse()

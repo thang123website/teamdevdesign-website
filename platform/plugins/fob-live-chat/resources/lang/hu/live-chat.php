@@ -1,0 +1,216 @@
+<?php
+
+return [
+    'title' => 'Élő chat',
+    'messages' => 'Üzenetek',
+    'visitor_name' => 'Látogató neve',
+    'visitor_email' => 'Látogató e-mail címe',
+    'visitor_phone' => 'Telefon',
+    'visitor_info' => 'Látogató adatai',
+    'ip_address' => 'IP-cím',
+    'current_page' => 'Aktuális oldal',
+    'browser' => 'Böngésző',
+    'last_message' => 'Utolsó üzenet',
+    'close_conversation' => 'Bezárás',
+    'delete_conversation' => 'Beszélgetés törlése',
+    'conversation_closed' => 'A beszélgetés lezárva.',
+    'conversation_deleted' => 'A beszélgetés törölve.',
+    'conversation_is_closed' => 'Ez a beszélgetés lezárt.',
+    'conversation_with' => 'Beszélgetés :name felhasználóval',
+    'confirm_close' => 'Biztosan le szeretné zárni ezt a beszélgetést?',
+    'confirm_delete' => 'Biztosan törölni szeretné ezt a beszélgetést? Ez a művelet nem vonható vissza.',
+    'type_reply' => 'Írja be a válaszát...',
+    'reply_sent' => 'Válasz sikeresen elküldve.',
+    'no_conversation' => 'Nem található aktív beszélgetés. Kérjük, indítson új chatet.',
+    'no_conversations' => 'Még nincs beszélgetés',
+    'chat_started' => 'A chat sikeresen elindult.',
+    'message_sent' => 'Üzenet elküldve.',
+    'select_conversation' => 'Beszélgetés kiválasztása',
+    'select_conversation_hint' => 'Válasszon beszélgetést a listából a csevegés megkezdéséhez.',
+    'all' => 'Összes',
+    'timeline' => 'Idővonal',
+    'total_messages' => 'Összes üzenet',
+    'just_now' => 'Épp most',
+    'test_sound' => 'Kattintson a hang teszteléséhez',
+    'back_to_list' => 'Vissza a beszélgetésekhez',
+    'no_messages_yet' => 'Még nincsenek üzenetek',
+    'start_conversation_hint' => 'Küldjön üzenetet a beszélgetés megkezdéséhez',
+    'notifications_enabled' => 'Böngésző értesítések engedélyezve!',
+    'enable_notifications' => 'Böngésző értesítések engedélyezése',
+    'new_conversation' => 'Új beszélgetés',
+    'new_message' => 'Új üzenet',
+    'no_conversations_hint' => 'A beszélgetések itt jelennek meg, amikor a látogatók csevegni kezdenek.',
+    'open_chat' => 'Chat megnyitása',
+    'close' => 'Bezárás',
+    'chat_title' => 'Élő chat',
+    'online' => 'Elérhető',
+    'start_message' => 'Üdv! Miben segíthetünk ma?',
+    'your_name' => 'Az Ön neve',
+    'your_email' => 'Az Ön e-mailje',
+    'your_email_optional' => 'Az Ön e-mail címe (opcionális)',
+    'your_phone' => 'Az Ön telefonja',
+    'start_chat' => 'Chat indítása',
+    'type_message' => 'Írjon üzenetet...',
+    'send' => 'Küldés',
+    'default_admin_name' => 'Támogatás',
+    'default_welcome_message' => 'Üdv! Köszönjük, hogy jelentkezett. Miben segíthetek ma?',
+    'conversation_statuses' => [
+        'open' => 'Nyitott',
+        'closed' => 'Lezárt',
+    ],
+    'settings' => [
+        'title' => 'Élő chat',
+        'description' => 'Állítsa be a lebegő élő chat widgetet, amely a weboldalán jelenik meg valós idejű ügyféltámogatáshoz.',
+        'form' => [
+            'enabled' => 'Élő chat engedélyezése',
+            'enabled_help' => 'Kapcsolja be, hogy megjelenjen a chat widget a weboldalán. A látogatók beszélgetést indíthatnak a támogatási csapattal.',
+            'widget_title' => 'Widget címe',
+            'widget_title_help' => 'A cím, amely a chat widget fejlécének tetején jelenik meg.',
+            'widget_title_placeholder' => 'Élő chat',
+            'welcome_message' => 'Üdvözlő üzenet',
+            'welcome_message_help' => 'Az első üzenet, amelyet a látogatók látnak, amikor megnyitják a chat widgetet. Hagyja üresen az alapértelmezett üzenet használatához.',
+            'welcome_message_placeholder' => 'Üdv! Köszönjük, hogy jelentkezett. Miben segíthetek ma?',
+            'admin_name' => 'Adminisztrátor neve',
+            'admin_name_help' => 'A chat widgetben az adminisztrátori válaszokhoz megjelenített név.',
+            'admin_name_placeholder' => 'Támogatás',
+            'random_admin_names_enabled' => 'Véletlenszerű admin nevek használata',
+            'random_admin_names_enabled_help' => 'Ha engedélyezve van, minden új beszélgetéshez véletlenszerű admin név kerül hozzárendelésre az alábbi listából.',
+            'random_admin_names' => 'Véletlenszerű admin nevek',
+            'random_admin_names_help' => 'Adjon meg egy nevet soronként. Minden új beszélgetéshez véletlenszerű név kerül hozzárendelésre.',
+            'random_admin_names_placeholder' => 'Sarah
+Mike
+Emma
+John',
+            'primary_color' => 'Elsődleges szín',
+            'primary_color_help' => 'A chat widget gombjának és fejlécének fő színe. Válasszon a márkájához illő színt.',
+            'position' => 'Widget pozíciója',
+            'position_help' => 'Hol jelenik meg a chat widget gombja a képernyőn.',
+            'position_right' => 'Jobb alsó',
+            'position_left' => 'Bal alsó',
+            'email_required' => 'E-mail megadása kötelező',
+            'email_required_help' => 'Engedélyezve a látogatóknak meg kell adniuk e-mail címüket a chat indítása előtt. Hasznos a későbbi kommunikációhoz.',
+            'display_fields' => 'Megjelenített mezők',
+            'mandatory_fields' => 'Kötelező mezők',
+            'poll_interval' => 'Lekérdezési intervallum (ms)',
+            'poll_interval_help' => 'Milyen gyakran ellenőrizze az új üzeneteket ezredmásodpercben. Az alacsonyabb értékek gyorsabb frissítést, de több szerverkérést jelentenek. Ajánlott: 3000-5000ms.',
+            'poll_interval_placeholder' => '3000',
+            'online_status' => 'Online állapot',
+            'working_hours_enabled' => 'Munkaidő engedélyezése',
+            'working_hours_enabled_help' => 'Ha engedélyezve van, a csevegés állapota munkaidőn kívül automatikusan offline-ra vált. A munkaidő a Beállítások → Általános menüpontban beállított időzónán alapul.',
+            'working_hours_start' => 'Kezdési idő',
+            'working_hours_end' => 'Befejezési idő',
+            'working_days' => 'Munkanapok',
+            'avatar_image' => 'Avatár kép',
+            'avatar_image_help' => 'Egyéni avatár kép a csevegés fejlécéhez. Hagyja üresen az alapértelmezett ikon használatához.',
+            'primary_hover_color' => 'Lebegő szín',
+            'primary_hover_color_help' => 'A szín, amikor a kurzort a csevegés gomb fölé viszi.',
+            'position_bottom_right' => 'Jobb alsó',
+            'position_bottom_left' => 'Bal alsó',
+            'position_center_right' => 'Jobb közép',
+            'position_center_left' => 'Bal közép',
+            'offset_x' => 'Eltolás X (px)',
+            'offset_x_help' => 'Vízszintes távolság a képernyő szélétől pixelekben.',
+            'offset_y' => 'Eltolás Y (px)',
+            'offset_y_help' => 'Függőleges távolság a képernyő szélétől pixelekben.',
+            'display_on_mobile' => 'Megjelenítés mobilon',
+            'display_on_mobile_help' => 'Szabályozza, hogy a csevegés widget megjelenjen-e mobileszközökön.',
+            'display_on_mobile_always' => 'Mindig mutassa',
+            'display_on_mobile_hide' => 'Elrejtés mobilon',
+        ],
+    ],
+    'email' => [
+        'title' => 'Live Chat Email',
+        'description' => 'Email notifications for live chat events',
+        'templates' => [
+            'new_conversation_title' => 'New Conversation Notification',
+            'new_conversation_description' => 'Email sent to admin when a visitor starts a new conversation',
+            'new_conversation_subject' => 'New Live Chat Conversation from {{ visitor_name }}',
+            'visitor_name' => 'Visitor name',
+            'visitor_email' => 'Visitor email',
+            'visitor_phone' => 'Visitor phone',
+            'visitor_ip' => 'Visitor IP address',
+            'current_page' => 'Current page URL',
+            'conversation_url' => 'Link to conversation in admin panel',
+        ],
+    ],
+    'email_settings' => [
+        'title' => 'Email Notifications',
+        'description' => 'Configure email notifications for new chat conversations. Only one email is sent when a visitor starts a new conversation.',
+        'enable_email_notification' => 'Enable Email Notifications',
+        'enable_email_notification_help' => 'Send an email notification when a visitor starts a new chat conversation',
+        'notification_emails' => 'Notification Email Addresses',
+        'notification_emails_help' => 'Comma-separated list of email addresses to receive notifications. Leave empty to use the default admin email.',
+    ],
+    'email_templates' => [
+        'new_conversation_title' => 'New Live Chat Conversation',
+        'new_conversation_greeting' => 'A visitor has started a new live chat conversation on your website.',
+        'visitor_details' => 'Visitor Details',
+        'field_name' => 'Name:',
+        'field_email' => 'Email:',
+        'field_phone' => 'Phone:',
+        'field_ip' => 'IP Address:',
+        'field_page' => 'Current Page:',
+        'respond_instruction' => 'Click the button below to respond to this conversation.',
+        'view_conversation_button' => 'View Conversation',
+    ],
+    'webhook' => [
+        'title' => 'Webhook beállítások',
+        'description' => 'Konfigurálja a webhookokat, hogy értesítéseket kapjon a csevegési eseményekről. A webhookok HTTP POST kéréseket küldenek a megadott URL-ekre az eseményadatokkal.',
+        'enable_webhooks' => 'Webhookok engedélyezése',
+        'enable_webhooks_help' => 'Webhook értesítések küldésének engedélyezése az élő csevegési eseményekhez',
+        'message_received_url' => 'Üzenet fogadva Webhook URL',
+        'message_received_url_help' => 'Aktiválódik, amikor egy látogató új üzenetet küld a csevegésben',
+        'conversation_started_url' => 'Beszélgetés elindítva Webhook URL',
+        'conversation_started_url_help' => 'Aktiválódik, amikor egy látogató új beszélgetést indít',
+        'view_sample_data' => 'Mintaadatok megtekintése',
+        'test_button' => 'Teszt Webhook küldése',
+        'testing' => 'Küldés...',
+        'test_success' => 'Webhook sikeresen elküldve!',
+        'test_failed' => 'A webhook teszt sikertelen.',
+        'status_code' => 'Állapotkód',
+        'please_enter_url' => 'Kérjük, először adja meg a webhook URL-t',
+        'error_occurred' => 'Hiba történt a webhook tesztelése közben',
+        'usage_instructions_title' => 'How to Use Webhooks',
+        'usage_instructions' => '<p><strong>Webhooks</strong> allow you to receive real-time notifications when events occur in Live Chat. When an event is triggered, an HTTP POST request is sent to your configured URL with JSON payload.</p>
+<h6>HTTP Headers</h6>
+<ul>
+<li><code>Content-Type: application/json</code></li>
+<li><code>X-Webhook-Event</code> - Event type (e.g., <code>message.received</code>, <code>conversation.started</code>)</li>
+<li><code>X-Webhook-Timestamp</code> - ISO 8601 timestamp when webhook was sent</li>
+<li><code>X-Webhook-Test: true</code> - Only present for test webhooks</li>
+</ul>
+<h6>Your Endpoint Requirements</h6>
+<ul>
+<li>Must accept HTTP POST requests</li>
+<li>Must respond within 10 seconds (timeout limit)</li>
+<li>Should return HTTP 2xx status code for success</li>
+<li>Must be publicly accessible (HTTPS recommended)</li>
+</ul>
+<h6>Integration Tutorials</h6>
+<ul>
+<li><strong>Slack:</strong> <a href="https://api.slack.com/messaging/webhooks" target="_blank">Incoming Webhooks Guide</a></li>
+<li><strong>Discord:</strong> <a href="https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks" target="_blank">Intro to Webhooks</a></li>
+<li><strong>Telegram:</strong> <a href="https://core.telegram.org/bots/webhooks" target="_blank">Bot Webhooks</a> (use with <a href="https://core.telegram.org/bots/api#sendmessage" target="_blank">sendMessage API</a>)</li>
+<li><strong>n8n:</strong> <a href="https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.webhook/" target="_blank">Webhook Node</a></li>
+<li><strong>Zapier:</strong> <a href="https://zapier.com/apps/webhook/integrations" target="_blank">Webhooks by Zapier</a></li>
+<li><strong>Make (Integromat):</strong> <a href="https://www.make.com/en/help/tools/webhooks" target="_blank">Webhooks Module</a></li>
+</ul>
+<h6>Example Use Cases</h6>
+<ul>
+<li>Send notifications to Slack, Discord, or Telegram</li>
+<li>Create tickets in helpdesk systems (Zendesk, Freshdesk)</li>
+<li>Log conversations to external CRM</li>
+<li>Trigger automated responses via n8n or Zapier</li>
+</ul>',
+    ],
+    'offline' => 'Offline',
+    'days' => [
+        'monday' => 'Hétfő',
+        'tuesday' => 'Kedd',
+        'wednesday' => 'Szerda',
+        'thursday' => 'Csütörtök',
+        'friday' => 'Péntek',
+        'saturday' => 'Szombat',
+        'sunday' => 'Vasárnap',
+    ],
+];

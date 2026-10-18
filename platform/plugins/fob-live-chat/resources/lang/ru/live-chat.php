@@ -1,0 +1,216 @@
+<?php
+
+return [
+    'title' => 'Чат в реальном времени',
+    'messages' => 'Сообщения',
+    'visitor_name' => 'Имя посетителя',
+    'visitor_email' => 'Email посетителя',
+    'visitor_phone' => 'Телефон',
+    'visitor_info' => 'Информация о посетителе',
+    'ip_address' => 'IP-адрес',
+    'current_page' => 'Текущая страница',
+    'browser' => 'Браузер',
+    'last_message' => 'Последнее сообщение',
+    'close_conversation' => 'Закрыть',
+    'delete_conversation' => 'Удалить диалог',
+    'conversation_closed' => 'Диалог был закрыт.',
+    'conversation_deleted' => 'Диалог был удалён.',
+    'conversation_is_closed' => 'Этот диалог закрыт.',
+    'conversation_with' => 'Диалог с :name',
+    'confirm_close' => 'Вы уверены, что хотите закрыть этот диалог?',
+    'confirm_delete' => 'Вы уверены, что хотите удалить этот диалог? Это действие нельзя отменить.',
+    'type_reply' => 'Введите ваш ответ...',
+    'reply_sent' => 'Ответ успешно отправлен.',
+    'no_conversation' => 'Активный диалог не найден. Пожалуйста, начните новый чат.',
+    'no_conversations' => 'Пока нет диалогов',
+    'chat_started' => 'Чат успешно начат.',
+    'message_sent' => 'Сообщение отправлено.',
+    'select_conversation' => 'Выберите диалог',
+    'select_conversation_hint' => 'Выберите диалог из списка, чтобы начать чат.',
+    'all' => 'Все',
+    'timeline' => 'Лента',
+    'total_messages' => 'Всего сообщений',
+    'just_now' => 'Только что',
+    'test_sound' => 'Нажмите для проверки звука',
+    'back_to_list' => 'Назад к списку',
+    'no_messages_yet' => 'Сообщений пока нет',
+    'start_conversation_hint' => 'Отправьте сообщение, чтобы начать разговор',
+    'notifications_enabled' => 'Уведомления браузера включены!',
+    'enable_notifications' => 'Включить уведомления браузера',
+    'new_conversation' => 'Новый разговор',
+    'new_message' => 'Новое сообщение',
+    'no_conversations_hint' => 'Разговоры появятся здесь, когда посетители начнут общаться.',
+    'open_chat' => 'Открыть чат',
+    'close' => 'Закрыть',
+    'chat_title' => 'Чат в реальном времени',
+    'online' => 'Онлайн',
+    'start_message' => 'Привет! Чем мы можем помочь сегодня?',
+    'your_name' => 'Ваше имя',
+    'your_email' => 'Ваш адрес электронной почты',
+    'your_email_optional' => 'Ваш email (необязательно)',
+    'your_phone' => 'Ваш телефон',
+    'start_chat' => 'Начать чат',
+    'type_message' => 'Введите сообщение...',
+    'send' => 'Отправить',
+    'default_admin_name' => 'Поддержка',
+    'default_welcome_message' => 'Привет! Спасибо, что связались с нами. Чем я могу помочь сегодня?',
+    'conversation_statuses' => [
+        'open' => 'Открыт',
+        'closed' => 'Закрыт',
+    ],
+    'settings' => [
+        'title' => 'Чат в реальном времени',
+        'description' => 'Настройте плавающий виджет чата, который появляется на вашем сайте для поддержки клиентов в реальном времени.',
+        'form' => [
+            'enabled' => 'Включить чат',
+            'enabled_help' => 'Включите, чтобы отображать виджет чата на вашем сайте. Посетители могут начинать диалоги с вашей командой поддержки.',
+            'widget_title' => 'Заголовок виджета',
+            'widget_title_help' => 'Заголовок, отображаемый в верхней части шапки виджета чата.',
+            'widget_title_placeholder' => 'Чат в реальном времени',
+            'welcome_message' => 'Приветственное сообщение',
+            'welcome_message_help' => 'Первое сообщение, которое видят посетители при открытии виджета чата. Оставьте пустым, чтобы использовать сообщение по умолчанию.',
+            'welcome_message_placeholder' => 'Привет! Спасибо, что связались с нами. Чем я могу помочь сегодня?',
+            'admin_name' => 'Имя администратора',
+            'admin_name_help' => 'Имя, отображаемое для ответов администратора в виджете чата.',
+            'admin_name_placeholder' => 'Поддержка',
+            'random_admin_names_enabled' => 'Использовать случайные имена администраторов',
+            'random_admin_names_enabled_help' => 'Если включено, каждому новому разговору будет назначено случайное имя администратора из списка ниже.',
+            'random_admin_names' => 'Случайные имена администраторов',
+            'random_admin_names_help' => 'Введите одно имя в строке. Случайное имя будет назначено каждому новому разговору.',
+            'random_admin_names_placeholder' => 'Sarah
+Mike
+Emma
+John',
+            'primary_color' => 'Основной цвет',
+            'primary_color_help' => 'Основной цвет кнопки и шапки виджета чата. Выберите цвет, соответствующий вашему бренду.',
+            'position' => 'Положение виджета',
+            'position_help' => 'Где на экране отображается кнопка виджета чата.',
+            'position_right' => 'Внизу справа',
+            'position_left' => 'Внизу слева',
+            'email_required' => 'Требовать email',
+            'email_required_help' => 'При включении посетители должны ввести свой адрес email перед началом чата. Полезно для дальнейшей коммуникации.',
+            'display_fields' => 'Отображаемые поля',
+            'mandatory_fields' => 'Обязательные поля',
+            'poll_interval' => 'Интервал опроса (мс)',
+            'poll_interval_help' => 'Как часто проверять новые сообщения в миллисекундах. Меньшие значения означают более быстрые обновления, но больше запросов к серверу. Рекомендуется: 3000-5000ms.',
+            'poll_interval_placeholder' => '3000',
+            'online_status' => 'Онлайн статус',
+            'working_hours_enabled' => 'Включить рабочее время',
+            'working_hours_enabled_help' => 'При включении статус чата будет автоматически переключаться в оффлайн в нерабочее время. Рабочее время основано на часовом поясе, настроенном в Настройки → Общие.',
+            'working_hours_start' => 'Время начала',
+            'working_hours_end' => 'Время окончания',
+            'working_days' => 'Рабочие дни',
+            'avatar_image' => 'Изображение аватара',
+            'avatar_image_help' => 'Пользовательское изображение аватара для заголовка чата. Оставьте пустым, чтобы использовать значок по умолчанию.',
+            'primary_hover_color' => 'Цвет при наведении',
+            'primary_hover_color_help' => 'Цвет кнопки чата при наведении курсора.',
+            'position_bottom_right' => 'Снизу справа',
+            'position_bottom_left' => 'Снизу слева',
+            'position_center_right' => 'По центру справа',
+            'position_center_left' => 'По центру слева',
+            'offset_x' => 'Смещение X (px)',
+            'offset_x_help' => 'Горизонтальное смещение от края экрана в пикселях.',
+            'offset_y' => 'Смещение Y (px)',
+            'offset_y_help' => 'Вертикальное смещение от края экрана в пикселях.',
+            'display_on_mobile' => 'Отображать на мобильных',
+            'display_on_mobile_help' => 'Управление отображением виджета чата на мобильных устройствах.',
+            'display_on_mobile_always' => 'Всегда показывать',
+            'display_on_mobile_hide' => 'Скрывать на мобильных',
+        ],
+    ],
+    'email' => [
+        'title' => 'Live Chat Email',
+        'description' => 'Email notifications for live chat events',
+        'templates' => [
+            'new_conversation_title' => 'New Conversation Notification',
+            'new_conversation_description' => 'Email sent to admin when a visitor starts a new conversation',
+            'new_conversation_subject' => 'New Live Chat Conversation from {{ visitor_name }}',
+            'visitor_name' => 'Visitor name',
+            'visitor_email' => 'Visitor email',
+            'visitor_phone' => 'Visitor phone',
+            'visitor_ip' => 'Visitor IP address',
+            'current_page' => 'Current page URL',
+            'conversation_url' => 'Link to conversation in admin panel',
+        ],
+    ],
+    'email_settings' => [
+        'title' => 'Email Notifications',
+        'description' => 'Configure email notifications for new chat conversations. Only one email is sent when a visitor starts a new conversation.',
+        'enable_email_notification' => 'Enable Email Notifications',
+        'enable_email_notification_help' => 'Send an email notification when a visitor starts a new chat conversation',
+        'notification_emails' => 'Notification Email Addresses',
+        'notification_emails_help' => 'Comma-separated list of email addresses to receive notifications. Leave empty to use the default admin email.',
+    ],
+    'email_templates' => [
+        'new_conversation_title' => 'New Live Chat Conversation',
+        'new_conversation_greeting' => 'A visitor has started a new live chat conversation on your website.',
+        'visitor_details' => 'Visitor Details',
+        'field_name' => 'Name:',
+        'field_email' => 'Email:',
+        'field_phone' => 'Phone:',
+        'field_ip' => 'IP Address:',
+        'field_page' => 'Current Page:',
+        'respond_instruction' => 'Click the button below to respond to this conversation.',
+        'view_conversation_button' => 'View Conversation',
+    ],
+    'webhook' => [
+        'title' => 'Настройки Webhook',
+        'description' => 'Настройте вебхуки для получения уведомлений о событиях чата. Вебхуки отправляют HTTP POST запросы на указанные URL с данными события.',
+        'enable_webhooks' => 'Включить Webhooks',
+        'enable_webhooks_help' => 'Включить отправку webhook-уведомлений для событий живого чата',
+        'message_received_url' => 'URL Webhook получения сообщения',
+        'message_received_url_help' => 'Срабатывает, когда посетитель отправляет новое сообщение в чат',
+        'conversation_started_url' => 'URL Webhook начала разговора',
+        'conversation_started_url_help' => 'Срабатывает, когда посетитель начинает новый разговор',
+        'view_sample_data' => 'Просмотреть пример данных',
+        'test_button' => 'Отправить тестовый Webhook',
+        'testing' => 'Отправка...',
+        'test_success' => 'Webhook успешно отправлен!',
+        'test_failed' => 'Тест webhook не пройден.',
+        'status_code' => 'Код статуса',
+        'please_enter_url' => 'Сначала введите URL webhook',
+        'error_occurred' => 'Произошла ошибка при тестировании webhook',
+        'usage_instructions_title' => 'Как использовать Webhooks',
+        'usage_instructions' => '<p><strong>Webhooks</strong> позволяют получать уведомления в реальном времени о событиях в чате. При срабатывании события на указанный URL отправляется HTTP POST запрос с JSON данными.</p>
+<h6>HTTP заголовки</h6>
+<ul>
+<li><code>Content-Type: application/json</code></li>
+<li><code>X-Webhook-Event</code> - Тип события (напр. <code>message.received</code>, <code>conversation.started</code>)</li>
+<li><code>X-Webhook-Timestamp</code> - Временная метка ISO 8601 при отправке webhook</li>
+<li><code>X-Webhook-Test: true</code> - Присутствует только для тестовых webhooks</li>
+</ul>
+<h6>Требования к endpoint</h6>
+<ul>
+<li>Должен принимать HTTP POST запросы</li>
+<li>Должен отвечать в течение 10 секунд (лимит таймаута)</li>
+<li>Должен возвращать HTTP код 2xx при успехе</li>
+<li>Должен быть публично доступен (рекомендуется HTTPS)</li>
+</ul>
+<h6>Руководства по интеграции</h6>
+<ul>
+<li><strong>Slack:</strong> <a href="https://api.slack.com/messaging/webhooks" target="_blank">Руководство по Incoming Webhooks</a></li>
+<li><strong>Discord:</strong> <a href="https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks" target="_blank">Введение в Webhooks</a></li>
+<li><strong>Telegram:</strong> <a href="https://core.telegram.org/bots/webhooks" target="_blank">Bot Webhooks</a> (использовать с <a href="https://core.telegram.org/bots/api#sendmessage" target="_blank">sendMessage API</a>)</li>
+<li><strong>n8n:</strong> <a href="https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.webhook/" target="_blank">Webhook Node</a></li>
+<li><strong>Zapier:</strong> <a href="https://zapier.com/apps/webhook/integrations" target="_blank">Webhooks by Zapier</a></li>
+<li><strong>Make (Integromat):</strong> <a href="https://www.make.com/en/help/tools/webhooks" target="_blank">Модуль Webhooks</a></li>
+</ul>
+<h6>Примеры использования</h6>
+<ul>
+<li>Отправка уведомлений в Slack, Discord или Telegram</li>
+<li>Создание тикетов в системах поддержки (Zendesk, Freshdesk)</li>
+<li>Логирование разговоров во внешнюю CRM</li>
+<li>Запуск автоматических ответов через n8n или Zapier</li>
+</ul>',
+    ],
+    'offline' => 'Offline',
+    'days' => [
+        'monday' => 'Понедельник',
+        'tuesday' => 'Вторник',
+        'wednesday' => 'Среда',
+        'thursday' => 'Четверг',
+        'friday' => 'Пятница',
+        'saturday' => 'Суббота',
+        'sunday' => 'Воскресенье',
+    ],
+];

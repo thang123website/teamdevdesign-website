@@ -4,9 +4,9 @@
             <div class="row align-items-center justify-content-between">
                 @if ($title = $shortcode->title)
                     <div class="col-lg-auto col-md-12 text-center text-lg-start mb-5 mb-lg-0">
-                        <h4 class="mb-0">
-                            {!! BaseHelper::clean($title) !!}
-                        </h4>
+                        <{{ $titleTag = infinia_title_tag($shortcode, 'h4') }} class="mb-0">
+                            {!! infinia_clean_title($title) !!}
+                        </{{ $titleTag }}>
                     </div>
                 @endif
 
@@ -21,7 +21,7 @@
                     <div class="col-lg-auto col-md-6">
                         <div class="counter-item-cover counter-item">
                             <div class="content text-center mx-auto">
-                                    <span class="h1 count fw-black text-primary my-0"><span class="odometer" data-count="{{ $itemData }}"></span>
+                                    <span class="h1 count fw-black text-primary my-0"><span class="visually-hidden">{{ $itemData }}</span><span class="odometer" data-count="{{ $itemData }}" aria-hidden="true"></span>
                                         @if($itemUnit = Arr::get($item, 'unit'))
                                             <span>{!! BaseHelper::clean($itemUnit) !!}</span>
                                         @endif

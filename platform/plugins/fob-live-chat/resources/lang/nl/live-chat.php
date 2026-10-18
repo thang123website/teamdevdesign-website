@@ -1,0 +1,216 @@
+<?php
+
+return [
+    'title' => 'Directe chat',
+    'messages' => 'Berichten',
+    'visitor_name' => 'Naam van de bezoeker',
+    'visitor_email' => 'E-mail van de bezoeker',
+    'visitor_phone' => 'Telefoon',
+    'visitor_info' => 'Bezoekersinformatie',
+    'ip_address' => 'IP-adres',
+    'current_page' => 'Huidige pagina',
+    'browser' => 'Webbrowser',
+    'last_message' => 'Laatste bericht',
+    'close_conversation' => 'Sluiten',
+    'delete_conversation' => 'Gesprek verwijderen',
+    'conversation_closed' => 'Het gesprek is gesloten.',
+    'conversation_deleted' => 'Het gesprek is verwijderd.',
+    'conversation_is_closed' => 'Dit gesprek is gesloten.',
+    'conversation_with' => 'Gesprek met :name',
+    'confirm_close' => 'Weet je zeker dat je dit gesprek wilt sluiten?',
+    'confirm_delete' => 'Weet je zeker dat je dit gesprek wilt verwijderen? Deze actie kan niet ongedaan worden gemaakt.',
+    'type_reply' => 'Typ je antwoord...',
+    'reply_sent' => 'Antwoord succesvol verzonden.',
+    'no_conversation' => 'Geen actief gesprek gevonden. Start een nieuwe chat.',
+    'no_conversations' => 'Nog geen gesprekken',
+    'chat_started' => 'Chat succesvol gestart.',
+    'message_sent' => 'Bericht verzonden.',
+    'select_conversation' => 'Selecteer een gesprek',
+    'select_conversation_hint' => 'Kies een gesprek uit de lijst om te chatten.',
+    'all' => 'Alles',
+    'timeline' => 'Tijdlijn',
+    'total_messages' => 'Totaal berichten',
+    'just_now' => 'Zojuist',
+    'test_sound' => 'Klik om geluid te testen',
+    'back_to_list' => 'Terug naar gesprekken',
+    'no_messages_yet' => 'Nog geen berichten',
+    'start_conversation_hint' => 'Stuur een bericht om het gesprek te starten',
+    'notifications_enabled' => 'Browsermeldingen ingeschakeld!',
+    'enable_notifications' => 'Browsermeldingen inschakelen',
+    'new_conversation' => 'Nieuw gesprek',
+    'new_message' => 'Nieuw bericht',
+    'no_conversations_hint' => 'Gesprekken verschijnen hier wanneer bezoekers beginnen te chatten.',
+    'open_chat' => 'Chat openen',
+    'close' => 'Sluiten',
+    'chat_title' => 'Directe chat',
+    'online' => 'Verbonden',
+    'start_message' => 'Hoi! Hoe kunnen we je vandaag helpen?',
+    'your_name' => 'Je naam',
+    'your_email' => 'Uw e-mail',
+    'your_email_optional' => 'Je e-mail (optioneel)',
+    'your_phone' => 'Jouw telefoon',
+    'start_chat' => 'Chat starten',
+    'type_message' => 'Typ een bericht...',
+    'send' => 'Verzenden',
+    'default_admin_name' => 'Ondersteuning',
+    'default_welcome_message' => 'Hoi! Bedankt dat je contact opneemt. Hoe kan ik je vandaag helpen?',
+    'conversation_statuses' => [
+        'open' => 'Geopend',
+        'closed' => 'Gesloten',
+    ],
+    'settings' => [
+        'title' => 'Directe chat',
+        'description' => 'Configureer de zwevende directe chat-widget die op je website verschijnt voor realtime klantenservice.',
+        'form' => [
+            'enabled' => 'Directe chat inschakelen',
+            'enabled_help' => 'Schakel in om de chat-widget op je website te tonen. Bezoekers kunnen gesprekken starten met je supportteam.',
+            'widget_title' => 'Widgettitel',
+            'widget_title_help' => 'De titel die bovenaan de header van de chat-widget wordt weergegeven.',
+            'widget_title_placeholder' => 'Directe chat',
+            'welcome_message' => 'Welkomstbericht',
+            'welcome_message_help' => 'Het eerste bericht dat bezoekers zien wanneer ze de chat-widget openen. Laat leeg om het standaardbericht te gebruiken.',
+            'welcome_message_placeholder' => 'Hoi! Bedankt dat je contact opneemt. Hoe kan ik je vandaag helpen?',
+            'admin_name' => 'Beheerdersnaam',
+            'admin_name_help' => 'De naam die wordt weergegeven voor beheerdersantwoorden in de chatwidget.',
+            'admin_name_placeholder' => 'Ondersteuning',
+            'random_admin_names_enabled' => 'Gebruik willekeurige beheerdersnamen',
+            'random_admin_names_enabled_help' => 'Indien ingeschakeld, wordt aan elk nieuw gesprek een willekeurige beheerdersnaam uit de onderstaande lijst toegewezen.',
+            'random_admin_names' => 'Willekeurige beheerdersnamen',
+            'random_admin_names_help' => 'Voer één naam per regel in. Er wordt een willekeurige naam toegewezen aan elk nieuw gesprek.',
+            'random_admin_names_placeholder' => 'Sarah
+Mike
+Emma
+John',
+            'primary_color' => 'Primaire kleur',
+            'primary_color_help' => 'De hoofdkleur voor de knop en header van de chat-widget. Kies een kleur die past bij je merk.',
+            'position' => 'Widgetpositie',
+            'position_help' => 'Waar de knop van de chat-widget op het scherm verschijnt.',
+            'position_right' => 'Rechtsonder',
+            'position_left' => 'Linksonder',
+            'email_required' => 'E-mail verplicht',
+            'email_required_help' => 'Wanneer ingeschakeld moeten bezoekers hun e-mailadres invoeren voordat ze een chat starten. Handig voor vervolgcommunicatie.',
+            'display_fields' => 'Weergavevelden',
+            'mandatory_fields' => 'Verplichte velden',
+            'poll_interval' => 'Poll-interval (ms)',
+            'poll_interval_help' => 'Hoe vaak nieuwe berichten worden gecontroleerd in milliseconden. Lagere waarden betekenen snellere updates maar meer serververzoeken. Aanbevolen: 3000-5000ms.',
+            'poll_interval_placeholder' => '3000',
+            'online_status' => 'Online status',
+            'working_hours_enabled' => 'Werktijden inschakelen',
+            'working_hours_enabled_help' => 'Indien ingeschakeld, schakelt de chatstatus buiten werktijd automatisch naar offline. Werktijden zijn gebaseerd op de tijdzone die is geconfigureerd in Instellingen → Algemeen.',
+            'working_hours_start' => 'Starttijd',
+            'working_hours_end' => 'Eindtijd',
+            'working_days' => 'Werkdagen',
+            'avatar_image' => 'Avatar afbeelding',
+            'avatar_image_help' => 'Aangepaste avatar afbeelding voor de chat header. Laat leeg om het standaard icoon te gebruiken.',
+            'primary_hover_color' => 'Hover kleur',
+            'primary_hover_color_help' => 'De kleur wanneer je met de muis over de chatknop gaat.',
+            'position_bottom_right' => 'Rechtsonder',
+            'position_bottom_left' => 'Linksonder',
+            'position_center_right' => 'Rechts midden',
+            'position_center_left' => 'Links midden',
+            'offset_x' => 'Offset X (px)',
+            'offset_x_help' => 'Horizontale afstand vanaf de schermrand in pixels.',
+            'offset_y' => 'Offset Y (px)',
+            'offset_y_help' => 'Verticale afstand vanaf de schermrand in pixels.',
+            'display_on_mobile' => 'Weergeven op mobiel',
+            'display_on_mobile_help' => 'Bepaal of de chat widget wordt weergegeven op mobiele apparaten.',
+            'display_on_mobile_always' => 'Altijd tonen',
+            'display_on_mobile_hide' => 'Verbergen op mobiel',
+        ],
+    ],
+    'email' => [
+        'title' => 'Live Chat Email',
+        'description' => 'Email notifications for live chat events',
+        'templates' => [
+            'new_conversation_title' => 'New Conversation Notification',
+            'new_conversation_description' => 'Email sent to admin when a visitor starts a new conversation',
+            'new_conversation_subject' => 'New Live Chat Conversation from {{ visitor_name }}',
+            'visitor_name' => 'Visitor name',
+            'visitor_email' => 'Visitor email',
+            'visitor_phone' => 'Visitor phone',
+            'visitor_ip' => 'Visitor IP address',
+            'current_page' => 'Current page URL',
+            'conversation_url' => 'Link to conversation in admin panel',
+        ],
+    ],
+    'email_settings' => [
+        'title' => 'Email Notifications',
+        'description' => 'Configure email notifications for new chat conversations. Only one email is sent when a visitor starts a new conversation.',
+        'enable_email_notification' => 'Enable Email Notifications',
+        'enable_email_notification_help' => 'Send an email notification when a visitor starts a new chat conversation',
+        'notification_emails' => 'Notification Email Addresses',
+        'notification_emails_help' => 'Comma-separated list of email addresses to receive notifications. Leave empty to use the default admin email.',
+    ],
+    'email_templates' => [
+        'new_conversation_title' => 'New Live Chat Conversation',
+        'new_conversation_greeting' => 'A visitor has started a new live chat conversation on your website.',
+        'visitor_details' => 'Visitor Details',
+        'field_name' => 'Name:',
+        'field_email' => 'Email:',
+        'field_phone' => 'Phone:',
+        'field_ip' => 'IP Address:',
+        'field_page' => 'Current Page:',
+        'respond_instruction' => 'Click the button below to respond to this conversation.',
+        'view_conversation_button' => 'View Conversation',
+    ],
+    'webhook' => [
+        'title' => 'Webhook-instellingen',
+        'description' => 'Configureer webhooks om meldingen te ontvangen wanneer chatgebeurtenissen plaatsvinden. Webhooks sturen HTTP POST-verzoeken naar uw opgegeven URL\'s met gebeurtenisgegevens.',
+        'enable_webhooks' => 'Webhooks inschakelen',
+        'enable_webhooks_help' => 'Schakel het verzenden van webhook-meldingen in voor live chat-gebeurtenissen',
+        'message_received_url' => 'Bericht ontvangen Webhook-URL',
+        'message_received_url_help' => 'Geactiveerd wanneer een bezoeker een nieuw bericht in de chat stuurt',
+        'conversation_started_url' => 'Gesprek gestart Webhook-URL',
+        'conversation_started_url_help' => 'Geactiveerd wanneer een bezoeker een nieuw gesprek start',
+        'view_sample_data' => 'Voorbeeldgegevens bekijken',
+        'test_button' => 'Test-webhook verzenden',
+        'testing' => 'Verzenden...',
+        'test_success' => 'Webhook succesvol verzonden!',
+        'test_failed' => 'Webhook-test mislukt.',
+        'status_code' => 'Statuscode',
+        'please_enter_url' => 'Voer eerst een webhook-URL in',
+        'error_occurred' => 'Er is een fout opgetreden bij het testen van de webhook',
+        'usage_instructions_title' => 'Webhooks gebruiken',
+        'usage_instructions' => '<p><strong>Webhooks</strong> stellen u in staat om real-time meldingen te ontvangen wanneer er gebeurtenissen plaatsvinden in de live chat. Wanneer een gebeurtenis wordt geactiveerd, wordt er een HTTP POST-verzoek naar uw geconfigureerde URL gestuurd met JSON-gegevens.</p>
+<h6>HTTP Headers</h6>
+<ul>
+<li><code>Content-Type: application/json</code></li>
+<li><code>X-Webhook-Event</code> - Gebeurtenistype (bijv. <code>message.received</code>, <code>conversation.started</code>)</li>
+<li><code>X-Webhook-Timestamp</code> - ISO 8601 tijdstempel wanneer de webhook werd verzonden</li>
+<li><code>X-Webhook-Test: true</code> - Alleen aanwezig voor test webhooks</li>
+</ul>
+<h6>Endpoint vereisten</h6>
+<ul>
+<li>Moet HTTP POST-verzoeken accepteren</li>
+<li>Moet binnen 10 seconden reageren (timeout limiet)</li>
+<li>Moet HTTP 2xx statuscode retourneren bij succes</li>
+<li>Moet publiek toegankelijk zijn (HTTPS aanbevolen)</li>
+</ul>
+<h6>Integratie tutorials</h6>
+<ul>
+<li><strong>Slack:</strong> <a href="https://api.slack.com/messaging/webhooks" target="_blank">Incoming Webhooks Gids</a></li>
+<li><strong>Discord:</strong> <a href="https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks" target="_blank">Introductie tot Webhooks</a></li>
+<li><strong>Telegram:</strong> <a href="https://core.telegram.org/bots/webhooks" target="_blank">Bot Webhooks</a> (gebruik met <a href="https://core.telegram.org/bots/api#sendmessage" target="_blank">sendMessage API</a>)</li>
+<li><strong>n8n:</strong> <a href="https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.webhook/" target="_blank">Webhook Node</a></li>
+<li><strong>Zapier:</strong> <a href="https://zapier.com/apps/webhook/integrations" target="_blank">Webhooks by Zapier</a></li>
+<li><strong>Make (Integromat):</strong> <a href="https://www.make.com/en/help/tools/webhooks" target="_blank">Webhooks Module</a></li>
+</ul>
+<h6>Gebruiksvoorbeelden</h6>
+<ul>
+<li>Meldingen sturen naar Slack, Discord of Telegram</li>
+<li>Tickets aanmaken in helpdesksystemen (Zendesk, Freshdesk)</li>
+<li>Gesprekken loggen naar externe CRM</li>
+<li>Geautomatiseerde antwoorden triggeren via n8n of Zapier</li>
+</ul>',
+    ],
+    'offline' => 'Offline',
+    'days' => [
+        'monday' => 'Maandag',
+        'tuesday' => 'Dinsdag',
+        'wednesday' => 'Woensdag',
+        'thursday' => 'Donderdag',
+        'friday' => 'Vrijdag',
+        'saturday' => 'Zaterdag',
+        'sunday' => 'Zondag',
+    ],
+];

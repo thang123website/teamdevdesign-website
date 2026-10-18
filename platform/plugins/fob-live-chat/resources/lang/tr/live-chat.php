@@ -1,0 +1,216 @@
+<?php
+
+return [
+    'title' => 'Canlı Sohbet',
+    'messages' => 'Mesajlar',
+    'visitor_name' => 'Ziyaretçi adı',
+    'visitor_email' => 'Ziyaretçi e-posta',
+    'visitor_phone' => 'Telefon',
+    'visitor_info' => 'Ziyaretçi bilgileri',
+    'ip_address' => 'IP adresi',
+    'current_page' => 'Geçerli sayfa',
+    'browser' => 'Tarayıcı',
+    'last_message' => 'Son mesaj',
+    'close_conversation' => 'Kapat',
+    'delete_conversation' => 'Konuşmayı sil',
+    'conversation_closed' => 'Konuşma kapatıldı.',
+    'conversation_deleted' => 'Konuşma silindi.',
+    'conversation_is_closed' => 'Bu konuşma kapalı.',
+    'conversation_with' => ':name ile konuşma',
+    'confirm_close' => 'Bu konuşmayı kapatmak istediğinizden emin misiniz?',
+    'confirm_delete' => 'Bu konuşmayı silmek istediğinizden emin misiniz? Bu işlem geri alınamaz.',
+    'type_reply' => 'Yanıtınızı yazın...',
+    'reply_sent' => 'Yanıt başarıyla gönderildi.',
+    'no_conversation' => 'Aktif konuşma bulunamadı. Lütfen yeni bir sohbet başlatın.',
+    'no_conversations' => 'Henüz konuşma yok',
+    'chat_started' => 'Sohbet başarıyla başlatıldı.',
+    'message_sent' => 'Mesaj gönderildi.',
+    'select_conversation' => 'Konuşma seçin',
+    'select_conversation_hint' => 'Sohbete başlamak için listeden bir konuşma seçin.',
+    'all' => 'Tümü',
+    'timeline' => 'Zaman çizelgesi',
+    'total_messages' => 'Toplam mesaj',
+    'just_now' => 'Az önce',
+    'test_sound' => 'Sesi test etmek için tıklayın',
+    'back_to_list' => 'Görüşmelere geri dön',
+    'no_messages_yet' => 'Henüz mesaj yok',
+    'start_conversation_hint' => 'Sohbeti başlatmak için bir mesaj gönderin',
+    'notifications_enabled' => 'Tarayıcı bildirimleri etkinleştirildi!',
+    'enable_notifications' => 'Tarayıcı bildirimlerini etkinleştir',
+    'new_conversation' => 'Yeni konuşma',
+    'new_message' => 'Yeni mesaj',
+    'no_conversations_hint' => 'Ziyaretçiler sohbet etmeye başladığında konuşmalar burada görünecek.',
+    'open_chat' => 'Sohbeti aç',
+    'close' => 'Kapat',
+    'chat_title' => 'Canlı Sohbet',
+    'online' => 'Çevrimiçi',
+    'start_message' => 'Merhaba! Bugün nasıl yardımcı olabiliriz?',
+    'your_name' => 'Adınız',
+    'your_email' => 'E-postanız',
+    'your_email_optional' => 'E-posta adresiniz (isteğe bağlı)',
+    'your_phone' => 'Telefonunuz',
+    'start_chat' => 'Sohbeti başlat',
+    'type_message' => 'Bir mesaj yazın...',
+    'send' => 'Gönder',
+    'default_admin_name' => 'Destek',
+    'default_welcome_message' => 'Merhaba! Bizimle iletişime geçtiğiniz için teşekkürler. Bugün nasıl yardımcı olabilirim?',
+    'conversation_statuses' => [
+        'open' => 'Açık',
+        'closed' => 'Kapalı',
+    ],
+    'settings' => [
+        'title' => 'Canlı Sohbet',
+        'description' => 'Web sitenizde görünen yüzen canlı sohbet widget\'ını gerçek zamanlı müşteri desteği için yapılandırın.',
+        'form' => [
+            'enabled' => 'Canlı sohbeti etkinleştir',
+            'enabled_help' => 'Web sitenizde sohbet widget\'ını göstermek için açın. Ziyaretçiler destek ekibinizle konuşma başlatabilir.',
+            'widget_title' => 'Widget başlığı',
+            'widget_title_help' => 'Sohbet widget\'ı başlığının üst kısmında gösterilen başlık.',
+            'widget_title_placeholder' => 'Canlı Sohbet',
+            'welcome_message' => 'Hoş geldiniz mesajı',
+            'welcome_message_help' => 'Ziyaretçiler sohbet widget\'ını açtığında gördükleri ilk mesaj. Varsayılan mesajı kullanmak için boş bırakın.',
+            'welcome_message_placeholder' => 'Merhaba! Bizimle iletişime geçtiğiniz için teşekkürler. Bugün nasıl yardımcı olabilirim?',
+            'admin_name' => 'Yönetici Adı',
+            'admin_name_help' => 'Sohbet widget\'ında yönetici yanıtları için görüntülenen ad.',
+            'admin_name_placeholder' => 'Destek',
+            'random_admin_names_enabled' => 'Rastgele Yönetici İsimleri Kullan',
+            'random_admin_names_enabled_help' => 'Etkinleştirildiğinde, her yeni konuşmaya aşağıdaki listeden rastgele bir yönetici ismi atanacaktır.',
+            'random_admin_names' => 'Rastgele Yönetici İsimleri',
+            'random_admin_names_help' => 'Satır başına bir isim girin. Her yeni konuşmaya rastgele bir isim atanacaktır.',
+            'random_admin_names_placeholder' => 'Sarah
+Mike
+Emma
+John',
+            'primary_color' => 'Birincil renk',
+            'primary_color_help' => 'Sohbet widget\'ı düğmesi ve başlığının ana rengi. Markanıza uygun bir renk seçin.',
+            'position' => 'Widget konumu',
+            'position_help' => 'Sohbet widget\'ı düğmesinin ekranda göründüğü yer.',
+            'position_right' => 'Sağ alt',
+            'position_left' => 'Sol alt',
+            'email_required' => 'E-posta zorunlu',
+            'email_required_help' => 'Etkinleştirildiğinde, ziyaretçiler sohbet başlatmadan önce e-posta adreslerini girmek zorundadır. Takip iletişimleri için faydalıdır.',
+            'display_fields' => 'Alanları görüntüle',
+            'mandatory_fields' => 'Zorunlu alanlar',
+            'poll_interval' => 'Yoklama aralığı (ms)',
+            'poll_interval_help' => 'Yeni mesajların milisaniye cinsinden ne sıklıkla kontrol edileceği. Düşük değerler daha hızlı güncelleme ancak daha fazla sunucu isteği demektir. Önerilen: 3000-5000ms.',
+            'poll_interval_placeholder' => '3000',
+            'online_status' => 'Çevrimiçi Durum',
+            'working_hours_enabled' => 'Çalışma Saatlerini Etkinleştir',
+            'working_hours_enabled_help' => 'Etkinleştirildiğinde, sohbet durumu çalışma saatleri dışında otomatik olarak çevrimdışına geçer. Çalışma saatleri, Ayarlar → Genel bölümünde yapılandırılan saat dilimine dayanır.',
+            'working_hours_start' => 'Başlangıç Saati',
+            'working_hours_end' => 'Bitiş Saati',
+            'working_days' => 'Çalışma Günleri',
+            'avatar_image' => 'Avatar Resmi',
+            'avatar_image_help' => 'Sohbet başlığı için özel avatar resmi. Varsayılan simgeyi kullanmak için boş bırakın.',
+            'primary_hover_color' => 'Vurgu Rengi',
+            'primary_hover_color_help' => 'Sohbet düğmesinin üzerine gelindiğindeki renk.',
+            'position_bottom_right' => 'Sağ Alt',
+            'position_bottom_left' => 'Sol Alt',
+            'position_center_right' => 'Sağ Orta',
+            'position_center_left' => 'Sol Orta',
+            'offset_x' => 'X Ofseti (px)',
+            'offset_x_help' => 'Ekran kenarından yatay uzaklık (piksel).',
+            'offset_y' => 'Y Ofseti (px)',
+            'offset_y_help' => 'Ekran kenarından dikey uzaklık (piksel).',
+            'display_on_mobile' => 'Mobilde Göster',
+            'display_on_mobile_help' => 'Sohbet aracının mobil cihazlarda görüntülenip görüntülenmeyeceğini kontrol edin.',
+            'display_on_mobile_always' => 'Her zaman göster',
+            'display_on_mobile_hide' => 'Mobilde gizle',
+        ],
+    ],
+    'email' => [
+        'title' => 'Live Chat Email',
+        'description' => 'Email notifications for live chat events',
+        'templates' => [
+            'new_conversation_title' => 'New Conversation Notification',
+            'new_conversation_description' => 'Email sent to admin when a visitor starts a new conversation',
+            'new_conversation_subject' => 'New Live Chat Conversation from {{ visitor_name }}',
+            'visitor_name' => 'Visitor name',
+            'visitor_email' => 'Visitor email',
+            'visitor_phone' => 'Visitor phone',
+            'visitor_ip' => 'Visitor IP address',
+            'current_page' => 'Current page URL',
+            'conversation_url' => 'Link to conversation in admin panel',
+        ],
+    ],
+    'email_settings' => [
+        'title' => 'Email Notifications',
+        'description' => 'Configure email notifications for new chat conversations. Only one email is sent when a visitor starts a new conversation.',
+        'enable_email_notification' => 'Enable Email Notifications',
+        'enable_email_notification_help' => 'Send an email notification when a visitor starts a new chat conversation',
+        'notification_emails' => 'Notification Email Addresses',
+        'notification_emails_help' => 'Comma-separated list of email addresses to receive notifications. Leave empty to use the default admin email.',
+    ],
+    'email_templates' => [
+        'new_conversation_title' => 'New Live Chat Conversation',
+        'new_conversation_greeting' => 'A visitor has started a new live chat conversation on your website.',
+        'visitor_details' => 'Visitor Details',
+        'field_name' => 'Name:',
+        'field_email' => 'Email:',
+        'field_phone' => 'Phone:',
+        'field_ip' => 'IP Address:',
+        'field_page' => 'Current Page:',
+        'respond_instruction' => 'Click the button below to respond to this conversation.',
+        'view_conversation_button' => 'View Conversation',
+    ],
+    'webhook' => [
+        'title' => 'Webhook Ayarları',
+        'description' => 'Sohbet olayları gerçekleştiğinde bildirim almak için webhookları yapılandırın. Webhooklar, belirtilen URL\'lerinize olay verileriyle birlikte HTTP POST istekleri gönderir.',
+        'enable_webhooks' => 'Webhookları Etkinleştir',
+        'enable_webhooks_help' => 'Canlı sohbet olayları için webhook bildirimleri göndermeyi etkinleştir',
+        'message_received_url' => 'Mesaj Alındı Webhook URL\'si',
+        'message_received_url_help' => 'Bir ziyaretçi sohbette yeni bir mesaj gönderdiğinde tetiklenir',
+        'conversation_started_url' => 'Sohbet Başladı Webhook URL\'si',
+        'conversation_started_url_help' => 'Bir ziyaretçi yeni bir sohbet başlattığında tetiklenir',
+        'view_sample_data' => 'Örnek Verileri Görüntüle',
+        'test_button' => 'Test Webhook\'u Gönder',
+        'testing' => 'Gönderiliyor...',
+        'test_success' => 'Webhook başarıyla gönderildi!',
+        'test_failed' => 'Webhook testi başarısız oldu.',
+        'status_code' => 'Durum Kodu',
+        'please_enter_url' => 'Lütfen önce bir webhook URL\'si girin',
+        'error_occurred' => 'Webhook test edilirken bir hata oluştu',
+        'usage_instructions_title' => 'Webhook Nasıl Kullanılır',
+        'usage_instructions' => '<p><strong>Webhook\'lar</strong> canlı sohbette olaylar gerçekleştiğinde gerçek zamanlı bildirimler almanızı sağlar. Bir olay tetiklendiğinde, yapılandırılmış URL\'nize JSON verileri içeren bir HTTP POST isteği gönderilir.</p>
+<h6>HTTP Başlıkları</h6>
+<ul>
+<li><code>Content-Type: application/json</code></li>
+<li><code>X-Webhook-Event</code> - Olay türü (örn. <code>message.received</code>, <code>conversation.started</code>)</li>
+<li><code>X-Webhook-Timestamp</code> - Webhook gönderildiğinde ISO 8601 zaman damgası</li>
+<li><code>X-Webhook-Test: true</code> - Yalnızca test webhook\'larında bulunur</li>
+</ul>
+<h6>Endpoint Gereksinimleri</h6>
+<ul>
+<li>HTTP POST isteklerini kabul etmelidir</li>
+<li>10 saniye içinde yanıt vermelidir (zaman aşımı sınırı)</li>
+<li>Başarı için HTTP 2xx durum kodu döndürmelidir</li>
+<li>Herkese açık erişilebilir olmalıdır (HTTPS önerilir)</li>
+</ul>
+<h6>Entegrasyon Eğitimleri</h6>
+<ul>
+<li><strong>Slack:</strong> <a href="https://api.slack.com/messaging/webhooks" target="_blank">Incoming Webhooks Kılavuzu</a></li>
+<li><strong>Discord:</strong> <a href="https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks" target="_blank">Webhook\'lara Giriş</a></li>
+<li><strong>Telegram:</strong> <a href="https://core.telegram.org/bots/webhooks" target="_blank">Bot Webhooks</a> (<a href="https://core.telegram.org/bots/api#sendmessage" target="_blank">sendMessage API</a> ile kullanın)</li>
+<li><strong>n8n:</strong> <a href="https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.webhook/" target="_blank">Webhook Node</a></li>
+<li><strong>Zapier:</strong> <a href="https://zapier.com/apps/webhook/integrations" target="_blank">Webhooks by Zapier</a></li>
+<li><strong>Make (Integromat):</strong> <a href="https://www.make.com/en/help/tools/webhooks" target="_blank">Webhooks Modülü</a></li>
+</ul>
+<h6>Kullanım Örnekleri</h6>
+<ul>
+<li>Slack, Discord veya Telegram\'a bildirim gönderme</li>
+<li>Yardım masası sistemlerinde (Zendesk, Freshdesk) bilet oluşturma</li>
+<li>Konuşmaları harici CRM\'e kaydetme</li>
+<li>n8n veya Zapier ile otomatik yanıtları tetikleme</li>
+</ul>',
+    ],
+    'offline' => 'Offline',
+    'days' => [
+        'monday' => 'Pazartesi',
+        'tuesday' => 'Salı',
+        'wednesday' => 'Çarşamba',
+        'thursday' => 'Perşembe',
+        'friday' => 'Cuma',
+        'saturday' => 'Cumartesi',
+        'sunday' => 'Pazar',
+    ],
+];

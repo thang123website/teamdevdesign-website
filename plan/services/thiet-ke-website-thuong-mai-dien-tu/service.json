@@ -1,0 +1,46 @@
+{
+  "id": 2,
+  "slug": "thiet-ke-website-thuong-mai-dien-tu",
+  "name": "Website Thương mại điện tử",
+  "category": "Website Thương Mại Điện Tử (E-commerce)",
+  "category_id": 2,
+  "description": "Giải pháp bán hàng online với giỏ hàng, thanh toán trực tuyến, quản lý đơn hàng và sản phẩm hiệu quả.",
+  "image": "services/service_2_featured.jpg",
+  "images": [],
+  "is_featured": true,
+  "order": 0,
+  "status": "published",
+  "seo": {
+    "seo_title": "Thiết Kế Website Thương Mại Điện Tử & Bán Hàng | TeamDevDesign",
+    "seo_description": "Giải pháp thiết kế website bán hàng online chuẩn E-commerce, tích hợp giỏ hàng, thanh toán trực tuyến, quản lý kho hàng. Tối ưu UX/UI tăng chuyển đổi tối đa!",
+    "seo_image": "services/service_2_featured.jpg",
+    "index": "index"
+  },
+  "meta": {
+    "icon_image": "icons/icon-7.png"
+  },
+  "faqs": [
+    {
+      "category_id": 6,
+      "category": "FAQ - Website Thương Mại Điện Tử",
+      "items": [
+        {
+          "question": "Thiết kế website thương mại điện tử mất bao lâu?",
+          "answer": "Thời gian triển khai từ 7 đến 45 ngày tùy thuộc vào quy mô nền tảng (WordPress hay Laravel/Next JS) và số lượng tính năng tích hợp."
+        },
+        {
+          "question": "Có tích hợp thanh toán online và tính phí ship tự động không?",
+          "answer": "Có. Chúng tôi hỗ trợ tích hợp các cổng thanh toán (VNPAY, MoMo, PayPal) và kết nối API với các đơn vị vận chuyển (GHTK, GHN) để tự động tính phí ship."
+        },
+        {
+          "question": "Website bán hàng có giới hạn số lượng sản phẩm không?",
+          "answer": "Nếu dùng nền tảng Laravel/Next JS, hệ thống có khả năng chịu tải hàng triệu sản phẩm mà vẫn giữ tốc độ nhanh. Với WordPress, tối ưu nhất là dưới 5.000 sản phẩm."
+        },
+        {
+          "question": "Chính sách bảo hành như thế nào?",
+          "answer": "Chúng tôi bảo hành 6 tháng đối với các lỗi kỹ thuật phát sinh trên nền tảng WordPress và 12 tháng đối với nền tảng Laravel/Next JS."
+        }
+      ]
+    }
+  ]
+}

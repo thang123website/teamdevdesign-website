@@ -1,0 +1,23 @@
+{
+  "name": "Cách Cài WordPress Trên VPS aaPanel: Trỏ Tên Miền, Cài SSL",
+  "slug": "cai-wordpress-tren-vps-aapanel",
+  "description": "Cách cài WordPress trên VPS aaPanel từng bước: trỏ tên miền về VPS, tạo website, database, cài SSL Let's Encrypt và bật HTTPS cho người mới.",
+  "seo_title": "Cài WordPress Trên VPS aaPanel + SSL Miễn Phí (2026)",
+  "seo_description": "Cách cài WordPress trên VPS aaPanel từng bước: trỏ tên miền về VPS, tạo website, database, cài SSL Let's Encrypt và bật HTTPS cho người mới.",
+  "focus_keyword": "cài wordpress trên vps aapanel",
+  "category": {
+    "name": "Hosting & VPS",
+    "slug": "hosting-vps",
+    "description": "Kiến thức, thủ thuật và hướng dẫn quản trị Hosting, VPS, aaPanel, Mail Server, bảo mật và tối ưu máy chủ cho website doanh nghiệp từ đội ngũ TeamDevDesign.",
+    "seo_title": "Hosting & VPS – Hướng Dẫn Quản Trị Máy Chủ | TeamDevDesign",
+    "seo_description": "Tổng hợp hướng dẫn quản trị Hosting, VPS, aaPanel, Mail Server và bảo mật máy chủ dễ hiểu, cập nhật mới nhất từ TeamDevDesign."
+  },
+  "tags": ["WordPress", "aaPanel", "VPS", "SSL", "Let's Encrypt", "Hướng dẫn"],
+  "featured_image": {
+    "file": "images/featured.webp",
+    "alt": "Hướng dẫn cài WordPress trên VPS aaPanel và cài SSL miễn phí"
+  },
+  "is_featured": 0,
+  "status": "published",
+  "translation_en": "copy"
+}

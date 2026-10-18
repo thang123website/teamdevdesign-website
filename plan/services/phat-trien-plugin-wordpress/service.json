@@ -1,0 +1,38 @@
+{
+  "slug": "phat-trien-plugin-wordpress",
+  "id": 8,
+  "name": "Phát Triển Plugin WordPress Theo Yêu Cầu",
+  "category_id": 5,
+  "category": "Dịch vụ phát triển",
+  "description": "Dịch vụ viết và lập trình Plugin WordPress chuyên nghiệp. Đồng bộ API, CRM, ERP, tối ưu hiệu năng và bảo mật, không xung đột hệ thống.",
+  "image": "services/service_wp_plugin_featured.jpg",
+  "images": [],
+  "is_featured": true,
+  "order": 0,
+  "status": "published",
+  "seo": {
+    "seo_title": "Lập trình, phát triển Plugin WordPress theo yêu cầu | Báo giá 2026",
+    "seo_description": "Nhận viết Plugin WordPress theo yêu cầu giá rẻ, tối ưu tốc độ, bảo mật cao. Đồng bộ hệ thống nội bộ ERP/CRM, tương thích WooCommerce hoàn hảo.",
+    "seo_image": "services/service_wp_plugin_featured.jpg",
+    "index": "index"
+  },
+  "meta": {
+    "icon_image": "icons/icon-7.png"
+  },
+  "faqs": [
+    {
+      "category_id": 12,
+      "category": "FAQ - Plugin WordPress",
+      "items": [
+        {
+          "question": "Tôi cần chuẩn bị gì để nhận báo giá?",
+          "answer": "Để có báo giá chính xác, bạn cần cung cấp: Mục tiêu plugin (giải quyết việc gì), Danh sách tính năng chi tiết, Yêu cầu tương thích (WooCommerce/Elementor...), và yêu cầu về dữ liệu/bảo mật."
+        },
+        {
+          "question": "Thời gian lập trình Plugin mất bao lâu?",
+          "answer": "Tùy thuộc vào độ phức tạp. Thường 3-7 ngày cho plugin đơn giản, và 2-4 tuần cho các plugin tích hợp hệ thống lớn."
+        }
+      ]
+    }
+  ]
+}

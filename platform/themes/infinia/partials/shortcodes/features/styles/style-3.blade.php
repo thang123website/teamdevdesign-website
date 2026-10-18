@@ -5,7 +5,7 @@
                 @if($shortcode->image)
                     <div class="col-lg-6 text-lg-end text-center">
                         <div class="position-relative d-inline-block mb-lg-0 mb-8">
-                            {{ RvMedia::image($shortcode->image, __('Image'), attributes: ['class' => 'rounded-4', 'data-aos' => 'fade-zoom-in', 'data-aos-delay' => 200]) }}
+                            {{ RvMedia::image($shortcode->image, infinia_image_alt($shortcode), attributes: ['class' => 'rounded-4', 'data-aos' => 'fade-zoom-in', 'data-aos-delay' => 200]) }}
                             @if($shortcode->floating_card_title || $shortcode->floating_card_image || $shortcode->floating_card_description)
                                 <div class="position-absolute bottom-0 start-0 translate-middle-md-x mb-md-8 backdrop-filter rounded-3 p-md-4 p-3 text-center">
                                     @if($shortcode->floating_card_title)
@@ -13,7 +13,7 @@
                                     @endif
                                     @if($shortcode->floating_card_image)
                                         <div class="d-flex align-items-center justify-content-center py-4">
-                                            {{ RvMedia::image($shortcode->floating_card_image, __('Image'), attributes: ['style' => 'max-width: 10.5rem']) }}
+                                            {{ RvMedia::image($shortcode->floating_card_image, infinia_image_alt($shortcode), attributes: ['style' => 'max-width: 10.5rem']) }}
                                         </div>
                                     @endif
                                     @if($shortcode->floating_card_description)
@@ -32,7 +32,7 @@
                             <strong class="d-block fs-6" data-aos="fade-zoom-in" data-aos-delay="50">{{ $shortcode->subtitle }}</strong>
                         @endif
                         @if($shortcode->title)
-                            <h3 class="ds-3 mt-2 mb-5" data-aos="fade-zoom-in" data-aos-delay="100">{!! BaseHelper::clean($shortcode->title) !!}</h3>
+                            <{{ $titleTag = infinia_title_tag($shortcode, 'h3') }} class="ds-3 mt-2 mb-5" data-aos="fade-zoom-in" data-aos-delay="100">{!! infinia_clean_title($shortcode->title) !!}</{{ $titleTag }}>
                         @endif
                         @if($shortcode->description)
                             <p class="mb-5" data-aos="fade-zoom-in" data-aos-delay="100">

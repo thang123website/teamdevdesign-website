@@ -15,7 +15,7 @@
                     @endif
 
                     @if ($image = $shortcode->image)
-                        {{ RvMedia::image($image, __('Image')) }}
+                        {{ RvMedia::image($image, infinia_image_alt($shortcode)) }}
                     @endif
 
                     @if (($primaryActionLabel = $shortcode->primary_action_label) && ($primaryActionUrl = $shortcode->primary_action_url))
@@ -28,9 +28,9 @@
                         </a>
                     @endif
                 </div>
-                <img class="position-absolute top-0 end-0 z-0" src="{{ Theme::asset()->url('images/shapes/bg-line-1.png') }}" alt="line">
+                <img class="position-absolute top-0 end-0 z-0" src="{{ Theme::asset()->url('images/shapes/bg-line-1.png') }}" alt="" aria-hidden="true">
                 <img class="position-absolute bottom-0 start-0 z-0" src="{{ Theme::asset()->url('images/shapes/bg-line-2.png') }}" alt="line 2">
-                <img class="flickering position-absolute top-0 end-50 me-5 mt-3 z-0" src="{{ Theme::asset()->url('images/shapes/shine-effect.png') }}" alt="shine effect">
+                <img class="flickering position-absolute top-0 end-50 me-5 mt-3 z-0" src="{{ Theme::asset()->url('images/shapes/shine-effect.png') }}" alt="" aria-hidden="true">
                 <img class="flickering position-absolute bottom-0 start-50 ms-md-10 mb-3 ps-10 z-0" src="{{ Theme::asset()->url('images/shapes/shine-effect-1.png') }}" alt="shine effect 2">
             </div>
         </div>

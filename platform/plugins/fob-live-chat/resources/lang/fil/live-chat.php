@@ -1,0 +1,216 @@
+<?php
+
+return [
+    'title' => 'Agarang chat',
+    'messages' => 'Mga mensahe',
+    'visitor_name' => 'Pangalan ng bisita',
+    'visitor_email' => 'Email ng bisita',
+    'visitor_phone' => 'Telepono',
+    'visitor_info' => 'Impormasyon ng bisita',
+    'ip_address' => 'IP address',
+    'current_page' => 'Kasalukuyang pahina',
+    'browser' => 'Browser',
+    'last_message' => 'Huling mensahe',
+    'close_conversation' => 'Isara',
+    'delete_conversation' => 'Burahin ang usapan',
+    'conversation_closed' => 'Isinara na ang usapan.',
+    'conversation_deleted' => 'Nabura na ang usapan.',
+    'conversation_is_closed' => 'Sarado na ang usapang ito.',
+    'conversation_with' => 'Usapan kay :name',
+    'confirm_close' => 'Sigurado ka bang gusto mong isara ang usapang ito?',
+    'confirm_delete' => 'Sigurado ka bang gusto mong burahin ang usapang ito? Hindi na ito maaaring ibalik.',
+    'type_reply' => 'I-type ang iyong sagot...',
+    'reply_sent' => 'Naipadala ang sagot.',
+    'no_conversation' => 'Walang aktibong usapan na natagpuan. Mangyaring magsimula ng bagong chat.',
+    'no_conversations' => 'Wala pang mga usapan',
+    'chat_started' => 'Matagumpay na nasimulan ang chat.',
+    'message_sent' => 'Naipadala ang mensahe.',
+    'select_conversation' => 'Pumili ng usapan',
+    'select_conversation_hint' => 'Pumili ng usapan mula sa listahan upang magsimulang mag-chat.',
+    'all' => 'Lahat',
+    'timeline' => 'Guhit ng oras',
+    'total_messages' => 'Kabuuang mensahe',
+    'just_now' => 'Ngayon lang',
+    'test_sound' => 'I-click para subukan ang tunog',
+    'back_to_list' => 'Bumalik sa mga pag-uusap',
+    'no_messages_yet' => 'Wala pang mga mensahe',
+    'start_conversation_hint' => 'Magpadala ng mensahe upang simulan ang pag-uusap',
+    'notifications_enabled' => 'Na-enable ang mga notification sa browser!',
+    'enable_notifications' => 'I-enable ang mga notification sa browser',
+    'new_conversation' => 'Bagong pag-uusap',
+    'new_message' => 'Bagong mensahe',
+    'no_conversations_hint' => 'Lalabas dito ang mga pag-uusap kapag nagsimulang mag-chat ang mga bisita.',
+    'open_chat' => 'Buksan ang chat',
+    'close' => 'Isara',
+    'chat_title' => 'Agarang chat',
+    'online' => 'Konektado',
+    'start_message' => 'Kumusta! Paano ka namin matutulungan ngayon?',
+    'your_name' => 'Ang iyong pangalan',
+    'your_email' => 'Ang iyong email',
+    'your_email_optional' => 'Ang iyong email (opsyonal)',
+    'your_phone' => 'Ang iyong telepono',
+    'start_chat' => 'Simulan ang chat',
+    'type_message' => 'Mag-type ng mensahe...',
+    'send' => 'Ipadala',
+    'default_admin_name' => 'Suporta',
+    'default_welcome_message' => 'Kumusta! Salamat sa pakikipag-ugnayan. Paano kita matutulungan ngayon?',
+    'conversation_statuses' => [
+        'open' => 'Bukas',
+        'closed' => 'Sarado',
+    ],
+    'settings' => [
+        'title' => 'Agarang chat',
+        'description' => 'I-configure ang lumulutang na widget ng agarang chat na lumalabas sa iyong website para sa suportang pangkustomer sa aktuwal na oras.',
+        'form' => [
+            'enabled' => 'Paganahin ang agarang chat',
+            'enabled_help' => 'Paganahin upang ipakita ang chat widget sa iyong website. Maaaring magsimula ng usapan ang mga bisita kasama ang iyong koponan ng suporta.',
+            'widget_title' => 'Pamagat ng widget',
+            'widget_title_help' => 'Ang pamagat na ipinapakita sa itaas ng header ng chat widget.',
+            'widget_title_placeholder' => 'Agarang chat',
+            'welcome_message' => 'Mensahe ng pagbati',
+            'welcome_message_help' => 'Ang unang mensaheng nakikita ng mga bisita kapag binuksan nila ang chat widget. Iwanang walang laman upang gamitin ang default na mensahe.',
+            'welcome_message_placeholder' => 'Kumusta! Salamat sa pakikipag-ugnayan. Paano kita matutulungan ngayon?',
+            'admin_name' => 'Pangalan ng Admin',
+            'admin_name_help' => 'Ang pangalang ipinapakita para sa mga tugon ng admin sa chat widget.',
+            'admin_name_placeholder' => 'Suporta',
+            'random_admin_names_enabled' => 'Gumamit ng Random na Pangalan ng Admin',
+            'random_admin_names_enabled_help' => 'Kapag pinagana, ang bawat bagong pag-uusap ay bibigyan ng random na pangalan ng admin mula sa listahan sa ibaba.',
+            'random_admin_names' => 'Mga Random na Pangalan ng Admin',
+            'random_admin_names_help' => 'Maglagay ng isang pangalan bawat linya. Isang random na pangalan ang itatalaga sa bawat bagong pag-uusap.',
+            'random_admin_names_placeholder' => 'Sarah
+Mike
+Emma
+John',
+            'primary_color' => 'Pangunahing kulay',
+            'primary_color_help' => 'Ang pangunahing kulay para sa pindutan at header ng chat widget. Pumili ng kulay na tumutugma sa iyong brand.',
+            'position' => 'Posisyon ng widget',
+            'position_help' => 'Kung saan lumalabas ang pindutan ng chat widget sa screen.',
+            'position_right' => 'Ibaba kanan',
+            'position_left' => 'Ibaba kaliwa',
+            'email_required' => 'Kailangan ng email',
+            'email_required_help' => 'Kapag naka-enable, kailangang ilagay ng mga bisita ang kanilang email bago magsimula ng chat. Kapaki-pakinabang para sa follow-up na komunikasyon.',
+            'display_fields' => 'Mga ipapakitang field',
+            'mandatory_fields' => 'Mga kinakailangang field',
+            'poll_interval' => 'Agwat ng polling (ms)',
+            'poll_interval_help' => 'Gaano kadalas susuriin ang mga bagong mensahe sa milisegundo. Mas mababang halaga ay mas mabilis na pag-update ngunit mas maraming kahilingan sa server. Inirerekomenda: 3000-5000ms.',
+            'poll_interval_placeholder' => '3000',
+            'online_status' => 'Katayuan sa Online',
+            'working_hours_enabled' => 'Paganahin ang Oras ng Trabaho',
+            'working_hours_enabled_help' => 'Kapag pinagana, ang katayuan ng chat ay awtomatikong magiging offline sa labas ng oras ng trabaho. Ang oras ng trabaho ay nakabatay sa timezone na na-configure sa Mga Setting → Pangkalahatan.',
+            'working_hours_start' => 'Oras ng Pagsisimula',
+            'working_hours_end' => 'Oras ng Pagtatapos',
+            'working_days' => 'Mga Araw na May Pasok',
+            'avatar_image' => 'Larawan ng Avatar',
+            'avatar_image_help' => 'Pasadyang larawan ng avatar para sa header ng chat. Iwanang blangko upang gamitin ang default na icon.',
+            'primary_hover_color' => 'Kulay ng Hover',
+            'primary_hover_color_help' => 'Ang kulay kapag itinutok ang cursor sa button ng chat.',
+            'position_bottom_right' => 'Kanan sa Ibaba',
+            'position_bottom_left' => 'Kaliwa sa Ibaba',
+            'position_center_right' => 'Kanan sa Gitna',
+            'position_center_left' => 'Kaliwa sa Gitna',
+            'offset_x' => 'Offset X (px)',
+            'offset_x_help' => 'Pahalang na offset mula sa gilid ng screen sa pixels.',
+            'offset_y' => 'Offset Y (px)',
+            'offset_y_help' => 'Patayong offset mula sa gilid ng screen sa pixels.',
+            'display_on_mobile' => 'Ipakita sa Mobile',
+            'display_on_mobile_help' => 'Kontrolin kung ang chat widget ay ipapakita sa mga mobile device.',
+            'display_on_mobile_always' => 'Laging ipakita',
+            'display_on_mobile_hide' => 'Itago sa mobile',
+        ],
+    ],
+    'email' => [
+        'title' => 'Live Chat Email',
+        'description' => 'Email notifications for live chat events',
+        'templates' => [
+            'new_conversation_title' => 'New Conversation Notification',
+            'new_conversation_description' => 'Email sent to admin when a visitor starts a new conversation',
+            'new_conversation_subject' => 'New Live Chat Conversation from {{ visitor_name }}',
+            'visitor_name' => 'Visitor name',
+            'visitor_email' => 'Visitor email',
+            'visitor_phone' => 'Visitor phone',
+            'visitor_ip' => 'Visitor IP address',
+            'current_page' => 'Current page URL',
+            'conversation_url' => 'Link to conversation in admin panel',
+        ],
+    ],
+    'email_settings' => [
+        'title' => 'Email Notifications',
+        'description' => 'Configure email notifications for new chat conversations. Only one email is sent when a visitor starts a new conversation.',
+        'enable_email_notification' => 'Enable Email Notifications',
+        'enable_email_notification_help' => 'Send an email notification when a visitor starts a new chat conversation',
+        'notification_emails' => 'Notification Email Addresses',
+        'notification_emails_help' => 'Comma-separated list of email addresses to receive notifications. Leave empty to use the default admin email.',
+    ],
+    'email_templates' => [
+        'new_conversation_title' => 'New Live Chat Conversation',
+        'new_conversation_greeting' => 'A visitor has started a new live chat conversation on your website.',
+        'visitor_details' => 'Visitor Details',
+        'field_name' => 'Name:',
+        'field_email' => 'Email:',
+        'field_phone' => 'Phone:',
+        'field_ip' => 'IP Address:',
+        'field_page' => 'Current Page:',
+        'respond_instruction' => 'Click the button below to respond to this conversation.',
+        'view_conversation_button' => 'View Conversation',
+    ],
+    'webhook' => [
+        'title' => 'Mga Setting ng Webhook',
+        'description' => 'I-configure ang mga webhook upang makatanggap ng mga abiso kapag may mga kaganapan sa chat. Nagpapadala ang mga webhook ng mga HTTP POST request sa iyong tinukoy na mga URL na may data ng kaganapan.',
+        'enable_webhooks' => 'I-enable ang mga Webhook',
+        'enable_webhooks_help' => 'I-enable ang pagpapadala ng mga webhook notification para sa mga live chat event',
+        'message_received_url' => 'URL ng Webhook na Natanggap ang Mensahe',
+        'message_received_url_help' => 'Na-trigger kapag nagpadala ang bisita ng bagong mensahe sa chat',
+        'conversation_started_url' => 'URL ng Webhook na Nagsimula ang Pag-uusap',
+        'conversation_started_url_help' => 'Na-trigger kapag nagsimula ang bisita ng bagong pag-uusap',
+        'view_sample_data' => 'Tingnan ang Sample Data',
+        'test_button' => 'Magpadala ng Test Webhook',
+        'testing' => 'Nagpapadala...',
+        'test_success' => 'Matagumpay na naipadala ang webhook!',
+        'test_failed' => 'Nabigo ang pagsubok ng webhook.',
+        'status_code' => 'Status Code',
+        'please_enter_url' => 'Mangyaring maglagay muna ng webhook URL',
+        'error_occurred' => 'May naganap na error habang sinusubukan ang webhook',
+        'usage_instructions_title' => 'How to Use Webhooks',
+        'usage_instructions' => '<p><strong>Webhooks</strong> allow you to receive real-time notifications when events occur in Live Chat. When an event is triggered, an HTTP POST request is sent to your configured URL with JSON payload.</p>
+<h6>HTTP Headers</h6>
+<ul>
+<li><code>Content-Type: application/json</code></li>
+<li><code>X-Webhook-Event</code> - Event type (e.g., <code>message.received</code>, <code>conversation.started</code>)</li>
+<li><code>X-Webhook-Timestamp</code> - ISO 8601 timestamp when webhook was sent</li>
+<li><code>X-Webhook-Test: true</code> - Only present for test webhooks</li>
+</ul>
+<h6>Your Endpoint Requirements</h6>
+<ul>
+<li>Must accept HTTP POST requests</li>
+<li>Must respond within 10 seconds (timeout limit)</li>
+<li>Should return HTTP 2xx status code for success</li>
+<li>Must be publicly accessible (HTTPS recommended)</li>
+</ul>
+<h6>Integration Tutorials</h6>
+<ul>
+<li><strong>Slack:</strong> <a href="https://api.slack.com/messaging/webhooks" target="_blank">Incoming Webhooks Guide</a></li>
+<li><strong>Discord:</strong> <a href="https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks" target="_blank">Intro to Webhooks</a></li>
+<li><strong>Telegram:</strong> <a href="https://core.telegram.org/bots/webhooks" target="_blank">Bot Webhooks</a> (use with <a href="https://core.telegram.org/bots/api#sendmessage" target="_blank">sendMessage API</a>)</li>
+<li><strong>n8n:</strong> <a href="https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.webhook/" target="_blank">Webhook Node</a></li>
+<li><strong>Zapier:</strong> <a href="https://zapier.com/apps/webhook/integrations" target="_blank">Webhooks by Zapier</a></li>
+<li><strong>Make (Integromat):</strong> <a href="https://www.make.com/en/help/tools/webhooks" target="_blank">Webhooks Module</a></li>
+</ul>
+<h6>Example Use Cases</h6>
+<ul>
+<li>Send notifications to Slack, Discord, or Telegram</li>
+<li>Create tickets in helpdesk systems (Zendesk, Freshdesk)</li>
+<li>Log conversations to external CRM</li>
+<li>Trigger automated responses via n8n or Zapier</li>
+</ul>',
+    ],
+    'offline' => 'Offline',
+    'days' => [
+        'monday' => 'Lunes',
+        'tuesday' => 'Martes',
+        'wednesday' => 'Miyerkules',
+        'thursday' => 'Huwebes',
+        'friday' => 'Biyernes',
+        'saturday' => 'Sabado',
+        'sunday' => 'Linggo',
+    ],
+];

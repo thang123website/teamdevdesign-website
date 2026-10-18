@@ -1,0 +1,216 @@
+<?php
+
+return [
+    'title' => 'Ζωντανή συνομιλία',
+    'messages' => 'Μηνύματα',
+    'visitor_name' => 'Όνομα επισκέπτη',
+    'visitor_email' => 'Email επισκέπτη',
+    'visitor_phone' => 'Τηλέφωνο',
+    'visitor_info' => 'Πληροφορίες επισκέπτη',
+    'ip_address' => 'Διεύθυνση IP',
+    'current_page' => 'Τρέχουσα σελίδα',
+    'browser' => 'Πρόγραμμα περιήγησης',
+    'last_message' => 'Τελευταίο μήνυμα',
+    'close_conversation' => 'Κλείσιμο',
+    'delete_conversation' => 'Διαγραφή συνομιλίας',
+    'conversation_closed' => 'Η συνομιλία έκλεισε.',
+    'conversation_deleted' => 'Η συνομιλία διαγράφηκε.',
+    'conversation_is_closed' => 'Αυτή η συνομιλία είναι κλειστή.',
+    'conversation_with' => 'Συνομιλία με :name',
+    'confirm_close' => 'Είστε σίγουροι ότι θέλετε να κλείσετε αυτή τη συνομιλία;',
+    'confirm_delete' => 'Είστε σίγουροι ότι θέλετε να διαγράψετε αυτή τη συνομιλία; Αυτή η ενέργεια δεν μπορεί να αναιρεθεί.',
+    'type_reply' => 'Πληκτρολογήστε την απάντησή σας...',
+    'reply_sent' => 'Η απάντηση στάλθηκε με επιτυχία.',
+    'no_conversation' => 'Δεν βρέθηκε ενεργή συνομιλία. Παρακαλώ ξεκινήστε νέα συνομιλία.',
+    'no_conversations' => 'Δεν υπάρχουν συνομιλίες ακόμη',
+    'chat_started' => 'Η συνομιλία ξεκίνησε με επιτυχία.',
+    'message_sent' => 'Το μήνυμα στάλθηκε.',
+    'select_conversation' => 'Επιλέξτε συνομιλία',
+    'select_conversation_hint' => 'Επιλέξτε μια συνομιλία από τη λίστα για να ξεκινήσετε.',
+    'all' => 'Όλα',
+    'timeline' => 'Χρονολόγιο',
+    'total_messages' => 'Σύνολο μηνυμάτων',
+    'just_now' => 'Μόλις τώρα',
+    'test_sound' => 'Κάντε κλικ για δοκιμή ήχου',
+    'back_to_list' => 'Επιστροφή στις συνομιλίες',
+    'no_messages_yet' => 'Δεν υπάρχουν μηνύματα ακόμα',
+    'start_conversation_hint' => 'Στείλτε ένα μήνυμα για να ξεκινήσετε τη συνομιλία',
+    'notifications_enabled' => 'Οι ειδοποιήσεις προγράμματος περιήγησης ενεργοποιήθηκαν!',
+    'enable_notifications' => 'Ενεργοποίηση ειδοποιήσεων προγράμματος περιήγησης',
+    'new_conversation' => 'Νέα συνομιλία',
+    'new_message' => 'Νέο μήνυμα',
+    'no_conversations_hint' => 'Οι συνομιλίες θα εμφανιστούν εδώ όταν οι επισκέπτες αρχίσουν να συνομιλούν.',
+    'open_chat' => 'Άνοιγμα συνομιλίας',
+    'close' => 'Κλείσιμο',
+    'chat_title' => 'Ζωντανή συνομιλία',
+    'online' => 'Σε σύνδεση',
+    'start_message' => 'Γεια σας! Πώς μπορούμε να σας βοηθήσουμε σήμερα;',
+    'your_name' => 'Το όνομά σας',
+    'your_email' => 'Το email σας',
+    'your_email_optional' => 'Το email σας (προαιρετικό)',
+    'your_phone' => 'Το τηλέφωνό σας',
+    'start_chat' => 'Έναρξη συνομιλίας',
+    'type_message' => 'Πληκτρολογήστε μήνυμα...',
+    'send' => 'Αποστολή',
+    'default_admin_name' => 'Υποστήριξη',
+    'default_welcome_message' => 'Γεια σας! Ευχαριστούμε που επικοινωνήσατε. Πώς μπορώ να σας βοηθήσω σήμερα;',
+    'conversation_statuses' => [
+        'open' => 'Ανοιχτή',
+        'closed' => 'Κλειστή',
+    ],
+    'settings' => [
+        'title' => 'Ζωντανή συνομιλία',
+        'description' => 'Ρυθμίστε το αιωρούμενο widget ζωντανής συνομιλίας που εμφανίζεται στον ιστότοπό σας για υποστήριξη πελατών σε πραγματικό χρόνο.',
+        'form' => [
+            'enabled' => 'Ενεργοποίηση ζωντανής συνομιλίας',
+            'enabled_help' => 'Ενεργοποιήστε για να εμφανίζεται το widget συνομιλίας στον ιστότοπό σας. Οι επισκέπτες μπορούν να ξεκινήσουν συνομιλίες με την ομάδα υποστήριξης.',
+            'widget_title' => 'Τίτλος widget',
+            'widget_title_help' => 'Ο τίτλος που εμφανίζεται στην κορυφή της κεφαλίδας του widget συνομιλίας.',
+            'widget_title_placeholder' => 'Ζωντανή συνομιλία',
+            'welcome_message' => 'Μήνυμα καλωσορίσματος',
+            'welcome_message_help' => 'Το πρώτο μήνυμα που βλέπουν οι επισκέπτες όταν ανοίγουν το widget συνομιλίας. Αφήστε το κενό για να χρησιμοποιηθεί το προεπιλεγμένο μήνυμα.',
+            'welcome_message_placeholder' => 'Γεια σας! Ευχαριστούμε που επικοινωνήσατε. Πώς μπορώ να σας βοηθήσω σήμερα;',
+            'admin_name' => 'Όνομα διαχειριστή',
+            'admin_name_help' => 'Το όνομα που εμφανίζεται για τις απαντήσεις του διαχειριστή στο widget συνομιλίας.',
+            'admin_name_placeholder' => 'Υποστήριξη',
+            'random_admin_names_enabled' => 'Χρήση τυχαίων ονομάτων διαχειριστή',
+            'random_admin_names_enabled_help' => 'Όταν είναι ενεργοποιημένο, σε κάθε νέα συνομιλία θα ανατίθεται ένα τυχαίο όνομα διαχειριστή από την παρακάτω λίστα.',
+            'random_admin_names' => 'Τυχαία ονόματα διαχειριστή',
+            'random_admin_names_help' => 'Εισαγάγετε ένα όνομα ανά γραμμή. Ένα τυχαίο όνομα θα ανατεθεί σε κάθε νέα συνομιλία.',
+            'random_admin_names_placeholder' => 'Sarah
+Mike
+Emma
+John',
+            'primary_color' => 'Κύριο χρώμα',
+            'primary_color_help' => 'Το κύριο χρώμα για το κουμπί και την κεφαλίδα του widget συνομιλίας. Επιλέξτε χρώμα που ταιριάζει με το brand σας.',
+            'position' => 'Θέση widget',
+            'position_help' => 'Πού εμφανίζεται το κουμπί του widget συνομιλίας στην οθόνη.',
+            'position_right' => 'Κάτω δεξιά',
+            'position_left' => 'Κάτω αριστερά',
+            'email_required' => 'Απαιτείται email',
+            'email_required_help' => 'Όταν είναι ενεργό, οι επισκέπτες πρέπει να εισάγουν το email τους πριν ξεκινήσουν συνομιλία. Χρήσιμο για επικοινωνία παρακολούθησης.',
+            'display_fields' => 'Πεδία εμφάνισης',
+            'mandatory_fields' => 'Υποχρεωτικά πεδία',
+            'poll_interval' => 'Διάστημα ελέγχου (ms)',
+            'poll_interval_help' => 'Πόσο συχνά γίνεται έλεγχος για νέα μηνύματα σε χιλιοστά του δευτερολέπτου. Μικρότερες τιμές σημαίνουν γρηγορότερες ενημερώσεις αλλά περισσότερα αιτήματα στον διακομιστή. Προτεινόμενο: 3000-5000ms.',
+            'poll_interval_placeholder' => '3000',
+            'online_status' => 'Κατάσταση σύνδεσης',
+            'working_hours_enabled' => 'Ενεργοποίηση ωρών εργασίας',
+            'working_hours_enabled_help' => 'Όταν είναι ενεργοποιημένο, η κατάσταση συνομιλίας θα αλλάζει αυτόματα σε εκτός σύνδεσης εκτός των ωρών εργασίας. Οι ώρες εργασίας βασίζονται στη ζώνη ώρας που έχει ρυθμιστεί στις Ρυθμίσεις → Γενικά.',
+            'working_hours_start' => 'Ώρα έναρξης',
+            'working_hours_end' => 'Ώρα λήξης',
+            'working_days' => 'Εργάσιμες ημέρες',
+            'avatar_image' => 'Εικόνα Avatar',
+            'avatar_image_help' => 'Προσαρμοσμένη εικόνα avatar για την επικεφαλίδα της συνομιλίας. Αφήστε κενό για να χρησιμοποιήσετε το προεπιλεγμένο εικονίδιο.',
+            'primary_hover_color' => 'Χρώμα κατάδειξης',
+            'primary_hover_color_help' => 'Το χρώμα κατά την τοποθέτηση του δείκτη πάνω από το κουμπί συνομιλίας.',
+            'position_bottom_right' => 'Κάτω Δεξιά',
+            'position_bottom_left' => 'Κάτω Αριστερά',
+            'position_center_right' => 'Κέντρο Δεξιά',
+            'position_center_left' => 'Κέντρο Αριστερά',
+            'offset_x' => 'Μετατόπιση X (px)',
+            'offset_x_help' => 'Οριζόντια μετατόπιση από την άκρη της οθόνης σε pixel.',
+            'offset_y' => 'Μετατόπιση Y (px)',
+            'offset_y_help' => 'Κάθετη μετατόπιση από την άκρη της οθόνης σε pixel.',
+            'display_on_mobile' => 'Εμφάνιση σε κινητά',
+            'display_on_mobile_help' => 'Ελέγξτε αν το widget συνομιλίας εμφανίζεται σε κινητές συσκευές.',
+            'display_on_mobile_always' => 'Πάντα εμφάνιση',
+            'display_on_mobile_hide' => 'Απόκρυψη σε κινητά',
+        ],
+    ],
+    'email' => [
+        'title' => 'Live Chat Email',
+        'description' => 'Email notifications for live chat events',
+        'templates' => [
+            'new_conversation_title' => 'New Conversation Notification',
+            'new_conversation_description' => 'Email sent to admin when a visitor starts a new conversation',
+            'new_conversation_subject' => 'New Live Chat Conversation from {{ visitor_name }}',
+            'visitor_name' => 'Visitor name',
+            'visitor_email' => 'Visitor email',
+            'visitor_phone' => 'Visitor phone',
+            'visitor_ip' => 'Visitor IP address',
+            'current_page' => 'Current page URL',
+            'conversation_url' => 'Link to conversation in admin panel',
+        ],
+    ],
+    'email_settings' => [
+        'title' => 'Email Notifications',
+        'description' => 'Configure email notifications for new chat conversations. Only one email is sent when a visitor starts a new conversation.',
+        'enable_email_notification' => 'Enable Email Notifications',
+        'enable_email_notification_help' => 'Send an email notification when a visitor starts a new chat conversation',
+        'notification_emails' => 'Notification Email Addresses',
+        'notification_emails_help' => 'Comma-separated list of email addresses to receive notifications. Leave empty to use the default admin email.',
+    ],
+    'email_templates' => [
+        'new_conversation_title' => 'New Live Chat Conversation',
+        'new_conversation_greeting' => 'A visitor has started a new live chat conversation on your website.',
+        'visitor_details' => 'Visitor Details',
+        'field_name' => 'Name:',
+        'field_email' => 'Email:',
+        'field_phone' => 'Phone:',
+        'field_ip' => 'IP Address:',
+        'field_page' => 'Current Page:',
+        'respond_instruction' => 'Click the button below to respond to this conversation.',
+        'view_conversation_button' => 'View Conversation',
+    ],
+    'webhook' => [
+        'title' => 'Ρυθμίσεις Webhook',
+        'description' => 'Διαμορφώστε webhooks για να λαμβάνετε ειδοποιήσεις όταν συμβαίνουν γεγονότα συνομιλίας. Τα webhooks στέλνουν αιτήματα HTTP POST στα καθορισμένα URLs σας με δεδομένα γεγονότων.',
+        'enable_webhooks' => 'Ενεργοποίηση Webhooks',
+        'enable_webhooks_help' => 'Ενεργοποιήστε την αποστολή ειδοποιήσεων webhook για γεγονότα ζωντανής συνομιλίας',
+        'message_received_url' => 'URL Webhook λήψης μηνύματος',
+        'message_received_url_help' => 'Ενεργοποιείται όταν ένας επισκέπτης στέλνει νέο μήνυμα στη συνομιλία',
+        'conversation_started_url' => 'URL Webhook έναρξης συνομιλίας',
+        'conversation_started_url_help' => 'Ενεργοποιείται όταν ένας επισκέπτης ξεκινά νέα συνομιλία',
+        'view_sample_data' => 'Προβολή δείγματος δεδομένων',
+        'test_button' => 'Αποστολή δοκιμαστικού Webhook',
+        'testing' => 'Αποστολή...',
+        'test_success' => 'Το Webhook στάλθηκε επιτυχώς!',
+        'test_failed' => 'Η δοκιμή webhook απέτυχε.',
+        'status_code' => 'Κωδικός κατάστασης',
+        'please_enter_url' => 'Παρακαλώ εισάγετε πρώτα ένα URL webhook',
+        'error_occurred' => 'Παρουσιάστηκε σφάλμα κατά τη δοκιμή του webhook',
+        'usage_instructions_title' => 'How to Use Webhooks',
+        'usage_instructions' => '<p><strong>Webhooks</strong> allow you to receive real-time notifications when events occur in Live Chat. When an event is triggered, an HTTP POST request is sent to your configured URL with JSON payload.</p>
+<h6>HTTP Headers</h6>
+<ul>
+<li><code>Content-Type: application/json</code></li>
+<li><code>X-Webhook-Event</code> - Event type (e.g., <code>message.received</code>, <code>conversation.started</code>)</li>
+<li><code>X-Webhook-Timestamp</code> - ISO 8601 timestamp when webhook was sent</li>
+<li><code>X-Webhook-Test: true</code> - Only present for test webhooks</li>
+</ul>
+<h6>Your Endpoint Requirements</h6>
+<ul>
+<li>Must accept HTTP POST requests</li>
+<li>Must respond within 10 seconds (timeout limit)</li>
+<li>Should return HTTP 2xx status code for success</li>
+<li>Must be publicly accessible (HTTPS recommended)</li>
+</ul>
+<h6>Integration Tutorials</h6>
+<ul>
+<li><strong>Slack:</strong> <a href="https://api.slack.com/messaging/webhooks" target="_blank">Incoming Webhooks Guide</a></li>
+<li><strong>Discord:</strong> <a href="https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks" target="_blank">Intro to Webhooks</a></li>
+<li><strong>Telegram:</strong> <a href="https://core.telegram.org/bots/webhooks" target="_blank">Bot Webhooks</a> (use with <a href="https://core.telegram.org/bots/api#sendmessage" target="_blank">sendMessage API</a>)</li>
+<li><strong>n8n:</strong> <a href="https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.webhook/" target="_blank">Webhook Node</a></li>
+<li><strong>Zapier:</strong> <a href="https://zapier.com/apps/webhook/integrations" target="_blank">Webhooks by Zapier</a></li>
+<li><strong>Make (Integromat):</strong> <a href="https://www.make.com/en/help/tools/webhooks" target="_blank">Webhooks Module</a></li>
+</ul>
+<h6>Example Use Cases</h6>
+<ul>
+<li>Send notifications to Slack, Discord, or Telegram</li>
+<li>Create tickets in helpdesk systems (Zendesk, Freshdesk)</li>
+<li>Log conversations to external CRM</li>
+<li>Trigger automated responses via n8n or Zapier</li>
+</ul>',
+    ],
+    'offline' => 'Offline',
+    'days' => [
+        'monday' => 'Δευτέρα',
+        'tuesday' => 'Τρίτη',
+        'wednesday' => 'Τετάρτη',
+        'thursday' => 'Πέμπτη',
+        'friday' => 'Παρασκευή',
+        'saturday' => 'Σάββατο',
+        'sunday' => 'Κυριακή',
+    ],
+];

@@ -5,13 +5,13 @@
                 <div class="text-start mb-lg-0 mb-5">
                     @if ($subtitle = $shortcode->subtitle)
                         <div class="d-flex align-items-center justify-content-center bg-primary-soft border border-2 border-white d-inline-flex rounded-pill px-4 py-2" data-aos="zoom-in" data-aos-delay="50">
-                            <img src="{{ Theme::asset()->url('images/icons/dots.png') }}" alt="dots">
+                            <img src="{{ Theme::asset()->url('images/icons/dots.png') }}" alt="" aria-hidden="true">
                             <span class="tag-spacing fs-7 fw-bold text-linear-2 ms-2 text-primary">{!! BaseHelper::clean($subtitle) !!}</span>
                         </div>
                     @endif
 
                     @if ($title = $shortcode->title)
-                        <h3 class="ds-3 my-3" data-aos="fade-zoom-in" data-aos-delay="0">{!! BaseHelper::clean($title) !!}</h3>
+                        <{{ $titleTag = infinia_title_tag($shortcode, 'h3') }} class="ds-3 my-3" data-aos="fade-zoom-in" data-aos-delay="0">{!! infinia_clean_title($title) !!}</{{ $titleTag }}>
                     @endif
 
                     @if ($description = $shortcode->description)
@@ -29,7 +29,7 @@
                                     @foreach($features as $feature)
                                         @continue(! $feature)
                                         <li class="d-flex align-items-center mt-2">
-                                            <img src="{{ Theme::asset()->url('images/icons/check.png') }}" alt="check">
+                                            <img src="{{ Theme::asset()->url('images/icons/check.png') }}" alt="" aria-hidden="true">
                                             <span class="ms-2">{!! BaseHelper::clean($feature) !!}</span>
                                         </li>
                                     @endforeach
@@ -107,7 +107,7 @@
                                     <ul class="list-unstyled mb-0">
                                         @foreach($package->feature_list as $feature)
                                             <li class="d-flex align-items-center mb-4">
-                                                <img src="{{ Theme::asset()->url($feature['is_available'] ? 'images/icons/check-primary.png' : 'images/icons/check-secondary.png') }}" alt="check">
+                                                <img src="{{ Theme::asset()->url($feature['is_available'] ? 'images/icons/check-primary.png' : 'images/icons/check-secondary.png') }}" alt="" aria-hidden="true">
                                                 <strong class="d-block fs-6 mb-0 ms-2">{{ $feature['value'] }}</strong>
                                             </li>
                                         @endforeach

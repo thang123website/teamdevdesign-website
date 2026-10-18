@@ -1,0 +1,216 @@
+<?php
+
+return [
+    'title' => '在线聊天',
+    'messages' => '消息',
+    'visitor_name' => '访客姓名',
+    'visitor_email' => '访客邮箱',
+    'visitor_phone' => '电话',
+    'visitor_info' => '访客信息',
+    'ip_address' => 'IP 地址',
+    'current_page' => '当前页面',
+    'browser' => '浏览器',
+    'last_message' => '最后一条消息',
+    'close_conversation' => '关闭',
+    'delete_conversation' => '删除会话',
+    'conversation_closed' => '会话已关闭。',
+    'conversation_deleted' => '会话已删除。',
+    'conversation_is_closed' => '该会话已关闭。',
+    'conversation_with' => '与 :name 的会话',
+    'confirm_close' => '确认要关闭此会话吗？',
+    'confirm_delete' => '确认要删除此会话吗？此操作无法撤销。',
+    'type_reply' => '输入您的回复...',
+    'reply_sent' => '回复已成功发送。',
+    'no_conversation' => '未找到活动会话。请开始新的聊天。',
+    'no_conversations' => '暂无会话',
+    'chat_started' => '聊天已成功开始。',
+    'message_sent' => '消息已发送。',
+    'select_conversation' => '选择一个会话',
+    'select_conversation_hint' => '从列表中选择会话开始聊天。',
+    'all' => '全部',
+    'timeline' => '时间线',
+    'total_messages' => '消息总数',
+    'just_now' => '刚刚',
+    'test_sound' => '点击测试声音',
+    'back_to_list' => '返回列表',
+    'no_messages_yet' => '暂无消息',
+    'start_conversation_hint' => '发送消息以开始对话',
+    'notifications_enabled' => '浏览器通知已启用！',
+    'enable_notifications' => '启用浏览器通知',
+    'new_conversation' => '新对话',
+    'new_message' => '新消息',
+    'no_conversations_hint' => '当访客开始聊天时，对话将显示在此处。',
+    'open_chat' => '打开聊天',
+    'close' => '关闭',
+    'chat_title' => '在线聊天',
+    'online' => '在线',
+    'start_message' => '您好！今天我们能帮您什么？',
+    'your_name' => '您的姓名',
+    'your_email' => '您的电子邮件',
+    'your_email_optional' => '您的邮箱（可选）',
+    'your_phone' => '你的电话',
+    'start_chat' => '开始聊天',
+    'type_message' => '输入消息...',
+    'send' => '发送',
+    'default_admin_name' => '客服',
+    'default_welcome_message' => '您好！感谢您的联系。今天我能帮您什么？',
+    'conversation_statuses' => [
+        'open' => '开启',
+        'closed' => '关闭',
+    ],
+    'settings' => [
+        'title' => '在线聊天',
+        'description' => '配置出现在您网站上的浮动在线聊天小部件，以提供实时客户支持。',
+        'form' => [
+            'enabled' => '启用在线聊天',
+            'enabled_help' => '开启后将在您的网站上显示聊天小部件。访客可以与您的支持团队开始会话。',
+            'widget_title' => '小部件标题',
+            'widget_title_help' => '显示在聊天小部件头部顶部的标题。',
+            'widget_title_placeholder' => '在线聊天',
+            'welcome_message' => '欢迎消息',
+            'welcome_message_help' => '访客打开聊天小部件时看到的第一条消息。留空将使用默认消息。',
+            'welcome_message_placeholder' => '您好！感谢您的联系。今天我能帮您什么？',
+            'admin_name' => '管理员名称',
+            'admin_name_help' => '在聊天小部件中显示的管理员回复名称。',
+            'admin_name_placeholder' => '客服',
+            'random_admin_names_enabled' => '使用随机管理员名称',
+            'random_admin_names_enabled_help' => '启用后，每个新对话将从下面的列表中分配一个随机管理员名称。',
+            'random_admin_names' => '随机管理员名称',
+            'random_admin_names_help' => '每行输入一个名称。将为每个新对话分配一个随机名称。',
+            'random_admin_names_placeholder' => 'Sarah
+Mike
+Emma
+John',
+            'primary_color' => '主色',
+            'primary_color_help' => '聊天小部件按钮和头部的主色。选择与您的品牌匹配的颜色。',
+            'position' => '小部件位置',
+            'position_help' => '聊天小部件按钮在屏幕上出现的位置。',
+            'position_right' => '右下角',
+            'position_left' => '左下角',
+            'email_required' => '要求邮箱',
+            'email_required_help' => '启用后，访客在开始聊天前必须输入邮箱地址。适用于后续沟通。',
+            'display_fields' => '显示字段',
+            'mandatory_fields' => '必填字段',
+            'poll_interval' => '轮询间隔（毫秒）',
+            'poll_interval_help' => '以毫秒为单位检查新消息的频率。数值越小更新越快，但服务器请求更多。推荐：3000-5000ms。',
+            'poll_interval_placeholder' => '3000',
+            'online_status' => '在线状态',
+            'working_hours_enabled' => '启用工作时间',
+            'working_hours_enabled_help' => '启用后，聊天状态将在工作时间之外自动切换为离线。工作时间基于“设置”→“常规”中配置的时区。',
+            'working_hours_start' => '开始时间',
+            'working_hours_end' => '结束时间',
+            'working_days' => '工作日',
+            'avatar_image' => '头像图片',
+            'avatar_image_help' => '聊天标题的自定义头像图片。留空以使用默认图标。',
+            'primary_hover_color' => '悬停颜色',
+            'primary_hover_color_help' => '鼠标悬停在聊天按钮上时的颜色。',
+            'position_bottom_right' => '右下角',
+            'position_bottom_left' => '左下角',
+            'position_center_right' => '右中',
+            'position_center_left' => '左中',
+            'offset_x' => '偏移 X (px)',
+            'offset_x_help' => '距离屏幕边缘的水平偏移量（像素）。',
+            'offset_y' => '偏移 Y (px)',
+            'offset_y_help' => '距离屏幕边缘的垂直偏移量（像素）。',
+            'display_on_mobile' => '在手机上显示',
+            'display_on_mobile_help' => '控制是否在移动设备上显示聊天小部件。',
+            'display_on_mobile_always' => '始终显示',
+            'display_on_mobile_hide' => '在手机上隐藏',
+        ],
+    ],
+    'email' => [
+        'title' => '实时聊天邮件',
+        'description' => '实时聊天事件的邮件通知',
+        'templates' => [
+            'new_conversation_title' => '新对话通知',
+            'new_conversation_description' => '当访客开始新对话时发送给管理员的邮件',
+            'new_conversation_subject' => '{{ visitor_name }} 发起的新聊天对话',
+            'visitor_name' => '访客姓名',
+            'visitor_email' => '访客邮箱',
+            'visitor_phone' => '访客电话',
+            'visitor_ip' => '访客IP地址',
+            'current_page' => '当前页面URL',
+            'conversation_url' => '管理面板中的对话链接',
+        ],
+    ],
+    'email_settings' => [
+        'title' => '邮件通知',
+        'description' => '配置新聊天对话的邮件通知。当访客开始新对话时只发送一封邮件。',
+        'enable_email_notification' => '启用邮件通知',
+        'enable_email_notification_help' => '当访客开始新聊天对话时发送邮件通知',
+        'notification_emails' => '通知邮件地址',
+        'notification_emails_help' => '用逗号分隔的邮件地址列表。留空则使用默认管理员邮箱。',
+    ],
+    'email_templates' => [
+        'new_conversation_title' => '新的实时聊天对话',
+        'new_conversation_greeting' => '一位访客在您的网站上开始了新的实时聊天对话。',
+        'visitor_details' => '访客详情',
+        'field_name' => '姓名：',
+        'field_email' => '邮箱：',
+        'field_phone' => '电话：',
+        'field_ip' => 'IP地址：',
+        'field_page' => '当前页面：',
+        'respond_instruction' => '点击下面的按钮回复此对话。',
+        'view_conversation_button' => '查看对话',
+    ],
+    'webhook' => [
+        'title' => 'Webhook 设置',
+        'description' => '配置 Webhook 以在聊天事件发生时接收通知。Webhook 将向您指定的 URL 发送带有事件数据的 HTTP POST 请求。',
+        'enable_webhooks' => '启用 Webhook',
+        'enable_webhooks_help' => '启用实时聊天事件的 Webhook 通知',
+        'message_received_url' => '消息接收 Webhook URL',
+        'message_received_url_help' => '当访客在聊天中发送新消息时触发',
+        'conversation_started_url' => '对话开始 Webhook URL',
+        'conversation_started_url_help' => '当访客开始新对话时触发',
+        'view_sample_data' => '查看示例数据',
+        'test_button' => '发送测试 Webhook',
+        'testing' => '发送中...',
+        'test_success' => 'Webhook 发送成功！',
+        'test_failed' => 'Webhook 测试失败。',
+        'status_code' => '状态码',
+        'please_enter_url' => '请先输入 Webhook URL',
+        'error_occurred' => '测试 Webhook 时发生错误',
+        'usage_instructions_title' => '如何使用 Webhook',
+        'usage_instructions' => '<p><strong>Webhook</strong> 允许您在实时聊天中发生事件时接收实时通知。当触发事件时，将向您配置的 URL 发送包含 JSON 数据的 HTTP POST 请求。</p>
+<h6>HTTP 头</h6>
+<ul>
+<li><code>Content-Type: application/json</code></li>
+<li><code>X-Webhook-Event</code> - 事件类型（如 <code>message.received</code>、<code>conversation.started</code>）</li>
+<li><code>X-Webhook-Timestamp</code> - Webhook 发送时的 ISO 8601 时间戳</li>
+<li><code>X-Webhook-Test: true</code> - 仅在测试 Webhook 时存在</li>
+</ul>
+<h6>端点要求</h6>
+<ul>
+<li>必须接受 HTTP POST 请求</li>
+<li>必须在 10 秒内响应（超时限制）</li>
+<li>成功时应返回 HTTP 2xx 状态码</li>
+<li>必须可公开访问（建议使用 HTTPS）</li>
+</ul>
+<h6>集成教程</h6>
+<ul>
+<li><strong>Slack:</strong> <a href="https://api.slack.com/messaging/webhooks" target="_blank">传入 Webhook 指南</a></li>
+<li><strong>Discord:</strong> <a href="https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks" target="_blank">Webhook 入门</a></li>
+<li><strong>Telegram:</strong> <a href="https://core.telegram.org/bots/webhooks" target="_blank">Bot Webhooks</a>（配合 <a href="https://core.telegram.org/bots/api#sendmessage" target="_blank">sendMessage API</a> 使用）</li>
+<li><strong>n8n:</strong> <a href="https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.webhook/" target="_blank">Webhook Node</a></li>
+<li><strong>Zapier:</strong> <a href="https://zapier.com/apps/webhook/integrations" target="_blank">Webhooks by Zapier</a></li>
+<li><strong>Make (Integromat):</strong> <a href="https://www.make.com/en/help/tools/webhooks" target="_blank">Webhooks 模块</a></li>
+</ul>
+<h6>使用场景</h6>
+<ul>
+<li>向 Slack、Discord 或 Telegram 发送通知</li>
+<li>在帮助台系统（Zendesk、Freshdesk）中创建工单</li>
+<li>将对话记录到外部 CRM</li>
+<li>通过 n8n 或 Zapier 触发自动回复</li>
+</ul>',
+    ],
+    'offline' => 'Offline',
+    'days' => [
+        'monday' => '星期一',
+        'tuesday' => '星期二',
+        'wednesday' => '星期三',
+        'thursday' => '星期四',
+        'friday' => '星期五',
+        'saturday' => '星期六',
+        'sunday' => '星期日',
+    ],
+];

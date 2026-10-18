@@ -197,6 +197,20 @@ app('events')->listen(RenderingThemeOptionSettings::class, function (): void {
                 ->label(__('Suggest keywords'))
                 ->helperText(__('Separate by comma'))
         )
+        ->setField(
+            SelectField::make()
+                ->sectionId('opt-text-subsection-blog')
+                ->name('toc_headings')
+                ->label(__('Thẻ H trong Mục lục (TOC)'))
+                ->options([
+                    'h2, h3, h4, h5, h6' => __('Tất cả (H2 -> H6)'),
+                    'h2, h3, h4'         => __('H2, H3, H4'),
+                    'h2, h3'             => __('Chỉ H2, H3'),
+                    'h2'                 => __('Chỉ H2'),
+                ])
+                ->defaultValue('h2, h3, h4')
+                ->helperText(__('Chọn cấp độ thẻ Heading (Tiêu đề) để tạo Mục lục tự động cho bài viết.'))
+        )
         ->when(is_plugin_active('portfolio'), function () {
             theme_option()
                 ->setSection([

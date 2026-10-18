@@ -1,0 +1,216 @@
+<?php
+
+return [
+    'title' => 'Direkte chat',
+    'messages' => 'Meldinger',
+    'visitor_name' => 'Besøkers navn',
+    'visitor_email' => 'Besøkers e-post',
+    'visitor_phone' => 'Telefon',
+    'visitor_info' => 'Besøksinformasjon',
+    'ip_address' => 'IP-adresse',
+    'current_page' => 'Nåværende side',
+    'browser' => 'Nettleser',
+    'last_message' => 'Siste melding',
+    'close_conversation' => 'Lukk',
+    'delete_conversation' => 'Slett samtale',
+    'conversation_closed' => 'Samtalen er lukket.',
+    'conversation_deleted' => 'Samtalen er slettet.',
+    'conversation_is_closed' => 'Denne samtalen er lukket.',
+    'conversation_with' => 'Samtale med :name',
+    'confirm_close' => 'Er du sikker på at du vil lukke denne samtalen?',
+    'confirm_delete' => 'Er du sikker på at du vil slette denne samtalen? Denne handlingen kan ikke angres.',
+    'type_reply' => 'Skriv svaret ditt...',
+    'reply_sent' => 'Svar sendt.',
+    'no_conversation' => 'Ingen aktiv samtale funnet. Vennligst start en ny chat.',
+    'no_conversations' => 'Ingen samtaler ennå',
+    'chat_started' => 'Chat startet.',
+    'message_sent' => 'Melding sendt.',
+    'select_conversation' => 'Velg en samtale',
+    'select_conversation_hint' => 'Velg en samtale fra listen for å starte chat.',
+    'all' => 'Alle',
+    'timeline' => 'Tidslinje',
+    'total_messages' => 'Totalt antall meldinger',
+    'just_now' => 'Akkurat nå',
+    'test_sound' => 'Klikk for å teste lyd',
+    'back_to_list' => 'Tilbake til samtaler',
+    'no_messages_yet' => 'Ingen meldinger ennå',
+    'start_conversation_hint' => 'Send en melding for å starte samtalen',
+    'notifications_enabled' => 'Nettleservarsler aktivert!',
+    'enable_notifications' => 'Aktiver nettleservarsler',
+    'new_conversation' => 'Ny samtale',
+    'new_message' => 'Ny melding',
+    'no_conversations_hint' => 'Samtaler vil vises her når besøkende begynner å chatte.',
+    'open_chat' => 'Åpne chat',
+    'close' => 'Lukk',
+    'chat_title' => 'Direkte chat',
+    'online' => 'På nett',
+    'start_message' => 'Hei! Hvordan kan vi hjelpe deg i dag?',
+    'your_name' => 'Navnet ditt',
+    'your_email' => 'Din e-post',
+    'your_email_optional' => 'E-posten din (valgfri)',
+    'your_phone' => 'Din telefon',
+    'start_chat' => 'Start chat',
+    'type_message' => 'Skriv en melding...',
+    'send' => 'Send melding',
+    'default_admin_name' => 'Støtte',
+    'default_welcome_message' => 'Hei! Takk for at du tok kontakt. Hvordan kan jeg hjelpe deg i dag?',
+    'conversation_statuses' => [
+        'open' => 'Åpen',
+        'closed' => 'Lukket',
+    ],
+    'settings' => [
+        'title' => 'Direkte chat',
+        'description' => 'Konfigurer den flytende direkte chat-widgeten som vises på nettstedet ditt for kundestøtte i sanntid.',
+        'form' => [
+            'enabled' => 'Aktiver direkte chat',
+            'enabled_help' => 'Slå på for å vise chat-widgeten på nettstedet ditt. Besøkende kan starte samtaler med supportteamet ditt.',
+            'widget_title' => 'Widgettittel',
+            'widget_title_help' => 'Tittelen som vises øverst i chat-widgetens toppfelt.',
+            'widget_title_placeholder' => 'Direkte chat',
+            'welcome_message' => 'Velkomstmelding',
+            'welcome_message_help' => 'Den første meldingen besøkende ser når de åpner chat-widgeten. La stå tomt for å bruke standardmeldingen.',
+            'welcome_message_placeholder' => 'Hei! Takk for at du tok kontakt. Hvordan kan jeg hjelpe deg i dag?',
+            'admin_name' => 'Admin-navn',
+            'admin_name_help' => 'Navnet som vises for admin-svar i chat-widgeten.',
+            'admin_name_placeholder' => 'Støtte',
+            'random_admin_names_enabled' => 'Bruk tilfeldige administratornavn',
+            'random_admin_names_enabled_help' => 'Når aktivert, vil hver ny samtale bli tildelt et tilfeldig administratornavn fra listen nedenfor.',
+            'random_admin_names' => 'Tilfeldige administratornavn',
+            'random_admin_names_help' => 'Skriv inn ett navn per linje. Et tilfeldig navn vil bli tildelt hver ny samtale.',
+            'random_admin_names_placeholder' => 'Sarah
+Mike
+Emma
+John',
+            'primary_color' => 'Primærfarge',
+            'primary_color_help' => 'Hovedfargen for chat-widgetens knapp og toppfelt. Velg en farge som passer merkevaren din.',
+            'position' => 'Widgetplassering',
+            'position_help' => 'Hvor chat-widgetknappen vises på skjermen.',
+            'position_right' => 'Nederst til høyre',
+            'position_left' => 'Nederst til venstre',
+            'email_required' => 'Krev e-post',
+            'email_required_help' => 'Når aktivert må besøkende skrive inn e-postadressen sin før de starter en chat. Nyttig for oppfølging.',
+            'display_fields' => 'Visningsfelter',
+            'mandatory_fields' => 'Obligatoriske felt',
+            'poll_interval' => 'Pollingsintervall (ms)',
+            'poll_interval_help' => 'Hvor ofte det sjekkes for nye meldinger i millisekunder. Lavere verdier gir raskere oppdateringer, men flere serverforespørsler. Anbefalt: 3000-5000ms.',
+            'poll_interval_placeholder' => '3000',
+            'online_status' => 'Online status',
+            'working_hours_enabled' => 'Aktiver arbeidstid',
+            'working_hours_enabled_help' => 'Når aktivert, vil chat-statusen automatisk bytte til offline utenfor arbeidstiden. Arbeidstiden er basert på tidssonen som er konfigurert i Innstillinger → Generelt.',
+            'working_hours_start' => 'Starttid',
+            'working_hours_end' => 'Sluttid',
+            'working_days' => 'Arbeidsdager',
+            'avatar_image' => 'Avatarbilde',
+            'avatar_image_help' => 'Egendefinert avatarbilde for chat-overskriften. La stå tomt for å bruke standardikonet.',
+            'primary_hover_color' => 'Hover-farge',
+            'primary_hover_color_help' => 'Fargen når du holder musepekeren over chat-knappen.',
+            'position_bottom_right' => 'Nede til høyre',
+            'position_bottom_left' => 'Nede til venstre',
+            'position_center_right' => 'Midt til høyre',
+            'position_center_left' => 'Midt til venstre',
+            'offset_x' => 'Forskyvning X (px)',
+            'offset_x_help' => 'Horisontal avstand fra skjermkanten i piksler.',
+            'offset_y' => 'Forskyvning Y (px)',
+            'offset_y_help' => 'Vertikal avstand fra skjermkanten i piksler.',
+            'display_on_mobile' => 'Vis på mobil',
+            'display_on_mobile_help' => 'Kontroller om chat-widgeten vises på mobile enheter.',
+            'display_on_mobile_always' => 'Vis alltid',
+            'display_on_mobile_hide' => 'Skjul på mobil',
+        ],
+    ],
+    'email' => [
+        'title' => 'Live Chat Email',
+        'description' => 'Email notifications for live chat events',
+        'templates' => [
+            'new_conversation_title' => 'New Conversation Notification',
+            'new_conversation_description' => 'Email sent to admin when a visitor starts a new conversation',
+            'new_conversation_subject' => 'New Live Chat Conversation from {{ visitor_name }}',
+            'visitor_name' => 'Visitor name',
+            'visitor_email' => 'Visitor email',
+            'visitor_phone' => 'Visitor phone',
+            'visitor_ip' => 'Visitor IP address',
+            'current_page' => 'Current page URL',
+            'conversation_url' => 'Link to conversation in admin panel',
+        ],
+    ],
+    'email_settings' => [
+        'title' => 'Email Notifications',
+        'description' => 'Configure email notifications for new chat conversations. Only one email is sent when a visitor starts a new conversation.',
+        'enable_email_notification' => 'Enable Email Notifications',
+        'enable_email_notification_help' => 'Send an email notification when a visitor starts a new chat conversation',
+        'notification_emails' => 'Notification Email Addresses',
+        'notification_emails_help' => 'Comma-separated list of email addresses to receive notifications. Leave empty to use the default admin email.',
+    ],
+    'email_templates' => [
+        'new_conversation_title' => 'New Live Chat Conversation',
+        'new_conversation_greeting' => 'A visitor has started a new live chat conversation on your website.',
+        'visitor_details' => 'Visitor Details',
+        'field_name' => 'Name:',
+        'field_email' => 'Email:',
+        'field_phone' => 'Phone:',
+        'field_ip' => 'IP Address:',
+        'field_page' => 'Current Page:',
+        'respond_instruction' => 'Click the button below to respond to this conversation.',
+        'view_conversation_button' => 'View Conversation',
+    ],
+    'webhook' => [
+        'title' => 'Webhook-innstillinger',
+        'description' => 'Konfigurer webhooks for å motta varsler når chat-hendelser oppstår. Webhooks sender HTTP POST-forespørsler til dine angitte URL-er med hendelsesdata.',
+        'enable_webhooks' => 'Aktiver Webhooks',
+        'enable_webhooks_help' => 'Aktiver sending av webhook-varsler for live chat-hendelser',
+        'message_received_url' => 'Melding mottatt Webhook-URL',
+        'message_received_url_help' => 'Utløses når en besøkende sender en ny melding i chatten',
+        'conversation_started_url' => 'Samtale startet Webhook-URL',
+        'conversation_started_url_help' => 'Utløses når en besøkende starter en ny samtale',
+        'view_sample_data' => 'Vis eksempeldata',
+        'test_button' => 'Send test-webhook',
+        'testing' => 'Sender...',
+        'test_success' => 'Webhook sendt!',
+        'test_failed' => 'Webhook-test mislyktes.',
+        'status_code' => 'Statuskode',
+        'please_enter_url' => 'Vennligst skriv inn en webhook-URL først',
+        'error_occurred' => 'Det oppstod en feil under testing av webhook',
+        'usage_instructions_title' => 'How to Use Webhooks',
+        'usage_instructions' => '<p><strong>Webhooks</strong> allow you to receive real-time notifications when events occur in Live Chat. When an event is triggered, an HTTP POST request is sent to your configured URL with JSON payload.</p>
+<h6>HTTP Headers</h6>
+<ul>
+<li><code>Content-Type: application/json</code></li>
+<li><code>X-Webhook-Event</code> - Event type (e.g., <code>message.received</code>, <code>conversation.started</code>)</li>
+<li><code>X-Webhook-Timestamp</code> - ISO 8601 timestamp when webhook was sent</li>
+<li><code>X-Webhook-Test: true</code> - Only present for test webhooks</li>
+</ul>
+<h6>Your Endpoint Requirements</h6>
+<ul>
+<li>Must accept HTTP POST requests</li>
+<li>Must respond within 10 seconds (timeout limit)</li>
+<li>Should return HTTP 2xx status code for success</li>
+<li>Must be publicly accessible (HTTPS recommended)</li>
+</ul>
+<h6>Integration Tutorials</h6>
+<ul>
+<li><strong>Slack:</strong> <a href="https://api.slack.com/messaging/webhooks" target="_blank">Incoming Webhooks Guide</a></li>
+<li><strong>Discord:</strong> <a href="https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks" target="_blank">Intro to Webhooks</a></li>
+<li><strong>Telegram:</strong> <a href="https://core.telegram.org/bots/webhooks" target="_blank">Bot Webhooks</a> (use with <a href="https://core.telegram.org/bots/api#sendmessage" target="_blank">sendMessage API</a>)</li>
+<li><strong>n8n:</strong> <a href="https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.webhook/" target="_blank">Webhook Node</a></li>
+<li><strong>Zapier:</strong> <a href="https://zapier.com/apps/webhook/integrations" target="_blank">Webhooks by Zapier</a></li>
+<li><strong>Make (Integromat):</strong> <a href="https://www.make.com/en/help/tools/webhooks" target="_blank">Webhooks Module</a></li>
+</ul>
+<h6>Example Use Cases</h6>
+<ul>
+<li>Send notifications to Slack, Discord, or Telegram</li>
+<li>Create tickets in helpdesk systems (Zendesk, Freshdesk)</li>
+<li>Log conversations to external CRM</li>
+<li>Trigger automated responses via n8n or Zapier</li>
+</ul>',
+    ],
+    'offline' => 'Offline',
+    'days' => [
+        'monday' => 'Mandag',
+        'tuesday' => 'Tirsdag',
+        'wednesday' => 'Onsdag',
+        'thursday' => 'Torsdag',
+        'friday' => 'Fredag',
+        'saturday' => 'Lørdag',
+        'sunday' => 'Søndag',
+    ],
+];

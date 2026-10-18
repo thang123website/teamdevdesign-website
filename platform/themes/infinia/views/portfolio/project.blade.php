@@ -6,9 +6,9 @@
 
 <section class="container section-padding">
     <div class="row">
-        <h5 class="ds-5 mt-3 mb-8">
+        <h1 class="ds-5 mt-3 mb-8">
             {!! BaseHelper::clean($project->name) !!}
-        </h5>
+        </h1>
         <div @class(['col-12', 'col-lg-8' => $projectSidebar])>
             @if($project->image)
                 <div class="mb-9">
@@ -56,6 +56,11 @@
                 </div>
             </div>
             {!! apply_filters(BASE_FILTER_PUBLIC_COMMENT_AREA, null, $project) !!}
+
+            {{-- Minh bạch nguồn gốc (Luật SHTT, Luật Quảng cáo): nhiều mẫu dựa trên theme bản quyền của bên thứ ba. --}}
+            <p class="text-500 fs-7 border-top pt-4 mt-6 mb-0">
+                Lưu ý: Một số dự án/mẫu giao diện được TeamDevDesign triển khai và tùy biến trên nền tảng theme, plugin hoặc mã nguồn có bản quyền của bên thứ ba (ví dụ Botble, ThemeForest, CodeCanyon). Tên và nhãn hiệu thuộc về chủ sở hữu tương ứng. Xem <a href="/dieu-khoan-su-dung">Điều khoản sử dụng</a>.
+            </p>
         </div>
         @if($projectSidebar)
             <div class="col-lg-4 d-flex flex-column gap-5">

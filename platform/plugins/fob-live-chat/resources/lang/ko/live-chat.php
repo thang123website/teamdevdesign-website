@@ -1,0 +1,216 @@
+<?php
+
+return [
+    'title' => '라이브 채팅',
+    'messages' => '메시지',
+    'visitor_name' => '방문자 이름',
+    'visitor_email' => '방문자 이메일',
+    'visitor_phone' => '전화번호',
+    'visitor_info' => '방문자 정보',
+    'ip_address' => 'IP 주소',
+    'current_page' => '현재 페이지',
+    'browser' => '브라우저',
+    'last_message' => '마지막 메시지',
+    'close_conversation' => '닫기',
+    'delete_conversation' => '대화 삭제',
+    'conversation_closed' => '대화가 종료되었습니다.',
+    'conversation_deleted' => '대화가 삭제되었습니다.',
+    'conversation_is_closed' => '이 대화는 종료되었습니다.',
+    'conversation_with' => ':name 님과의 대화',
+    'confirm_close' => '이 대화를 닫으시겠습니까?',
+    'confirm_delete' => '이 대화를 삭제하시겠습니까? 이 작업은 되돌릴 수 없습니다.',
+    'type_reply' => '답변을 입력하세요...',
+    'reply_sent' => '답변이 성공적으로 전송되었습니다.',
+    'no_conversation' => '활성 대화를 찾을 수 없습니다. 새 채팅을 시작해 주세요.',
+    'no_conversations' => '아직 대화가 없습니다',
+    'chat_started' => '채팅이 성공적으로 시작되었습니다.',
+    'message_sent' => '메시지가 전송되었습니다.',
+    'select_conversation' => '대화 선택',
+    'select_conversation_hint' => '채팅을 시작하려면 목록에서 대화를 선택하세요.',
+    'all' => '전체',
+    'timeline' => '타임라인',
+    'total_messages' => '총 메시지',
+    'just_now' => '방금',
+    'test_sound' => '소리 테스트를 위해 클릭',
+    'back_to_list' => '대화 목록으로 돌아가기',
+    'no_messages_yet' => '아직 메시지가 없습니다',
+    'start_conversation_hint' => '대화를 시작하려면 메시지를 보내세요',
+    'notifications_enabled' => '브라우저 알림이 활성화되었습니다!',
+    'enable_notifications' => '브라우저 알림 활성화',
+    'new_conversation' => '새 대화',
+    'new_message' => '새 메시지',
+    'no_conversations_hint' => '방문자가 채팅을 시작하면 여기에 대화가 나타납니다.',
+    'open_chat' => '채팅 열기',
+    'close' => '닫기',
+    'chat_title' => '라이브 채팅',
+    'online' => '온라인',
+    'start_message' => '안녕하세요! 오늘 무엇을 도와드릴까요?',
+    'your_name' => '이름',
+    'your_email' => '귀하의 이메일',
+    'your_email_optional' => '이메일(선택)',
+    'your_phone' => '귀하의 전화',
+    'start_chat' => '채팅 시작',
+    'type_message' => '메시지를 입력하세요...',
+    'send' => '보내기',
+    'default_admin_name' => '지원',
+    'default_welcome_message' => '안녕하세요! 문의해 주셔서 감사합니다. 오늘 무엇을 도와드릴까요?',
+    'conversation_statuses' => [
+        'open' => '열림',
+        'closed' => '닫힘',
+    ],
+    'settings' => [
+        'title' => '라이브 채팅',
+        'description' => '웹사이트에 표시되는 플로팅 라이브 채팅 위젯을 설정하여 실시간 고객 지원을 제공합니다.',
+        'form' => [
+            'enabled' => '라이브 채팅 활성화',
+            'enabled_help' => '웹사이트에서 채팅 위젯을 표시하려면 켜세요. 방문자는 지원 팀과 대화를 시작할 수 있습니다.',
+            'widget_title' => '위젯 제목',
+            'widget_title_help' => '채팅 위젯 헤더 상단에 표시되는 제목입니다.',
+            'widget_title_placeholder' => '라이브 채팅',
+            'welcome_message' => '환영 메시지',
+            'welcome_message_help' => '방문자가 채팅 위젯을 열 때 처음 보는 메시지입니다. 기본 메시지를 사용하려면 비워 두세요.',
+            'welcome_message_placeholder' => '안녕하세요! 문의해 주셔서 감사합니다. 오늘 무엇을 도와드릴까요?',
+            'admin_name' => '관리자 이름',
+            'admin_name_help' => '채팅 위젯에서 관리자 답변에 표시되는 이름입니다.',
+            'admin_name_placeholder' => '지원',
+            'random_admin_names_enabled' => '무작위 관리자 이름 사용',
+            'random_admin_names_enabled_help' => '활성화하면 각 새 대화에 아래 목록에서 무작위 관리자 이름이 할당됩니다.',
+            'random_admin_names' => '무작위 관리자 이름',
+            'random_admin_names_help' => '한 줄에 하나의 이름을 입력하십시오. 각 새 대화에 무작위 이름이 할당됩니다.',
+            'random_admin_names_placeholder' => 'Sarah
+Mike
+Emma
+John',
+            'primary_color' => '기본 색상',
+            'primary_color_help' => '채팅 위젯 버튼과 헤더의 기본 색상입니다. 브랜드와 어울리는 색상을 선택하세요.',
+            'position' => '위젯 위치',
+            'position_help' => '화면에서 채팅 위젯 버튼이 표시되는 위치입니다.',
+            'position_right' => '오른쪽 하단',
+            'position_left' => '왼쪽 하단',
+            'email_required' => '이메일 필수',
+            'email_required_help' => '활성화하면 방문자는 채팅을 시작하기 전에 이메일 주소를 입력해야 합니다. 후속 커뮤니케이션에 유용합니다.',
+            'display_fields' => '필드 표시',
+            'mandatory_fields' => '필수 필드',
+            'poll_interval' => '폴링 간격(ms)',
+            'poll_interval_help' => '새 메시지를 확인하는 빈도(밀리초). 값이 낮을수록 업데이트가 빠르지만 서버 요청이 많아집니다. 권장: 3000-5000ms.',
+            'poll_interval_placeholder' => '3000',
+            'online_status' => '온라인 상태',
+            'working_hours_enabled' => '영업 시간 사용',
+            'working_hours_enabled_help' => '활성화하면 영업 시간 외에는 채팅 상태가 자동으로 오프라인으로 전환됩니다. 영업 시간은 설정 → 일반에 구성된 시간대를 기준으로 합니다.',
+            'working_hours_start' => '시작 시간',
+            'working_hours_end' => '종료 시간',
+            'working_days' => '근무일',
+            'avatar_image' => '아바타 이미지',
+            'avatar_image_help' => '채팅 헤더의 사용자 정의 아바타 이미지. 기본 아이콘을 사용하려면 비워 두세요.',
+            'primary_hover_color' => '호버 색상',
+            'primary_hover_color_help' => '채팅 버튼 위에 마우스를 올렸을 때의 색상.',
+            'position_bottom_right' => '오른쪽 하단',
+            'position_bottom_left' => '왼쪽 하단',
+            'position_center_right' => '오른쪽 중앙',
+            'position_center_left' => '왼쪽 중앙',
+            'offset_x' => '오프셋 X (px)',
+            'offset_x_help' => '화면 가장자리에서의 수평 오프셋(픽셀).',
+            'offset_y' => '오프셋 Y (px)',
+            'offset_y_help' => '화면 가장자리에서의 수직 오프셋(픽셀).',
+            'display_on_mobile' => '모바일 표시',
+            'display_on_mobile_help' => '모바일 장치에서 채팅 위젯 표시 여부를 제어합니다.',
+            'display_on_mobile_always' => '항상 표시',
+            'display_on_mobile_hide' => '모바일에서 숨기기',
+        ],
+    ],
+    'email' => [
+        'title' => '실시간 채팅 이메일',
+        'description' => '실시간 채팅 이벤트에 대한 이메일 알림',
+        'templates' => [
+            'new_conversation_title' => '새 대화 알림',
+            'new_conversation_description' => '방문자가 새 대화를 시작할 때 관리자에게 전송되는 이메일',
+            'new_conversation_subject' => '{{ visitor_name }}의 새 채팅 대화',
+            'visitor_name' => '방문자 이름',
+            'visitor_email' => '방문자 이메일',
+            'visitor_phone' => '방문자 전화',
+            'visitor_ip' => '방문자 IP 주소',
+            'current_page' => '현재 페이지 URL',
+            'conversation_url' => '관리자 패널의 대화 링크',
+        ],
+    ],
+    'email_settings' => [
+        'title' => '이메일 알림',
+        'description' => '새 채팅 대화에 대한 이메일 알림을 구성합니다. 방문자가 새 대화를 시작할 때 하나의 이메일만 전송됩니다.',
+        'enable_email_notification' => '이메일 알림 활성화',
+        'enable_email_notification_help' => '방문자가 새 채팅 대화를 시작할 때 이메일 알림 전송',
+        'notification_emails' => '알림 이메일 주소',
+        'notification_emails_help' => '쉼표로 구분된 이메일 주소 목록. 비워두면 기본 관리자 이메일을 사용합니다.',
+    ],
+    'email_templates' => [
+        'new_conversation_title' => '새 실시간 채팅 대화',
+        'new_conversation_greeting' => '방문자가 웹사이트에서 새 실시간 채팅 대화를 시작했습니다.',
+        'visitor_details' => '방문자 세부 정보',
+        'field_name' => '이름:',
+        'field_email' => '이메일:',
+        'field_phone' => '전화:',
+        'field_ip' => 'IP 주소:',
+        'field_page' => '현재 페이지:',
+        'respond_instruction' => '아래 버튼을 클릭하여 이 대화에 응답하세요.',
+        'view_conversation_button' => '대화 보기',
+    ],
+    'webhook' => [
+        'title' => 'Webhook 설정',
+        'description' => '채팅 이벤트 발생 시 알림을 받을 수 있도록 Webhook을 구성합니다. Webhook은 지정된 URL로 이벤트 데이터가 포함된 HTTP POST 요청을 보냅니다.',
+        'enable_webhooks' => 'Webhook 활성화',
+        'enable_webhooks_help' => '실시간 채팅 이벤트에 대한 Webhook 알림 활성화',
+        'message_received_url' => '메시지 수신 Webhook URL',
+        'message_received_url_help' => '방문자가 채팅에서 새 메시지를 보낼 때 트리거됩니다',
+        'conversation_started_url' => '대화 시작 Webhook URL',
+        'conversation_started_url_help' => '방문자가 새 대화를 시작할 때 트리거됩니다',
+        'view_sample_data' => '샘플 데이터 보기',
+        'test_button' => '테스트 Webhook 전송',
+        'testing' => '전송 중...',
+        'test_success' => 'Webhook이 성공적으로 전송되었습니다!',
+        'test_failed' => 'Webhook 테스트 실패.',
+        'status_code' => '상태 코드',
+        'please_enter_url' => '먼저 Webhook URL을 입력하세요',
+        'error_occurred' => 'Webhook 테스트 중 오류가 발생했습니다',
+        'usage_instructions_title' => 'Webhook 사용 방법',
+        'usage_instructions' => '<p><strong>Webhook</strong>을 사용하면 라이브 채팅에서 이벤트가 발생할 때 실시간 알림을 받을 수 있습니다. 이벤트가 트리거되면 구성된 URL로 JSON 페이로드가 포함된 HTTP POST 요청이 전송됩니다.</p>
+<h6>HTTP 헤더</h6>
+<ul>
+<li><code>Content-Type: application/json</code></li>
+<li><code>X-Webhook-Event</code> - 이벤트 유형 (예: <code>message.received</code>, <code>conversation.started</code>)</li>
+<li><code>X-Webhook-Timestamp</code> - Webhook 전송 시 ISO 8601 타임스탬프</li>
+<li><code>X-Webhook-Test: true</code> - 테스트 Webhook에만 존재</li>
+</ul>
+<h6>엔드포인트 요구 사항</h6>
+<ul>
+<li>HTTP POST 요청을 수락해야 합니다</li>
+<li>10초 이내에 응답해야 합니다 (시간 초과 제한)</li>
+<li>성공 시 HTTP 2xx 상태 코드를 반환해야 합니다</li>
+<li>공개적으로 접근 가능해야 합니다 (HTTPS 권장)</li>
+</ul>
+<h6>통합 튜토리얼</h6>
+<ul>
+<li><strong>Slack:</strong> <a href="https://api.slack.com/messaging/webhooks" target="_blank">Incoming Webhooks 가이드</a></li>
+<li><strong>Discord:</strong> <a href="https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks" target="_blank">Webhooks 소개</a></li>
+<li><strong>Telegram:</strong> <a href="https://core.telegram.org/bots/webhooks" target="_blank">Bot Webhooks</a> (<a href="https://core.telegram.org/bots/api#sendmessage" target="_blank">sendMessage API</a>와 함께 사용)</li>
+<li><strong>n8n:</strong> <a href="https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.webhook/" target="_blank">Webhook Node</a></li>
+<li><strong>Zapier:</strong> <a href="https://zapier.com/apps/webhook/integrations" target="_blank">Webhooks by Zapier</a></li>
+<li><strong>Make (Integromat):</strong> <a href="https://www.make.com/en/help/tools/webhooks" target="_blank">Webhooks 모듈</a></li>
+</ul>
+<h6>사용 사례</h6>
+<ul>
+<li>Slack, Discord 또는 Telegram으로 알림 전송</li>
+<li>헬프데스크 시스템(Zendesk, Freshdesk)에서 티켓 생성</li>
+<li>외부 CRM에 대화 기록</li>
+<li>n8n 또는 Zapier를 통한 자동 응답 트리거</li>
+</ul>',
+    ],
+    'offline' => 'Offline',
+    'days' => [
+        'monday' => '월요일',
+        'tuesday' => '화요일',
+        'wednesday' => '수요일',
+        'thursday' => '목요일',
+        'friday' => '금요일',
+        'saturday' => '토요일',
+        'sunday' => '일요일',
+    ],
+];

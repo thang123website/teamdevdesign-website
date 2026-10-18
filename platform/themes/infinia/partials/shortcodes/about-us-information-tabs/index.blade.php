@@ -4,7 +4,7 @@
             <div class="row">
                 @if ($title = $shortcode->title)
                     <div class="col-lg-6">
-                        <h5 class="fw-regular ds-5">{!! BaseHelper::clean($title) !!}</h5>
+                        <{{ $titleTag = infinia_title_tag($shortcode, 'h5') }} class="fw-regular ds-5">{!! infinia_clean_title($title) !!}</{{ $titleTag }}>
                     </div>
                 @endif
 
@@ -12,7 +12,7 @@
                     <div class="col-lg-6 text-lg-start text-center">
                         <div class="position-relative z-1 d-inline-block mb-lg-0 mb-8">
                             @if ($image = $shortcode->image)
-                                {{ RvMedia::image($image, __('Image'), attributes: ['class' => 'rounded-4 position-relative z-1']) }}
+                                {{ RvMedia::image($image, infinia_image_alt($shortcode), attributes: ['class' => 'rounded-4 position-relative z-1']) }}
                             @endif
 
                             @if ($counters)
@@ -76,7 +76,7 @@
                                                         @foreach($features as $feature)
                                                             @continue(! $feature)
                                                             <li class="d-flex align-items-center mt-3">
-                                                                <img src="{{ Theme::asset()->url('images/icons/check.png') }}" alt="check">
+                                                                <img src="{{ Theme::asset()->url('images/icons/check.png') }}" alt="" aria-hidden="true">
                                                                 <p class="ms-2 mb-0 text-900 fs-6">{!! BaseHelper::clean($feature) !!}</p>
                                                             </li>
                                                         @endforeach
@@ -85,7 +85,7 @@
                                             </div>
                                             <div class="col-12 col-md-6 position-relative text-center">
                                                 @if($image = Arr::get($tab, 'image'))
-                                                    {{ RvMedia::image($image, __('Image'), attributes: ['class' => 'rounded-3']) }}
+                                                    {{ RvMedia::image($image, infinia_image_alt($shortcode), attributes: ['class' => 'rounded-3']) }}
                                                 @endif
 
                                                 @php
@@ -138,7 +138,7 @@
                 </div>
             </div>
             <div class="position-absolute top-0 end-0 z-1 flickering p-10 m-10 d-none d-lg-block">
-                <img src="{{ Theme::asset()->url('images/shapes/shine-effect.png') }}" alt="shine effect">
+                <img src="{{ Theme::asset()->url('images/shapes/shine-effect.png') }}" alt="" aria-hidden="true">
             </div>
         </div>
     </div>

@@ -3,13 +3,13 @@
         <div class="text-center">
             @if ($subtitle = $shortcode->subtitle)
                 <div class="d-flex align-items-center justify-content-center bg-primary-soft border border-2 border-white d-inline-flex rounded-pill px-4 py-2" data-aos="zoom-in" data-aos-delay="50">
-                    <img src="{{ Theme::asset()->url('images/icons/dots.png') }}" alt="dots">
+                    <img src="{{ Theme::asset()->url('images/icons/dots.png') }}" alt="" aria-hidden="true">
                     <span class="tag-spacing fs-7 fw-bold text-linear-2 ms-2 text-primary">{!! BaseHelper::clean($subtitle) !!}</span>
                 </div>
             @endif
 
             @if ($title = $shortcode->title)
-                <h5 class="ds-5 my-3 fw-regular">{!! BaseHelper::clean($title) !!}</h5>
+                <{{ $titleTag = infinia_title_tag($shortcode, 'h5') }} class="ds-5 my-3 fw-regular">{!! infinia_clean_title($title) !!}</{{ $titleTag }}>
             @endif
         </div>
         <div class="row mt-8">
@@ -17,7 +17,7 @@
                 <div class="position-relative">
                     <div class="zoom-img rounded-4 border-5 border-white border position-relative z-2">
                         @if ($image = $shortcode->image)
-                            {{ RvMedia::image($image, __('Image'), attributes: ['class' => 'rounded-3']) }}
+                            {{ RvMedia::image($image, infinia_image_alt($shortcode), attributes: ['class' => 'rounded-3']) }}
 
                         @endif
 
@@ -38,10 +38,10 @@
                             @endif
                     </div>
                     <div class="position-absolute top-100 start-0 translate-middle z-1">
-                        <img class="alltuchtopdown" src="{{ Theme::asset()->url('images/shapes/vector-2.png') }}" alt="vector">
+                        <img class="alltuchtopdown" src="{{ Theme::asset()->url('images/shapes/vector-2.png') }}" alt="" aria-hidden="true">
                     </div>
                     <div class="vector-2 position-absolute z-2">
-                        <img class="alltuchtopdown" src="{{ Theme::asset()->url('images/shapes/vector.png') }}" alt="vector">
+                        <img class="alltuchtopdown" src="{{ Theme::asset()->url('images/shapes/vector.png') }}" alt="" aria-hidden="true">
                     </div>
                 </div>
             </div>

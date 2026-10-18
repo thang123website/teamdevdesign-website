@@ -1,0 +1,216 @@
+<?php
+
+return [
+    'title' => 'Czat na żywo',
+    'messages' => 'Wiadomości',
+    'visitor_name' => 'Imię odwiedzającego',
+    'visitor_email' => 'E-mail odwiedzającego',
+    'visitor_phone' => 'Telefon',
+    'visitor_info' => 'Informacje o odwiedzającym',
+    'ip_address' => 'Adres IP',
+    'current_page' => 'Bieżąca strona',
+    'browser' => 'Przeglądarka',
+    'last_message' => 'Ostatnia wiadomość',
+    'close_conversation' => 'Zamknij',
+    'delete_conversation' => 'Usuń rozmowę',
+    'conversation_closed' => 'Rozmowa została zamknięta.',
+    'conversation_deleted' => 'Rozmowa została usunięta.',
+    'conversation_is_closed' => 'Ta rozmowa jest zamknięta.',
+    'conversation_with' => 'Rozmowa z :name',
+    'confirm_close' => 'Czy na pewno chcesz zamknąć tę rozmowę?',
+    'confirm_delete' => 'Czy na pewno chcesz usunąć tę rozmowę? Tej akcji nie można cofnąć.',
+    'type_reply' => 'Wpisz swoją odpowiedź...',
+    'reply_sent' => 'Odpowiedź została wysłana.',
+    'no_conversation' => 'Nie znaleziono aktywnej rozmowy. Proszę rozpocząć nowy czat.',
+    'no_conversations' => 'Brak rozmów',
+    'chat_started' => 'Czat rozpoczęty pomyślnie.',
+    'message_sent' => 'Wiadomość wysłana.',
+    'select_conversation' => 'Wybierz rozmowę',
+    'select_conversation_hint' => 'Wybierz rozmowę z listy, aby rozpocząć czat.',
+    'all' => 'Wszystkie',
+    'timeline' => 'Oś czasu',
+    'total_messages' => 'Łączna liczba wiadomości',
+    'just_now' => 'Przed chwilą',
+    'test_sound' => 'Kliknij, aby przetestować dźwięk',
+    'back_to_list' => 'Powrót do rozmów',
+    'no_messages_yet' => 'Brak wiadomości',
+    'start_conversation_hint' => 'Wyślij wiadomość, aby rozpocząć rozmowę',
+    'notifications_enabled' => 'Powiadomienia przeglądarki włączone!',
+    'enable_notifications' => 'Włącz powiadomienia przeglądarki',
+    'new_conversation' => 'Nowa rozmowa',
+    'new_message' => 'Nowa wiadomość',
+    'no_conversations_hint' => 'Rozmowy pojawią się tutaj, gdy odwiedzający zaczną rozmawiać.',
+    'open_chat' => 'Otwórz czat',
+    'close' => 'Zamknij',
+    'chat_title' => 'Czat na żywo',
+    'online' => 'Dostępny',
+    'start_message' => 'Cześć! Jak możemy Ci dzisiaj pomóc?',
+    'your_name' => 'Twoje imię',
+    'your_email' => 'Twój e-mail',
+    'your_email_optional' => 'Twój e-mail (opcjonalnie)',
+    'your_phone' => 'Twój telefon',
+    'start_chat' => 'Rozpocznij czat',
+    'type_message' => 'Wpisz wiadomość...',
+    'send' => 'Wyślij',
+    'default_admin_name' => 'Wsparcie',
+    'default_welcome_message' => 'Cześć! Dziękujemy za kontakt. Jak mogę Ci dziś pomóc?',
+    'conversation_statuses' => [
+        'open' => 'Otwarte',
+        'closed' => 'Zamknięte',
+    ],
+    'settings' => [
+        'title' => 'Czat na żywo',
+        'description' => 'Skonfiguruj pływający widget czatu na żywo, który pojawia się na Twojej stronie, aby zapewnić wsparcie klienta w czasie rzeczywistym.',
+        'form' => [
+            'enabled' => 'Włącz czat na żywo',
+            'enabled_help' => 'Włącz, aby wyświetlać widget czatu na Twojej stronie. Odwiedzający mogą rozpocząć rozmowy z zespołem wsparcia.',
+            'widget_title' => 'Tytuł widgetu',
+            'widget_title_help' => 'Tytuł wyświetlany na górze nagłówka widgetu czatu.',
+            'widget_title_placeholder' => 'Czat na żywo',
+            'welcome_message' => 'Wiadomość powitalna',
+            'welcome_message_help' => 'Pierwsza wiadomość, którą odwiedzający widzą po otwarciu widgetu czatu. Pozostaw puste, aby użyć domyślnej wiadomości.',
+            'welcome_message_placeholder' => 'Cześć! Dziękujemy za kontakt. Jak mogę Ci dziś pomóc?',
+            'admin_name' => 'Nazwa administratora',
+            'admin_name_help' => 'Nazwa wyświetlana dla odpowiedzi administratora w widgecie czatu.',
+            'admin_name_placeholder' => 'Wsparcie',
+            'random_admin_names_enabled' => 'Użyj losowych imion administratorów',
+            'random_admin_names_enabled_help' => 'Po włączeniu każda nowa rozmowa otrzyma losowe imię administratora z poniższej listy.',
+            'random_admin_names' => 'Losowe imiona administratorów',
+            'random_admin_names_help' => 'Wpisz jedno imię w wierszu. Losowe imię zostanie przypisane do każdej nowej rozmowy.',
+            'random_admin_names_placeholder' => 'Sarah
+Mike
+Emma
+John',
+            'primary_color' => 'Kolor główny',
+            'primary_color_help' => 'Główny kolor przycisku i nagłówka widgetu czatu. Wybierz kolor pasujący do Twojej marki.',
+            'position' => 'Pozycja widgetu',
+            'position_help' => 'Miejsce, w którym pojawia się przycisk widgetu czatu na ekranie.',
+            'position_right' => 'Prawy dolny róg',
+            'position_left' => 'Lewy dolny róg',
+            'email_required' => 'Wymagaj e-maila',
+            'email_required_help' => 'Po włączeniu odwiedzający muszą podać swój adres e-mail przed rozpoczęciem czatu. Przydatne do dalszej komunikacji.',
+            'display_fields' => 'Wyświetlane pola',
+            'mandatory_fields' => 'Pola obowiązkowe',
+            'poll_interval' => 'Interwał odpytywania (ms)',
+            'poll_interval_help' => 'Jak często sprawdzać nowe wiadomości w milisekundach. Niższe wartości oznaczają szybsze aktualizacje, ale więcej zapytań do serwera. Zalecane: 3000-5000ms.',
+            'poll_interval_placeholder' => '3000',
+            'online_status' => 'Status online',
+            'working_hours_enabled' => 'Włącz godziny pracy',
+            'working_hours_enabled_help' => 'Po włączeniu status czatu automatycznie przełączy się na offline poza godzinami pracy. Godziny pracy opierają się na strefie czasowej skonfigurowanej w Ustawienia → Ogólne.',
+            'working_hours_start' => 'Godzina rozpoczęcia',
+            'working_hours_end' => 'Godzina zakończenia',
+            'working_days' => 'Dni robocze',
+            'avatar_image' => 'Obraz awatara',
+            'avatar_image_help' => 'Niestandardowy obraz awatara dla nagłówka czatu. Pozostaw puste, aby użyć domyślnej ikony.',
+            'primary_hover_color' => 'Kolor po najechaniu',
+            'primary_hover_color_help' => 'Kolor po najechaniu kursorem na przycisk czatu.',
+            'position_bottom_right' => 'Prawy dolny',
+            'position_bottom_left' => 'Lewy dolny',
+            'position_center_right' => 'Środkowy prawy',
+            'position_center_left' => 'Środkowy lewy',
+            'offset_x' => 'Przesunięcie X (px)',
+            'offset_x_help' => 'Poziome przesunięcie od krawędzi ekranu w pikselach.',
+            'offset_y' => 'Przesunięcie Y (px)',
+            'offset_y_help' => 'Pionowe przesunięcie od krawędzi ekranu w pikselach.',
+            'display_on_mobile' => 'Pokaż na urządzeniach mobilnych',
+            'display_on_mobile_help' => 'Kontroluj, czy widżet czatu jest wyświetlany na urządzeniach mobilnych.',
+            'display_on_mobile_always' => 'Zawsze pokazuj',
+            'display_on_mobile_hide' => 'Ukryj na urządzeniach mobilnych',
+        ],
+    ],
+    'email' => [
+        'title' => 'Live Chat Email',
+        'description' => 'Email notifications for live chat events',
+        'templates' => [
+            'new_conversation_title' => 'New Conversation Notification',
+            'new_conversation_description' => 'Email sent to admin when a visitor starts a new conversation',
+            'new_conversation_subject' => 'New Live Chat Conversation from {{ visitor_name }}',
+            'visitor_name' => 'Visitor name',
+            'visitor_email' => 'Visitor email',
+            'visitor_phone' => 'Visitor phone',
+            'visitor_ip' => 'Visitor IP address',
+            'current_page' => 'Current page URL',
+            'conversation_url' => 'Link to conversation in admin panel',
+        ],
+    ],
+    'email_settings' => [
+        'title' => 'Email Notifications',
+        'description' => 'Configure email notifications for new chat conversations. Only one email is sent when a visitor starts a new conversation.',
+        'enable_email_notification' => 'Enable Email Notifications',
+        'enable_email_notification_help' => 'Send an email notification when a visitor starts a new chat conversation',
+        'notification_emails' => 'Notification Email Addresses',
+        'notification_emails_help' => 'Comma-separated list of email addresses to receive notifications. Leave empty to use the default admin email.',
+    ],
+    'email_templates' => [
+        'new_conversation_title' => 'New Live Chat Conversation',
+        'new_conversation_greeting' => 'A visitor has started a new live chat conversation on your website.',
+        'visitor_details' => 'Visitor Details',
+        'field_name' => 'Name:',
+        'field_email' => 'Email:',
+        'field_phone' => 'Phone:',
+        'field_ip' => 'IP Address:',
+        'field_page' => 'Current Page:',
+        'respond_instruction' => 'Click the button below to respond to this conversation.',
+        'view_conversation_button' => 'View Conversation',
+    ],
+    'webhook' => [
+        'title' => 'Ustawienia Webhook',
+        'description' => 'Skonfiguruj webhooki, aby otrzymywać powiadomienia o zdarzeniach czatu. Webhooki wysyłają żądania HTTP POST na określone adresy URL z danymi zdarzenia.',
+        'enable_webhooks' => 'Włącz Webhooki',
+        'enable_webhooks_help' => 'Włącz wysyłanie powiadomień webhook dla zdarzeń czatu na żywo',
+        'message_received_url' => 'URL Webhook otrzymania wiadomości',
+        'message_received_url_help' => 'Wyzwalany, gdy odwiedzający wysyła nową wiadomość na czacie',
+        'conversation_started_url' => 'URL Webhook rozpoczęcia rozmowy',
+        'conversation_started_url_help' => 'Wyzwalany, gdy odwiedzający rozpoczyna nową rozmowę',
+        'view_sample_data' => 'Zobacz przykładowe dane',
+        'test_button' => 'Wyślij testowy Webhook',
+        'testing' => 'Wysyłanie...',
+        'test_success' => 'Webhook wysłany pomyślnie!',
+        'test_failed' => 'Test webhooka nie powiódł się.',
+        'status_code' => 'Kod statusu',
+        'please_enter_url' => 'Najpierw wprowadź adres URL webhooka',
+        'error_occurred' => 'Wystąpił błąd podczas testowania webhooka',
+        'usage_instructions_title' => 'Jak używać Webhooków',
+        'usage_instructions' => '<p><strong>Webhooki</strong> pozwalają otrzymywać powiadomienia w czasie rzeczywistym o zdarzeniach w czacie na żywo. Gdy zdarzenie zostanie wyzwolone, żądanie HTTP POST jest wysyłane na skonfigurowany URL z danymi JSON.</p>
+<h6>Nagłówki HTTP</h6>
+<ul>
+<li><code>Content-Type: application/json</code></li>
+<li><code>X-Webhook-Event</code> - Typ zdarzenia (np. <code>message.received</code>, <code>conversation.started</code>)</li>
+<li><code>X-Webhook-Timestamp</code> - Znacznik czasu ISO 8601 przy wysyłaniu webhooka</li>
+<li><code>X-Webhook-Test: true</code> - Obecny tylko dla testowych webhooków</li>
+</ul>
+<h6>Wymagania endpoint</h6>
+<ul>
+<li>Musi akceptować żądania HTTP POST</li>
+<li>Musi odpowiedzieć w ciągu 10 sekund (limit timeout)</li>
+<li>Powinien zwrócić kod statusu HTTP 2xx przy sukcesie</li>
+<li>Musi być publicznie dostępny (zalecane HTTPS)</li>
+</ul>
+<h6>Poradniki integracji</h6>
+<ul>
+<li><strong>Slack:</strong> <a href="https://api.slack.com/messaging/webhooks" target="_blank">Przewodnik Incoming Webhooks</a></li>
+<li><strong>Discord:</strong> <a href="https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks" target="_blank">Wprowadzenie do Webhooków</a></li>
+<li><strong>Telegram:</strong> <a href="https://core.telegram.org/bots/webhooks" target="_blank">Bot Webhooks</a> (użyj z <a href="https://core.telegram.org/bots/api#sendmessage" target="_blank">sendMessage API</a>)</li>
+<li><strong>n8n:</strong> <a href="https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.webhook/" target="_blank">Webhook Node</a></li>
+<li><strong>Zapier:</strong> <a href="https://zapier.com/apps/webhook/integrations" target="_blank">Webhooks by Zapier</a></li>
+<li><strong>Make (Integromat):</strong> <a href="https://www.make.com/en/help/tools/webhooks" target="_blank">Moduł Webhooks</a></li>
+</ul>
+<h6>Przykłady użycia</h6>
+<ul>
+<li>Wysyłanie powiadomień do Slack, Discord lub Telegram</li>
+<li>Tworzenie zgłoszeń w systemach helpdesk (Zendesk, Freshdesk)</li>
+<li>Logowanie rozmów do zewnętrznego CRM</li>
+<li>Wyzwalanie automatycznych odpowiedzi przez n8n lub Zapier</li>
+</ul>',
+    ],
+    'offline' => 'Offline',
+    'days' => [
+        'monday' => 'Poniedziałek',
+        'tuesday' => 'Wtorek',
+        'wednesday' => 'Środa',
+        'thursday' => 'Czwartek',
+        'friday' => 'Piątek',
+        'saturday' => 'Sobota',
+        'sunday' => 'Niedziela',
+    ],
+];

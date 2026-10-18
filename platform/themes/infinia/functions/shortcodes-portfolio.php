@@ -290,7 +290,7 @@ app()->booted(function (): void {
                     ->numberItemsPerRow(1)
                     ->withoutAspectRatio()
                     ->choices(
-                        collect(range(1, 3))->mapWithKeys(function ($i) {
+                        collect(range(1, 4))->mapWithKeys(function ($i) {
                             return [
                                 $i => [
                                     'label' => __('Style :i', ['i' => $i]),

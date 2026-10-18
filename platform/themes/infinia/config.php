@@ -41,10 +41,8 @@ return [
             $theme->asset()->container('footer')->usePath()->add('bootstrap', 'js/vendors/bootstrap.bundle.min.js');
             $theme->asset()->container('footer')->usePath()->add('swiper-bundle', 'js/vendors/swiper-bundle.min.js');
             $theme->asset()->container('footer')->usePath()->add('slick-js', 'js/vendors/slick.min.js');
-            $theme->asset()->container('footer')->usePath()->add('headhesive', 'js/vendors/headhesive.min.js');
             $theme->asset()->container('footer')->usePath()->add('jquery.maginific-popup', 'js/vendors/jquery.magnific-popup.min.js');
             $theme->asset()->container('footer')->usePath()->add('imagesloaded', 'js/vendors/imagesloaded.pkgd.min.js');
-            $theme->asset()->container('footer')->usePath()->add('ScrollToPlugin', 'js/vendors/ScrollToPlugin.min.js');
             $theme->asset()->container('footer')->usePath()->add('jquery.appear', 'js/vendors/jquery.appear.js');
             $theme->asset()->container('footer')->usePath()->add('jquery.odometer', 'js/vendors/jquery.odometer.min.js');
 
@@ -55,11 +53,11 @@ return [
 
             if (theme_option('animation_enabled', true) && ! BaseHelper::isRtlEnabled()) {
                 $theme->asset()->usePath()->add('aos', 'css/vendors/aos.css');
-                $theme->asset()->container('footer')->usePath()->add('ScrollTrigger', 'js/vendors/ScrollTrigger.min.js');
+                // Hiệu năng: nạp gsap trước ScrollTrigger; bỏ wow.js (chỉ dùng ở 2 chỗ phụ, main.js đã kiểm tra typeof WOW).
                 $theme->asset()->container('footer')->usePath()->add('aos', 'js/vendors/aos.js');
                 $theme->asset()->container('footer')->usePath()->add('gsap', 'js/vendors/gsap.min.js');
+                $theme->asset()->container('footer')->usePath()->add('ScrollTrigger', 'js/vendors/ScrollTrigger.min.js');
                 $theme->asset()->container('footer')->usePath()->add('gsap-custom', 'js/vendors/gsap-custom.js');
-                $theme->asset()->container('footer')->usePath()->add('wow', 'js/vendors/wow.min.js');
             }
 
             if (function_exists('shortcode')) {

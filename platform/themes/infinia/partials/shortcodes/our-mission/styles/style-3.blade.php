@@ -4,7 +4,7 @@
             <div class="col-lg-6 text-center text-lg-start">
                 <div class="position-relative d-inline-block">
                     @if ($image = $shortcode->image)
-                        {{ RvMedia::image($image, __('Image'), attributes: ['class' => 'rounded-5 border border-5 border-white']) }}
+                        {{ RvMedia::image($image, infinia_image_alt($shortcode), attributes: ['class' => 'rounded-5 border border-5 border-white']) }}
                     @endif
 
 
@@ -51,7 +51,7 @@
             <div class="col-lg-6">
                 <div class="position-relative align-self-end mt-10">
                     @if ($title = $shortcode->title)
-                        <h3 class="ds-3 fw-regular">{!! BaseHelper::clean($title) !!}</h3>
+                        <{{ $titleTag = infinia_title_tag($shortcode, 'h3') }} class="ds-3 fw-regular">{!! infinia_clean_title($title) !!}</{{ $titleTag }}>
                     @endif
 
                     @if ($description = $shortcode->description)
@@ -129,7 +129,7 @@
                         @endif
                     </div>
                     <div class="position-absolute top-0 end-0 z-1 flickering pt-9 pe-4">
-                        <img src="{{ Theme::asset()->url('images/shapes/shine-effect.png') }}" alt="shine effect" />
+                        <img src="{{ Theme::asset()->url('images/shapes/shine-effect.png') }}" alt="" aria-hidden="true" />
                     </div>
                 </div>
             </div>

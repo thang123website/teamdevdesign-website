@@ -1,0 +1,42 @@
+{
+  "id": 6,
+  "slug": "dich-vu-hosting-ten-mien",
+  "name": "Dịch vụ Hosting & Tên miền",
+  "category": "Dịch vụ Bảo trì & Nâng cấp Website",
+  "category_id": 4,
+  "description": "Cung cấp hosting tốc độ cao, bảo mật tốt, kèm đăng ký và quản lý tên miền trọn gói.",
+  "image": "services/service_6_featured.jpg",
+  "images": [],
+  "is_featured": true,
+  "order": 0,
+  "status": "published",
+  "seo": {
+    "seo_title": "Đăng Ký Tên Miền & Cloud VPS Hosting Tốc Độ Cao | TeamDevDesign",
+    "seo_description": "Cung cấp giải pháp lưu trữ website Cloud VPS/Hosting siêu tốc với ổ cứng NVMe, bảo mật chống DDoS, tặng kèm SSL miễn phí. Hỗ trợ cấu hình chuyên sâu 24/7.",
+    "seo_image": "services/service_6_featured.jpg",
+    "index": "index"
+  },
+  "meta": {
+    "icon_image": "icons/icon-11.png"
+  },
+  "faqs": [
+    {
+      "category_id": 10,
+      "category": "FAQ - Hosting Tên Miền",
+      "items": [
+        {
+          "question": "Nên chọn Hosting tại Việt Nam hay Nước ngoài?",
+          "answer": "Nếu khách hàng truy cập chủ yếu ở Việt Nam, bạn nên chọn Hosting/VPS đặt tại datacenter Việt Nam (FPT, Viettel, VNPT) để có tốc độ nhanh nhất, không bị ảnh hưởng khi đứt cáp quang biển."
+        },
+        {
+          "question": "Tôi có thể dùng Hosting của nhà cung cấp khác không?",
+          "answer": "Hoàn toàn được. Chúng tôi hỗ trợ cài đặt mã nguồn website lên bất kỳ Hosting/VPS nào mà khách hàng cung cấp, miễn là nó đáp ứng đủ yêu cầu kỹ thuật của mã nguồn."
+        },
+        {
+          "question": "TeamDevDesign có cung cấp VPS quản trị không?",
+          "answer": "Có. Chúng tôi cung cấp dịch vụ Cloud VPS tốc độ cao, được cài đặt và tối ưu sẵn Control Panel (như aaPanel), tự động gia hạn SSL và cấu hình bảo mật chuyên sâu."
+        }
+      ]
+    }
+  ]
+}

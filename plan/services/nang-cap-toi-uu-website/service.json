@@ -1,0 +1,42 @@
+{
+  "id": 5,
+  "slug": "nang-cap-toi-uu-website",
+  "name": "Nâng cấp & Tối ưu Website",
+  "category": "Dịch vụ Bảo trì & Nâng cấp Website",
+  "category_id": 4,
+  "description": "Cải tiến giao diện, thêm tính năng mới, tối ưu hiệu suất và trải nghiệm người dùng.",
+  "image": "services/service_5_featured.jpg",
+  "images": [],
+  "is_featured": true,
+  "order": 0,
+  "status": "published",
+  "seo": {
+    "seo_title": "Nâng Cấp & Tối Ưu Tốc Độ Website (PageSpeed) | TeamDevDesign",
+    "seo_description": "Dịch vụ tối ưu tốc độ website đạt 90+ điểm Google PageSpeed, nâng cấp giao diện chuẩn Mobile-first, chuyển đổi nền tảng an toàn không rớt Top SEO.",
+    "seo_image": "services/service_5_featured.jpg",
+    "index": "index"
+  },
+  "meta": {
+    "icon_image": "icons/icon-10.png"
+  },
+  "faqs": [
+    {
+      "category_id": 9,
+      "category": "FAQ - Nâng Cấp Tối Ưu",
+      "items": [
+        {
+          "question": "Khi nào tôi cần nâng cấp lại website?",
+          "answer": "Khi website tải chậm (trên 3s), không hiển thị tốt trên điện thoại di động, giao diện quá cũ kỹ so với đối thủ, hoặc hệ thống thường xuyên bị lỗi khi có nhiều người truy cập."
+        },
+        {
+          "question": "Nâng cấp website có bị mất dữ liệu cũ không?",
+          "answer": "Tuyệt đối không. Quy trình nâng cấp của chúng tôi luôn bắt đầu bằng việc sao lưu (backup) toàn bộ cơ sở dữ liệu. URL cũ sẽ được giữ nguyên hoặc chuyển hướng (301 Redirect) để bảo vệ thứ hạng SEO."
+        },
+        {
+          "question": "Có thể tối ưu tốc độ website WordPress hiện tại không?",
+          "answer": "Có. Chúng tôi cung cấp dịch vụ tối ưu PageSpeed Insight (Google), bao gồm tối ưu mã nguồn, cài đặt hệ thống Cache (Redis/Memcached), và cấu hình CDN để tăng tốc độ tải trang."
+        }
+      ]
+    }
+  ]
+}

@@ -3,7 +3,7 @@
 @endphp
 
 <div class="card border-0 rounded-3 mt-8 position-relative d-inline-flex" data-aos="fade-zoom-in" data-aos-delay="{{ $loop->iteration }}00">
-    {{ RvMedia::image($post->image, $post->name, 'horizontal_thumb', attributes: ['class' => 'rounded-3']) }}
+    {{ RvMedia::image($post->image, $post->name, 'horizontal_thumb', attributes: ['class' => 'rounded-3 w-100 object-fit-cover']) }}
     <div @class([$cardWrapperClass])>
         @if($post->firstCategory)
             <a href="{{ $post->firstCategory->url }}" class="bg-primary-soft position-relative z-1 d-inline-flex rounded-pill px-3 py-2 mt-3">
