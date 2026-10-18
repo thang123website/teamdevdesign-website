@@ -51,7 +51,7 @@
                                             @endif
 
                                             @if ($title = $slider->title)
-                                                <{{ $titleTag = infinia_title_tag($shortcode, 'h3') }} class="ds-3 my-3">{!! infinia_clean_title($title) !!}</{{ $titleTag }}>
+                                                <{{ $titleTag = infinia_title_tag($shortcode, 'h2') }} class="ds-3 my-3">{!! infinia_clean_title($title) !!}</{{ $titleTag }}>
                                             @endif
 
                                             @if ($description = $slider->description)

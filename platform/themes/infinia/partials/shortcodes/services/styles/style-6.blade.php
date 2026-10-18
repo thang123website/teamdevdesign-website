@@ -29,7 +29,7 @@
                                         @endif
                                     </div>
                                 </div>
-                                <h5 class="my-3 truncate-1-custom" title="{{ $service->name }}">{{ $service->name }}</h5>
+                                <h2 class="h5 my-3 truncate-1-custom" title="{{ $service->name }}">{{ $service->name }}</h2>
                                 @if ($serviceDescription = $service->description)
                                     <p class="mb-6 truncate-3-custom">{!! BaseHelper::clean($serviceDescription) !!}</p>
                                 @endif

@@ -20,7 +20,10 @@
                     // Có thể ép bằng Theme::set('pageHeadingTag', 'h1'|'h2'|'div').
                     $pageHeadingTag = Theme::get('pageHeadingTag');
                     if (! in_array($pageHeadingTag, ['h1', 'h2', 'div'], true)) {
-                        $pageHeadingTag = stripos((string) Theme::content(), '<h1') === false ? 'h1' : 'div';
+                        // Một số trang (404, trang extend thẳng layout) không có vùng "content" => Theme::content() lỗi.
+                        // Khi đó trang tự có H1 riêng (vd 404) => breadcrumb dùng div.
+                        $renderedContent = rescue(fn () => (string) Theme::content(), null, false);
+                        $pageHeadingTag = $renderedContent !== null && stripos($renderedContent, '<h1') === false ? 'h1' : 'div';
                     }
                     $pageHeadingText = Theme::get('pageHeadingText') ?: SeoHelper::getTitleOnly();
                 @endphp

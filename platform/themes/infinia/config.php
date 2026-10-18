@@ -53,11 +53,8 @@ return [
 
             if (theme_option('animation_enabled', true) && ! BaseHelper::isRtlEnabled()) {
                 $theme->asset()->usePath()->add('aos', 'css/vendors/aos.css');
-                // Hiệu năng: nạp gsap trước ScrollTrigger; bỏ wow.js (chỉ dùng ở 2 chỗ phụ, main.js đã kiểm tra typeof WOW).
+                // Hiệu năng: bỏ gsap/ScrollTrigger/gsap-custom (không template nào dùng class hiệu ứng của chúng) và wow.js.
                 $theme->asset()->container('footer')->usePath()->add('aos', 'js/vendors/aos.js');
-                $theme->asset()->container('footer')->usePath()->add('gsap', 'js/vendors/gsap.min.js');
-                $theme->asset()->container('footer')->usePath()->add('ScrollTrigger', 'js/vendors/ScrollTrigger.min.js');
-                $theme->asset()->container('footer')->usePath()->add('gsap-custom', 'js/vendors/gsap-custom.js');
             }
 
             if (function_exists('shortcode')) {
