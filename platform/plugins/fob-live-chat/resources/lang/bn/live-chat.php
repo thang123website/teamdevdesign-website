@@ -1,0 +1,216 @@
+<?php
+
+return [
+    'title' => 'লাইভ চ্যাট',
+    'messages' => 'বার্তাসমূহ',
+    'visitor_name' => 'দর্শকের নাম',
+    'visitor_email' => 'দর্শকের ইমেইল',
+    'visitor_phone' => 'ফোন',
+    'visitor_info' => 'দর্শকের তথ্য',
+    'ip_address' => 'IP ঠিকানা',
+    'current_page' => 'বর্তমান পৃষ্ঠা',
+    'browser' => 'ব্রাউজার',
+    'last_message' => 'শেষ বার্তা',
+    'close_conversation' => 'বন্ধ করুন',
+    'delete_conversation' => 'কথোপকথন মুছুন',
+    'conversation_closed' => 'কথোপকথন বন্ধ করা হয়েছে।',
+    'conversation_deleted' => 'কথোপকথন মুছে ফেলা হয়েছে।',
+    'conversation_is_closed' => 'এই কথোপকথন বন্ধ রয়েছে।',
+    'conversation_with' => ':name-এর সাথে কথোপকথন',
+    'confirm_close' => 'আপনি কি নিশ্চিত যে আপনি এই কথোপকথন বন্ধ করতে চান?',
+    'confirm_delete' => 'আপনি কি নিশ্চিত যে আপনি এই কথোপকথন মুছতে চান? এই কাজটি পূর্বাবস্থায় ফেরানো যাবে না।',
+    'type_reply' => 'আপনার উত্তর লিখুন...',
+    'reply_sent' => 'উত্তর সফলভাবে পাঠানো হয়েছে।',
+    'no_conversation' => 'কোনো সক্রিয় কথোপকথন পাওয়া যায়নি। অনুগ্রহ করে নতুন চ্যাট শুরু করুন।',
+    'no_conversations' => 'এখনও কোনো কথোপকথন নেই',
+    'chat_started' => 'চ্যাট সফলভাবে শুরু হয়েছে।',
+    'message_sent' => 'বার্তা পাঠানো হয়েছে।',
+    'select_conversation' => 'একটি কথোপকথন নির্বাচন করুন',
+    'select_conversation_hint' => 'চ্যাট শুরু করতে তালিকা থেকে একটি কথোপকথন বেছে নিন।',
+    'all' => 'সব',
+    'timeline' => 'টাইমলাইন',
+    'total_messages' => 'মোট বার্তা',
+    'just_now' => 'এইমাত্র',
+    'test_sound' => 'সাউন্ড পরীক্ষা করতে ক্লিক করুন',
+    'back_to_list' => 'কথোপকথনে ফিরে যান',
+    'no_messages_yet' => 'এখনো কোনো বার্তা নেই',
+    'start_conversation_hint' => 'কথোপকথন শুরু করতে একটি বার্তা পাঠান',
+    'notifications_enabled' => 'ব্রাউজার বিজ্ঞপ্তি সক্রিয় হয়েছে!',
+    'enable_notifications' => 'ব্রাউজার বিজ্ঞপ্তি সক্রিয় করুন',
+    'new_conversation' => 'নতুন কথোপকথন',
+    'new_message' => 'নতুন বার্তা',
+    'no_conversations_hint' => 'দর্শকরা চ্যাট শুরু করলে এখানে কথোপকথন দেখা যাবে।',
+    'open_chat' => 'চ্যাট খুলুন',
+    'close' => 'বন্ধ করুন',
+    'chat_title' => 'লাইভ চ্যাট',
+    'online' => 'অনলাইন',
+    'start_message' => 'হ্যালো! আজ আমরা কীভাবে আপনাকে সাহায্য করতে পারি?',
+    'your_name' => 'আপনার নাম',
+    'your_email' => 'আপনার ইমেইল',
+    'your_email_optional' => 'আপনার ইমেইল (ঐচ্ছিক)',
+    'your_phone' => 'আপনার ফোন',
+    'start_chat' => 'চ্যাট শুরু করুন',
+    'type_message' => 'একটি বার্তা লিখুন...',
+    'send' => 'পাঠান',
+    'default_admin_name' => 'সাপোর্ট',
+    'default_welcome_message' => 'হ্যালো! যোগাযোগ করার জন্য ধন্যবাদ। আজ আমি কীভাবে আপনাকে সাহায্য করতে পারি?',
+    'conversation_statuses' => [
+        'open' => 'খোলা',
+        'closed' => 'বন্ধ',
+    ],
+    'settings' => [
+        'title' => 'লাইভ চ্যাট',
+        'description' => 'আপনার ওয়েবসাইটে ভাসমান লাইভ চ্যাট উইজেট কনফিগার করুন যাতে রিয়েল-টাইম গ্রাহক সহায়তা দেওয়া যায়।',
+        'form' => [
+            'enabled' => 'লাইভ চ্যাট সক্রিয় করুন',
+            'enabled_help' => 'আপনার ওয়েবসাইটে চ্যাট উইজেট দেখাতে চালু করুন। দর্শকরা আপনার সহায়তা দলের সাথে কথোপকথন শুরু করতে পারবেন।',
+            'widget_title' => 'উইজেট শিরোনাম',
+            'widget_title_help' => 'চ্যাট উইজেট হেডারের উপরে প্রদর্শিত শিরোনাম।',
+            'widget_title_placeholder' => 'লাইভ চ্যাট',
+            'welcome_message' => 'স্বাগত বার্তা',
+            'welcome_message_help' => 'দর্শকরা চ্যাট উইজেট খুললে যে প্রথম বার্তা দেখে। ডিফল্ট বার্তা ব্যবহার করতে খালি রাখুন।',
+            'welcome_message_placeholder' => 'হ্যালো! যোগাযোগ করার জন্য ধন্যবাদ। আজ আমি কীভাবে আপনাকে সাহায্য করতে পারি?',
+            'admin_name' => 'অ্যাডমিন নাম',
+            'admin_name_help' => 'চ্যাট উইজেটে অ্যাডমিন উত্তরের জন্য প্রদর্শিত নাম।',
+            'admin_name_placeholder' => 'সাপোর্ট',
+            'random_admin_names_enabled' => 'এলোমেলো অ্যাডমিন নাম ব্যবহার করুন',
+            'random_admin_names_enabled_help' => 'যখন সক্রিয় করা হয়, প্রতিটি নতুন কথোপকথনে নীচের তালিকা থেকে একটি এলোমেলো অ্যাডমিন নাম বরাদ্দ করা হবে।',
+            'random_admin_names' => 'এলোমেলো অ্যাডমিন নাম',
+            'random_admin_names_help' => 'প্রতি লাইনে একটি নাম লিখুন। প্রতিটি নতুন কথোপকথনে একটি এলোমেলো নাম বরাদ্দ করা হবে।',
+            'random_admin_names_placeholder' => 'Sarah
+Mike
+Emma
+John',
+            'primary_color' => 'প্রধান রঙ',
+            'primary_color_help' => 'চ্যাট উইজেটের বোতাম ও হেডারের প্রধান রঙ। আপনার ব্র্যান্ডের সাথে মানানসই রঙ বেছে নিন।',
+            'position' => 'উইজেটের অবস্থান',
+            'position_help' => 'স্ক্রিনে চ্যাট উইজেটের বোতাম কোথায় দেখাবে।',
+            'position_right' => 'ডান নিচে',
+            'position_left' => 'বাম নিচে',
+            'email_required' => 'ইমেইল বাধ্যতামূলক করুন',
+            'email_required_help' => 'সক্রিয় থাকলে, চ্যাট শুরু করার আগে দর্শকদের ইমেইল ঠিকানা দিতে হবে। পরবর্তী যোগাযোগের জন্য উপকারী।',
+            'display_fields' => 'প্রদর্শিত ক্ষেত্রসমূহ',
+            'mandatory_fields' => 'বাধ্যতামূলক ক্ষেত্রসমূহ',
+            'poll_interval' => 'পোল ইন্টারভাল (মি.সে.)',
+            'poll_interval_help' => 'কত ঘনঘন নতুন বার্তা যাচাই করা হবে (মিলিসেকেন্ডে)। কম মানে দ্রুত আপডেট কিন্তু বেশি সার্ভার অনুরোধ। প্রস্তাবিত: 3000-5000ms।',
+            'poll_interval_placeholder' => '3000',
+            'online_status' => 'অনলাইন স্ট্যাটাস',
+            'working_hours_enabled' => 'কাজের সময় সক্ষম করুন',
+            'working_hours_enabled_help' => 'সক্ষম করা হলে, কাজের সময়ের বাইরে চ্যাট স্ট্যাটাস স্বয়ংক্রিয়ভাবে অফলাইনে চলে যাবে। কাজের সময় সেটিংস → সাধারণ-এ কনফিগার করা সময় অঞ্চলের উপর ভিত্তি করে।',
+            'working_hours_start' => 'শুরুর সময়',
+            'working_hours_end' => 'শেষের সময়',
+            'working_days' => 'কাজের দিন',
+            'avatar_image' => 'অবতার চিত্র',
+            'avatar_image_help' => 'চ্যাট হেডারের জন্য কাস্টম অবতার চিত্র। ডিফল্ট আইকন ব্যবহার করতে খালি রাখুন।',
+            'primary_hover_color' => 'হোভার রঙ',
+            'primary_hover_color_help' => 'চ্যাট বোতামের উপর হোভার করার সময় রঙ।',
+            'position_bottom_right' => 'নিচে ডানদিকে',
+            'position_bottom_left' => 'নিচে বামদিকে',
+            'position_center_right' => 'কেন্দ্রে ডানদিকে',
+            'position_center_left' => 'কেন্দ্রে বামদিকে',
+            'offset_x' => 'অফসেট X (px)',
+            'offset_x_help' => 'পিক্সেলগুলিতে পর্দার প্রান্ত থেকে অনুভূমিক অফসেট।',
+            'offset_y' => 'অফসেট Y (px)',
+            'offset_y_help' => 'পিক্সেলগুলিতে পর্দার প্রান্ত থেকে উল্লম্ব অফসেট।',
+            'display_on_mobile' => 'মোবাইলে প্রদর্শন করুন',
+            'display_on_mobile_help' => 'মোবাইল ডিভাইসে চ্যাট উইজেট প্রদর্শিত হবে কিনা তা নিয়ন্ত্রণ করুন।',
+            'display_on_mobile_always' => 'সর্বদা দেখান',
+            'display_on_mobile_hide' => 'মোবাইলে লুকান',
+        ],
+    ],
+    'email' => [
+        'title' => 'Live Chat Email',
+        'description' => 'Email notifications for live chat events',
+        'templates' => [
+            'new_conversation_title' => 'New Conversation Notification',
+            'new_conversation_description' => 'Email sent to admin when a visitor starts a new conversation',
+            'new_conversation_subject' => 'New Live Chat Conversation from {{ visitor_name }}',
+            'visitor_name' => 'Visitor name',
+            'visitor_email' => 'Visitor email',
+            'visitor_phone' => 'Visitor phone',
+            'visitor_ip' => 'Visitor IP address',
+            'current_page' => 'Current page URL',
+            'conversation_url' => 'Link to conversation in admin panel',
+        ],
+    ],
+    'email_settings' => [
+        'title' => 'Email Notifications',
+        'description' => 'Configure email notifications for new chat conversations. Only one email is sent when a visitor starts a new conversation.',
+        'enable_email_notification' => 'Enable Email Notifications',
+        'enable_email_notification_help' => 'Send an email notification when a visitor starts a new chat conversation',
+        'notification_emails' => 'Notification Email Addresses',
+        'notification_emails_help' => 'Comma-separated list of email addresses to receive notifications. Leave empty to use the default admin email.',
+    ],
+    'email_templates' => [
+        'new_conversation_title' => 'New Live Chat Conversation',
+        'new_conversation_greeting' => 'A visitor has started a new live chat conversation on your website.',
+        'visitor_details' => 'Visitor Details',
+        'field_name' => 'Name:',
+        'field_email' => 'Email:',
+        'field_phone' => 'Phone:',
+        'field_ip' => 'IP Address:',
+        'field_page' => 'Current Page:',
+        'respond_instruction' => 'Click the button below to respond to this conversation.',
+        'view_conversation_button' => 'View Conversation',
+    ],
+    'webhook' => [
+        'title' => 'Webhook সেটিংস',
+        'description' => 'চ্যাট ইভেন্ট ঘটলে বিজ্ঞপ্তি পেতে webhooks কনফিগার করুন। Webhooks আপনার নির্দিষ্ট URLs-এ ইভেন্ট ডেটা সহ HTTP POST অনুরোধ পাঠায়।',
+        'enable_webhooks' => 'Webhooks সক্ষম করুন',
+        'enable_webhooks_help' => 'লাইভ চ্যাট ইভেন্টের জন্য webhook বিজ্ঞপ্তি পাঠানো সক্ষম করুন',
+        'message_received_url' => 'বার্তা প্রাপ্ত Webhook URL',
+        'message_received_url_help' => 'যখন কোনো দর্শক চ্যাটে নতুন বার্তা পাঠায় তখন ট্রিগার হয়',
+        'conversation_started_url' => 'কথোপকথন শুরু Webhook URL',
+        'conversation_started_url_help' => 'যখন কোনো দর্শক নতুন কথোপকথন শুরু করে তখন ট্রিগার হয়',
+        'view_sample_data' => 'নমুনা ডেটা দেখুন',
+        'test_button' => 'টেস্ট Webhook পাঠান',
+        'testing' => 'পাঠানো হচ্ছে...',
+        'test_success' => 'Webhook সফলভাবে পাঠানো হয়েছে!',
+        'test_failed' => 'Webhook পরীক্ষা ব্যর্থ।',
+        'status_code' => 'স্ট্যাটাস কোড',
+        'please_enter_url' => 'অনুগ্রহ করে প্রথমে webhook URL লিখুন',
+        'error_occurred' => 'Webhook পরীক্ষা করার সময় একটি ত্রুটি ঘটেছে',
+        'usage_instructions_title' => 'How to Use Webhooks',
+        'usage_instructions' => '<p><strong>Webhooks</strong> allow you to receive real-time notifications when events occur in Live Chat. When an event is triggered, an HTTP POST request is sent to your configured URL with JSON payload.</p>
+<h6>HTTP Headers</h6>
+<ul>
+<li><code>Content-Type: application/json</code></li>
+<li><code>X-Webhook-Event</code> - Event type (e.g., <code>message.received</code>, <code>conversation.started</code>)</li>
+<li><code>X-Webhook-Timestamp</code> - ISO 8601 timestamp when webhook was sent</li>
+<li><code>X-Webhook-Test: true</code> - Only present for test webhooks</li>
+</ul>
+<h6>Your Endpoint Requirements</h6>
+<ul>
+<li>Must accept HTTP POST requests</li>
+<li>Must respond within 10 seconds (timeout limit)</li>
+<li>Should return HTTP 2xx status code for success</li>
+<li>Must be publicly accessible (HTTPS recommended)</li>
+</ul>
+<h6>Integration Tutorials</h6>
+<ul>
+<li><strong>Slack:</strong> <a href="https://api.slack.com/messaging/webhooks" target="_blank">Incoming Webhooks Guide</a></li>
+<li><strong>Discord:</strong> <a href="https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks" target="_blank">Intro to Webhooks</a></li>
+<li><strong>Telegram:</strong> <a href="https://core.telegram.org/bots/webhooks" target="_blank">Bot Webhooks</a> (use with <a href="https://core.telegram.org/bots/api#sendmessage" target="_blank">sendMessage API</a>)</li>
+<li><strong>n8n:</strong> <a href="https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.webhook/" target="_blank">Webhook Node</a></li>
+<li><strong>Zapier:</strong> <a href="https://zapier.com/apps/webhook/integrations" target="_blank">Webhooks by Zapier</a></li>
+<li><strong>Make (Integromat):</strong> <a href="https://www.make.com/en/help/tools/webhooks" target="_blank">Webhooks Module</a></li>
+</ul>
+<h6>Example Use Cases</h6>
+<ul>
+<li>Send notifications to Slack, Discord, or Telegram</li>
+<li>Create tickets in helpdesk systems (Zendesk, Freshdesk)</li>
+<li>Log conversations to external CRM</li>
+<li>Trigger automated responses via n8n or Zapier</li>
+</ul>',
+    ],
+    'offline' => 'Offline',
+    'days' => [
+        'monday' => 'সোমবার',
+        'tuesday' => 'মঙ্গলবার',
+        'wednesday' => 'বুধবার',
+        'thursday' => 'বৃহস্পতিবার',
+        'friday' => 'শুক্রবার',
+        'saturday' => 'শনিবার',
+        'sunday' => 'রবিবার',
+    ],
+];

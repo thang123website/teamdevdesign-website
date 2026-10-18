@@ -11,7 +11,7 @@ class ServiceRequest extends Request
     public function rules(): array
     {
         return [
-            'category_id' => ['required', 'exists:pf_service_categories,id'],
+            'category_id' => ['nullable'],
             'name' => [
                 'required',
                 'string',

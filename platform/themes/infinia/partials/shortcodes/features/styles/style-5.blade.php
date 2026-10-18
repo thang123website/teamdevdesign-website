@@ -5,13 +5,13 @@
                 <div class="col-lg-4 col-md-6 mb-lg-0 mb-8 position-relative z-1">
                     @if ($subtitle = $shortcode->subtitle)
                         <div class="d-flex align-items-center justify-content-center bg-primary-soft d-inline-flex rounded-pill border-white border px-3 py-1">
-                            <img src="{{ Theme::asset()->url('images/icons/dots.png') }}" alt="dots" />
+                            <img src="{{ Theme::asset()->url('images/icons/dots.png') }}" alt="" aria-hidden="true" />
                             <span class="tag-spacing fs-7 fw-bold text-linear-2 ms-2 text-primary">{!! BaseHelper::clean($subtitle) !!}</span>
                         </div>
                     @endif
 
                     @if ($title = $shortcode->title)
-                        <h2 class=" mt-3 mb-4 fw-black">{!! BaseHelper::clean($title) !!}</h2>
+                        <{{ $titleTag = infinia_title_tag($shortcode, 'h2') }} class=" mt-3 mb-4 fw-black">{!! infinia_clean_title($title) !!}</{{ $titleTag }}>
                     @endif
 
                     @if ($description = $shortcode->description)

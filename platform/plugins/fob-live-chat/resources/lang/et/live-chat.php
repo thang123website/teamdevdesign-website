@@ -1,0 +1,216 @@
+<?php
+
+return [
+    'title' => 'Reaalajas vestlus',
+    'messages' => 'Sõnumid',
+    'visitor_name' => 'Külastaja nimi',
+    'visitor_email' => 'Külastaja e-post',
+    'visitor_phone' => 'Telefon',
+    'visitor_info' => 'Külastaja teave',
+    'ip_address' => 'IP-aadress',
+    'current_page' => 'Praegune leht',
+    'browser' => 'Brauser',
+    'last_message' => 'Viimane sõnum',
+    'close_conversation' => 'Sulge',
+    'delete_conversation' => 'Kustuta vestlus',
+    'conversation_closed' => 'Vestlus on suletud.',
+    'conversation_deleted' => 'Vestlus on kustutatud.',
+    'conversation_is_closed' => 'See vestlus on suletud.',
+    'conversation_with' => 'Vestlus kasutajaga :name',
+    'confirm_close' => 'Kas olete kindel, et soovite selle vestluse sulgeda?',
+    'confirm_delete' => 'Kas olete kindel, et soovite selle vestluse kustutada? Seda toimingut ei saa tagasi võtta.',
+    'type_reply' => 'Kirjutage oma vastus...',
+    'reply_sent' => 'Vastus on edukalt saadetud.',
+    'no_conversation' => 'Aktiivset vestlust ei leitud. Palun alustage uut vestlust.',
+    'no_conversations' => 'Vestlusi veel pole',
+    'chat_started' => 'Vestlus edukalt alustatud.',
+    'message_sent' => 'Sõnum saadetud.',
+    'select_conversation' => 'Valige vestlus',
+    'select_conversation_hint' => 'Vestluse alustamiseks valige loendist vestlus.',
+    'all' => 'Kõik',
+    'timeline' => 'Ajatelg',
+    'total_messages' => 'Sõnumite koguarv',
+    'just_now' => 'Just praegu',
+    'test_sound' => 'Kliki heli testimiseks',
+    'back_to_list' => 'Tagasi vestluste juurde',
+    'no_messages_yet' => 'Sõnumeid veel pole',
+    'start_conversation_hint' => 'Saada sõnum vestluse alustamiseks',
+    'notifications_enabled' => 'Brauseri teavitused lubatud!',
+    'enable_notifications' => 'Luba brauseri teavitused',
+    'new_conversation' => 'Uus vestlus',
+    'new_message' => 'Uus sõnum',
+    'no_conversations_hint' => 'Vestlused ilmuvad siia, kui külastajad hakkavad vestlema.',
+    'open_chat' => 'Ava vestlus',
+    'close' => 'Sulge',
+    'chat_title' => 'Reaalajas vestlus',
+    'online' => 'Võrgus',
+    'start_message' => 'Tere! Kuidas saame teid täna aidata?',
+    'your_name' => 'Teie nimi',
+    'your_email' => 'Teie e-post',
+    'your_email_optional' => 'Teie e-post (valikuline)',
+    'your_phone' => 'Teie Telefon',
+    'start_chat' => 'Alusta vestlust',
+    'type_message' => 'Kirjuta sõnum...',
+    'send' => 'Saada',
+    'default_admin_name' => 'Tugi',
+    'default_welcome_message' => 'Tere! Aitäh, et võtsite ühendust. Kuidas saan teid täna aidata?',
+    'conversation_statuses' => [
+        'open' => 'Avatud',
+        'closed' => 'Suletud',
+    ],
+    'settings' => [
+        'title' => 'Reaalajas vestlus',
+        'description' => 'Seadistage ujuv reaalajas vestluse vidin, mis kuvatakse teie veebisaidil klienditoe jaoks reaalajas.',
+        'form' => [
+            'enabled' => 'Luba reaalajas vestlus',
+            'enabled_help' => 'Lülitage sisse, et kuvada vestlusvidin teie veebisaidil. Külastajad saavad alustada vestlusi teie toe meeskonnaga.',
+            'widget_title' => 'Vidina pealkiri',
+            'widget_title_help' => 'Pealkiri, mis kuvatakse vestlusvidina päises.',
+            'widget_title_placeholder' => 'Reaalajas vestlus',
+            'welcome_message' => 'Tervitussõnum',
+            'welcome_message_help' => 'Esimene sõnum, mida külastajad näevad vestlusvidinat avades. Jätke tühjaks, et kasutada vaikesõnumit.',
+            'welcome_message_placeholder' => 'Tere! Aitäh, et võtsite ühendust. Kuidas saan teid täna aidata?',
+            'admin_name' => 'Administraatori nimi',
+            'admin_name_help' => 'Vestlusvidinas administraatori vastuste jaoks kuvatav nimi.',
+            'admin_name_placeholder' => 'Tugi',
+            'random_admin_names_enabled' => 'Kasuta juhuslikke administraatorite nimesid',
+            'random_admin_names_enabled_help' => 'Kui see on lubatud, määratakse igale uuele vestlusele juhuslik administraatori nimi allolevast loendist.',
+            'random_admin_names' => 'Juhuslikud administraatorite nimed',
+            'random_admin_names_help' => 'Sisestage üks nimi rea kohta. Igale uuele vestlusele määratakse juhuslik nimi.',
+            'random_admin_names_placeholder' => 'Sarah
+Mike
+Emma
+John',
+            'primary_color' => 'Põhivärv',
+            'primary_color_help' => 'Vestlusvidina nupu ja päise põhivärv. Valige värv, mis sobib teie brändiga.',
+            'position' => 'Vidina asukoht',
+            'position_help' => 'Kus vestlusvidina nupp ekraanil kuvatakse.',
+            'position_right' => 'All paremal',
+            'position_left' => 'All vasakul',
+            'email_required' => 'Nõua e-posti',
+            'email_required_help' => 'Kui lubatud, peavad külastajad enne vestluse alustamist sisestama oma e-posti aadressi. Kasulik järelkommunikatsiooniks.',
+            'display_fields' => 'Kuva väljad',
+            'mandatory_fields' => 'Kohustuslikud väljad',
+            'poll_interval' => 'Küsitluse intervall (ms)',
+            'poll_interval_help' => 'Kui tihti kontrollida uusi sõnumeid millisekundites. Madalamad väärtused tähendavad kiiremaid värskendusi, kuid rohkem serveripäringuid. Soovitatav: 3000-5000ms.',
+            'poll_interval_placeholder' => '3000',
+            'online_status' => 'Olek',
+            'working_hours_enabled' => 'Luba tööajad',
+            'working_hours_enabled_help' => 'Kui lubatud, lülitub vestluse olek väljaspool tööaega automaatselt võrguühenduseta olekusse. Tööajad põhinevad ajavööndil, mis on seadistatud menüüs Seaded → Üldine.',
+            'working_hours_start' => 'Algusaeg',
+            'working_hours_end' => 'Lõppaeg',
+            'working_days' => 'Tööpäevad',
+            'avatar_image' => 'Avatari pilt',
+            'avatar_image_help' => 'Kohandatud avatari pilt vestluse päises. Jäta tühjaks, et kasutada vaikeikooni.',
+            'primary_hover_color' => 'Hõljumise värv',
+            'primary_hover_color_help' => 'Värv vestluse nupul hõljumisel.',
+            'position_bottom_right' => 'All paremal',
+            'position_bottom_left' => 'All vasakul',
+            'position_center_right' => 'Keskel paremal',
+            'position_center_left' => 'Keskel vasakul',
+            'offset_x' => 'Nihe X (px)',
+            'offset_x_help' => 'Horisontaalne nihe ekraani servast pikslites.',
+            'offset_y' => 'Nihe Y (px)',
+            'offset_y_help' => 'Vertikaalne nihe ekraani servast pikslites.',
+            'display_on_mobile' => 'Kuva mobiilis',
+            'display_on_mobile_help' => 'Määra, kas vestluse vidinat kuvatakse mobiilseadmetes.',
+            'display_on_mobile_always' => 'Kuva alati',
+            'display_on_mobile_hide' => 'Peida mobiilis',
+        ],
+    ],
+    'email' => [
+        'title' => 'Live Chat Email',
+        'description' => 'Email notifications for live chat events',
+        'templates' => [
+            'new_conversation_title' => 'New Conversation Notification',
+            'new_conversation_description' => 'Email sent to admin when a visitor starts a new conversation',
+            'new_conversation_subject' => 'New Live Chat Conversation from {{ visitor_name }}',
+            'visitor_name' => 'Visitor name',
+            'visitor_email' => 'Visitor email',
+            'visitor_phone' => 'Visitor phone',
+            'visitor_ip' => 'Visitor IP address',
+            'current_page' => 'Current page URL',
+            'conversation_url' => 'Link to conversation in admin panel',
+        ],
+    ],
+    'email_settings' => [
+        'title' => 'Email Notifications',
+        'description' => 'Configure email notifications for new chat conversations. Only one email is sent when a visitor starts a new conversation.',
+        'enable_email_notification' => 'Enable Email Notifications',
+        'enable_email_notification_help' => 'Send an email notification when a visitor starts a new chat conversation',
+        'notification_emails' => 'Notification Email Addresses',
+        'notification_emails_help' => 'Comma-separated list of email addresses to receive notifications. Leave empty to use the default admin email.',
+    ],
+    'email_templates' => [
+        'new_conversation_title' => 'New Live Chat Conversation',
+        'new_conversation_greeting' => 'A visitor has started a new live chat conversation on your website.',
+        'visitor_details' => 'Visitor Details',
+        'field_name' => 'Name:',
+        'field_email' => 'Email:',
+        'field_phone' => 'Phone:',
+        'field_ip' => 'IP Address:',
+        'field_page' => 'Current Page:',
+        'respond_instruction' => 'Click the button below to respond to this conversation.',
+        'view_conversation_button' => 'View Conversation',
+    ],
+    'webhook' => [
+        'title' => 'Veebihaagi seaded',
+        'description' => 'Seadistage veebihaagid, et saada teateid vestlussündmuste kohta. Veebihaagid saadavad HTTP POST päringuid teie määratud URL-idele koos sündmuse andmetega.',
+        'enable_webhooks' => 'Luba veebihaagid',
+        'enable_webhooks_help' => 'Luba veebihaagi teatiste saatmine reaalajas vestluse sündmuste jaoks',
+        'message_received_url' => 'Sõnumi vastuvõtmise veebihaagi URL',
+        'message_received_url_help' => 'Käivitub, kui külastaja saadab vestluses uue sõnumi',
+        'conversation_started_url' => 'Vestluse alustamise veebihaagi URL',
+        'conversation_started_url_help' => 'Käivitub, kui külastaja alustab uut vestlust',
+        'view_sample_data' => 'Vaata näidisandmeid',
+        'test_button' => 'Saada testveebihaak',
+        'testing' => 'Saatmine...',
+        'test_success' => 'Veebihaak saadeti edukalt!',
+        'test_failed' => 'Veebihaagi test ebaõnnestus.',
+        'status_code' => 'Olekukood',
+        'please_enter_url' => 'Palun sisestage esmalt veebihaagi URL',
+        'error_occurred' => 'Veebihaagi testimisel tekkis viga',
+        'usage_instructions_title' => 'How to Use Webhooks',
+        'usage_instructions' => '<p><strong>Webhooks</strong> allow you to receive real-time notifications when events occur in Live Chat. When an event is triggered, an HTTP POST request is sent to your configured URL with JSON payload.</p>
+<h6>HTTP Headers</h6>
+<ul>
+<li><code>Content-Type: application/json</code></li>
+<li><code>X-Webhook-Event</code> - Event type (e.g., <code>message.received</code>, <code>conversation.started</code>)</li>
+<li><code>X-Webhook-Timestamp</code> - ISO 8601 timestamp when webhook was sent</li>
+<li><code>X-Webhook-Test: true</code> - Only present for test webhooks</li>
+</ul>
+<h6>Your Endpoint Requirements</h6>
+<ul>
+<li>Must accept HTTP POST requests</li>
+<li>Must respond within 10 seconds (timeout limit)</li>
+<li>Should return HTTP 2xx status code for success</li>
+<li>Must be publicly accessible (HTTPS recommended)</li>
+</ul>
+<h6>Integration Tutorials</h6>
+<ul>
+<li><strong>Slack:</strong> <a href="https://api.slack.com/messaging/webhooks" target="_blank">Incoming Webhooks Guide</a></li>
+<li><strong>Discord:</strong> <a href="https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks" target="_blank">Intro to Webhooks</a></li>
+<li><strong>Telegram:</strong> <a href="https://core.telegram.org/bots/webhooks" target="_blank">Bot Webhooks</a> (use with <a href="https://core.telegram.org/bots/api#sendmessage" target="_blank">sendMessage API</a>)</li>
+<li><strong>n8n:</strong> <a href="https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.webhook/" target="_blank">Webhook Node</a></li>
+<li><strong>Zapier:</strong> <a href="https://zapier.com/apps/webhook/integrations" target="_blank">Webhooks by Zapier</a></li>
+<li><strong>Make (Integromat):</strong> <a href="https://www.make.com/en/help/tools/webhooks" target="_blank">Webhooks Module</a></li>
+</ul>
+<h6>Example Use Cases</h6>
+<ul>
+<li>Send notifications to Slack, Discord, or Telegram</li>
+<li>Create tickets in helpdesk systems (Zendesk, Freshdesk)</li>
+<li>Log conversations to external CRM</li>
+<li>Trigger automated responses via n8n or Zapier</li>
+</ul>',
+    ],
+    'offline' => 'Offline',
+    'days' => [
+        'monday' => 'Esmaspäev',
+        'tuesday' => 'Teisipäev',
+        'wednesday' => 'Kolmapäev',
+        'thursday' => 'Neljapäev',
+        'friday' => 'Reede',
+        'saturday' => 'Laupäev',
+        'sunday' => 'Pühapäev',
+    ],
+];

@@ -37,11 +37,11 @@
             <div class="row align-items-center">
                 <div class="col-lg-4 col-md-6 mb-lg-0 mb-8 pe-5 pe-lg-10 position-relative z-1">
                     @if ($image = $shortcode->image)
-                        {{ RvMedia::image($image, __('Image')) }}
+                        {{ RvMedia::image($image, infinia_image_alt($shortcode)) }}
                     @endif
 
                     @if ($title = $shortcode->title)
-                        <h2 class="text-white mt-3 mb-4 fw-black">{!! BaseHelper::clean($title) !!}</h2>
+                        <{{ $titleTag = infinia_title_tag($shortcode, 'h2') }} class="text-white mt-3 mb-4 fw-black">{!! infinia_clean_title($title) !!}</{{ $titleTag }}>
                     @endif
 
                     @if ($description = $shortcode->description)
@@ -78,7 +78,7 @@
                                 <li>
                                     <a href="{{ Arr::get($tabContent, 'url') }}" class="d-flex align-items-start mb-6">
                                         @if ($tabContentIconImage = Arr::get($tabContent, 'icon_image'))
-                                            {{ RvMedia::image($tabContentIconImage, __('Image'), attributes: ['class' => 'mt-2']) }}
+                                            {{ RvMedia::image($tabContentIconImage, infinia_image_alt($shortcode), attributes: ['class' => 'mt-2']) }}
                                         @elseif ($tabContentIcon = Arr::get($tabContent, 'icon'))
                                             <x-core::icon :name="$tabContentIcon"/>
                                         @endif

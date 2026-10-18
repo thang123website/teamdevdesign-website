@@ -1,7 +1,7 @@
 <section class="section-services-details pt-80">
     <div class="container">
         @if ($service->image)
-            {{ RvMedia::image($service->image, $service->name, 'medium', attributes: ['class' => 'rounded-3']) }}
+            {{ RvMedia::image($service->image, $service->name, null, attributes: ['class' => 'rounded-3 img-fluid w-100 mb-4']) }}
         @endif
         <div @class(['row', 'pt-8' => $service->image])>
             @if ($serviceSidebar)

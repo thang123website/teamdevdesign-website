@@ -1,0 +1,216 @@
+<?php
+
+return [
+    'title' => 'الدردشة المباشرة',
+    'messages' => 'الرسائل',
+    'visitor_name' => 'اسم الزائر',
+    'visitor_email' => 'بريد الزائر الإلكتروني',
+    'visitor_phone' => 'الهاتف',
+    'visitor_info' => 'معلومات الزائر',
+    'ip_address' => 'عنوان IP',
+    'current_page' => 'الصفحة الحالية',
+    'browser' => 'المتصفح',
+    'last_message' => 'آخر رسالة',
+    'close_conversation' => 'إغلاق',
+    'delete_conversation' => 'حذف المحادثة',
+    'conversation_closed' => 'تم إغلاق المحادثة.',
+    'conversation_deleted' => 'تم حذف المحادثة.',
+    'conversation_is_closed' => 'هذه المحادثة مغلقة.',
+    'conversation_with' => 'المحادثة مع :name',
+    'confirm_close' => 'هل أنت متأكد أنك تريد إغلاق هذه المحادثة؟',
+    'confirm_delete' => 'هل أنت متأكد أنك تريد حذف هذه المحادثة؟ لا يمكن التراجع عن هذا الإجراء.',
+    'type_reply' => 'اكتب ردك...',
+    'reply_sent' => 'تم إرسال الرد بنجاح.',
+    'no_conversation' => 'لم يتم العثور على محادثة نشطة. يرجى بدء محادثة جديدة.',
+    'no_conversations' => 'لا توجد محادثات بعد',
+    'chat_started' => 'تم بدء الدردشة بنجاح.',
+    'message_sent' => 'تم إرسال الرسالة.',
+    'select_conversation' => 'اختر محادثة',
+    'select_conversation_hint' => 'اختر محادثة من القائمة لبدء الدردشة.',
+    'all' => 'الكل',
+    'timeline' => 'الخط الزمني',
+    'total_messages' => 'إجمالي الرسائل',
+    'just_now' => 'الآن',
+    'test_sound' => 'انقر لاختبار الصوت',
+    'back_to_list' => 'العودة إلى المحادثات',
+    'no_messages_yet' => 'لا توجد رسائل بعد',
+    'start_conversation_hint' => 'أرسل رسالة لبدء المحادثة',
+    'notifications_enabled' => 'تم تفعيل إشعارات المتصفح!',
+    'enable_notifications' => 'تفعيل إشعارات المتصفح',
+    'new_conversation' => 'محادثة جديدة',
+    'new_message' => 'رسالة جديدة',
+    'no_conversations_hint' => 'ستظهر المحادثات هنا عندما يبدأ الزوار بالدردشة.',
+    'open_chat' => 'فتح الدردشة',
+    'close' => 'إغلاق',
+    'chat_title' => 'الدردشة المباشرة',
+    'online' => 'متصل',
+    'start_message' => 'مرحبًا! كيف يمكننا مساعدتك اليوم؟',
+    'your_name' => 'اسمك',
+    'your_email' => 'البريد الإلكتروني الخاص بك',
+    'your_email_optional' => 'بريدك الإلكتروني (اختياري)',
+    'your_phone' => 'هاتفك',
+    'start_chat' => 'بدء الدردشة',
+    'type_message' => 'اكتب رسالة...',
+    'send' => 'إرسال',
+    'default_admin_name' => 'الدعم',
+    'default_welcome_message' => 'مرحبًا! شكرًا لتواصلك. كيف يمكنني مساعدتك اليوم؟',
+    'conversation_statuses' => [
+        'open' => 'مفتوحة',
+        'closed' => 'مغلقة',
+    ],
+    'settings' => [
+        'title' => 'الدردشة المباشرة',
+        'description' => 'قم بإعداد أداة الدردشة المباشرة العائمة التي تظهر على موقعك للدعم الفوري للعملاء.',
+        'form' => [
+            'enabled' => 'تمكين الدردشة المباشرة',
+            'enabled_help' => 'قم بالتشغيل لعرض أداة الدردشة على موقعك. يمكن للزوار بدء محادثات مع فريق الدعم الخاص بك.',
+            'widget_title' => 'عنوان الأداة',
+            'widget_title_help' => 'العنوان المعروض في أعلى رأس أداة الدردشة.',
+            'widget_title_placeholder' => 'الدردشة المباشرة',
+            'welcome_message' => 'رسالة الترحيب',
+            'welcome_message_help' => 'أول رسالة يراها الزوار عند فتح أداة الدردشة. اتركه فارغًا لاستخدام الرسالة الافتراضية.',
+            'welcome_message_placeholder' => 'مرحبًا! شكرًا لتواصلك. كيف يمكنني مساعدتك اليوم؟',
+            'admin_name' => 'اسم المسؤول',
+            'admin_name_help' => 'الاسم المعروض لردود المسؤول في أداة الدردشة.',
+            'admin_name_placeholder' => 'الدعم',
+            'random_admin_names_enabled' => 'استخدام أسماء مسؤول عشوائية',
+            'random_admin_names_enabled_help' => 'عند التفعيل، سيتم تعيين اسم مسؤول عشوائي من القائمة أدناه لكل محادثة جديدة.',
+            'random_admin_names' => 'أسماء مسؤول عشوائية',
+            'random_admin_names_help' => 'أدخل اسمًا واحدًا في كل سطر. سيتم تعيين اسم عشوائي لكل محادثة جديدة.',
+            'random_admin_names_placeholder' => 'Sarah
+Mike
+Emma
+John',
+            'primary_color' => 'اللون الأساسي',
+            'primary_color_help' => 'اللون الرئيسي لزر ورأس أداة الدردشة. اختر لونًا يتناسب مع علامتك التجارية.',
+            'position' => 'موضع الأداة',
+            'position_help' => 'المكان الذي يظهر فيه زر أداة الدردشة على الشاشة.',
+            'position_right' => 'أسفل اليمين',
+            'position_left' => 'أسفل اليسار',
+            'email_required' => 'يتطلب البريد الإلكتروني',
+            'email_required_help' => 'عند التفعيل، يجب على الزوار إدخال بريدهم الإلكتروني قبل بدء الدردشة. مفيد للتواصل اللاحق.',
+            'display_fields' => 'حقول العرض',
+            'mandatory_fields' => 'الحقول الإلزامية',
+            'poll_interval' => 'فترة الاستطلاع (مللي ثانية)',
+            'poll_interval_help' => 'عدد مرات التحقق من الرسائل الجديدة بالمللي ثانية. القيم الأقل تعني تحديثات أسرع لكن طلبات أكثر على الخادم. الموصى به: 3000-5000ms.',
+            'poll_interval_placeholder' => '3000',
+            'online_status' => 'حالة الاتصال',
+            'working_hours_enabled' => 'تفعيل ساعات العمل',
+            'working_hours_enabled_help' => 'عند التفعيل، ستتحول حالة الدردشة تلقائيًا إلى وضع عدم الاتصال خارج ساعات العمل. تعتمد ساعات العمل على المنطقة الزمنية المكونة في الإعدادات ← عام.',
+            'working_hours_start' => 'وقت البدء',
+            'working_hours_end' => 'وقت النهاية',
+            'working_days' => 'أيام العمل',
+            'avatar_image' => 'صورة الرمزية',
+            'avatar_image_help' => 'صورة رمزية مخصصة لرأس الدردشة. اتركها فارغة لاستخدام الرمز الافتراضي.',
+            'primary_hover_color' => 'لون التحويم',
+            'primary_hover_color_help' => 'اللون عند تمرير المؤشر فوق زر الدردشة.',
+            'position_bottom_right' => 'أسفل اليمين',
+            'position_bottom_left' => 'أسفل اليسار',
+            'position_center_right' => 'وسط اليمين',
+            'position_center_left' => 'وسط اليسار',
+            'offset_x' => 'الإزاحة الأفقية (px)',
+            'offset_x_help' => 'الإزاحة الأفقية من حافة الشاشة بالبكسل.',
+            'offset_y' => 'الإزاحة العمودية (px)',
+            'offset_y_help' => 'الإزاحة العمودية من حافة الشاشة بالبكسل.',
+            'display_on_mobile' => 'عرض على الجوال',
+            'display_on_mobile_help' => 'تحكم فيما إذا كانت أداة الدردشة معروضة على الأجهزة المحمولة.',
+            'display_on_mobile_always' => 'إظهار دائما',
+            'display_on_mobile_hide' => 'إخفاء على الجوال',
+        ],
+    ],
+    'email' => [
+        'title' => 'Live Chat Email',
+        'description' => 'Email notifications for live chat events',
+        'templates' => [
+            'new_conversation_title' => 'New Conversation Notification',
+            'new_conversation_description' => 'Email sent to admin when a visitor starts a new conversation',
+            'new_conversation_subject' => 'New Live Chat Conversation from {{ visitor_name }}',
+            'visitor_name' => 'Visitor name',
+            'visitor_email' => 'Visitor email',
+            'visitor_phone' => 'Visitor phone',
+            'visitor_ip' => 'Visitor IP address',
+            'current_page' => 'Current page URL',
+            'conversation_url' => 'Link to conversation in admin panel',
+        ],
+    ],
+    'email_settings' => [
+        'title' => 'Email Notifications',
+        'description' => 'Configure email notifications for new chat conversations. Only one email is sent when a visitor starts a new conversation.',
+        'enable_email_notification' => 'Enable Email Notifications',
+        'enable_email_notification_help' => 'Send an email notification when a visitor starts a new chat conversation',
+        'notification_emails' => 'Notification Email Addresses',
+        'notification_emails_help' => 'Comma-separated list of email addresses to receive notifications. Leave empty to use the default admin email.',
+    ],
+    'email_templates' => [
+        'new_conversation_title' => 'New Live Chat Conversation',
+        'new_conversation_greeting' => 'A visitor has started a new live chat conversation on your website.',
+        'visitor_details' => 'Visitor Details',
+        'field_name' => 'Name:',
+        'field_email' => 'Email:',
+        'field_phone' => 'Phone:',
+        'field_ip' => 'IP Address:',
+        'field_page' => 'Current Page:',
+        'respond_instruction' => 'Click the button below to respond to this conversation.',
+        'view_conversation_button' => 'View Conversation',
+    ],
+    'webhook' => [
+        'title' => 'إعدادات Webhook',
+        'description' => 'قم بتكوين Webhooks لتلقي الإشعارات عند حدوث أحداث الدردشة. ترسل Webhooks طلبات HTTP POST إلى عناوين URL المحددة مع بيانات الحدث.',
+        'enable_webhooks' => 'تفعيل Webhooks',
+        'enable_webhooks_help' => 'تفعيل إرسال إشعارات webhook لأحداث الدردشة المباشرة',
+        'message_received_url' => 'رابط Webhook استلام الرسالة',
+        'message_received_url_help' => 'يتم تشغيله عندما يرسل الزائر رسالة جديدة في الدردشة',
+        'conversation_started_url' => 'رابط Webhook بدء المحادثة',
+        'conversation_started_url_help' => 'يتم تشغيله عندما يبدأ الزائر محادثة جديدة',
+        'view_sample_data' => 'عرض البيانات النموذجية',
+        'test_button' => 'إرسال Webhook تجريبي',
+        'testing' => 'جارٍ الإرسال...',
+        'test_success' => 'تم إرسال Webhook بنجاح!',
+        'test_failed' => 'فشل اختبار Webhook.',
+        'status_code' => 'رمز الحالة',
+        'please_enter_url' => 'الرجاء إدخال رابط webhook أولاً',
+        'error_occurred' => 'حدث خطأ أثناء اختبار webhook',
+        'usage_instructions_title' => 'كيفية استخدام Webhooks',
+        'usage_instructions' => '<p><strong>Webhooks</strong> تتيح لك تلقي إشعارات في الوقت الفعلي عند حدوث أحداث في الدردشة المباشرة. عند تشغيل حدث، يتم إرسال طلب HTTP POST إلى عنوان URL المحدد مع بيانات JSON.</p>
+<h6>رؤوس HTTP</h6>
+<ul>
+<li><code>Content-Type: application/json</code></li>
+<li><code>X-Webhook-Event</code> - نوع الحدث (مثل <code>message.received</code>، <code>conversation.started</code>)</li>
+<li><code>X-Webhook-Timestamp</code> - الطابع الزمني ISO 8601 عند إرسال webhook</li>
+<li><code>X-Webhook-Test: true</code> - موجود فقط لاختبار webhooks</li>
+</ul>
+<h6>متطلبات نقطة النهاية</h6>
+<ul>
+<li>يجب قبول طلبات HTTP POST</li>
+<li>يجب الاستجابة خلال 10 ثوانٍ (حد المهلة)</li>
+<li>يجب إرجاع رمز حالة HTTP 2xx للنجاح</li>
+<li>يجب أن تكون متاحة للجمهور (يُوصى بـ HTTPS)</li>
+</ul>
+<h6>دروس التكامل</h6>
+<ul>
+<li><strong>Slack:</strong> <a href="https://api.slack.com/messaging/webhooks" target="_blank">دليل Webhooks الواردة</a></li>
+<li><strong>Discord:</strong> <a href="https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks" target="_blank">مقدمة إلى Webhooks</a></li>
+<li><strong>Telegram:</strong> <a href="https://core.telegram.org/bots/webhooks" target="_blank">Bot Webhooks</a> (استخدم مع <a href="https://core.telegram.org/bots/api#sendmessage" target="_blank">sendMessage API</a>)</li>
+<li><strong>n8n:</strong> <a href="https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.webhook/" target="_blank">Webhook Node</a></li>
+<li><strong>Zapier:</strong> <a href="https://zapier.com/apps/webhook/integrations" target="_blank">Webhooks by Zapier</a></li>
+<li><strong>Make (Integromat):</strong> <a href="https://www.make.com/en/help/tools/webhooks" target="_blank">Webhooks Module</a></li>
+</ul>
+<h6>أمثلة على حالات الاستخدام</h6>
+<ul>
+<li>إرسال إشعارات إلى Slack أو Discord أو Telegram</li>
+<li>إنشاء تذاكر في أنظمة الدعم (Zendesk، Freshdesk)</li>
+<li>تسجيل المحادثات في CRM خارجي</li>
+<li>تشغيل ردود تلقائية عبر n8n أو Zapier</li>
+</ul>',
+    ],
+    'offline' => 'Offline',
+    'days' => [
+        'monday' => 'الاثنين',
+        'tuesday' => 'الثلاثاء',
+        'wednesday' => 'الأربعاء',
+        'thursday' => 'الخميس',
+        'friday' => 'الجمعة',
+        'saturday' => 'السبت',
+        'sunday' => 'الأحد',
+    ],
+];

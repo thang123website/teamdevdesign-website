@@ -1,0 +1,20 @@
+{
+  "name": "So Sánh Hosting và VPS: Nên Chọn Giải Pháp Nào Cho Website Doanh Nghiệp?",
+  "slug": "so-sanh-hosting-va-vps",
+  "description": "Bài phân tích toàn diện: So sánh Hosting và VPS về hiệu năng, bảo mật, khả năng mở rộng và chi phí. Giúp doanh nghiệp chọn đúng hạ tầng năm 2026.",
+  "seo_title": "So Sánh Hosting và VPS: Nên Chọn Giải Pháp Nào Cho Doanh Nghiệp?",
+  "seo_description": "Phân tích toàn diện sự khác biệt giữa Shared Hosting và VPS Cloud. Đánh giá ưu nhược điểm, chi phí và cách chọn hạ tầng tối ưu cho website năm 2026.",
+  "focus_keyword": "so sánh hosting và vps",
+  "category": {
+    "name": "Hosting & VPS",
+    "slug": "hosting-vps"
+  },
+  "tags": ["Hosting", "VPS", "So sánh", "Website doanh nghiệp", "Máy chủ"],
+  "featured_image": {
+    "file": "images/featured.webp",
+    "alt": "Infographic so sánh Shared Hosting và Virtual Private Server (VPS)"
+  },
+  "is_featured": 1,
+  "status": "published",
+  "translation_en": "copy"
+}

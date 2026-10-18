@@ -3,12 +3,19 @@
 use ArchiElite\Career\Forms\CareerForm;
 use Botble\Base\Forms\FieldOptions\CoreIconFieldOption;
 use Botble\Base\Forms\FieldOptions\MediaImageFieldOption;
+use Botble\Base\Forms\FieldOptions\NumberFieldOption;
+use Botble\Base\Forms\FieldOptions\OnOffFieldOption;
+use Botble\Base\Forms\FieldOptions\TextareaFieldOption;
 use Botble\Base\Forms\FieldOptions\SelectFieldOption;
 use Botble\Base\Forms\FieldOptions\TextFieldOption;
 use Botble\Base\Forms\Fields\CoreIconField;
 use Botble\Base\Forms\Fields\MediaImageField;
+use Botble\Base\Forms\Fields\NumberField;
+use Botble\Base\Forms\Fields\OnOffField;
 use Botble\Base\Forms\Fields\SelectField;
+use Botble\Base\Forms\Fields\TextareaField;
 use Botble\Base\Forms\Fields\TextField;
+use Botble\Shortcode\Facades\Shortcode;
 use Botble\Media\Facades\RvMedia;
 use Botble\Menu\Facades\Menu;
 use Botble\Newsletter\Facades\Newsletter;
@@ -68,10 +75,14 @@ app()->booted(function (): void {
         return [
             'v2' => __('Default'),
             'v1' => __('Simplify'),
+            'v3' => __('Text Động (TeamDevDesign)'),
         ];
     }, 128);
 
     add_filter('theme_preloader', function (string $preloader): string {
+        if (theme_option('preloader_version', 'v2') === 'v3') {
+            return Theme::partial('preloader-v3');
+        }
         if (theme_option('preloader_version', 'v2') === 'v2') {
             return Theme::partial('preloader');
         }
@@ -140,7 +151,7 @@ app()->booted(function (): void {
     ]);
 
     RvMedia::addSize('vertical_thumb', 400, 500)
-        ->addSize('horizontal_thumb', 600, 400)
+        ->addSize('horizontal_thumb', 600, 338)
         ->addSize('medium', 1280, 400);
 
     add_filter(THEME_FRONT_BODY, function (?string $html): string {
@@ -172,12 +183,17 @@ app()->booted(function (): void {
                         ->metadata()
                 );
         });
+
+        // Override view shortcode projects-list với theme partial
+        add_filter('projects-list-shortcode', function (string $view): string {
+            return Theme::getThemeNamespace('partials.shortcodes.projects-list.index');
+        });
     }
 
     Menu::useMenuItemIconImage();
 
     PageForm::extend(function (PageForm $form): void {
-        if (! Theme::breadcrumb()->enabled()) {
+        if (!Theme::breadcrumb()->enabled()) {
             return;
         }
 

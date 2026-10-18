@@ -5,13 +5,13 @@
                 <div class="col-lg-5 position-relative">
                     @if ($subtitle = $shortcode->subtitle)
                         <div class="d-flex align-items-center justify-content-center bg-primary-soft border border-2 border-white d-inline-flex rounded-pill px-4 py-2" data-aos="zoom-in" data-aos-delay="50">
-                            <img src="{{ Theme::asset()->url('images/icons/dots.png') }}" alt="dots">
+                            <img src="{{ Theme::asset()->url('images/icons/dots.png') }}" alt="" aria-hidden="true">
                             <span class="tag-spacing fs-7 fw-bold text-linear-2 ms-2 text-primary">{!! BaseHelper::clean($subtitle) !!}</span>
                         </div>
                     @endif
 
                     @if ($title = $shortcode->title)
-                        <h5 class="ds-5 mt-2">{!! BaseHelper::clean($title) !!}</h5>
+                        <{{ $titleTag = infinia_title_tag($shortcode, 'h2') }} class="ds-5 mt-2">{!! infinia_clean_title($title) !!}</{{ $titleTag }}>
                     @endif
 
                     @foreach($features as $feature)
@@ -43,20 +43,20 @@
                     @endforeach
 
                     <div class="position-absolute flickering top-0 end-0 mt-5 me-10 d-none d-md-block">
-                        <img src="{{ Theme::asset()->url('images/shapes/shine-effect.png') }}" alt="shine effect">
+                        <img src="{{ Theme::asset()->url('images/shapes/shine-effect.png') }}" alt="" aria-hidden="true">
                     </div>
                 </div>
 
                 <div class="col-lg-7 text-center mt-lg-0 mt-8 d-flex">
                     @if ($image = $shortcode->image)
                         <div class="zoom-img rounded-3 mt-8 me-3">
-                            {{ RvMedia::image($image, __('Image')) }}
+                            {{ RvMedia::image($image, infinia_image_alt($shortcode)) }}
                         </div>
                     @endif
 
                     @if ($image1 = $shortcode->image_1)
                         <div class="zoom-img rounded-3">
-                            {{ RvMedia::image($image1, __('Image'), attributes: ['class' => 'rounded-3']) }}
+                            {{ RvMedia::image($image1, infinia_image_alt($shortcode), attributes: ['class' => 'rounded-3']) }}
                         </div>
                     @endif
                 </div>

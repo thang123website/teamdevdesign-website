@@ -52,10 +52,10 @@
 
             @if ($backgroundColor && $backgroundColor !== 'transparent')
                 <div class="position-absolute top-0 start-0 z-0">
-                    <img src="{{ Theme::asset()->url('images/decorations/ellipse-left.png') }}" alt="left">
+                    <img src="{{ Theme::asset()->url('images/decorations/ellipse-left.png') }}" alt="" aria-hidden="true">
                 </div>
                 <div class="position-absolute top-0 end-0 z-0">
-                    <img src="{{ Theme::asset()->url('images/decorations/ellipse-right.png') }}" alt="right">
+                    <img src="{{ Theme::asset()->url('images/decorations/ellipse-right.png') }}" alt="" aria-hidden="true">
                 </div>
             @endif
         </div>

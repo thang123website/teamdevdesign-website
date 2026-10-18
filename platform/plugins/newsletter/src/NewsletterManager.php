@@ -109,15 +109,7 @@ class NewsletterManager extends Manager implements Factory
                     version: '1.2.8'
                 );
 
-            add_filter('theme_front_meta', function (?string $html): string {
-                $image = theme_option('newsletter_popup_image');
-
-                if (! $image) {
-                    return $html;
-                }
-
-                return $html . '<link rel="preload" as="image" href="' . RvMedia::getImageUrl($image) . '" />';
-            });
+            // Hiệu năng: không preload ảnh popup (popup hiện sau vài giây) để nhường băng thông cho ảnh hero/LCP.
 
             add_filter(THEME_FRONT_BODY, function (?string $html): string {
                 return $html . view('plugins/newsletter::partials.newsletter-popup');

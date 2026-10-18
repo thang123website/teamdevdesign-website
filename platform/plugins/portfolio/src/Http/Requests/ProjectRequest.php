@@ -23,6 +23,9 @@ class ProjectRequest extends Request
             'place' => ['nullable', 'string', 'max:255'],
             'order' => ['required', 'numeric', 'min:0', 'max:99999'],
             'start_date' => ['nullable', 'date', 'date_format:' . BaseHelper::getDateFormat()],
+            'programming_languages' => ['nullable', 'string', 'max:400'],
+            'categories' => ['nullable', 'array'],
+            'categories.*' => [Rule::exists((new \Botble\Portfolio\Models\ProjectCategory())->getTable(), 'id')],
         ];
     }
 }

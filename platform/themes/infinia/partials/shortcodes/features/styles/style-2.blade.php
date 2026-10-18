@@ -5,12 +5,12 @@
                 <div class="col-lg-4 col-md-6 mb-lg-0 mb-8 position-relative z-2">
                     @if($shortcode->subtitle)
                         <div class="d-flex align-items-center bg-white border border-2 border-white d-inline-flex rounded-pill px-3 py-1">
-                            <img src="{{ Theme::asset()->url('images/icons/dots.png') }}" alt="dots">
+                            <img src="{{ Theme::asset()->url('images/icons/dots.png') }}" alt="" aria-hidden="true">
                             <span class="tag-spacing fs-7 fw-bold text-linear-2 ms-2 text-primary">{{ $shortcode->subtitle }}</span>
                         </div>
                     @endif
                     @if($shortcode->title)
-                        <h2 class="text-white mt-3 mb-4 fw-medium hover-up">{!! BaseHelper::clean($shortcode->title) !!}</h2>
+                        <{{ $titleTag = infinia_title_tag($shortcode, 'h2') }} class="text-white mt-3 mb-4 fw-medium hover-up">{!! infinia_clean_title($shortcode->title) !!}</{{ $titleTag }}>
                     @endif
                     @if($checklist)
                         <ul class="list-unstyled phase-items">
@@ -45,7 +45,7 @@
                                         @if($tag === 'a') href="{{ $shortcode->floating_card_button_url }}" @endif
                                         class="d-flex align-items-center bg-white-keep d-inline-flex rounded-pill px-2 py-1"
                                     >
-                                        <img src="{{ Theme::asset()->url('images/icons/dots.png') }}" alt="dots">
+                                        <img src="{{ Theme::asset()->url('images/icons/dots.png') }}" alt="" aria-hidden="true">
                                         <span class="fs-7 fw-medium text-primary mx-2">{{ $shortcode->floating_card_button_label }}</span>
                                     </{{ $tag }}>
                                 @endif
@@ -68,7 +68,7 @@
                                 <div data-aos="fade-zoom-in" data-aos-delay="{{ $loop->iteration }}00">
                                     @if(! empty($feature['icon_image']))
                                         <div class="icon">
-                                            <img src="{{ RvMedia::getImageUrl($feature['icon_image']) }}" alt="icon" class="icon-image" style="max-width: 150px;">
+                                            <img src="{{ RvMedia::getImageUrl($feature['icon_image']) }}" alt="" aria-hidden="true" class="icon-image" style="max-width: 150px;">
                                         </div>
                                     @elseif($feature['icon'])
                                         <x-core::icon :name="$feature['icon']" class="hover-up" style="width: 48px; height: 48px; stroke-width: 1" />
@@ -90,7 +90,7 @@
         </div>
         @if($shortcode->image)
             <div class="position-absolute bg-rotate z-0">
-                {{ RvMedia::image($shortcode->image, __('Image'), attributes: ['class' => 'rotate-center']) }}
+                {{ RvMedia::image($shortcode->image, infinia_image_alt($shortcode), attributes: ['class' => 'rotate-center']) }}
             </div>
         @endif
         <div class="position-absolute top-0 end-0 z-1 p-8">

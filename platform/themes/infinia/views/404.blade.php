@@ -1,5 +1,5 @@
 @php
-    SeoHelper::setTitle(__('404 - Not found'));
+    SeoHelper::setTitle('404 - Không tìm thấy trang');
     Theme::fireEventGlobalAssets();
 @endphp
 
@@ -12,8 +12,8 @@
                 @if($image = theme_option('404_image'))
                     {{ RvMedia::image($image, Theme::getSiteTitle()) }}
                 @endif
-                <h5 class="ds-5 pt-8">{!! BaseHelper::clean("We Can't Find What <br /> You're Looking For")!!}</h5>
-                <p>{!! BaseHelper::clean('We apologize, but the page you requested seems to be missing. It may <br /> have been moved, deleted, or there might be a typo in the URL.') !!}</p>
+                <h1 class="ds-5 pt-8">{!! BaseHelper::clean('Không tìm thấy trang <br /> bạn đang tìm kiếm')!!}</h1>
+                <p>{!! BaseHelper::clean('Trang bạn yêu cầu không tồn tại hoặc đã được chuyển đi. <br /> Vui lòng kiểm tra lại đường dẫn hoặc quay về trang chủ.') !!}</p>
                 <a href="{{ BaseHelper::getHomepageUrl() }}" class="btn btn-primary hover-up mt-5">
                     <svg class="me-2" xmlns="http://www.w3.org/2000/svg" width="24" height="14" viewBox="0 0 24 14" fill="none">
                         <path

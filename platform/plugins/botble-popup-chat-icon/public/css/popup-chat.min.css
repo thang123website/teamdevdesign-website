@@ -1,0 +1,111 @@
+#button-contact-vr {
+    position: fixed;
+    bottom: calc(var(--chat-btn-bottom, 20) * 1px) !important;
+    right: calc(var(--chat-btn-right, 20) * 1px) !important;
+    z-index: 99999;
+}
+
+#gom-all-in-one {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.button-contact {
+    margin-top: 18px;
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+.phone-vr {
+    width: 100% !important;
+    height: 100% !important;
+    position: relative !important;
+}
+
+.phone-vr-circle-fill {
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    position: absolute !important;
+    z-index: 0 !important;
+}
+
+.phone-vr-circle-fill::before,
+.phone-vr-circle-fill::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: var(--chat-primary-color, #ff0000);
+    opacity: 0;
+    animation: explode 2s infinite linear;
+}
+
+.phone-vr-circle-fill::after {
+    animation-delay: 0.8s;
+}
+
+@keyframes explode {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.7;
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(2.2);
+        opacity: 0;
+    }
+}
+
+.phone-vr-img-circle {
+    width: 60px !important;
+    height: 60px !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0px !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15) !important;
+    top: 0 !important;
+    left: 0 !important;
+    position: relative !important;
+    overflow: hidden;
+    z-index: 1 !important;
+}
+
+.phone-vr-img-circle img {
+    width: 65% !important;
+    height: 65% !important;
+    display: block !important;
+    margin: 0 !important;
+    object-fit: contain !important;
+    transform: scale(1.1) !important;
+    transform-origin: center center !important;
+}
+
+.phone-vr-circle,
+.phone-bar {
+    display: none !important;
+}
+
+@media (max-width: 768px) {
+    .button-contact {
+        width: 48px;
+        height: 48px;
+        margin-top: 18px;
+    }
+
+    .phone-vr-img-circle {
+        width: 48px !important;
+        height: 48px !important;
+    }
+}

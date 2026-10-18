@@ -16,7 +16,7 @@
                 <div class="bg-primary rounded-4">
                     <div class="p-7">
                         @if ($title = $shortcode->title)
-                            <h3 class="text-white">{!! BaseHelper::clean($title) !!}</h3>
+                            <{{ $titleTag = infinia_title_tag($shortcode, 'h3') }} class="text-white">{!! infinia_clean_title($title) !!}</{{ $titleTag }}>
                         @endif
 
                         @php

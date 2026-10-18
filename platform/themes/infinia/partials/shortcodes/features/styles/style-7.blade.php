@@ -4,7 +4,7 @@
             @if ($image = $shortcode->image)
                 <div class="col-lg-6 pe-lg-0">
                     <div class="zoom-img rounded-end-lg-0 rounded-4">
-                        {{ RvMedia::image($image, __('Image'), attributes: ['class' => 'rounded-end-lg-0 rounded-4']) }}
+                        {{ RvMedia::image($image, infinia_image_alt($shortcode), attributes: ['class' => 'rounded-end-lg-0 rounded-4']) }}
                     </div>
                 </div>
             @endif
@@ -13,13 +13,13 @@
                 <div class="bg-white p-md-8 p-5 rounded-start-lg-0 h-100 rounded-4 mt-lg-0 mt-5 border border-start-lg-0 shadow-1">
                     @if ($subtitle = $shortcode->subtitle)
                         <div class="d-flex align-items-center justify-content-center bg-primary-soft border border-2 border-white d-inline-flex rounded-pill mb-2 px-4 py-2">
-                            <img src="{{ Theme::asset()->url('images/icons/dots.png') }}" alt="dots">
+                            <img src="{{ Theme::asset()->url('images/icons/dots.png') }}" alt="" aria-hidden="true">
                             <span class="tag-spacing fs-7 fw-bold text-linear-2 ms-2 text-primary">{!! BaseHelper::clean($subtitle) !!}</span>
                         </div>
                     @endif
 
                     @if ($title = $shortcode->title)
-                        <h1 class="fs-1">{!! BaseHelper::clean($title) !!}</h1>
+                        <{{ $titleTag = infinia_title_tag($shortcode, 'h1') }} class="fs-1">{!! infinia_clean_title($title) !!}</{{ $titleTag }}>
                     @endif
 
                     @if ($description = $shortcode->description)

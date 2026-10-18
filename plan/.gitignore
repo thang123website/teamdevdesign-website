@@ -1,0 +1,4 @@
+backups/
+posts/*/build/
+__pycache__/
+*.pyc

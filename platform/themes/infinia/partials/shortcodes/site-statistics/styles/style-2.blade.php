@@ -5,7 +5,7 @@
         <div class="row border-bottom border-primary-light pb-8">
             @if ($title = $shortcode->title)
                 <div class="col-lg-6 me-lg-auto">
-                    <h5 class="ds-5 text-100 m-0">{!! BaseHelper::clean($title) !!}</h5>
+                    <{{ $titleTag = infinia_title_tag($shortcode, 'h5') }} class="ds-5 text-100 m-0">{!! infinia_clean_title($title) !!}</{{ $titleTag }}>
                 </div>
             @endif
 
@@ -41,7 +41,7 @@
                     <div class="col-xl-3 col-lg-4 col-sm-6">
                         <div class="counter-item-cover counter-item">
                             <div class="content text-center mx-auto">
-                                <span class="fw-bold lh-sm count ds-2 text-100"><span class="odometer" data-count="{{ $itemData }}"></span>
+                                <span class="fw-bold lh-sm count ds-2 text-100"><span class="visually-hidden">{{ $itemData }}</span><span class="odometer" data-count="{{ $itemData }}" aria-hidden="true"></span>
                                     @if($itemUnit = Arr::get($item, 'unit'))
                                         <span>{!! BaseHelper::clean($itemUnit) !!}</span>
                                     @endif

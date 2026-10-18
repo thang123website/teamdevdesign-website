@@ -3,6 +3,7 @@
 use Botble\Base\Facades\AdminHelper;
 use Botble\Portfolio\Http\Controllers\CustomFieldController;
 use Botble\Portfolio\Http\Controllers\PackageController;
+use Botble\Portfolio\Http\Controllers\ProjectCategoryController;
 use Botble\Portfolio\Http\Controllers\ProjectController;
 use Botble\Portfolio\Http\Controllers\PublicController;
 use Botble\Portfolio\Http\Controllers\QuotationRequestController;
@@ -10,6 +11,7 @@ use Botble\Portfolio\Http\Controllers\ServiceCategoryController;
 use Botble\Portfolio\Http\Controllers\ServiceController;
 use Botble\Portfolio\Models\Package;
 use Botble\Portfolio\Models\Project;
+use Botble\Portfolio\Models\ProjectCategory;
 use Botble\Portfolio\Models\Service;
 use Botble\Portfolio\Models\ServiceCategory;
 use Botble\Slug\Facades\SlugHelper;
@@ -28,6 +30,10 @@ AdminHelper::registerRoutes(function (): void {
 
         Route::group(['prefix' => 'packages', 'as' => 'packages.'], function (): void {
             Route::resource('', PackageController::class)->parameters(['' => 'package']);
+        });
+
+        Route::group(['prefix' => 'project-categories', 'as' => 'project-categories.'], function (): void {
+            Route::resource('', ProjectCategoryController::class)->parameters(['' => 'projectCategory']);
         });
 
         Route::group(['prefix' => 'projects', 'as' => 'projects.'], function (): void {
@@ -64,6 +70,11 @@ Theme::registerRoutes(function (): void {
         sprintf('%s/{slug}', SlugHelper::getPrefix(Project::class, 'projects')),
         [PublicController::class, 'project']
     )->name('public.project');
+
+    Route::get(
+        sprintf('%s/{slug}', SlugHelper::getPrefix(ProjectCategory::class, 'project-categories')),
+        [PublicController::class, 'projectCategory']
+    )->name('public.project-category');
 
     Route::prefix('portfolio')->name('portfolio.')->group(function (): void {
         Route::post('request-quote', [PublicController::class, 'storeQuote'])->name('request-quote');

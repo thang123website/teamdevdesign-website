@@ -3,7 +3,7 @@
         <div class="row">
             <div @class(['content', 'col-lg-8 ps-lg-4 mt-lg-0 mt-8 ' => ! empty($serviceSidebar)])>
                 @if ($service->image)
-                    {{ RvMedia::image($service->image, $service->name, 'medium', attributes: ['class' => 'rounded-3 mb-3']) }}
+                    {{ RvMedia::image($service->image, $service->name, null, attributes: ['class' => 'rounded-3 img-fluid w-100 mb-4']) }}
                 @endif
                 <div class="ck-content">
                     {!! BaseHelper::clean($service->content) !!}

@@ -4,7 +4,7 @@
     <div class="container position-relative z-1">
         <div class="text-center">
             @if ($title = $shortcode->title)
-                <h5 class="ds-5 mt-3 mb-3">{!! BaseHelper::clean($title) !!}</h5>
+                <{{ $titleTag = infinia_title_tag($shortcode, 'h5') }} class="ds-5 mt-3 mb-3">{!! infinia_clean_title($title) !!}</{{ $titleTag }}>
             @endif
 
             @if ($description = $shortcode->description)

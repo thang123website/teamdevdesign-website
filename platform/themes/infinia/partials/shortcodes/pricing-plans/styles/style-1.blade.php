@@ -9,12 +9,12 @@
                             data-aos="zoom-in"
                             data-aos-delay="50"
                         >
-                            <img src="{{ Theme::asset()->url('images/icons/dots.png') }}" alt="dots">
+                            <img src="{{ Theme::asset()->url('images/icons/dots.png') }}" alt="" aria-hidden="true">
                             <span class="tag-spacing fs-7 fw-bold text-linear-2 ms-2 text-primary">{!! BaseHelper::clean($shortcode->subtitle) !!}</span>
                         </div>
                     @endif
                     @if($shortcode->title)
-                        <h3 class="ds-3 my-3" data-aos="fade-zoom-in" data-aos-delay="100">{!! BaseHelper::clean($shortcode->title) !!}</h3>
+                        <{{ $titleTag = infinia_title_tag($shortcode, 'h3') }} class="ds-3 my-3" data-aos="fade-zoom-in" data-aos-delay="100">{!! infinia_clean_title($shortcode->title) !!}</{{ $titleTag }}>
                     @endif
                     @if($shortcode->description)
                         <p class="fs-5 mb-0" data-aos="fade-zoom-in" data-aos-delay="100">
@@ -69,7 +69,7 @@
                         <ul class="list-unstyled mb-0">
                             @foreach($package->feature_list as $feature)
                                 <li class="d-flex align-items-center mb-4">
-                                    <img src="{{ Theme::asset()->url($feature['is_available'] ? 'images/icons/check-primary.png' : 'images/icons/check-secondary.png') }}" alt="check">
+                                    <img src="{{ Theme::asset()->url($feature['is_available'] ? 'images/icons/check-primary.png' : 'images/icons/check-secondary.png') }}" alt="" aria-hidden="true">
                                     <strong class="d-block fs-6 mb-0 ms-2">{{ $feature['value'] }}</strong>
                                 </li>
                             @endforeach

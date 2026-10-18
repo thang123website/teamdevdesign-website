@@ -1,0 +1,216 @@
+<?php
+
+return [
+    'title' => '即時聊天',
+    'messages' => '訊息',
+    'visitor_name' => '訪客姓名',
+    'visitor_email' => '訪客電郵',
+    'visitor_phone' => '電話',
+    'visitor_info' => '訪客資訊',
+    'ip_address' => 'IP 位址',
+    'current_page' => '目前頁面',
+    'browser' => '瀏覽器',
+    'last_message' => '最後一則訊息',
+    'close_conversation' => '關閉',
+    'delete_conversation' => '刪除對話',
+    'conversation_closed' => '對話已關閉。',
+    'conversation_deleted' => '對話已刪除。',
+    'conversation_is_closed' => '此對話已關閉。',
+    'conversation_with' => '與 :name 的對話',
+    'confirm_close' => '確定要關閉此對話嗎？',
+    'confirm_delete' => '確定要刪除此對話嗎？此操作無法還原。',
+    'type_reply' => '輸入你的回覆...',
+    'reply_sent' => '回覆已成功傳送。',
+    'no_conversation' => '找不到進行中的對話。請開始新的聊天。',
+    'no_conversations' => '尚無對話',
+    'chat_started' => '聊天已成功開始。',
+    'message_sent' => '訊息已傳送。',
+    'select_conversation' => '選擇一個對話',
+    'select_conversation_hint' => '從清單中選擇對話以開始聊天。',
+    'all' => '全部',
+    'timeline' => '時間軸',
+    'total_messages' => '總訊息數',
+    'just_now' => '剛剛',
+    'test_sound' => '點擊測試聲音',
+    'back_to_list' => '返回列表',
+    'no_messages_yet' => '暫無訊息',
+    'start_conversation_hint' => '發送訊息以開始對話',
+    'notifications_enabled' => '瀏覽器通知已啟用！',
+    'enable_notifications' => '啟用瀏覽器通知',
+    'new_conversation' => '新對話',
+    'new_message' => '新訊息',
+    'no_conversations_hint' => '當訪客開始聊天時，對話將顯示在此處。',
+    'open_chat' => '開啟聊天',
+    'close' => '關閉',
+    'chat_title' => '即時聊天',
+    'online' => '線上',
+    'start_message' => '你好！今天我們可以如何幫你？',
+    'your_name' => '你的姓名',
+    'your_email' => '您的電子郵件',
+    'your_email_optional' => '你的電郵（選填）',
+    'your_phone' => '你的電話',
+    'start_chat' => '開始聊天',
+    'type_message' => '輸入訊息...',
+    'send' => '送出',
+    'default_admin_name' => '客服',
+    'default_welcome_message' => '你好！感謝你的聯絡。今天我可以如何幫你？',
+    'conversation_statuses' => [
+        'open' => '開啟',
+        'closed' => '關閉',
+    ],
+    'settings' => [
+        'title' => '即時聊天',
+        'description' => '設定顯示於你網站上的浮動即時聊天小工具，提供即時客戶支援。',
+        'form' => [
+            'enabled' => '啟用即時聊天',
+            'enabled_help' => '開啟以在你網站上顯示聊天小工具。訪客可以與你的支援團隊開始對話。',
+            'widget_title' => '小工具標題',
+            'widget_title_help' => '顯示在聊天小工具標題列頂端的標題。',
+            'widget_title_placeholder' => '即時聊天',
+            'welcome_message' => '歡迎訊息',
+            'welcome_message_help' => '訪客開啟聊天小工具時看到的第一則訊息。留空以使用預設訊息。',
+            'welcome_message_placeholder' => '你好！感謝你的聯絡。今天我可以如何幫你？',
+            'admin_name' => '管理員名稱',
+            'admin_name_help' => '在聊天小工具中顯示的管理員回覆名稱。',
+            'admin_name_placeholder' => '客服',
+            'random_admin_names_enabled' => '使用隨機管理員名稱',
+            'random_admin_names_enabled_help' => '啟用後，每個新對話將從下面的列表中分配一個隨機管理員名稱。',
+            'random_admin_names' => '隨機管理員名稱',
+            'random_admin_names_help' => '每行輸入一個名稱。將為每個新對話分配一個隨機名稱。',
+            'random_admin_names_placeholder' => 'Sarah
+Mike
+Emma
+John',
+            'primary_color' => '主要顏色',
+            'primary_color_help' => '聊天小工具按鈕與標題列的主要顏色。選擇符合你品牌的顏色。',
+            'position' => '小工具位置',
+            'position_help' => '聊天小工具按鈕在螢幕上出現的位置。',
+            'position_right' => '右下角',
+            'position_left' => '左下角',
+            'email_required' => '要求電郵',
+            'email_required_help' => '啟用後，訪客必須在開始聊天前輸入電郵地址。適合後續聯絡。',
+            'display_fields' => '顯示欄位',
+            'mandatory_fields' => '必填欄位',
+            'poll_interval' => '輪詢間隔（毫秒）',
+            'poll_interval_help' => '以毫秒為單位檢查新訊息的頻率。數值越低更新越快，但伺服器請求更多。建議：3000-5000ms。',
+            'poll_interval_placeholder' => '3000',
+            'online_status' => '在線狀態',
+            'working_hours_enabled' => '啟用工作時間',
+            'working_hours_enabled_help' => '啟用後，聊天狀態將在工作時間之外自動切換為離線。工作時間基於「設置」→「常規」中配置的時區。',
+            'working_hours_start' => '開始時間',
+            'working_hours_end' => '結束時間',
+            'working_days' => '工作日',
+            'avatar_image' => '頭像圖片',
+            'avatar_image_help' => '聊天標題的自定義頭像圖片。留空以使用默認圖標。',
+            'primary_hover_color' => '懸停顏色',
+            'primary_hover_color_help' => '滑鼠懸停在聊天按鈕上時的顏色。',
+            'position_bottom_right' => '右下角',
+            'position_bottom_left' => '左下角',
+            'position_center_right' => '右中',
+            'position_center_left' => '左中',
+            'offset_x' => '偏移 X (px)',
+            'offset_x_help' => '距離屏幕邊緣的水平偏移量（像素）。',
+            'offset_y' => '偏移 Y (px)',
+            'offset_y_help' => '距離屏幕邊緣的垂直偏移量（像素）。',
+            'display_on_mobile' => '在手機上顯示',
+            'display_on_mobile_help' => '控制是否在移動設備上顯示聊天小部件。',
+            'display_on_mobile_always' => '始終顯示',
+            'display_on_mobile_hide' => '在手機上隱藏',
+        ],
+    ],
+    'email' => [
+        'title' => 'Live Chat Email',
+        'description' => 'Email notifications for live chat events',
+        'templates' => [
+            'new_conversation_title' => 'New Conversation Notification',
+            'new_conversation_description' => 'Email sent to admin when a visitor starts a new conversation',
+            'new_conversation_subject' => 'New Live Chat Conversation from {{ visitor_name }}',
+            'visitor_name' => 'Visitor name',
+            'visitor_email' => 'Visitor email',
+            'visitor_phone' => 'Visitor phone',
+            'visitor_ip' => 'Visitor IP address',
+            'current_page' => 'Current page URL',
+            'conversation_url' => 'Link to conversation in admin panel',
+        ],
+    ],
+    'email_settings' => [
+        'title' => 'Email Notifications',
+        'description' => 'Configure email notifications for new chat conversations. Only one email is sent when a visitor starts a new conversation.',
+        'enable_email_notification' => 'Enable Email Notifications',
+        'enable_email_notification_help' => 'Send an email notification when a visitor starts a new chat conversation',
+        'notification_emails' => 'Notification Email Addresses',
+        'notification_emails_help' => 'Comma-separated list of email addresses to receive notifications. Leave empty to use the default admin email.',
+    ],
+    'email_templates' => [
+        'new_conversation_title' => 'New Live Chat Conversation',
+        'new_conversation_greeting' => 'A visitor has started a new live chat conversation on your website.',
+        'visitor_details' => 'Visitor Details',
+        'field_name' => 'Name:',
+        'field_email' => 'Email:',
+        'field_phone' => 'Phone:',
+        'field_ip' => 'IP Address:',
+        'field_page' => 'Current Page:',
+        'respond_instruction' => 'Click the button below to respond to this conversation.',
+        'view_conversation_button' => 'View Conversation',
+    ],
+    'webhook' => [
+        'title' => 'Webhook 設定',
+        'description' => '配置 Webhook 以在聊天事件發生時接收通知。Webhook 將向您指定的 URL 發送帶有事件數據的 HTTP POST 請求。',
+        'enable_webhooks' => '啟用 Webhook',
+        'enable_webhooks_help' => '啟用即時聊天事件的 Webhook 通知',
+        'message_received_url' => '消息接收 Webhook URL',
+        'message_received_url_help' => '當訪客在聊天中發送新消息時觸發',
+        'conversation_started_url' => '對話開始 Webhook URL',
+        'conversation_started_url_help' => '當訪客開始新對話時觸發',
+        'view_sample_data' => '查看示例數據',
+        'test_button' => '發送測試 Webhook',
+        'testing' => '發送中...',
+        'test_success' => 'Webhook 發送成功！',
+        'test_failed' => 'Webhook 測試失敗。',
+        'status_code' => '狀態碼',
+        'please_enter_url' => '請先輸入 Webhook URL',
+        'error_occurred' => '測試 Webhook 時發生錯誤',
+        'usage_instructions_title' => '如何使用 Webhook',
+        'usage_instructions' => '<p><strong>Webhook</strong> 允許您在即時聊天中發生事件時接收實時通知。當觸發事件時，將向您配置的 URL 發送包含 JSON 數據的 HTTP POST 請求。</p>
+<h6>HTTP 標頭</h6>
+<ul>
+<li><code>Content-Type: application/json</code></li>
+<li><code>X-Webhook-Event</code> - 事件類型（如 <code>message.received</code>、<code>conversation.started</code>）</li>
+<li><code>X-Webhook-Timestamp</code> - Webhook 發送時的 ISO 8601 時間戳</li>
+<li><code>X-Webhook-Test: true</code> - 僅在測試 Webhook 時存在</li>
+</ul>
+<h6>端點要求</h6>
+<ul>
+<li>必須接受 HTTP POST 請求</li>
+<li>必須在 10 秒內響應（超時限制）</li>
+<li>成功時應返回 HTTP 2xx 狀態碼</li>
+<li>必須可公開訪問（建議使用 HTTPS）</li>
+</ul>
+<h6>整合教學</h6>
+<ul>
+<li><strong>Slack:</strong> <a href="https://api.slack.com/messaging/webhooks" target="_blank">傳入 Webhook 指南</a></li>
+<li><strong>Discord:</strong> <a href="https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks" target="_blank">Webhook 入門</a></li>
+<li><strong>Telegram:</strong> <a href="https://core.telegram.org/bots/webhooks" target="_blank">Bot Webhooks</a>（配合 <a href="https://core.telegram.org/bots/api#sendmessage" target="_blank">sendMessage API</a> 使用）</li>
+<li><strong>n8n:</strong> <a href="https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.webhook/" target="_blank">Webhook Node</a></li>
+<li><strong>Zapier:</strong> <a href="https://zapier.com/apps/webhook/integrations" target="_blank">Webhooks by Zapier</a></li>
+<li><strong>Make (Integromat):</strong> <a href="https://www.make.com/en/help/tools/webhooks" target="_blank">Webhooks 模組</a></li>
+</ul>
+<h6>使用場景</h6>
+<ul>
+<li>向 Slack、Discord 或 Telegram 發送通知</li>
+<li>在服務台系統（Zendesk、Freshdesk）中建立工單</li>
+<li>將對話記錄到外部 CRM</li>
+<li>通過 n8n 或 Zapier 觸發自動回覆</li>
+</ul>',
+    ],
+    'offline' => 'Offline',
+    'days' => [
+        'monday' => '星期一',
+        'tuesday' => '星期二',
+        'wednesday' => '星期三',
+        'thursday' => '星期四',
+        'friday' => '星期五',
+        'saturday' => '星期六',
+        'sunday' => '星期日',
+    ],
+];

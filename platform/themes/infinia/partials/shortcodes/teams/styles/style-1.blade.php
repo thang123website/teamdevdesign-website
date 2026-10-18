@@ -4,12 +4,12 @@
             <div class="text-center">
                 @if($shortcode->subtitle)
                     <div class="d-flex align-items-center justify-content-center bg-primary-soft border border-2 border-white d-inline-flex rounded-pill px-4 py-2" data-aos="zoom-in" data-aos-delay="50">
-                        <img src="{{ Theme::asset()->url('images/icons/dots.png') }}" alt="dots">
+                        <img src="{{ Theme::asset()->url('images/icons/dots.png') }}" alt="" aria-hidden="true">
                         <span class="tag-spacing fs-7 fw-bold text-linear-2 ms-2 text-primary">{!! BaseHelper::clean($shortcode->subtitle) !!}</span>
                     </div>
                 @endif
                 @if($shortcode->title)
-                    <h3 class="ds-3 my-3" data-aos="fade-zoom-in" data-aos-delay="100">{!! BaseHelper::clean($shortcode->title) !!}</h3>
+                    <{{ $titleTag = infinia_title_tag($shortcode, 'h3') }} class="ds-3 my-3" data-aos="fade-zoom-in" data-aos-delay="100">{!! infinia_clean_title($shortcode->title) !!}</{{ $titleTag }}>
                 @endif
                 @if($shortcode->description)
                     <p class="fs-5" data-aos="fade-zoom-in" data-aos-delay="100">
@@ -51,7 +51,7 @@
     </div>
     @if ($backgroundImage = $shortcode->background_image)
         <div class="position-absolute top-0 start-50 translate-middle-x z-0">
-            {{ RvMedia::image($backgroundImage, __('Image')) }}
+            {{ RvMedia::image($backgroundImage, infinia_image_alt($shortcode)) }}
         </div>
     @endif
     <div class="rotate-center ellipse-rotate-success position-absolute z-0"></div>

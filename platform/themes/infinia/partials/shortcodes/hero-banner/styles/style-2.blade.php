@@ -9,9 +9,9 @@
                 @endif
 
                 @if ($title = $shortcode->title)
-                    <h3 class="ds-3 fw-normal position-relative z-2 mb-5">
-                        {!! BaseHelper::clean($title) !!}
-                    </h3>
+                    <{{ $titleTag = infinia_title_tag($shortcode, 'h3') }} class="ds-3 fw-normal position-relative z-2 mb-5">
+                        {!! infinia_clean_title($title) !!}
+                    </{{ $titleTag }}>
                 @endif
 
                 @php
@@ -48,7 +48,7 @@
 
                 <div class="mt-10 mt-md-8 position-relative z-1  text-900">
                     @if ($image = $shortcode->image)
-                        {{ RvMedia::image($image, __('Image'), attributes: ['data-aos' => 'fade-up', 'data-aos-delay' => 100]) }}
+                        {{ RvMedia::image($image, infinia_image_alt($shortcode), attributes: ['data-aos' => 'fade-up', 'data-aos-delay' => 100]) }}
                     @endif
 
                     <img src="{{ Theme::asset()->url('images/shapes/vector.png') }}" class="alltuchtopdown d-none d-md-block position-absolute bottom-0 end-0 pe-10 me-lg-10 mb-lg-10" />
@@ -69,7 +69,7 @@
                                     @foreach($floatingFeatures as $floatingFeature)
                                         @continue(! $featureTitle = Arr::get($floatingFeature, 'title'))
                                         <li class="d-flex align-items-center mt-2">
-                                            <img src="{{ Theme::asset()->url('images/icons/check.png') }}" alt="check">
+                                            <img src="{{ Theme::asset()->url('images/icons/check.png') }}" alt="" aria-hidden="true">
                                             <span class="ms-2">{!! BaseHelper::clean($featureTitle) !!}</span>
                                         </li>
                                     @endforeach
@@ -96,7 +96,7 @@
 
     @if($bgImage = $shortcode->background_image)
         <div class="position-absolute top-0 start-50 translate-middle-x">
-            {{ RvMedia::image($bgImage, __('Image')) }}
+            {{ RvMedia::image($bgImage, infinia_image_alt($shortcode)) }}
         </div>
     @endif
 

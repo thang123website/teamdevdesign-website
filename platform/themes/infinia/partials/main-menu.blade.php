@@ -2,7 +2,7 @@
     @foreach($menu_nodes as $key => $row)
         <li @class(['nav-item', 'dropdown' => $row->has_child])>
             <a
-                @class(['nav-link fw-bold d-md-flex align-items-center', 'dropdown-toggle' => $row->has_child, 'active' => $row->active, $row->css_class])
+                @class(['nav-link fw-bold text-nowrap d-md-flex align-items-center', 'dropdown-toggle' => $row->has_child, 'active' => $row->active, $row->css_class])
                 href="{{ $row->url }}"
                 target="{{ $row->target }}"
                 @if($row->has_child)

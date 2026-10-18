@@ -1,0 +1,216 @@
+<?php
+
+return [
+    'title' => 'Tiesioginis pokalbis',
+    'messages' => 'Žinutės',
+    'visitor_name' => 'Lankytojo vardas',
+    'visitor_email' => 'Lankytojo el. paštas',
+    'visitor_phone' => 'Telefonas',
+    'visitor_info' => 'Lankytojo informacija',
+    'ip_address' => 'IP adresas',
+    'current_page' => 'Dabartinis puslapis',
+    'browser' => 'Naršyklė',
+    'last_message' => 'Paskutinė žinutė',
+    'close_conversation' => 'Uždaryti',
+    'delete_conversation' => 'Ištrinti pokalbį',
+    'conversation_closed' => 'Pokalbis uždarytas.',
+    'conversation_deleted' => 'Pokalbis ištrintas.',
+    'conversation_is_closed' => 'Šis pokalbis uždarytas.',
+    'conversation_with' => 'Pokalbis su :name',
+    'confirm_close' => 'Ar tikrai norite uždaryti šį pokalbį?',
+    'confirm_delete' => 'Ar tikrai norite ištrinti šį pokalbį? Šio veiksmo anuliuoti negalima.',
+    'type_reply' => 'Įveskite savo atsakymą...',
+    'reply_sent' => 'Atsakymas sėkmingai išsiųstas.',
+    'no_conversation' => 'Aktyvus pokalbis nerastas. Prašome pradėti naują pokalbį.',
+    'no_conversations' => 'Kol kas nėra pokalbių',
+    'chat_started' => 'Pokalbis sėkmingai pradėtas.',
+    'message_sent' => 'Žinutė išsiųsta.',
+    'select_conversation' => 'Pasirinkite pokalbį',
+    'select_conversation_hint' => 'Pasirinkite pokalbį iš sąrašo, kad pradėtumėte pokalbį.',
+    'all' => 'Visi',
+    'timeline' => 'Laiko juosta',
+    'total_messages' => 'Iš viso žinučių',
+    'just_now' => 'Ką tik',
+    'test_sound' => 'Spustelėkite, kad išbandytumėte garsą',
+    'back_to_list' => 'Grįžti į pokalbius',
+    'no_messages_yet' => 'Kol kas nėra žinučių',
+    'start_conversation_hint' => 'Siųskite žinutę pokalbio pradžiai',
+    'notifications_enabled' => 'Naršyklės pranešimai įjungti!',
+    'enable_notifications' => 'Įjungti naršyklės pranešimus',
+    'new_conversation' => 'Naujas pokalbis',
+    'new_message' => 'Nauja žinutė',
+    'no_conversations_hint' => 'Pokalbiai bus rodomi čia, kai lankytojai pradės kalbėtis.',
+    'open_chat' => 'Atidaryti pokalbį',
+    'close' => 'Uždaryti',
+    'chat_title' => 'Tiesioginis pokalbis',
+    'online' => 'Prisijungęs',
+    'start_message' => 'Sveiki! Kaip galime jums padėti šiandien?',
+    'your_name' => 'Jūsų vardas',
+    'your_email' => 'Jūsų el. paštas',
+    'your_email_optional' => 'Jūsų el. paštas (neprivaloma)',
+    'your_phone' => 'Jūsų Telefonas',
+    'start_chat' => 'Pradėti pokalbį',
+    'type_message' => 'Įveskite žinutę...',
+    'send' => 'Siųsti',
+    'default_admin_name' => 'Palaikymas',
+    'default_welcome_message' => 'Sveiki! Ačiū, kad susisiekėte. Kaip galiu jums padėti šiandien?',
+    'conversation_statuses' => [
+        'open' => 'Atidarytas',
+        'closed' => 'Uždarytas',
+    ],
+    'settings' => [
+        'title' => 'Tiesioginis pokalbis',
+        'description' => 'Konfigūruokite plaukiojantį tiesioginio pokalbio valdiklį, kuris rodomas jūsų svetainėje realaus laiko klientų palaikymui.',
+        'form' => [
+            'enabled' => 'Įjungti tiesioginį pokalbį',
+            'enabled_help' => 'Įjunkite, kad jūsų svetainėje būtų rodomas pokalbio valdiklis. Lankytojai gali pradėti pokalbius su jūsų pagalbos komanda.',
+            'widget_title' => 'Valdiklio pavadinimas',
+            'widget_title_help' => 'Pavadinimas, rodomas pokalbio valdiklio antraštės viršuje.',
+            'widget_title_placeholder' => 'Tiesioginis pokalbis',
+            'welcome_message' => 'Sveikinimo žinutė',
+            'welcome_message_help' => 'Pirmoji žinutė, kurią lankytojai mato atidarę pokalbio valdiklį. Palikite tuščią, jei norite naudoti numatytąją žinutę.',
+            'welcome_message_placeholder' => 'Sveiki! Ačiū, kad susisiekėte. Kaip galiu jums padėti šiandien?',
+            'admin_name' => 'Administratoriaus vardas',
+            'admin_name_help' => 'Pokalbių valdiklyje rodomas administratoriaus atsakymų vardas.',
+            'admin_name_placeholder' => 'Palaikymas',
+            'random_admin_names_enabled' => 'Naudoti atsitiktinius administratorių vardus',
+            'random_admin_names_enabled_help' => 'Įjungus, kiekvienam naujam pokalbiui bus priskirtas atsitiktinis administratoriaus vardas iš žemiau pateikto sąrašo.',
+            'random_admin_names' => 'Atsitiktiniai administratorių vardai',
+            'random_admin_names_help' => 'Įveskite po vieną vardą eilutėje. Kiekvienam naujam pokalbiui bus priskirtas atsitiktinis vardas.',
+            'random_admin_names_placeholder' => 'Sarah
+Mike
+Emma
+John',
+            'primary_color' => 'Pagrindinė spalva',
+            'primary_color_help' => 'Pagrindinė pokalbio valdiklio mygtuko ir antraštės spalva. Pasirinkite spalvą, atitinkančią jūsų prekės ženklą.',
+            'position' => 'Valdiklio padėtis',
+            'position_help' => 'Kur ekrane rodomas pokalbio valdiklio mygtukas.',
+            'position_right' => 'Apačioje dešinėje',
+            'position_left' => 'Apačioje kairėje',
+            'email_required' => 'Reikalauti el. pašto',
+            'email_required_help' => 'Įjungus lankytojai turi įvesti savo el. pašto adresą prieš pradėdami pokalbį. Naudinga tolimesnei komunikacijai.',
+            'display_fields' => 'Rodyti laukus',
+            'mandatory_fields' => 'Privalomi laukai',
+            'poll_interval' => 'Apklausos intervalas (ms)',
+            'poll_interval_help' => 'Kaip dažnai tikrinti naujas žinutes milisekundėmis. Mažesnės reikšmės reiškia greitesnius atnaujinimus, bet daugiau serverio užklausų. Rekomenduojama: 3000-5000ms.',
+            'poll_interval_placeholder' => '3000',
+            'online_status' => 'Prisijungimo būsena',
+            'working_hours_enabled' => 'Įgalinti darbo valandas',
+            'working_hours_enabled_help' => 'Kai įjungta, pokalbio būsena automatiškai persijungs į neprisijungusį ne darbo valandomis. Darbo valandos priklauso nuo laiko juostos, sukonfigūruotos Nustatymuose → Bendra.',
+            'working_hours_start' => 'Pradžios laikas',
+            'working_hours_end' => 'Pabaigos laikas',
+            'working_days' => 'Darbo dienos',
+            'avatar_image' => 'Avataro paveikslėlis',
+            'avatar_image_help' => 'Pasirinktinis avataro paveikslėlis pokalbio antraštei. Palikite tuščią, kad naudotumėte numatytąją piktogramą.',
+            'primary_hover_color' => 'Užvedimo spalva',
+            'primary_hover_color_help' => 'Spalva užvedus pelę ant pokalbio mygtuko.',
+            'position_bottom_right' => 'Apačioje dešinėje',
+            'position_bottom_left' => 'Apačioje kairėje',
+            'position_center_right' => 'Viduryje dešinėje',
+            'position_center_left' => 'Viduryje kairėje',
+            'offset_x' => 'Poslinkis X (px)',
+            'offset_x_help' => 'Horizontalus atstumas nuo ekrano krašto pikseliais.',
+            'offset_y' => 'Poslinkis Y (px)',
+            'offset_y_help' => 'Vertikalus atstumas nuo ekrano krašto pikseliais.',
+            'display_on_mobile' => 'Rodyti mobiliajame',
+            'display_on_mobile_help' => 'Valdykite, ar pokalbių valdiklis rodomas mobiliuosiuose įrenginiuose.',
+            'display_on_mobile_always' => 'Visada rodyti',
+            'display_on_mobile_hide' => 'Slėpti mobiliajame',
+        ],
+    ],
+    'email' => [
+        'title' => 'Live Chat Email',
+        'description' => 'Email notifications for live chat events',
+        'templates' => [
+            'new_conversation_title' => 'New Conversation Notification',
+            'new_conversation_description' => 'Email sent to admin when a visitor starts a new conversation',
+            'new_conversation_subject' => 'New Live Chat Conversation from {{ visitor_name }}',
+            'visitor_name' => 'Visitor name',
+            'visitor_email' => 'Visitor email',
+            'visitor_phone' => 'Visitor phone',
+            'visitor_ip' => 'Visitor IP address',
+            'current_page' => 'Current page URL',
+            'conversation_url' => 'Link to conversation in admin panel',
+        ],
+    ],
+    'email_settings' => [
+        'title' => 'Email Notifications',
+        'description' => 'Configure email notifications for new chat conversations. Only one email is sent when a visitor starts a new conversation.',
+        'enable_email_notification' => 'Enable Email Notifications',
+        'enable_email_notification_help' => 'Send an email notification when a visitor starts a new chat conversation',
+        'notification_emails' => 'Notification Email Addresses',
+        'notification_emails_help' => 'Comma-separated list of email addresses to receive notifications. Leave empty to use the default admin email.',
+    ],
+    'email_templates' => [
+        'new_conversation_title' => 'New Live Chat Conversation',
+        'new_conversation_greeting' => 'A visitor has started a new live chat conversation on your website.',
+        'visitor_details' => 'Visitor Details',
+        'field_name' => 'Name:',
+        'field_email' => 'Email:',
+        'field_phone' => 'Phone:',
+        'field_ip' => 'IP Address:',
+        'field_page' => 'Current Page:',
+        'respond_instruction' => 'Click the button below to respond to this conversation.',
+        'view_conversation_button' => 'View Conversation',
+    ],
+    'webhook' => [
+        'title' => 'Webhook nustatymai',
+        'description' => 'Sukonfigūruokite webhookus, kad gautumėte pranešimus apie pokalbių įvykius. Webhookai siunčia HTTP POST užklausas į jūsų nurodytus URL adresus su įvykių duomenimis.',
+        'enable_webhooks' => 'Įjungti Webhookus',
+        'enable_webhooks_help' => 'Įjungti webhook pranešimų siuntimą gyvų pokalbių įvykiams',
+        'message_received_url' => 'Žinutės gavimo Webhook URL',
+        'message_received_url_help' => 'Suaktyvinamas, kai lankytojas siunčia naują žinutę pokalbyje',
+        'conversation_started_url' => 'Pokalbio pradžios Webhook URL',
+        'conversation_started_url_help' => 'Suaktyvinamas, kai lankytojas pradeda naują pokalbį',
+        'view_sample_data' => 'Peržiūrėti pavyzdinius duomenis',
+        'test_button' => 'Siųsti testinį Webhook',
+        'testing' => 'Siunčiama...',
+        'test_success' => 'Webhook sėkmingai išsiųstas!',
+        'test_failed' => 'Webhook testas nepavyko.',
+        'status_code' => 'Būsenos kodas',
+        'please_enter_url' => 'Pirmiausia įveskite webhook URL',
+        'error_occurred' => 'Testuojant webhook įvyko klaida',
+        'usage_instructions_title' => 'How to Use Webhooks',
+        'usage_instructions' => '<p><strong>Webhooks</strong> allow you to receive real-time notifications when events occur in Live Chat. When an event is triggered, an HTTP POST request is sent to your configured URL with JSON payload.</p>
+<h6>HTTP Headers</h6>
+<ul>
+<li><code>Content-Type: application/json</code></li>
+<li><code>X-Webhook-Event</code> - Event type (e.g., <code>message.received</code>, <code>conversation.started</code>)</li>
+<li><code>X-Webhook-Timestamp</code> - ISO 8601 timestamp when webhook was sent</li>
+<li><code>X-Webhook-Test: true</code> - Only present for test webhooks</li>
+</ul>
+<h6>Your Endpoint Requirements</h6>
+<ul>
+<li>Must accept HTTP POST requests</li>
+<li>Must respond within 10 seconds (timeout limit)</li>
+<li>Should return HTTP 2xx status code for success</li>
+<li>Must be publicly accessible (HTTPS recommended)</li>
+</ul>
+<h6>Integration Tutorials</h6>
+<ul>
+<li><strong>Slack:</strong> <a href="https://api.slack.com/messaging/webhooks" target="_blank">Incoming Webhooks Guide</a></li>
+<li><strong>Discord:</strong> <a href="https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks" target="_blank">Intro to Webhooks</a></li>
+<li><strong>Telegram:</strong> <a href="https://core.telegram.org/bots/webhooks" target="_blank">Bot Webhooks</a> (use with <a href="https://core.telegram.org/bots/api#sendmessage" target="_blank">sendMessage API</a>)</li>
+<li><strong>n8n:</strong> <a href="https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.webhook/" target="_blank">Webhook Node</a></li>
+<li><strong>Zapier:</strong> <a href="https://zapier.com/apps/webhook/integrations" target="_blank">Webhooks by Zapier</a></li>
+<li><strong>Make (Integromat):</strong> <a href="https://www.make.com/en/help/tools/webhooks" target="_blank">Webhooks Module</a></li>
+</ul>
+<h6>Example Use Cases</h6>
+<ul>
+<li>Send notifications to Slack, Discord, or Telegram</li>
+<li>Create tickets in helpdesk systems (Zendesk, Freshdesk)</li>
+<li>Log conversations to external CRM</li>
+<li>Trigger automated responses via n8n or Zapier</li>
+</ul>',
+    ],
+    'offline' => 'Offline',
+    'days' => [
+        'monday' => 'Pirmadienis',
+        'tuesday' => 'Antradienis',
+        'wednesday' => 'Trečiadienis',
+        'thursday' => 'Ketvirtadienis',
+        'friday' => 'Penktadienis',
+        'saturday' => 'Šeštadienis',
+        'sunday' => 'Sekmadienis',
+    ],
+];

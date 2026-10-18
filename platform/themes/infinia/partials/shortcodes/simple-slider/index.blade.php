@@ -11,10 +11,31 @@
                     @php
                         $tabletImage = $slider->getMetaData('tablet_image', true) ?: $slider->image;
                         $mobileImage = $slider->getMetaData('mobile_image', true) ?: $tabletImage;
+
+                        // Hiệu năng (LCP): in sẵn ảnh nền bằng CSS thay vì đợi JS gán, và preload ảnh slide đầu.
+                        $slideId = 'hero-slide-' . $slider->getKey();
+                        $desktopUrl = RvMedia::getImageUrl($slider->image, null, false, RvMedia::getDefaultImage());
+                        $tabletUrl = RvMedia::getImageUrl($tabletImage, null, false, RvMedia::getDefaultImage());
+                        $mobileUrl = RvMedia::getImageUrl($mobileImage, null, false, RvMedia::getDefaultImage());
+
+                        if ($loop->first) {
+                            add_filter('theme_front_meta', function (?string $html) use ($desktopUrl, $tabletUrl, $mobileUrl): string {
+                                return $html
+                                    . '<link rel="preload" as="image" fetchpriority="high" href="' . e($mobileUrl) . '" media="(max-width: 768px)">'
+                                    . '<link rel="preload" as="image" fetchpriority="high" href="' . e($tabletUrl) . '" media="(min-width: 769px) and (max-width: 1199px)">'
+                                    . '<link rel="preload" as="image" fetchpriority="high" href="' . e($desktopUrl) . '" media="(min-width: 1200px)">';
+                            }, 1);
+                        }
                     @endphp
 
+                    <style>
+                        #{{ $slideId }} { background-image: url("{{ $mobileUrl }}"); }
+                        @media (min-width: 769px) { #{{ $slideId }} { background-image: url("{{ $tabletUrl }}"); } }
+                        @media (min-width: 1200px) { #{{ $slideId }} { background-image: url("{{ $desktopUrl }}"); } }
+                    </style>
+
                     <div class="swiper-slide">
-                        <div class="position-relative py-188 img-pull"
+                        <div id="{{ $slideId }}" class="position-relative py-188 img-pull"
                              data-original-image="{{ RvMedia::getImageUrl($slider->image, null, false, RvMedia::getDefaultImage()) }}"
                              @if ($tabletImage) data-tablet-image="{{ RvMedia::getImageUrl($tabletImage, null, false, RvMedia::getDefaultImage()) }}" @endif
                              @if ($mobileImage) data-mobile-image="{{ RvMedia::getImageUrl($mobileImage, null, false, RvMedia::getDefaultImage()) }}" @endif
@@ -30,7 +51,7 @@
                                             @endif
 
                                             @if ($title = $slider->title)
-                                                <h3 class="ds-3 my-3">{!! BaseHelper::clean($title) !!}</h3>
+                                                <{{ $titleTag = infinia_title_tag($shortcode, 'h3') }} class="ds-3 my-3">{!! infinia_clean_title($title) !!}</{{ $titleTag }}>
                                             @endif
 
                                             @if ($description = $slider->description)

@@ -551,7 +551,7 @@
     /*=============================================
 	=           Page Load       =
     =============================================*/
-    $(window).on('load', function () {
+    $(document).ready(function () {
         preloader();
         progressPageLoad();
         offcanvasMenu();

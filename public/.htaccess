@@ -18,8 +18,21 @@
     RewriteCond %{REQUEST_URI} (.+)/$
     RewriteRule ^ %1 [L,R=301]
 
+    # Hiệu năng: trả bản WebP (vd: a.png.webp) khi trình duyệt hỗ trợ và file webp tồn tại.
+    # URL ảnh giữ nguyên, ảnh gốc giữ nguyên. Gỡ 4 dòng dưới là quay về như cũ.
+    RewriteCond %{HTTP_ACCEPT} image/webp
+    RewriteCond %{REQUEST_FILENAME} \.(jpe?g|png)$ [NC]
+    RewriteCond %{REQUEST_FILENAME}.webp -f
+    RewriteRule ^(.+)$ $1.webp [T=image/webp,L]
+
     # Send Requests To Front Controller...
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
+</IfModule>
+
+<IfModule mod_headers.c>
+    <FilesMatch "\.(jpe?g|png|webp)$">
+        Header append Vary Accept
+    </FilesMatch>
 </IfModule>

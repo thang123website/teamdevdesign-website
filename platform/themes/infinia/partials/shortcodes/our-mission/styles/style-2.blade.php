@@ -5,13 +5,13 @@
                 <div class="text-center mb-lg-0 mb-5">
                     @if ($subtitle = $shortcode->subtitle)
                         <div class="d-flex align-items-center position-relative z-2 justify-content-center bg-primary-soft d-inline-flex rounded-pill border border-2 border-white px-3 py-1">
-                            <img src="{{ Theme::asset()->url('images/icons/dots.png') }}" alt="dots">
+                            <img src="{{ Theme::asset()->url('images/icons/dots.png') }}" alt="" aria-hidden="true">
                             <span class="tag-spacing fs-7 fw-bold text-linear-2 ms-2 text-primary">{!! BaseHelper::clean($subtitle) !!}</span>
                         </div>
                     @endif
 
                     @if ($title = $shortcode->title)
-                        <h5 class="ds-5 my-3 fw-regular">{!! BaseHelper::clean($title) !!}</h5>
+                        <{{ $titleTag = infinia_title_tag($shortcode, 'h1') }} class="ds-5 my-3 fw-regular">{!! infinia_clean_title($title) !!}</{{ $titleTag }}>
                     @endif
 
                     @if ($description = $shortcode->description)
@@ -25,7 +25,7 @@
                 <div class="position-relative mb-lg-0 mb-8 fix">
                     @if($image = $shortcode->image)
                         <div class="zoom-img rounded-4 fix">
-                            {{ RvMedia::image($image, __('Image')) }}
+                            {{ RvMedia::image($image, infinia_image_alt($shortcode)) }}
                         </div>
                     @endif
 
@@ -96,7 +96,7 @@
                     @if ($image1 = $shortcode->image_1)
                         <div class="col-md-6 col-lg-12">
                             <div class="zoom-img rounded-4 fix d-inline-block mt-4 mt-lg-4 mt-md-0 h-100">
-                                {{ RvMedia::image($image1, __('Image'), attributes: ['class' => 'h-100']) }}
+                                {{ RvMedia::image($image1, infinia_image_alt($shortcode), attributes: ['class' => 'h-100']) }}
                             </div>
                         </div>
                     @endif
@@ -107,7 +107,7 @@
 
     @if ($backgroundImage = $shortcode->background_image)
         <div class="position-absolute top-0 start-50 translate-middle-x z-0">
-            {{ RvMedia::image($backgroundImage, __('Image')) }}
+            {{ RvMedia::image($backgroundImage, infinia_image_alt($shortcode)) }}
         </div>
     @endif
     <div class="rotate-center ellipse-rotate-success position-absolute z-0"></div>

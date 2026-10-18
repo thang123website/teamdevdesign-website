@@ -9,7 +9,7 @@
                         <div class="bg-primary-soft icon-flip position-relative icon-shape icon-xxl rounded-3 mb-4">
                             <div class="icon">
                                 @if($iconImage = $service->getMetaData('icon_image', true))
-                                    <img src="{{ RvMedia::getImageUrl($iconImage) }}" alt="icon" class="service-icon">
+                                    <img src="{{ RvMedia::getImageUrl($iconImage) }}" alt="" aria-hidden="true" class="service-icon">
                                 @elseif($icon = $service->getMetaData('icon', true))
                                     <x-core::icon :name="$icon" class="service-icon" />
                                 @endif
@@ -38,7 +38,7 @@
                             </svg>
                         </a>
                         <div class="position-absolute end-0 top-0">
-                            <img src="{{ Theme::asset()->url('images/shapes/bg-line.png') }}" alt="line">
+                            <img src="{{ Theme::asset()->url('images/shapes/bg-line.png') }}" alt="" aria-hidden="true">
                         </div>
                     </div>
                 </div>

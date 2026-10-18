@@ -5,13 +5,13 @@
         <div class="text-center">
             @if ($subtitle = $shortcode->subtitle)
                 <div class="d-flex align-items-center justify-content-center bg-primary-soft border border-2 border-white d-inline-flex rounded-pill px-4 py-2" data-aos="zoom-in" data-aos-delay="50">
-                    <img src="{{ Theme::asset()->url('images/icons/dots.png') }}" alt="dots">
+                    <img src="{{ Theme::asset()->url('images/icons/dots.png') }}" alt="" aria-hidden="true">
                     <span class="tag-spacing fs-7 fw-bold text-linear-2 ms-2 text-primary">{!! BaseHelper::clean($subtitle) !!}</span>
                 </div>
             @endif
 
             @if ($title = $shortcode->title)
-                <h3 class="ds-3 my-3 fw-regular">{!! BaseHelper::clean($title) !!}</h3>
+                <{{ $titleTag = infinia_title_tag($shortcode, 'h2') }} class="ds-3 my-3 fw-regular">{!! infinia_clean_title($title) !!}</{{ $titleTag }}>
             @endif
         </div>
         <div class="row mt-6 position-relative">
@@ -23,7 +23,7 @@
                                 <div class="bg-primary-soft icon-flip position-relative icon-shape icon-xxl rounded-3 me-5">
                                     <div class="icon">
                                         @if($iconImage = $service->getMetaData('icon_image', true))
-                                            <img src="{{ RvMedia::getImageUrl($iconImage) }}" alt="icon" class="service-icon filter-invert">
+                                            <img src="{{ RvMedia::getImageUrl($iconImage) }}" alt="" aria-hidden="true" class="service-icon filter-invert">
                                         @elseif($icon = $service->getMetaData('icon', true))
                                             <x-core::icon :name="$icon" class="service-icon filter-invert" />
                                         @endif
@@ -64,7 +64,7 @@
 
     @if($shortcode->background_image)
         <div class="position-absolute top-0 start-50 translate-middle-x z-0">
-            {{ RvMedia::image($shortcode->background_image, __('Image')) }}
+            {{ RvMedia::image($shortcode->background_image, infinia_image_alt($shortcode)) }}
         </div>
     @endif
 

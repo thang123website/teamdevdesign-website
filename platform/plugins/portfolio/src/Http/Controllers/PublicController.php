@@ -15,6 +15,7 @@ use Botble\Portfolio\Models\Project;
 use Botble\Portfolio\Models\Quote;
 use Botble\Portfolio\Models\Service;
 use Botble\Portfolio\Models\ServiceCategory;
+use Botble\Media\Facades\RvMedia;
 use Botble\SeoHelper\Facades\SeoHelper;
 use Botble\SeoHelper\SeoOpenGraph;
 use Botble\Slug\Facades\SlugHelper;
@@ -94,18 +95,31 @@ class PublicController extends BaseController
             $service = $service->wherePublished();
         }
 
-        $service = $service->findOrFail($slug->reference_id);
+        $service = $service->with(['category', 'category.slugable'])->findOrFail($slug->reference_id);
 
         SeoHelper::setTitle($service->name)
             ->setDescription($service->description);
 
-        SeoHelper::setSeoOpenGraph(
-            (new SeoOpenGraph())
-                ->setDescription($service->description)
-                ->setUrl($service->url)
-                ->setTitle($service->name)
-                ->setType('article')
-        );
+        // SEO: OG image lấy từ ảnh dịch vụ (seo_image trong meta box vẫn được ưu tiên ghi đè).
+        $openGraph = (new SeoOpenGraph())
+            ->setDescription($service->description)
+            ->setUrl($service->url)
+            ->setTitle($service->name)
+            ->setType('website');
+
+        if ($service->image) {
+            $openGraph->setImage(RvMedia::getImageUrl($service->image));
+        }
+
+        SeoHelper::setSeoOpenGraph($openGraph);
+
+        // SEO: thẻ canonical (trước đây trang dịch vụ không có).
+        SeoHelper::meta()->setUrl($service->url);
+
+        // SEO: breadcrumb đủ cấp Trang chủ > Danh mục dịch vụ > Dịch vụ (BreadcrumbList schema).
+        if ($service->category && $service->category->url) {
+            Theme::breadcrumb()->add($service->category->name, $service->category->url);
+        }
 
         Theme::breadcrumb()->add($service->name, $service->url);
 

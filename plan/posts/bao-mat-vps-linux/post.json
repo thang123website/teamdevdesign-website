@@ -1,0 +1,23 @@
+{
+  "name": "Bảo Mật VPS Linux: 16 Bước Bắt Buộc Cho Người Mới (2026)",
+  "slug": "bao-mat-vps-linux",
+  "description": "16 bước bảo mật VPS Linux: SSH key, đổi port, tắt root, UFW, Fail2Ban, cập nhật tự động, bảo mật aaPanel, backup. Làm ngay để chặn hack.",
+  "seo_title": "Bảo Mật VPS Linux: 16 Bước Bắt Buộc Cho Người Mới (2026)",
+  "seo_description": "16 bước bảo mật VPS Linux: SSH key, đổi port, tắt root, UFW, Fail2Ban, cập nhật tự động, bảo mật aaPanel, backup. Làm ngay để chặn hack.",
+  "focus_keyword": "bảo mật vps linux",
+  "category": {
+    "name": "Hosting & VPS",
+    "slug": "hosting-vps",
+    "description": "Kiến thức, thủ thuật và hướng dẫn quản trị Hosting, VPS, aaPanel, Mail Server, bảo mật và tối ưu máy chủ cho website doanh nghiệp từ đội ngũ TeamDevDesign.",
+    "seo_title": "Hosting & VPS – Hướng Dẫn Quản Trị Máy Chủ | TeamDevDesign",
+    "seo_description": "Tổng hợp hướng dẫn quản trị Hosting, VPS, aaPanel, Mail Server và bảo mật máy chủ dễ hiểu, cập nhật mới nhất từ TeamDevDesign."
+  },
+  "tags": ["Bảo mật", "VPS", "Linux", "SSH", "UFW", "Firewall", "aaPanel"],
+  "featured_image": {
+    "file": "images/featured.webp",
+    "alt": "Hướng dẫn bảo mật VPS Linux với 16 bước chuẩn chuyên gia"
+  },
+  "is_featured": 0,
+  "status": "published",
+  "translation_en": "copy"
+}

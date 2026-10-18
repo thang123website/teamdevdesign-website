@@ -1,0 +1,20 @@
+{
+  "name": "Cách Tối Ưu VPS Cho WordPress Tải Cực Nhanh Dưới 1 Giây",
+  "slug": "toi-uu-vps-cho-wordpress",
+  "description": "Hướng dẫn tối ưu VPS cho WordPress từ chuyên gia: cấu hình PHP-FPM, bật Redis/Memcached, tinh chỉnh Nginx và MySQL để web tải dưới 1 giây.",
+  "seo_title": "Cách Tối Ưu VPS Cho WordPress Tải Cực Nhanh Dưới 1 Giây (2026)",
+  "seo_description": "Hướng dẫn tối ưu VPS cho WordPress từ chuyên gia: cấu hình PHP-FPM, bật Redis/Memcached, tinh chỉnh Nginx và MySQL để web tải dưới 1 giây.",
+  "focus_keyword": "tối ưu vps cho wordpress",
+  "category": {
+    "name": "Hosting & VPS",
+    "slug": "hosting-vps"
+  },
+  "tags": ["Tối ưu", "VPS", "WordPress", "Redis", "PHP-FPM", "Nginx", "Tốc độ"],
+  "featured_image": {
+    "file": "images/featured.webp",
+    "alt": "Bí quyết tối ưu VPS giúp WordPress tải trang cực nhanh"
+  },
+  "is_featured": 0,
+  "status": "published",
+  "translation_en": "copy"
+}

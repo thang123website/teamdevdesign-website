@@ -1,0 +1,169 @@
+<p>Bạn đang dùng VPS cài <strong>aaPanel</strong> và muốn có email theo tên miền riêng như <em>lienhe@congtyban.com</em> mà không phải trả phí hằng tháng cho Google Workspace? Bài viết này của <strong>TeamDevDesign</strong> sẽ hướng dẫn bạn cài đặt <strong>Mail Server trên aaPanel</strong> từ A–Z: từ khâu chuẩn bị VPS, cấu hình DNS (MX, SPF, DKIM, DMARC, PTR), cài webmail RoundCube, bật SSL cho tới gửi thư thử và xử lý lỗi vào spam. Làm đúng theo từng bước, bạn sẽ có một hệ thống email chuyên nghiệp chỉ trong khoảng 30–45 phút.</p>
+<hr>
+<h2><span style="font-size:24px;">1. Mail Server trên aaPanel là gì? Có nên tự host email không?</span></h2>
+<p><strong>aaPanel</strong> là bảng điều khiển quản trị VPS miễn phí (phiên bản quốc tế của BT Panel). Khác với cPanel hay DirectAdmin có sẵn email, aaPanel <strong>không cài sẵn dịch vụ mail</strong> – bạn cần cài thêm plugin <strong>Mail Server</strong> từ App Store. Plugin này đóng gói sẵn các thành phần tiêu chuẩn của một hệ thống email:</p>
+<ul>
+<li><strong>Postfix (SMTP):</strong> chịu trách nhiệm gửi và chuyển tiếp thư đi Internet.</li>
+<li><strong>Dovecot (IMAP/POP3):</strong> lưu trữ hộp thư và cho phép phần mềm (Outlook, Thunderbird, điện thoại) đọc thư.</li>
+<li><strong>Bộ lọc &amp; xác thực:</strong> hỗ trợ ký DKIM, kiểm tra SPF, chống spam.</li>
+<li><strong>RoundCube Webmail:</strong> giao diện đọc/gửi thư trên trình duyệt, cài thêm qua One-Click Deployment.</li>
+</ul>
+<figure class="image"><img src="images/mail-flow.jpg" alt="Sơ đồ luồng gửi nhận email của mail server trên aaPanel: RoundCube, Postfix, Dovecot"><figcaption>Luồng gửi &amp; nhận email khi tự dựng Mail Server trên aaPanel</figcaption></figure>
+<h3><span style="font-size:22px;">Khi nào nên tự dựng mail server trên aaPanel?</span></h3>
+<table style="border-collapse:collapse;width:100%;" border="1" cellpadding="8">
+<thead><tr><th>Nên dùng khi</th><th>Không nên dùng khi</th></tr></thead>
+<tbody>
+<tr><td>Doanh nghiệp nhỏ, cần vài đến vài chục hộp thư theo tên miền</td><td>Cần gửi email marketing số lượng lớn (hàng nghìn mail/ngày)</td></tr>
+<tr><td>Muốn tiết kiệm chi phí, đã có sẵn VPS chạy website</td><td>Nhà cung cấp VPS chặn port 25 và không hỗ trợ mở</td></tr>
+<tr><td>Muốn toàn quyền kiểm soát dữ liệu email</td><td>Không có người theo dõi, bảo trì máy chủ định kỳ</td></tr>
+</tbody>
+</table>
+<hr>
+<h2><span style="font-size:24px;">2. Chuẩn bị trước khi cài đặt</span></h2>
+<p>Phần lớn lỗi "gửi được nhưng không nhận được" hoặc "mail vào spam" đến từ khâu chuẩn bị. Hãy kiểm tra đủ checklist dưới đây trước khi bắt tay vào làm:</p>
+<ul>
+<li><strong>VPS đã cài aaPanel</strong>, khuyến nghị tối thiểu <strong>2 GB RAM</strong>, hệ điều hành Ubuntu 20.04/22.04 hoặc Debian 11/12.</li>
+<li><strong>Port 25 không bị chặn chiều ra:</strong> nhiều nhà cung cấp (AWS, Google Cloud, Vultr, DigitalOcean…) mặc định chặn port 25. Bạn cần gửi ticket yêu cầu mở trước.</li>
+<li><strong>Một tên miền</strong> và quyền chỉnh sửa DNS (Cloudflare, nhà đăng ký tên miền…).</li>
+<li><strong>IP sạch:</strong> kiểm tra IP VPS không nằm trong danh sách đen tại <a href="https://mxtoolbox.com/blacklists.aspx" target="_blank" rel="noopener noreferrer">MXToolbox Blacklist Check</a>.</li>
+<li><strong>Khả năng đặt bản ghi PTR (Reverse DNS)</strong> cho IP – thường thao tác trong trang quản lý VPS hoặc nhờ nhà cung cấp hỗ trợ.</li>
+</ul>
+<p>Để kiểm tra nhanh port 25 có bị chặn hay không, SSH vào VPS và chạy:</p>
+<pre><code>nc -vz gmail-smtp-in.l.google.com 25</code></pre>
+<p>Nếu kết quả trả về <code>succeeded</code> hoặc <code>open</code> là đạt. Nếu bị <code>timed out</code>, bạn cần liên hệ nhà cung cấp VPS trước khi tiếp tục.</p>
+<hr>
+<h2><span style="font-size:24px;">3. Bước 1 – Đặt hostname và cài Redis</span></h2>
+<p>Plugin Mail Server của aaPanel kiểm tra hostname và Redis trước khi cho phép thêm domain. Nếu bỏ qua bước này, bạn sẽ gặp thông báo lỗi khi bấm <em>Add Domain</em>.</p>
+<h3><span style="font-size:22px;">Đặt hostname cho máy chủ</span></h3>
+<p>Hostname nên trùng với tên máy chủ mail mà bạn sẽ dùng (ví dụ <code>mail.tenmien.com</code>). SSH vào VPS và chạy:</p>
+<pre><code>hostnamectl set-hostname mail.tenmien.com
+hostname -f</code></pre>
+<h3><span style="font-size:22px;">Cài Redis và đặt mật khẩu</span></h3>
+<ol>
+<li>Vào <strong>App Store</strong>, tìm <strong>Redis</strong> và bấm <strong>Install</strong>.</li>
+<li>Sau khi cài xong, mở <strong>Redis → Performance tuning</strong>, điền mật khẩu vào ô <code>requirepass</code> rồi lưu lại.</li>
+</ol>
+<hr>
+<h2><span style="font-size:24px;">4. Bước 2 – Cài plugin Mail Server từ App Store</span></h2>
+<ol>
+<li>Đăng nhập aaPanel, chọn <strong>App Store</strong>.</li>
+<li>Gõ tìm <strong>Mail Server</strong> (một số phiên bản hiển thị là <em>aaPanel Mail Server</em>) và bấm <strong>Install</strong>.</li>
+<li>Chờ quá trình cài đặt Postfix, Dovecot và các thành phần liên quan hoàn tất (khoảng 3–10 phút tùy cấu hình VPS).</li>
+</ol>
+<p>Khi cài xong, mở plugin và kiểm tra tab trạng thái dịch vụ: Postfix và Dovecot phải đang ở trạng thái <strong>Running</strong>.</p>
+<hr>
+<h2><span style="font-size:24px;">5. Bước 3 – Thêm domain và cấu hình bản ghi DNS</span></h2>
+<p>Trong plugin Mail Server, chọn <strong>Domain List → Add Domain</strong> và nhập:</p>
+<ul>
+<li><strong>Domain Name:</strong> tên miền dùng cho email, ví dụ <code>tenmien.com</code>.</li>
+<li><strong>A record:</strong> tên máy chủ mail, ví dụ <code>mail.tenmien.com</code>.</li>
+</ul>
+<p>Sau khi thêm, cột DNS sẽ hiển thị <strong>Not Set</strong>. Bấm vào đó để aaPanel hiển thị giá trị các bản ghi cần tạo (MX, TXT/SPF, DKIM). Bạn copy và tạo tương ứng tại nơi quản lý DNS của tên miền theo bảng dưới đây:</p>
+<figure class="image"><img src="images/dns-records.jpg" alt="Bảng bản ghi DNS A, MX, SPF, DKIM, DMARC, PTR cần cấu hình cho mail server trên aaPanel"><figcaption>Các bản ghi DNS bắt buộc để email không bị đánh dấu spam</figcaption></figure>
+<table style="border-collapse:collapse;width:100%;" border="1" cellpadding="8">
+<thead><tr><th>Loại</th><th>Tên (Name)</th><th>Giá trị (Value)</th><th>Mục đích</th></tr></thead>
+<tbody>
+<tr><td>A</td><td>mail</td><td>IP của VPS</td><td>Trỏ máy chủ mail về VPS</td></tr>
+<tr><td>MX</td><td>@</td><td>mail.tenmien.com (Priority 10)</td><td>Chỉ định nơi nhận thư cho tên miền</td></tr>
+<tr><td>TXT (SPF)</td><td>@</td><td><code>v=spf1 a mx ip4:IP_VPS ~all</code></td><td>Cho phép VPS gửi thư thay mặt tên miền</td></tr>
+<tr><td>TXT (DKIM)</td><td>default._domainkey</td><td>Copy nguyên giá trị aaPanel cung cấp</td><td>Ký số thư, chống giả mạo</td></tr>
+<tr><td>TXT (DMARC)</td><td>_dmarc</td><td><code>v=DMARC1; p=quarantine; rua=mailto:admin@tenmien.com</code></td><td>Chính sách xử lý thư không đạt SPF/DKIM</td></tr>
+<tr><td>PTR</td><td>IP của VPS</td><td>mail.tenmien.com</td><td>Reverse DNS – đặt tại nhà cung cấp VPS</td></tr>
+</tbody>
+</table>
+<p><strong>Lưu ý khi dùng Cloudflare:</strong> bản ghi A của <code>mail</code> phải để chế độ <strong>DNS only (đám mây xám)</strong>. Nếu bật proxy (đám mây cam), SMTP/IMAP sẽ không kết nối được vì Cloudflare không chuyển tiếp các port email.</p>
+<p>DNS thường cập nhật trong 5–30 phút. Khi cấu hình đúng, quay lại aaPanel bấm kiểm tra lại, các mục sẽ chuyển sang dấu tick xanh ✅.</p>
+<hr>
+<h2><span style="font-size:24px;">6. Bước 4 – Cài RoundCube Webmail</span></h2>
+<p>RoundCube giúp bạn đọc và gửi thư ngay trên trình duyệt qua địa chỉ như <code>https://mail.tenmien.com</code>. Ở các phiên bản aaPanel mới, plugin Mail Server có sẵn mục <strong>WebMail</strong> để cài RoundCube một chạm. Nếu phiên bản của bạn chưa có, hãy cài qua <strong>One-Click Deployment</strong>:</p>
+<ol>
+<li>Vào <strong>App Store → One-Click Deployment</strong> (cài plugin nếu chưa có).</li>
+<li>Tìm <strong>RoundCube</strong> và bấm <strong>Install</strong>.</li>
+<li>Điền thông tin:
+<ul>
+<li><strong>Domain:</strong> <code>mail.tenmien.com</code> – đường dẫn truy cập webmail.</li>
+<li><strong>Document root:</strong> thư mục chứa mã nguồn RoundCube (giữ mặc định).</li>
+<li><strong>Database:</strong> aaPanel tự tạo database cho RoundCube.</li>
+<li><strong>PHP Version:</strong> chọn phiên bản PHP mà trình cài đặt khuyến nghị. Nếu chưa có, cài thêm PHP tương ứng trong App Store.</li>
+</ul>
+</li>
+<li>Bấm <strong>Submit</strong> và chờ hoàn tất, sau đó truy cập <code>http://mail.tenmien.com</code> – nếu thấy màn hình đăng nhập RoundCube là thành công.</li>
+</ol>
+<hr>
+<h2><span style="font-size:24px;">7. Bước 5 – Bật SSL và mở port trên Firewall</span></h2>
+<h3><span style="font-size:22px;">Cài SSL miễn phí Let's Encrypt</span></h3>
+<p>Email truyền mật khẩu và nội dung thư, vì vậy SSL là bắt buộc:</p>
+<ul>
+<li><strong>Cho webmail:</strong> vào <strong>Website → mail.tenmien.com → SSL → Let's Encrypt</strong>, cấp chứng chỉ và bật <em>Force HTTPS</em>.</li>
+<li><strong>Cho SMTP/IMAP:</strong> trong plugin Mail Server, mở domain và chọn mục <strong>SSL</strong> để áp chứng chỉ cho <code>mail.tenmien.com</code>.</li>
+</ul>
+<h3><span style="font-size:22px;">Mở các port email cần thiết</span></h3>
+<p>Vào <strong>Security (Firewall)</strong> trong aaPanel và đảm bảo các port sau đã được mở. Nếu VPS có firewall riêng ở trang quản lý của nhà cung cấp (Security Group), cũng cần mở tương tự:</p>
+<table style="border-collapse:collapse;width:100%;" border="1" cellpadding="8">
+<thead><tr><th>Port</th><th>Giao thức</th><th>Công dụng</th></tr></thead>
+<tbody>
+<tr><td>25</td><td>SMTP</td><td>Nhận thư từ máy chủ khác, chuyển thư đi Internet</td></tr>
+<tr><td>465</td><td>SMTPS (SSL)</td><td>Gửi thư từ phần mềm mail, mã hóa SSL</td></tr>
+<tr><td>587</td><td>Submission (STARTTLS)</td><td>Gửi thư từ phần mềm mail, mã hóa STARTTLS</td></tr>
+<tr><td>993 / 143</td><td>IMAPS / IMAP</td><td>Đồng bộ hộp thư (khuyến nghị dùng 993)</td></tr>
+<tr><td>995 / 110</td><td>POP3S / POP3</td><td>Tải thư về máy (khuyến nghị dùng 995)</td></tr>
+</tbody>
+</table>
+<hr>
+<h2><span style="font-size:24px;">8. Bước 6 – Tạo tài khoản email và gửi thư thử</span></h2>
+<p>Trong plugin Mail Server, chọn <strong>Users → Add User</strong> và nhập:</p>
+<ul>
+<li><strong>User type:</strong> General User.</li>
+<li><strong>Name:</strong> tên hiển thị, ví dụ "Phòng Kinh Doanh".</li>
+<li><strong>Email Address:</strong> ví dụ <code>sales@tenmien.com</code>.</li>
+<li><strong>Password:</strong> mật khẩu mạnh, tối thiểu 12 ký tự gồm chữ hoa, chữ thường, số và ký tự đặc biệt.</li>
+<li><strong>Mailbox space:</strong> dung lượng hộp thư (ví dụ 5 GB).</li>
+</ul>
+<p>Sau đó truy cập <code>https://mail.tenmien.com</code>, đăng nhập bằng địa chỉ email đầy đủ và mật khẩu vừa tạo, rồi soạn một thư gửi tới Gmail cá nhân để kiểm tra.</p>
+<h3><span style="font-size:22px;">Chấm điểm email với Mail-Tester</span></h3>
+<p>Truy cập <a href="https://www.mail-tester.com" target="_blank" rel="noopener noreferrer">mail-tester.com</a>, copy địa chỉ email ngẫu nhiên mà trang cung cấp, gửi thư tới địa chỉ đó rồi bấm xem kết quả. Mục tiêu là đạt <strong>9/10 – 10/10</strong>. Công cụ sẽ chỉ rõ bạn đang thiếu SPF, DKIM, DMARC hay PTR để khắc phục.</p>
+<h3><span style="font-size:22px;">Cấu hình trên Outlook, Thunderbird, điện thoại</span></h3>
+<table style="border-collapse:collapse;width:100%;" border="1" cellpadding="8">
+<thead><tr><th>Thông số</th><th>Giá trị</th></tr></thead>
+<tbody>
+<tr><td>Máy chủ nhận (IMAP)</td><td>mail.tenmien.com – port 993 – SSL/TLS</td></tr>
+<tr><td>Máy chủ gửi (SMTP)</td><td>mail.tenmien.com – port 465 (SSL) hoặc 587 (STARTTLS)</td></tr>
+<tr><td>Tên đăng nhập</td><td>Địa chỉ email đầy đủ, ví dụ sales@tenmien.com</td></tr>
+<tr><td>Xác thực SMTP</td><td>Bật, dùng chung tài khoản với IMAP</td></tr>
+</tbody>
+</table>
+<hr>
+<h2><span style="font-size:24px;">9. Lỗi thường gặp khi dùng mail server trên aaPanel và cách khắc phục</span></h2>
+<h3><span style="font-size:22px;">Không gửi được thư ra ngoài (Gmail, Outlook)</span></h3>
+<p>Nguyên nhân phổ biến nhất là <strong>port 25 bị nhà cung cấp chặn</strong>. Kiểm tra lại bằng lệnh <code>nc -vz gmail-smtp-in.l.google.com 25</code>. Nếu bị chặn, gửi ticket yêu cầu mở hoặc cấu hình SMTP Relay qua dịch vụ trung gian như Amazon SES, SendGrid, Brevo.</p>
+<h3><span style="font-size:22px;">Thư gửi đi bị vào thư mục Spam</span></h3>
+<ul>
+<li>Kiểm tra đủ 4 bản ghi <strong>SPF, DKIM, DMARC và PTR</strong>; thiếu PTR là lý do hàng đầu khiến Gmail đánh dấu spam.</li>
+<li>Hostname của máy chủ phải khớp với PTR và bản ghi A của <code>mail.tenmien.com</code>.</li>
+<li>Với IP mới, hãy "làm ấm" bằng cách gửi số lượng ít trong 1–2 tuần đầu, tránh gửi hàng loạt.</li>
+<li>Nội dung thư tránh viết hoa toàn bộ, chèn quá nhiều link hoặc từ ngữ quảng cáo.</li>
+</ul>
+<h3><span style="font-size:22px;">Báo lỗi khi bấm Add Domain</span></h3>
+<p>Thường do chưa đặt hostname, chưa cài Redis hoặc chưa đặt mật khẩu Redis. Quay lại <strong>Bước 1</strong>, hoàn thành đủ cả ba mục rồi thử lại.</p>
+<h3><span style="font-size:22px;">Không truy cập được webmail mail.tenmien.com</span></h3>
+<p>Kiểm tra bản ghi A <code>mail</code> đã trỏ đúng IP VPS, đã tắt proxy Cloudflare và website <code>mail.tenmien.com</code> đã được tạo trong mục Website của aaPanel.</p>
+<hr>
+<h2><span style="font-size:24px;">10. Tự host email hay dùng Google Workspace, Zoho Mail?</span></h2>
+<p>Tự dựng Mail Server trên aaPanel giúp tiết kiệm chi phí và chủ động dữ liệu, nhưng đổi lại bạn phải tự chịu trách nhiệm về bảo mật, sao lưu, uy tín IP và theo dõi máy chủ. Nếu doanh nghiệp phụ thuộc nhiều vào email để chốt đơn, làm việc với đối tác, giải pháp email chuyên dụng (Google Workspace, Zoho Mail, Microsoft 365) sẽ ổn định hơn về khả năng vào inbox.</p>
+<p>Nếu bạn không có thời gian tự cấu hình, đội ngũ TeamDevDesign cung cấp <a href="https://teamdevdesign.net/services/dich-vu-hosting-ten-mien">dịch vụ Hosting – Tên miền – Email doanh nghiệp</a> và <a href="https://teamdevdesign.net/services/bao-tri-quan-tri-website">dịch vụ bảo trì, quản trị website &amp; VPS</a> trọn gói, giúp bạn yên tâm tập trung vào kinh doanh.</p>
+<hr>
+<h2><span style="font-size:24px;">Câu hỏi thường gặp (FAQ)</span></h2>
+<h3><span style="font-size:22px;">aaPanel có sẵn email không?</span></h3>
+<p>Không. aaPanel không cài sẵn dịch vụ email, bạn cần cài plugin <strong>Mail Server</strong> từ App Store và cài thêm RoundCube nếu muốn dùng webmail.</p>
+<h3><span style="font-size:22px;">Cài mail server trên aaPanel cần VPS cấu hình bao nhiêu?</span></h3>
+<p>Tối thiểu 1 GB RAM có thể chạy được, nhưng khuyến nghị từ <strong>2 GB RAM</strong> trở lên nếu VPS vừa chạy website vừa chạy email để đảm bảo ổn định.</p>
+<h3><span style="font-size:22px;">Vì sao gửi mail tới Gmail bị vào spam?</span></h3>
+<p>Thường do thiếu bản ghi PTR, SPF, DKIM hoặc DMARC, hoặc IP VPS từng bị đưa vào danh sách đen. Hãy dùng mail-tester.com để kiểm tra và khắc phục từng mục.</p>
+<h3><span style="font-size:22px;">Có dùng được email trên điện thoại không?</span></h3>
+<p>Có. Bạn chỉ cần thêm tài khoản IMAP trên ứng dụng Mail của iPhone, Gmail app trên Android hoặc Outlook với thông số ở mục 8.</p>
+<h3><span style="font-size:22px;">Một VPS có dùng email cho nhiều tên miền được không?</span></h3>
+<p>Được. Trong plugin Mail Server, bạn lặp lại bước Add Domain và cấu hình DNS riêng cho từng tên miền.</p>
+<hr>
+<h2><span style="font-size:24px;">Kết luận</span></h2>
+<p>Như vậy, bạn đã hoàn tất cài đặt <strong>Mail Server trên aaPanel</strong> với đầy đủ các bước: chuẩn bị VPS, đặt hostname, cài Mail Server, cấu hình DNS (MX, SPF, DKIM, DMARC, PTR), cài RoundCube Webmail, bật SSL, mở port và kiểm tra điểm gửi thư. Hãy nhớ sao lưu dữ liệu email định kỳ và theo dõi danh sách đen IP để hệ thống luôn hoạt động ổn định.</p>
+<p>Nếu cần hỗ trợ cài đặt hoặc muốn sở hữu website chuyên nghiệp đi kèm email doanh nghiệp, hãy tham khảo <a href="https://teamdevdesign.net/thiet-ke-website-doanh-nghiep-2026">dịch vụ thiết kế website doanh nghiệp</a> hoặc <a href="https://teamdevdesign.net/lien-he">liên hệ TeamDevDesign</a> để được tư vấn miễn phí. Chúc bạn thành công!</p>

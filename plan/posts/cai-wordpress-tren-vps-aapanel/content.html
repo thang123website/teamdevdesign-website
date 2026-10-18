@@ -1,0 +1,147 @@
+<p>Sau khi bạn đã hoàn tất việc <a href="/blog/huong-dan-cai-dat-aapanel-tren-vps">cài đặt aaPanel và môi trường Web Server (LNMP/LAMP) trên VPS</a>, bước tiếp theo và cũng là bước quan trọng nhất chính là đưa website WordPress của bạn lên Internet. Việc <strong>cài WordPress trên VPS aaPanel</strong> có thể khiến nhiều người bỡ ngỡ lần đầu, đặc biệt là khi phải xử lý phân quyền file hay cấu hình bảo mật so với việc sử dụng Shared Hosting truyền thống.</p>
+<p>Trong bài viết cực kỳ chi tiết này, <a href="/"><strong>TeamDevDesign</strong></a> sẽ hướng dẫn bạn toàn bộ quy trình chuẩn mực từ A–Z để <strong>cài WordPress trên VPS aaPanel</strong> thành công 100%. Chúng tôi sẽ phân tích cả 2 phương pháp: <strong>Cài đặt tự động 1 click (One-Click Deploy)</strong> và <strong>Cài đặt thủ công (Manual)</strong>. Bên cạnh đó là các mẹo xử lý lỗi kinh điển (502 Bad Gateway, Error Database) và tối ưu Nginx để website chạy mượt mà nhất.</p>
+
+<hr>
+<h2><span style="font-size:24px;">1. Bước 1: Chuẩn Bị & Trỏ Tên Miền (DNS) Về IP VPS</span></h2>
+<p>Trước khi khai báo website trên aaPanel, bạn bắt buộc phải chỉ cho tên miền biết máy chủ VPS của bạn nằm ở đâu trên Internet. Quá trình này gọi là <strong>Trỏ bản ghi DNS</strong>.</p>
+<h3><span style="font-size:22px;">Cách cấu hình bản ghi DNS:</span></h3>
+<ol>
+<li>Đăng nhập vào trang quản trị tên miền của nhà cung cấp (Mắt Bão, Tên Mọi, Namecheap...) hoặc thông qua trung gian Cloudflare (rất được khuyến nghị).</li>
+<li>Tìm đến mục <strong>Quản lý DNS (DNS Management)</strong>.</li>
+<li>Tạo hai bản ghi sau:
+<table style="border-collapse:collapse;width:100%;" border="1" cellpadding="8">
+<thead>
+<tr>
+<th>Loại Bản ghi (Type)</th>
+<th>Tên / Host (Name)</th>
+<th>Giá trị (Value / Points to)</th>
+<th>TTL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>A</strong></td>
+<td><code>@</code> (Hoặc bỏ trống)</td>
+<td><code>IP_VPS_CUA_BAN</code></td>
+<td>Auto / 300s</td>
+</tr>
+<tr>
+<td><strong>A</strong> (hoặc CNAME)</td>
+<td><code>www</code></td>
+<td><code>IP_VPS_CUA_BAN</code> (Hoặc tên miền chính)</td>
+<td>Auto / 300s</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>Lưu thay đổi. Bản ghi <code>@</code> giúp người dùng gõ <em>tenmien.com</em> sẽ vào được web, còn bản ghi <code>www</code> giúp truy cập từ <em>www.tenmien.com</em> không bị lỗi.</li>
+</ol>
+<figure class="image"><img src="images/tro-ten-mien-ve-vps.webp" alt="Màn hình cấu hình bản ghi A và CNAME trên hệ thống quản lý DNS"><figcaption>Minh họa cách thiết lập bản ghi A trỏ IP và CNAME trên trình quản lý DNS</figcaption></figure>
+<p><strong>Mẹo nhỏ:</strong> Để kiểm tra tên miền đã cập nhật IP mới chưa, bạn mở CMD (Windows) và gõ lệnh <code>ping tenmien.com</code>. Nếu trả về đúng IP của VPS là bạn đã thành công.</p>
+
+<hr>
+<h2><span style="font-size:24px;">2. Phương Pháp 1: Cài WordPress Trên VPS aaPanel Tự Động (One-Click)</span></h2>
+<p>aaPanel có sẵn ứng dụng <strong>One-Click Deployment</strong> dành cho mã nguồn <a href="https://wordpress.org/" target="_blank" rel="noopener">WordPress</a>, giúp bạn bỏ qua các bước tải file, giải nén và tạo database bằng tay. <strong>Đây là phương pháp khuyên dùng để cài WordPress trên VPS aaPanel cho người mới.</strong></p>
+<h3><span style="font-size:22px;">Quy trình thực hiện:</span></h3>
+<ol>
+<li>Đăng nhập vào trang quản trị aaPanel. Vào phần <strong>App Store</strong>, tìm và cài đặt plugin <code>One-click deployment</code> (nếu chưa cài).</li>
+<li>Truy cập menu <strong>Website</strong> bên trái. Nhấn nút xanh <strong>Add site</strong>.</li>
+<li>Cửa sổ mở ra, hãy chuyển sang tab thứ hai là <strong>WordPress deploy</strong>.</li>
+</ol>
+<figure class="image"><img src="images/aapanel-add-site.webp" alt="Cửa sổ Add site và WordPress deploy trong aaPanel"><figcaption>Giao diện nhập thông tin để tự động cài đặt WordPress trên aaPanel</figcaption></figure>
+<p>Tại đây, điền các thông số:</p>
+<ul>
+<li><strong>Domain:</strong> Nhập tên miền chính: <code>tenmien.com</code>. Xuống dòng nhập thêm <code>www.tenmien.com</code> (Rất quan trọng để cấp SSL cho cả 2 nhánh).</li>
+<li><strong>PHP version:</strong> Chọn bản PHP khuyên dùng là <strong>PHP 7.4 hoặc 8.1</strong>.</li>
+<li><strong>Database name &amp; password:</strong> Mặc định aaPanel sẽ sinh ra chuỗi ngẫu nhiên. Khuyến nghị bạn <strong>giữ nguyên các chuỗi phức tạp này</strong> để chống hack.</li>
+<li><strong>Admin account:</strong> Tên đăng nhập WordPress (<strong>Tuyệt đối không dùng <code>admin</code></strong>).</li>
+<li><strong>Password:</strong> Mật khẩu quản trị.</li>
+</ul>
+<p>Nhấn nút <strong>Submit</strong>. aaPanel sẽ tự động xử lý mọi thứ trong 20 giây. Bạn chỉ cần ra trình duyệt gõ tên miền là website đã hoạt động!</p>
+
+<hr>
+<h2><span style="font-size:24px;">3. Phương Pháp 2: Cài WordPress Trên VPS aaPanel Thủ Công (Manual)</span></h2>
+<p>Đôi khi bạn muốn dùng bản WordPress cũ, hoặc đang dùng một bản Source Code WordPress bán hàng đóng gói sẵn. Lúc này việc <strong>cài WordPress trên VPS aaPanel</strong> bắt buộc phải dùng cách thủ công.</p>
+<h3><span style="font-size:22px;">Bước 1: Tạo Vỏ Website và Database</span></h3>
+<p>Vào <strong>Website -&gt; Add Site</strong>. Tại tab <em>Create Site</em>, điền tên miền của bạn. Mục Database chọn <strong>MySQL</strong>. Mục PHP chọn <strong>8.1</strong>. Bấm Submit. Lúc này một thư mục rỗng <code>/www/wwwroot/tenmien.com</code> và Database đã được tạo.</p>
+<h3><span style="font-size:22px;">Bước 2: Sử Dụng Remote Download</span></h3>
+<p>Vào menu <strong>Files</strong>, mở thư mục <code>/www/wwwroot/tenmien.com</code>, xóa sạch các file có sẵn (như index.html, 404.html).</p>
+<p>Bấm nút <strong>Remote Download</strong> ở thanh menu trên cùng. Nhập đường link: <code>https://wordpress.org/latest.zip</code> (Bản tiếng Anh) hoặc <code>https://vi.wordpress.org/latest-vi.zip</code> (Bản tiếng Việt). VPS sẽ tải file zip này về trong 3 giây.</p>
+
+<figure class="image"><img src="images/aapanel-file-manager.jpg" alt="Giao diện File Manager của aaPanel với chức năng Remote Download và Unzip"><figcaption>Dùng Remote Download tải WordPress và click chuột phải chọn Unzip</figcaption></figure>
+
+<h3><span style="font-size:22px;">Bước 3: Giải nén và Phân Quyền (RẤT QUAN TRỌNG)</span></h3>
+<p>Click chuột phải vào file <code>latest.zip</code>, chọn <strong>Unzip</strong>. Chú ý: File sẽ giải nén ra một thư mục con tên là <code>wordpress</code>. Bạn phải vào thư mục con này, <strong>Select All</strong>, rồi <strong>Cut</strong> toàn bộ đưa ra ngoài thư mục gốc <code>/www/wwwroot/tenmien.com</code>.</p>
+<p><strong>Lưu ý về Permission (Quyền file):</strong> Toàn bộ file và thư mục WordPress phải thuộc sở hữu (Owner) của user <code>www</code>, thư mục mang quyền <code>755</code>, file mang quyền <code>644</code>. aaPanel thường tự động set quyền này, nhưng nếu bị lỗi, bạn có thể tick chọn tất cả file -&gt; Permission -&gt; Set thành Owner: www và 755.</p>
+
+<h3><span style="font-size:22px;">Bước 4: Chạy Trình Cài Đặt</span></h3>
+<p>Ra trình duyệt truy cập tên miền. Màn hình cài đặt WordPress quen thuộc sẽ hiện ra. Bạn nhập tên Database, User Database và Password đã lấy ở Bước 1 vào là xong.</p>
+
+<div style="background-color: #e8f4fd; padding: 20px; border-left: 4px solid #0d6efd; margin-bottom: 20px;">
+<strong>Bạn có biết?</strong> Việc cài đặt hệ thống máy chủ và website đúng kỹ thuật từ những bước đầu tiên sẽ quyết định đến 90% tính bảo mật và tốc độ web sau này. Nếu bạn cần một giải pháp hoàn hảo, <strong>TeamDevDesign</strong> chuyên cung cấp dịch vụ <a href="/thiet-ke-website"><strong>Thiết Kế Website Chuẩn SEO & Tối Ưu VPS</strong></a>, giúp trang web của bạn load dưới 1 giây.
+</div>
+
+<hr>
+<h2><span style="font-size:24px;">4. Cấu Hình Tối Ưu Hóa Sau Khi Cài Đặt (Bắt Buộc)</span></h2>
+<p>Để WordPress hoạt động trơn tru trên aaPanel, bạn cần thực hiện 3 thao tác tối ưu sau đây:</p>
+
+<h3><span style="font-size:22px;">4.1. Kích hoạt SSL Let's Encrypt (Miễn phí)</span></h3>
+<ol>
+<li>Trong menu <strong>Website</strong>, nhấp vào nút <em>Not Set</em> ở cột SSL.</li>
+<li>Chọn tab phụ <strong>Let's Encrypt</strong>. Chọn Select All (Tích cả domain và www.domain).</li>
+<li>Nhấn <strong>Apply</strong>.</li>
+<li>Khi thấy chứng chỉ màu xanh lá hiện lên, gạt công tắc <strong>Force HTTPS</strong> ở góc trên bên phải để ép chuyển hướng HTTP sang HTTPS.</li>
+</ol>
+<figure class="image"><img src="images/cai-ssl-lets-encrypt-aapanel.webp" alt="Khu vực cấu hình chứng chỉ SSL Let's Encrypt trên aaPanel"><figcaption>Kích hoạt SSL Let's Encrypt và bật Force HTTPS trên aaPanel</figcaption></figure>
+
+<h3><span style="font-size:22px;">4.2. Cấu hình URL Rewrite (Pseudo-static) cho Nginx</span></h3>
+<p>Mặc định Nginx không hiểu định dạng Permalink (đường dẫn tĩnh) của WordPress, dẫn đến lỗi 404 khi xem bài viết.</p>
+<ol>
+<li>Tại danh sách website, nhấp vào tên miền để mở bảng <strong>Site Configuration</strong>.</li>
+<li>Chọn tab <strong>URL rewrite</strong> (Pseudo-static).</li>
+<li>Mở ô Dropdown và chọn chữ <strong>wordpress</strong>. Đoạn mã cấu hình chuẩn sẽ hiện ra. Nhấn <strong>Save</strong>.</li>
+</ol>
+
+<h3><span style="font-size:22px;">4.3. Tăng giới hạn Upload trong PHP</span></h3>
+<p>Để upload Theme (Flatsome) hoặc file Backup lớn mà không bị lỗi <code>upload_max_filesize</code>:</p>
+<ol>
+<li>Vào menu <strong>App Store</strong>, tìm PHP (ví dụ PHP-8.1), bấm <strong>Setting</strong>.</li>
+<li>Tab <strong>Upload size</strong>: Tăng lên <code>100MB</code> hoặc <code>500MB</code>.</li>
+<li>Tab <strong>Configuration</strong>: Tăng <code>max_execution_time</code> từ 30 lên <code>300</code>.</li>
+<li>Vào tab <strong>Service</strong>, nhấn <strong>Restart</strong>.</li>
+</ol>
+
+<hr>
+<h2><span style="font-size:24px;">5. Các Lỗi Thường Gặp (Troubleshooting) Và Cách Khắc Phục</span></h2>
+
+<h3><span style="font-size:22px;">Lỗi "Error establishing a database connection"</span></h3>
+<p><strong>Nguyên nhân:</strong> Khi cài thủ công, bạn đã nhập sai thông tin (Database Name, User, Password) vào file <code>wp-config.php</code>.<br>
+<strong>Cách khắc phục:</strong> Truy cập aaPanel -&gt; menu Database. Kiểm tra xem tên User và Password có trùng khớp với file <code>wp-config.php</code> trong File Manager hay không. Nếu quên mật khẩu DB, bạn có thể nhấn đổi mật khẩu ngay trong bảng Database của aaPanel.</p>
+
+<h3><span style="font-size:22px;">Lỗi 502 Bad Gateway</span></h3>
+<p><strong>Nguyên nhân 1:</strong> Phiên bản PHP bị Crash. <strong>Khắc phục:</strong> Vào App Store -&gt; PHP -&gt; Restart lại dịch vụ PHP.<br>
+<strong>Nguyên nhân 2:</strong> VPS bị đầy RAM (Out of Memory - OOM) do cài MySQL 8.0 trên VPS 1GB RAM, hoặc do plugin quá nặng. <strong>Khắc phục:</strong> Kiểm tra biểu đồ CPU/RAM ở góc trái. Nếu RAM luôn &gt;90%, hãy thiết lập Swap File trong plugin <em>Linux Tools</em> hoặc nâng cấp lên gói VPS 2GB RAM.</p>
+
+<h3><span style="font-size:22px;">Lỗi yêu cầu tài khoản FTP khi cài Plugin / Upload ảnh</span></h3>
+<p><strong>Nguyên nhân:</strong> Đây là lỗi sai quyền sở hữu file kinh điển. Thư mục WordPress đang thuộc quyền user <code>root</code> thay vì user <code>www</code>.<br>
+<strong>Cách khắc phục:</strong> Mở File Manager, click vào hộp kiểm chọn tất cả các file. Góc phải trên cùng nhấn nút <strong>Permission</strong>. Tại dòng Owner, đổi từ <em>root</em> thành <em>www</em>. Permission đặt là <em>755</em>. Tick vào ô <em>Sub-directories</em> (áp dụng cho thư mục con) rồi nhấn OK.</p>
+
+<hr>
+<h2><span style="font-size:24px;">Câu hỏi thường gặp (FAQ)</span></h2>
+
+<h3><span style="font-size:22px;">1. Nên chọn Nginx hay Apache khi cài web WordPress?</span></h3>
+<p>Nginx là lựa chọn hoàn hảo nhất. Nginx quản lý RAM tốt hơn và phục vụ file tĩnh (ảnh, css, js) nhanh hơn Apache rất nhiều lần. Đặc biệt trên các VPS cấu hình yếu, Nginx chứng minh khả năng chịu tải (Concurrent Connections) vượt trội.</p>
+
+<h3><span style="font-size:22px;">2. Làm sao để truy cập phpMyAdmin trên aaPanel?</span></h3>
+<p>Vào menu <strong>Database</strong>, bạn sẽ thấy nút <strong>phpMyAdmin</strong>. Tuy nhiên, để truy cập được, bạn phải cài plugin phpMyAdmin trong App Store trước, đồng thời đảm bảo Port 888 (port mặc định của phpMyAdmin) đã được mở trên Firewall (Security) của VPS.</p>
+
+<h3><span style="font-size:22px;">3. aaPanel có tự động Backup dữ liệu WordPress không?</span></h3>
+<p>Mặc định là KHÔNG. Nhưng bạn có thể cấu hình tự động rất dễ dàng bằng cách vào menu <strong>Cron</strong>. Tại đây, chọn tính năng <em>Backup Site</em> và <em>Backup Database</em>, hẹn giờ chạy lúc 3h sáng mỗi ngày, lưu giữ 7 bản sao gần nhất. Bạn cũng có thể cài thêm app <em>Google Drive</em> từ App Store để đẩy backup thẳng lên cloud an toàn tuyệt đối.</p>
+
+<h3><span style="font-size:22px;">4. Tôi quên mật khẩu đăng nhập aaPanel, phải làm sao?</span></h3>
+<p>Bạn dùng phần mềm SSH (PuTTY) login vào VPS quyền root. Gõ lệnh <code>bt</code> và nhấn Enter. Nhấn số <code>5</code> để tạo ngay mật khẩu mới vô cùng dễ dàng mà không ảnh hưởng gì tới website đang chạy.</p>
+
+<hr>
+<h2><span style="font-size:24px;">6. Lời kết</span></h2>
+<p>Việc triển khai nền tảng VPS sử dụng aaPanel đem lại hiệu suất vượt trội, tốc độ load nhanh chuẩn mực và khả năng tùy biến sâu mà Shared Hosting không bao giờ có được. Bằng việc thực hiện đúng quy trình <strong>cài WordPress trên VPS aaPanel</strong> từ A-Z và tối ưu hóa hệ thống mà chúng tôi vừa hướng dẫn, bạn đã xây dựng thành công một pháo đài website vững chắc.</p>
+<p>Nếu bạn là chủ doanh nghiệp không có đội ngũ IT hỗ trợ, hãy tham khảo dịch vụ <a href="/dich-vu/bao-tri-quan-tri-website"><strong>Bảo trì & Quản trị Website</strong></a> chuyên nghiệp của <strong>TeamDevDesign</strong>. Chúng tôi luôn sẵn sàng túc trực 24/7 để giám sát, sao lưu và bảo vệ hệ thống của bạn trước mọi rủi ro.</p>

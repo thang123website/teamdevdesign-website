@@ -5,7 +5,7 @@
                 <div class="text-center rounded-4 position-relative d-inline-flex">
                     <div class="zoom-img rounded-4 position-relative z-1">
                         @if ($image = $shortcode->image)
-                            {{ RvMedia::image($image, __('Image'), attributes: ['class' => 'rounded-4']) }}
+                            {{ RvMedia::image($image, infinia_image_alt($shortcode), attributes: ['class' => 'rounded-4']) }}
                         @endif
 
                         @if(($floatingButtonLabel = $shortcode->floating_action_label) && ($floatingButtonUrl = $shortcode->floating_action_url))
@@ -26,7 +26,7 @@
 
                     </div>
                     <div class="position-absolute top-100 start-0 translate-middle z-0 pt-5">
-                        <img class="alltuchtopdown" src="{{ Theme::asset()->url('images/shapes/vector-2.png') }}" alt="vector">
+                        <img class="alltuchtopdown" src="{{ Theme::asset()->url('images/shapes/vector-2.png') }}" alt="" aria-hidden="true">
                     </div>
                 </div>
             </div>
@@ -36,7 +36,7 @@
                 @endif
 
                 @if ($title = $shortcode->title)
-                    <h5 class="ds-5 my-3">{!! BaseHelper::clean($title) !!}</h5>
+                    <{{ $titleTag = infinia_title_tag($shortcode, 'h2') }} class="ds-5 my-3">{!! infinia_clean_title($title) !!}</{{ $titleTag }}>
                 @endif
 
                 @if ($description = $shortcode->description)
@@ -53,7 +53,7 @@
                                 @foreach($features as $feature)
                                     @continue(! $featureTitle = Arr::get($feature, 'title'))
                                     <li class="d-flex align-items-center mt-3">
-                                        <img src="{{ Theme::asset()->url('images/icons/check.png') }}" alt="check">
+                                        <img src="{{ Theme::asset()->url('images/icons/check.png') }}" alt="" aria-hidden="true">
                                         <span class="ms-2 text-900 fw-medium fs-6">{!! BaseHelper::clean($featureTitle) !!}</span>
                                     </li>
                                 @endforeach

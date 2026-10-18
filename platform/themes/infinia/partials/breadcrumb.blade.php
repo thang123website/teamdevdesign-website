@@ -14,8 +14,18 @@
     <section class="section-page-header py-8 fix position-relative" @if (($backgroundColor = theme_option('breadcrumb_background_color')) && $backgroundColor !== 'transparent') style="background-color: {{ $backgroundColor }} !important;" @endif>
         <div class="container position-relative z-1">
             <div class="text-start">
-                <h3>{{ SeoHelper::getTitleOnly() }}</h3>
-                <ol class="ps-0 d-flex list-unstyled">
+                @php
+                    // SEO: mỗi trang đúng 1 H1. Nội dung đã render trước layout, nên nếu nội dung
+                    // chưa có <h1> thì tiêu đề breadcrumb làm H1; nếu có rồi thì dùng div (không phải heading).
+                    // Có thể ép bằng Theme::set('pageHeadingTag', 'h1'|'h2'|'div').
+                    $pageHeadingTag = Theme::get('pageHeadingTag');
+                    if (! in_array($pageHeadingTag, ['h1', 'h2', 'div'], true)) {
+                        $pageHeadingTag = stripos((string) Theme::content(), '<h1') === false ? 'h1' : 'div';
+                    }
+                    $pageHeadingText = Theme::get('pageHeadingText') ?: SeoHelper::getTitleOnly();
+                @endphp
+                <{{ $pageHeadingTag }} class="h3" @if ($pageHeadingTag !== 'div') style="font-size: 38px !important;" @endif>{{ $pageHeadingText }}</{{ $pageHeadingTag }}>
+                <ol class="ps-0 d-flex flex-wrap align-items-center list-unstyled gap-2">
                     @foreach (Theme::breadcrumb()->getCrumbs() as $crumb)
                         @if($loop->last)
                             <li class="d-flex align-items-center">

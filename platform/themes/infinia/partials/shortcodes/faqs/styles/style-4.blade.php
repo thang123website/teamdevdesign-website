@@ -9,13 +9,13 @@
                 <div class="text-start">
                     @if ($subtitle = $shortcode->subtitle)
                         <div class="d-flex align-items-center position-relative z-2 justify-content-center bg-primary-soft d-inline-flex rounded-pill border border-2 border-white px-3 py-1">
-                            <img src="{{ Theme::asset()->url('images/icons/dots.png') }}" alt="dots" />
+                            <img src="{{ Theme::asset()->url('images/icons/dots.png') }}" alt="" aria-hidden="true" />
                             <span class="tag-spacing fs-7 fw-bold text-linear-2 ms-2 text-primary">{!! BaseHelper::clean($subtitle) !!}</span>
                         </div>
                     @endif
 
                     @if ($title = $shortcode->title)
-                        <h3 class="ds-3 my-3 fw-bold">{!! BaseHelper::clean($title) !!}</h3>
+                        <{{ $titleTag = infinia_title_tag($shortcode, 'h3') }} class="ds-3 my-3 fw-bold">{!! infinia_clean_title($title) !!}</{{ $titleTag }}>
                     @endif
 
                     @php
@@ -26,11 +26,11 @@
                     @if ($image || $image1)
                         <div class="position-relative d-inline-block mt-3 mb-6">
                             @if ($image)
-                                {{ RvMedia::image($image, __('Image'), attributes: ['class' => 'rounded-pill border border-3 border-white']) }}
+                                {{ RvMedia::image($image, infinia_image_alt($shortcode), attributes: ['class' => 'rounded-pill border border-3 border-white']) }}
                             @endif
 
                             @if ($image1)
-                                {{ RvMedia::image($image1, __('Image'), attributes: ['class' => 'position-absolute z-1 top-0 start-50 mt-3 rounded-pill border border-3 border-white']) }}
+                                {{ RvMedia::image($image1, infinia_image_alt($shortcode), attributes: ['class' => 'position-absolute z-1 top-0 start-50 mt-3 rounded-pill border border-3 border-white']) }}
                             @endif
                         </div>
                     @endif

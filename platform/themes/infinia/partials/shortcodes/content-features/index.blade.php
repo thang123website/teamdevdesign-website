@@ -5,7 +5,7 @@
                 @if(! empty($feature['icon_image']))
                     <div class="bg-primary-soft icon-flip position-relative icon-shape icon-xxl rounded-3 mb-4">
                         <div class="icon">
-                            <img src="{{ RvMedia::getImageUrl($feature['icon_image']) }}" alt="icon" class="icon-image">
+                            <img src="{{ RvMedia::getImageUrl($feature['icon_image']) }}" alt="" aria-hidden="true" class="icon-image">
                         </div>
                     </div>
                 @elseif($feature['icon'])
@@ -26,7 +26,7 @@
     </div>
     @if($shortcode->image)
         <div class="col-lg-5 mt-lg-0 mt-5">
-            {{ RvMedia::image($shortcode->image, __('Image'), attributes: ['class' => 'rounded-3']) }}
+            {{ RvMedia::image($shortcode->image, infinia_image_alt($shortcode), attributes: ['class' => 'rounded-3']) }}
         </div>
     @endif
 </div>

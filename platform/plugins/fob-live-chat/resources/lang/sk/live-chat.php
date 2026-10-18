@@ -1,0 +1,216 @@
+<?php
+
+return [
+    'title' => 'Živý chat',
+    'messages' => 'Správy',
+    'visitor_name' => 'Meno návštevníka',
+    'visitor_email' => 'E-mail návštevníka',
+    'visitor_phone' => 'Telefón',
+    'visitor_info' => 'Informácie o návštevníkovi',
+    'ip_address' => 'IP adresa',
+    'current_page' => 'Aktuálna stránka',
+    'browser' => 'Prehliadač',
+    'last_message' => 'Posledná správa',
+    'close_conversation' => 'Zavrieť',
+    'delete_conversation' => 'Zmazať konverzáciu',
+    'conversation_closed' => 'Konverzácia bola uzavretá.',
+    'conversation_deleted' => 'Konverzácia bola zmazaná.',
+    'conversation_is_closed' => 'Táto konverzácia je uzavretá.',
+    'conversation_with' => 'Konverzácia s :name',
+    'confirm_close' => 'Naozaj chcete uzavrieť túto konverzáciu?',
+    'confirm_delete' => 'Naozaj chcete zmazať túto konverzáciu? Túto akciu nie je možné vrátiť späť.',
+    'type_reply' => 'Napíšte svoju odpoveď...',
+    'reply_sent' => 'Odpoveď bola úspešne odoslaná.',
+    'no_conversation' => 'Nenašla sa žiadna aktívna konverzácia. Prosím, začnite nový chat.',
+    'no_conversations' => 'Zatiaľ žiadne konverzácie',
+    'chat_started' => 'Chat bol úspešne spustený.',
+    'message_sent' => 'Správa odoslaná.',
+    'select_conversation' => 'Vyberte konverzáciu',
+    'select_conversation_hint' => 'Vyberte konverzáciu zo zoznamu, aby ste začali chatovať.',
+    'all' => 'Všetky',
+    'timeline' => 'Časová os',
+    'total_messages' => 'Celkový počet správ',
+    'just_now' => 'Práve teraz',
+    'test_sound' => 'Kliknite pre test zvuku',
+    'back_to_list' => 'Späť na konverzácie',
+    'no_messages_yet' => 'Zatiaľ žiadne správy',
+    'start_conversation_hint' => 'Pošlite správu pre začatie konverzácie',
+    'notifications_enabled' => 'Upozornenia prehliadača povolené!',
+    'enable_notifications' => 'Povoliť upozornenia prehliadača',
+    'new_conversation' => 'Nová konverzácia',
+    'new_message' => 'Nová správa',
+    'no_conversations_hint' => 'Konverzácie sa tu zobrazia, keď návštevníci začnú chatovať.',
+    'open_chat' => 'Otvoriť chat',
+    'close' => 'Zavrieť',
+    'chat_title' => 'Živý chat',
+    'online' => 'Pripojený',
+    'start_message' => 'Dobrý deň! Ako vám môžeme dnes pomôcť?',
+    'your_name' => 'Vaše meno',
+    'your_email' => 'Váš email',
+    'your_email_optional' => 'Váš e-mail (voliteľné)',
+    'your_phone' => 'Váš telefón',
+    'start_chat' => 'Začať chat',
+    'type_message' => 'Napíšte správu...',
+    'send' => 'Odoslať',
+    'default_admin_name' => 'Podpora',
+    'default_welcome_message' => 'Dobrý deň! Ďakujeme, že ste sa ozvali. Ako vám môžem dnes pomôcť?',
+    'conversation_statuses' => [
+        'open' => 'Otvorená',
+        'closed' => 'Uzavretá',
+    ],
+    'settings' => [
+        'title' => 'Živý chat',
+        'description' => 'Nastavte plávajúci widget živého chatu, ktorý sa zobrazuje na vašom webe pre zákaznícku podporu v reálnom čase.',
+        'form' => [
+            'enabled' => 'Povoliť živý chat',
+            'enabled_help' => 'Zapnite, aby sa na vašom webe zobrazil chatovací widget. Návštevníci môžu začať konverzácie s vaším tímom podpory.',
+            'widget_title' => 'Názov widgetu',
+            'widget_title_help' => 'Názov zobrazený v hornej časti hlavičky chatovacieho widgetu.',
+            'widget_title_placeholder' => 'Živý chat',
+            'welcome_message' => 'Uvítacia správa',
+            'welcome_message_help' => 'Prvá správa, ktorú návštevníci uvidia po otvorení chatovacieho widgetu. Nechajte prázdne, ak chcete použiť predvolenú správu.',
+            'welcome_message_placeholder' => 'Dobrý deň! Ďakujeme, že ste sa ozvali. Ako vám môžem dnes pomôcť?',
+            'admin_name' => 'Meno administrátora',
+            'admin_name_help' => 'Meno zobrazené pre odpovede administrátora v chatovom widgete.',
+            'admin_name_placeholder' => 'Podpora',
+            'random_admin_names_enabled' => 'Použiť náhodné mená administrátorov',
+            'random_admin_names_enabled_help' => 'Ak je povolené, každej novej konverzácii bude priradené náhodné meno administrátora zo zoznamu nižšie.',
+            'random_admin_names' => 'Náhodné mená administrátorov',
+            'random_admin_names_help' => 'Zadajte jedno meno na riadok. Náhodné meno bude priradené každej novej konverzácii.',
+            'random_admin_names_placeholder' => 'Sarah
+Mike
+Emma
+John',
+            'primary_color' => 'Primárna farba',
+            'primary_color_help' => 'Hlavná farba tlačidla a hlavičky chatovacieho widgetu. Vyberte farbu, ktorá ladí s vašou značkou.',
+            'position' => 'Poloha widgetu',
+            'position_help' => 'Kde sa na obrazovke zobrazuje tlačidlo chatovacieho widgetu.',
+            'position_right' => 'Vpravo dole',
+            'position_left' => 'Vľavo dole',
+            'email_required' => 'Vyžadovať e-mail',
+            'email_required_help' => 'Keď je povolené, návštevníci musia pred začatím chatu zadať svoj e-mail. Užitočné pre následnú komunikáciu.',
+            'display_fields' => 'Zobraziť polia',
+            'mandatory_fields' => 'Povinné polia',
+            'poll_interval' => 'Interval dotazovania (ms)',
+            'poll_interval_help' => 'Ako často kontrolovať nové správy v milisekundách. Nižšie hodnoty znamenajú rýchlejšie aktualizácie, ale viac požiadaviek na server. Odporúčané: 3000-5000ms.',
+            'poll_interval_placeholder' => '3000',
+            'online_status' => 'Online stav',
+            'working_hours_enabled' => 'Povoliť pracovný čas',
+            'working_hours_enabled_help' => 'Ak je povolené, stav chatu sa mimo pracovného času automaticky prepne do režimu offline. Pracovný čas je založený na časovom pásme nakonfigurovanom v Nastavenia → Všeobecné.',
+            'working_hours_start' => 'Čas začiatku',
+            'working_hours_end' => 'Čas konca',
+            'working_days' => 'Pracovné dni',
+            'avatar_image' => 'Obrázok avatara',
+            'avatar_image_help' => 'Vlastný obrázok avatara pre hlavičku chatu. Nechajte prázdne pre použitie predvolenej ikony.',
+            'primary_hover_color' => 'Farba pri prejdení',
+            'primary_hover_color_help' => 'Farba pri prejdení myšou na tlačidlo chatu.',
+            'position_bottom_right' => 'Vpravo dole',
+            'position_bottom_left' => 'Vľavo dole',
+            'position_center_right' => 'Vpravo v strede',
+            'position_center_left' => 'Vľavo v strede',
+            'offset_x' => 'Odsadenie X (px)',
+            'offset_x_help' => 'Horizontálne odsadenie od okraja obrazovky v pixeloch.',
+            'offset_y' => 'Odsadenie Y (px)',
+            'offset_y_help' => 'Vertikálne odsadenie od okraja obrazovky v pixeloch.',
+            'display_on_mobile' => 'Zobraziť na mobile',
+            'display_on_mobile_help' => 'Ovládanie zobrazenia miniaplikácie chatu na mobilných zariadeniach.',
+            'display_on_mobile_always' => 'Vždy zobraziť',
+            'display_on_mobile_hide' => 'Skryť na mobile',
+        ],
+    ],
+    'email' => [
+        'title' => 'Live Chat Email',
+        'description' => 'Email notifications for live chat events',
+        'templates' => [
+            'new_conversation_title' => 'New Conversation Notification',
+            'new_conversation_description' => 'Email sent to admin when a visitor starts a new conversation',
+            'new_conversation_subject' => 'New Live Chat Conversation from {{ visitor_name }}',
+            'visitor_name' => 'Visitor name',
+            'visitor_email' => 'Visitor email',
+            'visitor_phone' => 'Visitor phone',
+            'visitor_ip' => 'Visitor IP address',
+            'current_page' => 'Current page URL',
+            'conversation_url' => 'Link to conversation in admin panel',
+        ],
+    ],
+    'email_settings' => [
+        'title' => 'Email Notifications',
+        'description' => 'Configure email notifications for new chat conversations. Only one email is sent when a visitor starts a new conversation.',
+        'enable_email_notification' => 'Enable Email Notifications',
+        'enable_email_notification_help' => 'Send an email notification when a visitor starts a new chat conversation',
+        'notification_emails' => 'Notification Email Addresses',
+        'notification_emails_help' => 'Comma-separated list of email addresses to receive notifications. Leave empty to use the default admin email.',
+    ],
+    'email_templates' => [
+        'new_conversation_title' => 'New Live Chat Conversation',
+        'new_conversation_greeting' => 'A visitor has started a new live chat conversation on your website.',
+        'visitor_details' => 'Visitor Details',
+        'field_name' => 'Name:',
+        'field_email' => 'Email:',
+        'field_phone' => 'Phone:',
+        'field_ip' => 'IP Address:',
+        'field_page' => 'Current Page:',
+        'respond_instruction' => 'Click the button below to respond to this conversation.',
+        'view_conversation_button' => 'View Conversation',
+    ],
+    'webhook' => [
+        'title' => 'Nastavenia Webhook',
+        'description' => 'Nakonfigurujte webhooky na prijímanie upozornení pri udalostiach chatu. Webhooky odosielajú HTTP POST požiadavky na vaše zadané URL adresy s údajmi o udalostiach.',
+        'enable_webhooks' => 'Povoliť Webhooky',
+        'enable_webhooks_help' => 'Povoliť odosielanie webhook upozornení pre udalosti živého chatu',
+        'message_received_url' => 'URL Webhook prijatej správy',
+        'message_received_url_help' => 'Spustené, keď návštevník odošle novú správu v chate',
+        'conversation_started_url' => 'URL Webhook začatej konverzácie',
+        'conversation_started_url_help' => 'Spustené, keď návštevník začne novú konverzáciu',
+        'view_sample_data' => 'Zobraziť vzorové údaje',
+        'test_button' => 'Odoslať testovací Webhook',
+        'testing' => 'Odosiela sa...',
+        'test_success' => 'Webhook úspešne odoslaný!',
+        'test_failed' => 'Test webhooku zlyhal.',
+        'status_code' => 'Stavový kód',
+        'please_enter_url' => 'Najprv zadajte URL webhooku',
+        'error_occurred' => 'Pri testovaní webhooku došlo k chybe',
+        'usage_instructions_title' => 'How to Use Webhooks',
+        'usage_instructions' => '<p><strong>Webhooks</strong> allow you to receive real-time notifications when events occur in Live Chat. When an event is triggered, an HTTP POST request is sent to your configured URL with JSON payload.</p>
+<h6>HTTP Headers</h6>
+<ul>
+<li><code>Content-Type: application/json</code></li>
+<li><code>X-Webhook-Event</code> - Event type (e.g., <code>message.received</code>, <code>conversation.started</code>)</li>
+<li><code>X-Webhook-Timestamp</code> - ISO 8601 timestamp when webhook was sent</li>
+<li><code>X-Webhook-Test: true</code> - Only present for test webhooks</li>
+</ul>
+<h6>Your Endpoint Requirements</h6>
+<ul>
+<li>Must accept HTTP POST requests</li>
+<li>Must respond within 10 seconds (timeout limit)</li>
+<li>Should return HTTP 2xx status code for success</li>
+<li>Must be publicly accessible (HTTPS recommended)</li>
+</ul>
+<h6>Integration Tutorials</h6>
+<ul>
+<li><strong>Slack:</strong> <a href="https://api.slack.com/messaging/webhooks" target="_blank">Incoming Webhooks Guide</a></li>
+<li><strong>Discord:</strong> <a href="https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks" target="_blank">Intro to Webhooks</a></li>
+<li><strong>Telegram:</strong> <a href="https://core.telegram.org/bots/webhooks" target="_blank">Bot Webhooks</a> (use with <a href="https://core.telegram.org/bots/api#sendmessage" target="_blank">sendMessage API</a>)</li>
+<li><strong>n8n:</strong> <a href="https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.webhook/" target="_blank">Webhook Node</a></li>
+<li><strong>Zapier:</strong> <a href="https://zapier.com/apps/webhook/integrations" target="_blank">Webhooks by Zapier</a></li>
+<li><strong>Make (Integromat):</strong> <a href="https://www.make.com/en/help/tools/webhooks" target="_blank">Webhooks Module</a></li>
+</ul>
+<h6>Example Use Cases</h6>
+<ul>
+<li>Send notifications to Slack, Discord, or Telegram</li>
+<li>Create tickets in helpdesk systems (Zendesk, Freshdesk)</li>
+<li>Log conversations to external CRM</li>
+<li>Trigger automated responses via n8n or Zapier</li>
+</ul>',
+    ],
+    'offline' => 'Offline',
+    'days' => [
+        'monday' => 'Pondelok',
+        'tuesday' => 'Utorok',
+        'wednesday' => 'Streda',
+        'thursday' => 'Štvrtok',
+        'friday' => 'Piatok',
+        'saturday' => 'Sobota',
+        'sunday' => 'Nedeľa',
+    ],
+];

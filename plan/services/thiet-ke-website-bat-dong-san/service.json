@@ -1,0 +1,38 @@
+{
+  "slug": "thiet-ke-website-bat-dong-san",
+  "id": 7,
+  "name": "Thiết Kế Website Bất Động Sản Chuẩn SEO",
+  "category_id": 2,
+  "category": "Website Doanh Nghiệp",
+  "description": "Dịch vụ thiết kế website bất động sản chuyên nghiệp, tích hợp bản đồ quy hoạch, VR 360, bộ lọc tìm kiếm thông minh và quản lý CRM.",
+  "image": "services/service_bds_featured.jpg",
+  "images": [],
+  "is_featured": true,
+  "order": 0,
+  "status": "published",
+  "seo": {
+    "seo_title": "Thiết kế website bất động sản chuyên nghiệp, chuẩn SEO Top 1",
+    "seo_description": "Công ty thiết kế website bất động sản uy tín, giá chỉ từ 3-8 triệu. Tích hợp bộ lọc thông minh, bản đồ VR 360, tốc độ cao chuẩn Core Web Vitals.",
+    "seo_image": "services/service_bds_featured.jpg",
+    "index": "index"
+  },
+  "meta": {
+    "icon_image": "icons/icon-2.png"
+  },
+  "faqs": [
+    {
+      "category_id": 11,
+      "category": "FAQ - Website Bất Động Sản",
+      "items": [
+        {
+          "question": "Thời gian thiết kế website bất động sản là bao lâu?",
+          "answer": "Thường từ 5 đến 15 ngày tùy theo tính năng (có tích hợp VR360, CRM hay không)."
+        },
+        {
+          "question": "Website có tích hợp bộ lọc tìm kiếm thông minh không?",
+          "answer": "Có, chúng tôi tích hợp bộ lọc cực kỳ chi tiết từ giá, diện tích, hướng nhà, số phòng ngủ, cho đến pháp lý."
+        }
+      ]
+    }
+  ]
+}

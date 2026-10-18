@@ -3,21 +3,21 @@
         <div class="text-center mb-8">
             @if ($subtitle = $shortcode->subtitle)
                 <div class="d-flex align-items-center justify-content-center bg-primary-soft border border-2 border-white d-inline-flex rounded-pill px-4 py-2" data-aos="zoom-in" data-aos-delay="50">
-                    <img src="{{ Theme::asset()->url('images/icons/dots.png') }}" alt="dots">
+                    <img src="{{ Theme::asset()->url('images/icons/dots.png') }}" alt="" aria-hidden="true">
 
                     <span class="tag-spacing fs-7 fw-bold text-linear-2 ms-2 text-primary">{!! BaseHelper::clean($subtitle) !!}</span>
                 </div>
             @endif
 
             @if ($title = $shortcode->title)
-                <h3 class="ds-3 my-3 fw-regular">{!! BaseHelper::clean($title) !!}</h3>
+                <{{ $titleTag = infinia_title_tag($shortcode, 'h3') }} class="ds-3 my-3 fw-regular">{!! infinia_clean_title($title) !!}</{{ $titleTag }}>
             @endif
         </div>
         <div class="row">
             <div class="col-lg-5 pe-lg-0">
                 <div class="bg-linear-1 text-center rounded-4 position-relative">
                     @if ($image = $shortcode->image)
-                        {{ RvMedia::image($image, __('Image'), attributes: ['class' => 'rounded-4 border border-2 border-white mb-10 mt-5']) }}
+                        {{ RvMedia::image($image, infinia_image_alt($shortcode), attributes: ['class' => 'rounded-4 border border-2 border-white mb-10 mt-5']) }}
                     @endif
 
                     @php
@@ -39,10 +39,10 @@
                     @endif
 
                     <div class="position-absolute top-0 end-0">
-                        <img class="flickering" src="{{ Theme::asset()->url('images/icons/star-5.png') }}" alt="infinia">
+                        <img class="flickering" src="{{ Theme::asset()->url('images/icons/star-5.png') }}" alt="" aria-hidden="true">
                     </div>
                     <div class="position-absolute bottom-0 start-0">
-                        <img class="alltuchtopdown" src="{{ Theme::asset()->url('images/icons/star-3.png') }}" alt="infinia">
+                        <img class="alltuchtopdown" src="{{ Theme::asset()->url('images/icons/star-3.png') }}" alt="" aria-hidden="true">
                     </div>
                 </div>
             </div>
@@ -65,7 +65,7 @@
                                 @foreach($features as $feature)
                                     @continue(! $featureTitle = Arr::get($feature, 'title'))
                                     <li class="d-flex align-items-center mt-3">
-                                        <img src="{{ Theme::asset()->url('images/icons/check.png') }}" alt="check">
+                                        <img src="{{ Theme::asset()->url('images/icons/check.png') }}" alt="" aria-hidden="true">
                                         <span class="ms-2 text-900 fw-medium fs-6">{!! BaseHelper::clean($featureTitle) !!}</span>
                                     </li>
                                 @endforeach

@@ -23,21 +23,16 @@ class RenderingSiteMapListener
                         ->get();
 
                     foreach ($categories as $category) {
+                        if (! $category->slugable) {
+                            continue;
+                        }
+
                         SiteMapManager::add($category->url, $category->updated_at, '0.8');
                     }
 
                     break;
                 case 'blog-tags':
-                    $tags = Tag::query()
-                        ->with('slugable')
-                        ->wherePublished()->latest()
-                        ->select(['id', 'name', 'updated_at'])
-                        ->get();
-
-                    foreach ($tags as $tag) {
-                        SiteMapManager::add($tag->url, $tag->updated_at, '0.3', 'weekly');
-                    }
-
+                    // SEO: trang tag đặt noindex nên không đưa vào sitemap.
                     break;
             }
 
@@ -100,15 +95,6 @@ class RenderingSiteMapListener
 
         if ($categoryLastUpdated) {
             SiteMapManager::addSitemap(SiteMapManager::route('blog-categories'), $categoryLastUpdated);
-        }
-
-        $tagLastUpdated = Tag::query()
-            ->wherePublished()
-            ->latest('updated_at')
-            ->value('updated_at');
-
-        if ($tagLastUpdated) {
-            SiteMapManager::addSitemap(SiteMapManager::route('blog-tags'), $tagLastUpdated);
         }
     }
 }

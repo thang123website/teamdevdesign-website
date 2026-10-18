@@ -1,0 +1,216 @@
+<?php
+
+return [
+    'title' => 'लाइव चैट',
+    'messages' => 'संदेश',
+    'visitor_name' => 'आगंतुक का नाम',
+    'visitor_email' => 'आगंतुक का ईमेल',
+    'visitor_phone' => 'फोन',
+    'visitor_info' => 'आगंतुक जानकारी',
+    'ip_address' => 'IP पता',
+    'current_page' => 'वर्तमान पृष्ठ',
+    'browser' => 'ब्राउज़र',
+    'last_message' => 'अंतिम संदेश',
+    'close_conversation' => 'बंद करें',
+    'delete_conversation' => 'बातचीत हटाएं',
+    'conversation_closed' => 'बातचीत बंद कर दी गई है।',
+    'conversation_deleted' => 'बातचीत हटा दी गई है।',
+    'conversation_is_closed' => 'यह बातचीत बंद है।',
+    'conversation_with' => ':name के साथ बातचीत',
+    'confirm_close' => 'क्या आप वाकई इस बातचीत को बंद करना चाहते हैं?',
+    'confirm_delete' => 'क्या आप वाकई इस बातचीत को हटाना चाहते हैं? यह कार्रवाई वापस नहीं की जा सकती।',
+    'type_reply' => 'अपना उत्तर लिखें...',
+    'reply_sent' => 'उत्तर सफलतापूर्वक भेजा गया।',
+    'no_conversation' => 'कोई सक्रिय बातचीत नहीं मिली। कृपया नया चैट शुरू करें।',
+    'no_conversations' => 'अभी तक कोई बातचीत नहीं',
+    'chat_started' => 'चैट सफलतापूर्वक शुरू हुआ।',
+    'message_sent' => 'संदेश भेजा गया।',
+    'select_conversation' => 'एक बातचीत चुनें',
+    'select_conversation_hint' => 'चैट शुरू करने के लिए सूची से एक बातचीत चुनें।',
+    'all' => 'सभी',
+    'timeline' => 'टाइमलाइन',
+    'total_messages' => 'कुल संदेश',
+    'just_now' => 'अभी',
+    'test_sound' => 'ध्वनि परीक्षण के लिए क्लिक करें',
+    'back_to_list' => 'बातचीत पर वापस जाएं',
+    'no_messages_yet' => 'अभी कोई संदेश नहीं',
+    'start_conversation_hint' => 'बातचीत शुरू करने के लिए संदेश भेजें',
+    'notifications_enabled' => 'ब्राउज़र सूचनाएं सक्षम!',
+    'enable_notifications' => 'ब्राउज़र सूचनाएं सक्षम करें',
+    'new_conversation' => 'नई बातचीत',
+    'new_message' => 'नया संदेश',
+    'no_conversations_hint' => 'जब आगंतुक चैट करना शुरू करेंगे तो बातचीत यहां दिखाई देगी।',
+    'open_chat' => 'चैट खोलें',
+    'close' => 'बंद करें',
+    'chat_title' => 'लाइव चैट',
+    'online' => 'ऑनलाइन',
+    'start_message' => 'नमस्ते! हम आपकी कैसे मदद कर सकते हैं?',
+    'your_name' => 'आपका नाम',
+    'your_email' => 'आपका ईमेल',
+    'your_email_optional' => 'आपका ईमेल (वैकल्पिक)',
+    'your_phone' => 'अपने फोन को',
+    'start_chat' => 'चैट शुरू करें',
+    'type_message' => 'संदेश लिखें...',
+    'send' => 'भेजें',
+    'default_admin_name' => 'सहायता',
+    'default_welcome_message' => 'नमस्ते! संपर्क करने के लिए धन्यवाद। मैं आपकी कैसे मदद कर सकता हूँ?',
+    'conversation_statuses' => [
+        'open' => 'खुला',
+        'closed' => 'बंद',
+    ],
+    'settings' => [
+        'title' => 'लाइव चैट',
+        'description' => 'अपने वेबसाइट पर दिखाई देने वाले फ्लोटिंग लाइव चैट विजेट को रीयल-टाइम ग्राहक सहायता के लिए कॉन्फ़िगर करें।',
+        'form' => [
+            'enabled' => 'लाइव चैट सक्षम करें',
+            'enabled_help' => 'अपनी वेबसाइट पर चैट विजेट दिखाने के लिए चालू करें। आगंतुक आपकी सहायता टीम के साथ बातचीत शुरू कर सकते हैं।',
+            'widget_title' => 'विजेट शीर्षक',
+            'widget_title_help' => 'चैट विजेट हेडर के शीर्ष पर दिखाया जाने वाला शीर्षक।',
+            'widget_title_placeholder' => 'लाइव चैट',
+            'welcome_message' => 'स्वागत संदेश',
+            'welcome_message_help' => 'चैट विजेट खोलने पर आगंतुकों को दिखाई देने वाला पहला संदेश। डिफ़ॉल्ट संदेश उपयोग करने के लिए खाली छोड़ दें।',
+            'welcome_message_placeholder' => 'नमस्ते! संपर्क करने के लिए धन्यवाद। मैं आपकी कैसे मदद कर सकता हूँ?',
+            'admin_name' => 'व्यवस्थापक का नाम',
+            'admin_name_help' => 'चैट विजेट में व्यवस्थापक के जवाबों के लिए प्रदर्शित नाम।',
+            'admin_name_placeholder' => 'सहायता',
+            'random_admin_names_enabled' => 'यादृच्छिक व्यवस्थापक नामों का उपयोग करें',
+            'random_admin_names_enabled_help' => 'सक्षम होने पर, प्रत्येक नई बातचीत को नीचे दी गई सूची से एक यादृच्छिक व्यवस्थापक नाम सौंपा जाएगा।',
+            'random_admin_names' => 'यादृच्छिक व्यवस्थापक नाम',
+            'random_admin_names_help' => 'प्रति पंक्ति एक नाम दर्ज करें। प्रत्येक नई बातचीत को एक यादृच्छिक नाम सौंपा जाएगा।',
+            'random_admin_names_placeholder' => 'Sarah
+Mike
+Emma
+John',
+            'primary_color' => 'प्राथमिक रंग',
+            'primary_color_help' => 'चैट विजेट बटन और हेडर का मुख्य रंग। अपने ब्रांड से मेल खाने वाला रंग चुनें।',
+            'position' => 'विजेट स्थिति',
+            'position_help' => 'स्क्रीन पर चैट विजेट बटन कहाँ दिखाई देता है।',
+            'position_right' => 'नीचे दाईं ओर',
+            'position_left' => 'नीचे बाईं ओर',
+            'email_required' => 'ईमेल आवश्यक करें',
+            'email_required_help' => 'सक्षम होने पर, आगंतुकों को चैट शुरू करने से पहले अपना ईमेल पता दर्ज करना होगा। फॉलो-अप संचार के लिए उपयोगी।',
+            'display_fields' => 'प्रदर्शित फ़ील्ड',
+            'mandatory_fields' => 'अनिवार्य फ़ील्ड',
+            'poll_interval' => 'पोल अंतराल (ms)',
+            'poll_interval_help' => 'नई संदेशों की जांच कितनी बार करनी है (मिलीसेकंड में)। कम मान तेज अपडेट लेकिन अधिक सर्वर अनुरोध। अनुशंसित: 3000-5000ms।',
+            'poll_interval_placeholder' => '3000',
+            'online_status' => 'ऑनलाइन स्थिति',
+            'working_hours_enabled' => 'काम के घंटे सक्षम करें',
+            'working_hours_enabled_help' => 'सक्षम होने पर, काम के घंटों के बाहर चैट स्थिति स्वचालित रूप से ऑफ़लाइन हो जाएगी। काम के घंटे सेटिंग्स → सामान्य में कॉन्फ़िगर किए गए समय क्षेत्र पर आधारित हैं।',
+            'working_hours_start' => 'शुरुआत का समय',
+            'working_hours_end' => 'समाप्ति का समय',
+            'working_days' => 'कार्य दिवस',
+            'avatar_image' => 'अवतार छवि',
+            'avatar_image_help' => 'चैट हेडर के लिए कस्टम अवतार छवि। डिफ़ॉल्ट आइकन का उपयोग करने के लिए खाली छोड़ दें।',
+            'primary_hover_color' => 'होवर रंग',
+            'primary_hover_color_help' => 'चैट बटन पर माउस ले जाने पर रंग।',
+            'position_bottom_right' => 'नीचे दायें',
+            'position_bottom_left' => 'नीचे बाएं',
+            'position_center_right' => 'केंद्र दायें',
+            'position_center_left' => 'केंद्र बाएं',
+            'offset_x' => 'ऑफसेट X (px)',
+            'offset_x_help' => 'पिक्सेल में स्क्रीन के किनारे से क्षैतिज ऑफसेट।',
+            'offset_y' => 'ऑफसेट Y (px)',
+            'offset_y_help' => 'पिक्सेल में स्क्रीन के किनारे से ऊर्ध्वाधर ऑफसेट।',
+            'display_on_mobile' => 'मोबाइल पर प्रदर्शित करें',
+            'display_on_mobile_help' => 'नियंत्रित करें कि चैट विजेट मोबाइल उपकरणों पर प्रदर्शित होता है या नहीं।',
+            'display_on_mobile_always' => 'हमेशा दिखाएं',
+            'display_on_mobile_hide' => 'मोबाइल पर छुपाएं',
+        ],
+    ],
+    'email' => [
+        'title' => 'Live Chat Email',
+        'description' => 'Email notifications for live chat events',
+        'templates' => [
+            'new_conversation_title' => 'New Conversation Notification',
+            'new_conversation_description' => 'Email sent to admin when a visitor starts a new conversation',
+            'new_conversation_subject' => 'New Live Chat Conversation from {{ visitor_name }}',
+            'visitor_name' => 'Visitor name',
+            'visitor_email' => 'Visitor email',
+            'visitor_phone' => 'Visitor phone',
+            'visitor_ip' => 'Visitor IP address',
+            'current_page' => 'Current page URL',
+            'conversation_url' => 'Link to conversation in admin panel',
+        ],
+    ],
+    'email_settings' => [
+        'title' => 'Email Notifications',
+        'description' => 'Configure email notifications for new chat conversations. Only one email is sent when a visitor starts a new conversation.',
+        'enable_email_notification' => 'Enable Email Notifications',
+        'enable_email_notification_help' => 'Send an email notification when a visitor starts a new chat conversation',
+        'notification_emails' => 'Notification Email Addresses',
+        'notification_emails_help' => 'Comma-separated list of email addresses to receive notifications. Leave empty to use the default admin email.',
+    ],
+    'email_templates' => [
+        'new_conversation_title' => 'New Live Chat Conversation',
+        'new_conversation_greeting' => 'A visitor has started a new live chat conversation on your website.',
+        'visitor_details' => 'Visitor Details',
+        'field_name' => 'Name:',
+        'field_email' => 'Email:',
+        'field_phone' => 'Phone:',
+        'field_ip' => 'IP Address:',
+        'field_page' => 'Current Page:',
+        'respond_instruction' => 'Click the button below to respond to this conversation.',
+        'view_conversation_button' => 'View Conversation',
+    ],
+    'webhook' => [
+        'title' => 'Webhook सेटिंग्स',
+        'description' => 'चैट इवेंट होने पर सूचनाएं प्राप्त करने के लिए webhooks कॉन्फ़िगर करें। Webhooks आपके निर्दिष्ट URLs पर इवेंट डेटा के साथ HTTP POST अनुरोध भेजते हैं।',
+        'enable_webhooks' => 'Webhooks सक्षम करें',
+        'enable_webhooks_help' => 'लाइव चैट इवेंट के लिए webhook सूचनाएं भेजना सक्षम करें',
+        'message_received_url' => 'संदेश प्राप्त Webhook URL',
+        'message_received_url_help' => 'जब कोई विज़िटर चैट में नया संदेश भेजता है तब ट्रिगर होता है',
+        'conversation_started_url' => 'वार्तालाप शुरू Webhook URL',
+        'conversation_started_url_help' => 'जब कोई विज़िटर नई बातचीत शुरू करता है तब ट्रिगर होता है',
+        'view_sample_data' => 'नमूना डेटा देखें',
+        'test_button' => 'टेस्ट Webhook भेजें',
+        'testing' => 'भेज रहा है...',
+        'test_success' => 'Webhook सफलतापूर्वक भेजा गया!',
+        'test_failed' => 'Webhook परीक्षण विफल।',
+        'status_code' => 'स्थिति कोड',
+        'please_enter_url' => 'कृपया पहले webhook URL दर्ज करें',
+        'error_occurred' => 'Webhook का परीक्षण करते समय एक त्रुटि हुई',
+        'usage_instructions_title' => 'How to Use Webhooks',
+        'usage_instructions' => '<p><strong>Webhooks</strong> allow you to receive real-time notifications when events occur in Live Chat. When an event is triggered, an HTTP POST request is sent to your configured URL with JSON payload.</p>
+<h6>HTTP Headers</h6>
+<ul>
+<li><code>Content-Type: application/json</code></li>
+<li><code>X-Webhook-Event</code> - Event type (e.g., <code>message.received</code>, <code>conversation.started</code>)</li>
+<li><code>X-Webhook-Timestamp</code> - ISO 8601 timestamp when webhook was sent</li>
+<li><code>X-Webhook-Test: true</code> - Only present for test webhooks</li>
+</ul>
+<h6>Your Endpoint Requirements</h6>
+<ul>
+<li>Must accept HTTP POST requests</li>
+<li>Must respond within 10 seconds (timeout limit)</li>
+<li>Should return HTTP 2xx status code for success</li>
+<li>Must be publicly accessible (HTTPS recommended)</li>
+</ul>
+<h6>Integration Tutorials</h6>
+<ul>
+<li><strong>Slack:</strong> <a href="https://api.slack.com/messaging/webhooks" target="_blank">Incoming Webhooks Guide</a></li>
+<li><strong>Discord:</strong> <a href="https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks" target="_blank">Intro to Webhooks</a></li>
+<li><strong>Telegram:</strong> <a href="https://core.telegram.org/bots/webhooks" target="_blank">Bot Webhooks</a> (use with <a href="https://core.telegram.org/bots/api#sendmessage" target="_blank">sendMessage API</a>)</li>
+<li><strong>n8n:</strong> <a href="https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.webhook/" target="_blank">Webhook Node</a></li>
+<li><strong>Zapier:</strong> <a href="https://zapier.com/apps/webhook/integrations" target="_blank">Webhooks by Zapier</a></li>
+<li><strong>Make (Integromat):</strong> <a href="https://www.make.com/en/help/tools/webhooks" target="_blank">Webhooks Module</a></li>
+</ul>
+<h6>Example Use Cases</h6>
+<ul>
+<li>Send notifications to Slack, Discord, or Telegram</li>
+<li>Create tickets in helpdesk systems (Zendesk, Freshdesk)</li>
+<li>Log conversations to external CRM</li>
+<li>Trigger automated responses via n8n or Zapier</li>
+</ul>',
+    ],
+    'offline' => 'Offline',
+    'days' => [
+        'monday' => 'सोमवार',
+        'tuesday' => 'मंगलवार',
+        'wednesday' => 'बुधवार',
+        'thursday' => 'गुरुवार',
+        'friday' => 'शुक्रवार',
+        'saturday' => 'शनिवार',
+        'sunday' => 'रविवार',
+    ],
+];

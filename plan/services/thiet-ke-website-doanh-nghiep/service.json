@@ -1,0 +1,50 @@
+{
+  "id": 1,
+  "slug": "thiet-ke-website-doanh-nghiep",
+  "name": "Thiết kế Website Doanh nghiệp",
+  "category": "Website Doanh Nghiệp",
+  "category_id": 1,
+  "description": "Thiết kế website doanh nghiệp độc quyền trên Laravel, chuẩn SEO, tải dưới 2s, bàn giao CMS dễ dùng. Bảo hành trọn đời – nhận báo giá miễn phí hôm nay!",
+  "image": "services/service_corporate_web_featured.webp",
+  "images": [],
+  "is_featured": true,
+  "order": 0,
+  "status": "published",
+  "seo": {
+    "seo_title": "Thiết Kế Website Doanh Nghiệp Chuẩn SEO | TeamDevDesign",
+    "seo_description": "Thiết kế website doanh nghiệp độc quyền trên Laravel, chuẩn SEO, tải dưới 2s, bàn giao CMS dễ dùng. Bảo hành trọn đời – nhận báo giá miễn phí hôm nay!",
+    "seo_image": "services/service_corporate_web_featured.webp",
+    "index": "index"
+  },
+  "meta": {
+    "icon_image": "icons/icon-6.png"
+  },
+  "faqs": [
+    {
+      "category_id": 5,
+      "category": "FAQ - Thiết Kế Website Doanh Nghiệp",
+      "items": [
+        {
+          "question": "Thời gian thiết kế website doanh nghiệp mất bao lâu?",
+          "answer": "Thông thường, một dự án website giới thiệu doanh nghiệp tiêu chuẩn mất từ 15 đến 20 ngày làm việc (bao gồm cả khâu thiết kế Figma và lập trình). Các hệ thống phức tạp hơn có thể cần 30 đến 45 ngày."
+        },
+        {
+          "question": "Website của tôi có tương thích với thiết bị di động (Responsive) không?",
+          "answer": "Chắc chắn rồi. 100% dự án do TeamDevDesign thực hiện đều áp dụng nguyên tắc thiết kế Mobile-first, đảm bảo giao diện hiển thị hoàn hảo và tốc độ cực nhanh trên điện thoại thông minh, máy tính bảng và desktop."
+        },
+        {
+          "question": "Tôi có cần biết lập trình để quản lý website không?",
+          "answer": "Hoàn toàn không. Chúng tôi cung cấp hệ thống quản trị Botble CMS cực kỳ trực quan bằng tiếng Việt. Sau 30 phút được chúng tôi hướng dẫn, bạn có thể tự thay đổi hình ảnh, đăng bài viết, cập nhật dịch vụ dễ dàng như dùng Facebook."
+        },
+        {
+          "question": "TeamDevDesign có hỗ trợ SEO cho website không?",
+          "answer": "Website được lập trình chuẩn cấu trúc SEO on-page ngay từ đầu (sitemap tự động, thẻ meta, tối ưu thẻ H1-H6, thân thiện với bot Google). Tuy nhiên, để lên top từ khóa, bạn sẽ cần dịch vụ viết bài và đi backlink thêm. Nếu bạn cần, chúng tôi có các gói hỗ trợ marketing đi kèm."
+        },
+        {
+          "question": "Sau khi bàn giao, website có được bảo hành không?",
+          "answer": "Chúng tôi bảo hành kỹ thuật 12 tháng đối với mã nguồn. Nếu bạn sử dụng kèm dịch vụ hosting của TeamDevDesign, website sẽ được bảo hành trọn đời và thường xuyên được quét lỗi, sao lưu dữ liệu tự động."
+        }
+      ]
+    }
+  ]
+}

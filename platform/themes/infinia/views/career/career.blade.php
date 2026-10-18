@@ -14,9 +14,9 @@
             <div class="content" @style(["margin-top: unset !important;" => ! $backgroundImage])>
                 <div class="heading">
                     <div class="row">
-                        <h2 @class(['title truncate-custom truncate-2-custom', 'col-lg-9' => $applyUrl, 'col-12' => ! $applyUrl])>
+                        <h1 @class(['title truncate-custom truncate-2-custom', 'col-lg-9' => $applyUrl, 'col-12' => ! $applyUrl])>
                             {{ $career->name }}
-                        </h2>
+                        </h1>
                         @if ($applyUrl)
                             <div class="action col-lg-3 text-start text-lg-end mt-3 mt-lg-0">
                                 <a class="btn-apply btn btn-primary" href="{{ $applyUrl }}">{{ __('Apply now') }}</a>

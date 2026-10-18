@@ -1,2 +1,9 @@
 User-agent: *
-Disallow:
+Allow: /
+Disallow: /admin
+Disallow: /search
+Disallow: /*?style=
+Disallow: /*&style=
+Disallow: /cdn-cgi/
+
+Sitemap: https://teamdevdesign.net/sitemap.xml

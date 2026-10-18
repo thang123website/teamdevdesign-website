@@ -10,7 +10,7 @@
                         </a>
                     @endif
                     <a href="{{ $post->url }}">
-                        <strong class="d-block fs-6 my-3">{{ $post->name }}</strong>
+                        <h2 class="d-block fs-6 fw-bold my-3">{{ $post->name }}</h2>
                     </a>
                     <p>{{ Str::limit($post->description) }}</p>
                 </div>

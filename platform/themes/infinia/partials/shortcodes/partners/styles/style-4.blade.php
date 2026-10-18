@@ -24,7 +24,7 @@
                 @endif
 
                 @if ($title = $shortcode->title)
-                    <h1 class="ds-xs-4 fw-regular m-0 text-white">{!! BaseHelper::clean($title) !!}</h1>
+                    <{{ $titleTag = infinia_title_tag($shortcode, 'h1') }} class="ds-xs-4 fw-regular m-0 text-white">{!! infinia_clean_title($title) !!}</{{ $titleTag }}>
                 @endif
 
             </div>

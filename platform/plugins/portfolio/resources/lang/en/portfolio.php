@@ -17,6 +17,10 @@ return [
         'name' => 'Service Categories',
         'create' => 'Create Service Category',
     ],
+    'project_category' => [
+        'name' => 'Project Categories',
+        'create' => 'Create Project Category',
+    ],
     'service' => [
         'name' => 'Services',
         'create' => 'Create Service',
@@ -116,7 +120,14 @@ return [
     'message' => 'Message',
     'time' => 'Time',
     'service_categories' => 'Service Categories',
+    'project_categories' => 'Project Categories',
     'services' => 'Services',
     'projects' => 'Projects',
     'packages' => 'Packages',
+    'shortcodes' => [
+        'projects_list' => [
+            'name' => 'Projects List',
+            'description' => 'Display a filterable list of projects with pagination',
+        ],
+    ],
 ];

@@ -3,7 +3,7 @@
         <div class="d-flex flex-lg-row flex-column align-items-center">
             <div class="mb-lg-0 mb-8">
                 @if ($title = $shortcode->title)
-                    <h3 class="ds-3 fw-regular">{!! BaseHelper::clean($title) !!}</h3>
+                    <{{ $titleTag = infinia_title_tag($shortcode, 'h3') }} class="ds-3 fw-regular">{!! infinia_clean_title($title) !!}</{{ $titleTag }}>
                 @endif
 
                 @if ($description = $shortcode->description)
@@ -18,7 +18,7 @@
 
             @if ($image = $shortcode->image)
                 <div class="ms-auto rounded-2 border border-5 border-white">
-                    {{ RvMedia::image($image, __('Image'), attributes: ['class' => 'rounded-2']) }}
+                    {{ RvMedia::image($image, infinia_image_alt($shortcode), attributes: ['class' => 'rounded-2']) }}
                 </div>
             @endif
         </div>

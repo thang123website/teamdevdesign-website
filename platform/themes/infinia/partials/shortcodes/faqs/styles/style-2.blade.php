@@ -4,7 +4,7 @@
             <div class="col-lg-6">
                 <div class="text-start position-relative d-inline-block mb-lg-0 mb-5">
                     @if ($image = $shortcode->image)
-                        {{ RvMedia::image($image, __('Image'), attributes: ['class' => 'rounded-4']) }}
+                        {{ RvMedia::image($image, infinia_image_alt($shortcode), attributes: ['class' => 'rounded-4']) }}
                     @endif
 
                     @if ($tabs)
@@ -38,7 +38,7 @@
             </div>
             <div class="col-lg-6 mt-lg-0 mt-5">
                 @if ($title = $shortcode->title)
-                    <h3 class="ds-3" data-aos="fade-up" data-aos-delay="0">{!! BaseHelper::clean($title) !!}</h3>
+                    <{{ $titleTag = infinia_title_tag($shortcode, 'h3') }} class="ds-3" data-aos="fade-up" data-aos-delay="0">{!! infinia_clean_title($title) !!}</{{ $titleTag }}>
                 @endif
 
                 @if ($description = $shortcode->description)

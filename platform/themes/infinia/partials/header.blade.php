@@ -25,11 +25,11 @@
                     <div class="container">
                         <div class="row py-md-5 py-2">
                             <form action="{{ $searchPostUrl = route('public.search') }}" method="GET" class="col-12 col-lg-8 mx-auto">
-                                <h4 class="mb-2 fs-sm-5">{{ __('What are you looking for?') }}</h4>
+                                <div class="h4 mb-2 fs-sm-5">{{ __('What are you looking for?') }}</div>
                                 <p class="text-500 fs-6 mb-5">{{ __('Explore our services and discover how we can help you achieve your goals') }}</p>
                                 <div class="input-group" data-aos="zoom-in">
-                                    <input type="text" class="form-control ps-5 rounded-start-pill" name="name" placeholder="Enter Your Keywords" />
-                                    <button type="submit" class="btn btn-primary rounded-end-pill">
+                                    <input type="text" class="form-control ps-5 rounded-start-pill" name="name" placeholder="{{ __('Nhập từ khóa tìm kiếm') }}" aria-label="{{ __('Nhập từ khóa tìm kiếm') }}" />
+                                    <button type="submit" class="btn btn-primary rounded-end-pill" aria-label="{{ __('Search') }}">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                             <path
                                                 d="M19.25 19.25L15.5 15.5M4.75 11C4.75 7.54822 7.54822 4.75 11 4.75C14.4518 4.75 17.25 7.54822 17.25 11C17.25 14.4518 14.4518 17.25 11 17.25C7.54822 17.25 4.75 14.4518 4.75 11Z"

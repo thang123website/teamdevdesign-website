@@ -1,0 +1,216 @@
+<?php
+
+return [
+    'title' => 'ไลฟ์แชท',
+    'messages' => 'ข้อความ',
+    'visitor_name' => 'ชื่อผู้เยี่ยมชม',
+    'visitor_email' => 'อีเมลของผู้เยี่ยมชม',
+    'visitor_phone' => 'โทรศัพท์',
+    'visitor_info' => 'ข้อมูลผู้เยี่ยมชม',
+    'ip_address' => 'ที่อยู่ IP',
+    'current_page' => 'หน้าปัจจุบัน',
+    'browser' => 'เบราว์เซอร์',
+    'last_message' => 'ข้อความล่าสุด',
+    'close_conversation' => 'ปิด',
+    'delete_conversation' => 'ลบบทสนทนา',
+    'conversation_closed' => 'ปิดบทสนทนาแล้ว',
+    'conversation_deleted' => 'ลบบทสนทนาแล้ว',
+    'conversation_is_closed' => 'บทสนทนานี้ถูกปิดแล้ว',
+    'conversation_with' => 'บทสนทนากับ :name',
+    'confirm_close' => 'คุณแน่ใจหรือไม่ว่าต้องการปิดบทสนทนานี้?',
+    'confirm_delete' => 'คุณแน่ใจหรือไม่ว่าต้องการลบบทสนทนานี้? การกระทำนี้ไม่สามารถย้อนกลับได้',
+    'type_reply' => 'พิมพ์คำตอบของคุณ...',
+    'reply_sent' => 'ส่งคำตอบเรียบร้อยแล้ว',
+    'no_conversation' => 'ไม่พบบทสนทนาที่กำลังใช้งานอยู่ โปรดเริ่มแชทใหม่',
+    'no_conversations' => 'ยังไม่มีบทสนทนา',
+    'chat_started' => 'เริ่มแชทเรียบร้อยแล้ว',
+    'message_sent' => 'ส่งข้อความแล้ว',
+    'select_conversation' => 'เลือกบทสนทนา',
+    'select_conversation_hint' => 'เลือกบทสนทนาจากรายการเพื่อเริ่มแชท',
+    'all' => 'ทั้งหมด',
+    'timeline' => 'ไทม์ไลน์',
+    'total_messages' => 'ข้อความทั้งหมด',
+    'just_now' => 'เมื่อสักครู่',
+    'test_sound' => 'คลิกเพื่อทดสอบเสียง',
+    'back_to_list' => 'กลับไปยังการสนทนา',
+    'no_messages_yet' => 'ยังไม่มีข้อความ',
+    'start_conversation_hint' => 'ส่งข้อความเพื่อเริ่มการสนทนา',
+    'notifications_enabled' => 'เปิดใช้งานการแจ้งเตือนของเบราว์เซอร์แล้ว!',
+    'enable_notifications' => 'เปิดใช้งานการแจ้งเตือนของเบราว์เซอร์',
+    'new_conversation' => 'การสนทนาใหม่',
+    'new_message' => 'ข้อความใหม่',
+    'no_conversations_hint' => 'การสนทนาจะปรากฏที่นี่เมื่อผู้เยี่ยมชมเริ่มแชท',
+    'open_chat' => 'เปิดแชท',
+    'close' => 'ปิด',
+    'chat_title' => 'ไลฟ์แชท',
+    'online' => 'ออนไลน์',
+    'start_message' => 'สวัสดี! เราช่วยอะไรคุณได้บ้างวันนี้?',
+    'your_name' => 'ชื่อของคุณ',
+    'your_email' => 'อีเมลของคุณ',
+    'your_email_optional' => 'อีเมลของคุณ (ไม่บังคับ)',
+    'your_phone' => 'โทรศัพท์ของคุณ',
+    'start_chat' => 'เริ่มแชท',
+    'type_message' => 'พิมพ์ข้อความ...',
+    'send' => 'ส่ง',
+    'default_admin_name' => 'ฝ่ายสนับสนุน',
+    'default_welcome_message' => 'สวัสดี! ขอบคุณที่ติดต่อมา เราช่วยอะไรคุณได้บ้างวันนี้?',
+    'conversation_statuses' => [
+        'open' => 'เปิด',
+        'closed' => 'ปิด',
+    ],
+    'settings' => [
+        'title' => 'ไลฟ์แชท',
+        'description' => 'ตั้งค่าวิดเจ็ตไลฟ์แชทแบบลอยที่แสดงบนเว็บไซต์ของคุณเพื่อการช่วยเหลือลูกค้าแบบเรียลไทม์',
+        'form' => [
+            'enabled' => 'เปิดใช้งานไลฟ์แชท',
+            'enabled_help' => 'เปิดเพื่อแสดงวิดเจ็ตแชทบนเว็บไซต์ของคุณ ผู้เยี่ยมชมสามารถเริ่มบทสนทนากับทีมซัพพอร์ตของคุณได้',
+            'widget_title' => 'ชื่อวิดเจ็ต',
+            'widget_title_help' => 'ชื่อที่แสดงด้านบนของส่วนหัววิดเจ็ตแชท',
+            'widget_title_placeholder' => 'ไลฟ์แชท',
+            'welcome_message' => 'ข้อความต้อนรับ',
+            'welcome_message_help' => 'ข้อความแรกที่ผู้เยี่ยมชมเห็นเมื่อเปิดวิดเจ็ตแชท เว้นว่างไว้เพื่อใช้ข้อความเริ่มต้น',
+            'welcome_message_placeholder' => 'สวัสดี! ขอบคุณที่ติดต่อมา เราช่วยอะไรคุณได้บ้างวันนี้?',
+            'admin_name' => 'ชื่อผู้ดูแลระบบ',
+            'admin_name_help' => 'ชื่อที่แสดงสำหรับการตอบกลับของผู้ดูแลระบบในวิดเจ็ตแชท',
+            'admin_name_placeholder' => 'ฝ่ายสนับสนุน',
+            'random_admin_names_enabled' => 'ใช้ชื่อผู้ดูแลระบบแบบสุ่ม',
+            'random_admin_names_enabled_help' => 'เมื่อเปิดใช้งาน การสนทนาใหม่แต่ละรายการจะถูกกำหนดชื่อผู้ดูแลระบบแบบสุ่มจากรายการด้านล่าง',
+            'random_admin_names' => 'ชื่อผู้ดูแลระบบแบบสุ่ม',
+            'random_admin_names_help' => 'ป้อนหนึ่งชื่อต่อบรรทัด ชื่อแบบสุ่มจะถูกกำหนดให้กับแต่ละการสนทนาใหม่',
+            'random_admin_names_placeholder' => 'Sarah
+Mike
+Emma
+John',
+            'primary_color' => 'สีหลัก',
+            'primary_color_help' => 'สีหลักสำหรับปุ่มและส่วนหัวของวิดเจ็ตแชท เลือกสีที่เข้ากับแบรนด์ของคุณ',
+            'position' => 'ตำแหน่งวิดเจ็ต',
+            'position_help' => 'ตำแหน่งที่ปุ่มวิดเจ็ตแชทปรากฏบนหน้าจอ',
+            'position_right' => 'ด้านขวาล่าง',
+            'position_left' => 'ด้านซ้ายล่าง',
+            'email_required' => 'บังคับใช้อีเมล',
+            'email_required_help' => 'เมื่อเปิดใช้งาน ผู้เยี่ยมชมต้องระบุอีเมลก่อนเริ่มแชท มีประโยชน์สำหรับการติดต่อกลับ',
+            'display_fields' => 'แสดงฟิลด์',
+            'mandatory_fields' => 'ฟิลด์บังคับ',
+            'poll_interval' => 'ช่วงเวลาการดึงข้อมูล (ms)',
+            'poll_interval_help' => 'ความถี่ในการตรวจสอบข้อความใหม่ในหน่วยมิลลิวินาที ค่าที่ต่ำกว่าจะอัปเดตเร็วขึ้น แต่มีคำขอไปยังเซิร์ฟเวอร์มากขึ้น แนะนำ: 3000-5000ms.',
+            'poll_interval_placeholder' => '3000',
+            'online_status' => 'สถานะออนไลน์',
+            'working_hours_enabled' => 'เปิดใช้งานเวลาทำงาน',
+            'working_hours_enabled_help' => 'เมื่อเปิดใช้งาน สถานะการแชทจะเปลี่ยนเป็นออฟไลน์โดยอัตโนมัตินอกเวลาทำงาน เวลาทำงานขึ้นอยู่กับเขตเวลาที่กำหนดค่าใน การตั้งค่า → ทั่วไป',
+            'working_hours_start' => 'เวลาเริ่มต้น',
+            'working_hours_end' => 'เวลาสิ้นสุด',
+            'working_days' => 'วันทำงาน',
+            'avatar_image' => 'รูปภาพอวตาร',
+            'avatar_image_help' => 'รูปภาพอวตารที่กำหนดเองสำหรับส่วนหัวของการแชท เว้นว่างไว้เพื่อใช้ไอคอนเริ่มต้น',
+            'primary_hover_color' => 'สีเมื่อวางเมาส์',
+            'primary_hover_color_help' => 'สีเมื่อวางเมาส์เหนือปุ่มแชท',
+            'position_bottom_right' => 'ล่างขวา',
+            'position_bottom_left' => 'ล่างซ้าย',
+            'position_center_right' => 'กึ่งกลางขวา',
+            'position_center_left' => 'กึ่งกลางซ้าย',
+            'offset_x' => 'ออฟเซ็ต X (px)',
+            'offset_x_help' => 'ระยะห่างแนวนอนจากขอบหน้าจอเป็นพิกเซล',
+            'offset_y' => 'ออฟเซ็ต Y (px)',
+            'offset_y_help' => 'ระยะห่างแนวตั้งจากขอบหน้าจอเป็นพิกเซล',
+            'display_on_mobile' => 'แสดงบนมือถือ',
+            'display_on_mobile_help' => 'ควบคุมว่าจะแสดงวิดเจ็ตแชทบนอุปกรณ์มือถือหรือไม่',
+            'display_on_mobile_always' => 'แสดงเสมอ',
+            'display_on_mobile_hide' => 'ซ่อนบนมือถือ',
+        ],
+    ],
+    'email' => [
+        'title' => 'Live Chat Email',
+        'description' => 'Email notifications for live chat events',
+        'templates' => [
+            'new_conversation_title' => 'New Conversation Notification',
+            'new_conversation_description' => 'Email sent to admin when a visitor starts a new conversation',
+            'new_conversation_subject' => 'New Live Chat Conversation from {{ visitor_name }}',
+            'visitor_name' => 'Visitor name',
+            'visitor_email' => 'Visitor email',
+            'visitor_phone' => 'Visitor phone',
+            'visitor_ip' => 'Visitor IP address',
+            'current_page' => 'Current page URL',
+            'conversation_url' => 'Link to conversation in admin panel',
+        ],
+    ],
+    'email_settings' => [
+        'title' => 'Email Notifications',
+        'description' => 'Configure email notifications for new chat conversations. Only one email is sent when a visitor starts a new conversation.',
+        'enable_email_notification' => 'Enable Email Notifications',
+        'enable_email_notification_help' => 'Send an email notification when a visitor starts a new chat conversation',
+        'notification_emails' => 'Notification Email Addresses',
+        'notification_emails_help' => 'Comma-separated list of email addresses to receive notifications. Leave empty to use the default admin email.',
+    ],
+    'email_templates' => [
+        'new_conversation_title' => 'New Live Chat Conversation',
+        'new_conversation_greeting' => 'A visitor has started a new live chat conversation on your website.',
+        'visitor_details' => 'Visitor Details',
+        'field_name' => 'Name:',
+        'field_email' => 'Email:',
+        'field_phone' => 'Phone:',
+        'field_ip' => 'IP Address:',
+        'field_page' => 'Current Page:',
+        'respond_instruction' => 'Click the button below to respond to this conversation.',
+        'view_conversation_button' => 'View Conversation',
+    ],
+    'webhook' => [
+        'title' => 'การตั้งค่า Webhook',
+        'description' => 'กำหนดค่า Webhook เพื่อรับการแจ้งเตือนเมื่อเกิดเหตุการณ์แชท Webhook จะส่งคำขอ HTTP POST ไปยัง URL ที่คุณระบุพร้อมข้อมูลเหตุการณ์',
+        'enable_webhooks' => 'เปิดใช้งาน Webhook',
+        'enable_webhooks_help' => 'เปิดใช้งานการส่งการแจ้งเตือน webhook สำหรับเหตุการณ์แชทสด',
+        'message_received_url' => 'URL Webhook รับข้อความ',
+        'message_received_url_help' => 'ทำงานเมื่อผู้เยี่ยมชมส่งข้อความใหม่ในแชท',
+        'conversation_started_url' => 'URL Webhook เริ่มการสนทนา',
+        'conversation_started_url_help' => 'ทำงานเมื่อผู้เยี่ยมชมเริ่มการสนทนาใหม่',
+        'view_sample_data' => 'ดูข้อมูลตัวอย่าง',
+        'test_button' => 'ส่ง Webhook ทดสอบ',
+        'testing' => 'กำลังส่ง...',
+        'test_success' => 'ส่ง Webhook สำเร็จ!',
+        'test_failed' => 'การทดสอบ Webhook ล้มเหลว',
+        'status_code' => 'รหัสสถานะ',
+        'please_enter_url' => 'กรุณาใส่ URL webhook ก่อน',
+        'error_occurred' => 'เกิดข้อผิดพลาดขณะทดสอบ webhook',
+        'usage_instructions_title' => 'วิธีใช้ Webhook',
+        'usage_instructions' => '<p><strong>Webhook</strong> ช่วยให้คุณรับการแจ้งเตือนแบบเรียลไทม์เมื่อเกิดเหตุการณ์ใน Live Chat เมื่อเหตุการณ์ถูกทริกเกอร์ คำขอ HTTP POST จะถูกส่งไปยัง URL ที่กำหนดค่าพร้อมข้อมูล JSON</p>
+<h6>HTTP Headers</h6>
+<ul>
+<li><code>Content-Type: application/json</code></li>
+<li><code>X-Webhook-Event</code> - ประเภทเหตุการณ์ (เช่น <code>message.received</code>, <code>conversation.started</code>)</li>
+<li><code>X-Webhook-Timestamp</code> - เวลา ISO 8601 เมื่อส่ง webhook</li>
+<li><code>X-Webhook-Test: true</code> - มีเฉพาะสำหรับ webhook ทดสอบ</li>
+</ul>
+<h6>ข้อกำหนด Endpoint</h6>
+<ul>
+<li>ต้องรับคำขอ HTTP POST</li>
+<li>ต้องตอบกลับภายใน 10 วินาที (ขีดจำกัดหมดเวลา)</li>
+<li>ควรส่งคืนรหัสสถานะ HTTP 2xx เมื่อสำเร็จ</li>
+<li>ต้องเข้าถึงได้แบบสาธารณะ (แนะนำ HTTPS)</li>
+</ul>
+<h6>บทเรียนการรวมระบบ</h6>
+<ul>
+<li><strong>Slack:</strong> <a href="https://api.slack.com/messaging/webhooks" target="_blank">คู่มือ Incoming Webhooks</a></li>
+<li><strong>Discord:</strong> <a href="https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks" target="_blank">แนะนำ Webhooks</a></li>
+<li><strong>Telegram:</strong> <a href="https://core.telegram.org/bots/webhooks" target="_blank">Bot Webhooks</a> (ใช้กับ <a href="https://core.telegram.org/bots/api#sendmessage" target="_blank">sendMessage API</a>)</li>
+<li><strong>n8n:</strong> <a href="https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.webhook/" target="_blank">Webhook Node</a></li>
+<li><strong>Zapier:</strong> <a href="https://zapier.com/apps/webhook/integrations" target="_blank">Webhooks by Zapier</a></li>
+<li><strong>Make (Integromat):</strong> <a href="https://www.make.com/en/help/tools/webhooks" target="_blank">Webhooks Module</a></li>
+</ul>
+<h6>ตัวอย่างการใช้งาน</h6>
+<ul>
+<li>ส่งการแจ้งเตือนไปยัง Slack, Discord หรือ Telegram</li>
+<li>สร้างตั๋วในระบบ helpdesk (Zendesk, Freshdesk)</li>
+<li>บันทึกการสนทนาไปยัง CRM ภายนอก</li>
+<li>ทริกเกอร์การตอบกลับอัตโนมัติผ่าน n8n หรือ Zapier</li>
+</ul>',
+    ],
+    'offline' => 'Offline',
+    'days' => [
+        'monday' => 'วันจันทร์',
+        'tuesday' => 'วันอังคาร',
+        'wednesday' => 'วันพุธ',
+        'thursday' => 'วันพฤหัสบดี',
+        'friday' => 'วันศุกร์',
+        'saturday' => 'วันเสาร์',
+        'sunday' => 'วันอาทิตย์',
+    ],
+];

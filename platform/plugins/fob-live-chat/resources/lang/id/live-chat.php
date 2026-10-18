@@ -1,0 +1,216 @@
+<?php
+
+return [
+    'title' => 'Obrolan Langsung',
+    'messages' => 'Pesan',
+    'visitor_name' => 'Nama pengunjung',
+    'visitor_email' => 'Email pengunjung',
+    'visitor_phone' => 'Telepon',
+    'visitor_info' => 'Informasi pengunjung',
+    'ip_address' => 'Alamat IP',
+    'current_page' => 'Halaman saat ini',
+    'browser' => 'Peramban',
+    'last_message' => 'Pesan terakhir',
+    'close_conversation' => 'Tutup',
+    'delete_conversation' => 'Hapus percakapan',
+    'conversation_closed' => 'Percakapan telah ditutup.',
+    'conversation_deleted' => 'Percakapan telah dihapus.',
+    'conversation_is_closed' => 'Percakapan ini ditutup.',
+    'conversation_with' => 'Percakapan dengan :name',
+    'confirm_close' => 'Apakah Anda yakin ingin menutup percakapan ini?',
+    'confirm_delete' => 'Apakah Anda yakin ingin menghapus percakapan ini? Tindakan ini tidak dapat dibatalkan.',
+    'type_reply' => 'Ketik balasan Anda...',
+    'reply_sent' => 'Balasan berhasil dikirim.',
+    'no_conversation' => 'Tidak ada percakapan aktif. Silakan mulai chat baru.',
+    'no_conversations' => 'Belum ada percakapan',
+    'chat_started' => 'Chat berhasil dimulai.',
+    'message_sent' => 'Pesan terkirim.',
+    'select_conversation' => 'Pilih percakapan',
+    'select_conversation_hint' => 'Pilih percakapan dari daftar untuk mulai mengobrol.',
+    'all' => 'Semua',
+    'timeline' => 'Linimasa',
+    'total_messages' => 'Total pesan',
+    'just_now' => 'Baru saja',
+    'test_sound' => 'Klik untuk menguji suara',
+    'back_to_list' => 'Kembali ke percakapan',
+    'no_messages_yet' => 'Belum ada pesan',
+    'start_conversation_hint' => 'Kirim pesan untuk memulai percakapan',
+    'notifications_enabled' => 'Notifikasi browser diaktifkan!',
+    'enable_notifications' => 'Aktifkan notifikasi browser',
+    'new_conversation' => 'Percakapan baru',
+    'new_message' => 'Pesan baru',
+    'no_conversations_hint' => 'Percakapan akan muncul di sini ketika pengunjung mulai mengobrol.',
+    'open_chat' => 'Buka chat',
+    'close' => 'Tutup',
+    'chat_title' => 'Obrolan Langsung',
+    'online' => 'Daring',
+    'start_message' => 'Halo! Bagaimana kami dapat membantu Anda hari ini?',
+    'your_name' => 'Nama Anda',
+    'your_email' => 'Email Anda',
+    'your_email_optional' => 'Email Anda (opsional)',
+    'your_phone' => 'Telepon Anda',
+    'start_chat' => 'Mulai chat',
+    'type_message' => 'Ketik pesan...',
+    'send' => 'Kirim',
+    'default_admin_name' => 'Dukungan',
+    'default_welcome_message' => 'Halo! Terima kasih telah menghubungi kami. Bagaimana saya bisa membantu Anda hari ini?',
+    'conversation_statuses' => [
+        'open' => 'Terbuka',
+        'closed' => 'Ditutup',
+    ],
+    'settings' => [
+        'title' => 'Obrolan Langsung',
+        'description' => 'Konfigurasikan widget obrolan langsung mengambang yang muncul di situs web Anda untuk dukungan pelanggan waktu nyata.',
+        'form' => [
+            'enabled' => 'Aktifkan Obrolan Langsung',
+            'enabled_help' => 'Nyalakan untuk menampilkan widget chat di situs web Anda. Pengunjung dapat memulai percakapan dengan tim dukungan Anda.',
+            'widget_title' => 'Judul widget',
+            'widget_title_help' => 'Judul yang ditampilkan di bagian atas header widget chat.',
+            'widget_title_placeholder' => 'Obrolan Langsung',
+            'welcome_message' => 'Pesan sambutan',
+            'welcome_message_help' => 'Pesan pertama yang dilihat pengunjung saat membuka widget chat. Biarkan kosong untuk menggunakan pesan default.',
+            'welcome_message_placeholder' => 'Halo! Terima kasih telah menghubungi kami. Bagaimana saya bisa membantu Anda hari ini?',
+            'admin_name' => 'Nama Admin',
+            'admin_name_help' => 'Nama yang ditampilkan untuk balasan admin di widget chat.',
+            'admin_name_placeholder' => 'Dukungan',
+            'random_admin_names_enabled' => 'Gunakan Nama Admin Acak',
+            'random_admin_names_enabled_help' => 'Saat diaktifkan, setiap percakapan baru akan diberikan nama admin acak dari daftar di bawah ini.',
+            'random_admin_names' => 'Nama Admin Acak',
+            'random_admin_names_help' => 'Masukkan satu nama per baris. Nama acak akan diberikan untuk setiap percakapan baru.',
+            'random_admin_names_placeholder' => 'Sarah
+Mike
+Emma
+John',
+            'primary_color' => 'Warna utama',
+            'primary_color_help' => 'Warna utama untuk tombol dan header widget chat. Pilih warna yang sesuai dengan merek Anda.',
+            'position' => 'Posisi widget',
+            'position_help' => 'Di mana tombol widget chat muncul di layar.',
+            'position_right' => 'Kanan bawah',
+            'position_left' => 'Kiri bawah',
+            'email_required' => 'Wajibkan email',
+            'email_required_help' => 'Saat diaktifkan, pengunjung harus memasukkan alamat email sebelum memulai chat. Berguna untuk komunikasi tindak lanjut.',
+            'display_fields' => 'Tampilkan kolom',
+            'mandatory_fields' => 'Kolom wajib',
+            'poll_interval' => 'Interval polling (ms)',
+            'poll_interval_help' => 'Seberapa sering memeriksa pesan baru dalam milidetik. Nilai yang lebih rendah berarti pembaruan lebih cepat tetapi lebih banyak permintaan ke server. Disarankan: 3000-5000ms.',
+            'poll_interval_placeholder' => '3000',
+            'online_status' => 'Status Online',
+            'working_hours_enabled' => 'Aktifkan Jam Kerja',
+            'working_hours_enabled_help' => 'Saat diaktifkan, status obrolan akan secara otomatis beralih ke offline di luar jam kerja. Jam kerja didasarkan pada zona waktu yang dikonfigurasi di Pengaturan → Umum.',
+            'working_hours_start' => 'Waktu Mulai',
+            'working_hours_end' => 'Waktu Berakhir',
+            'working_days' => 'Hari Kerja',
+            'avatar_image' => 'Gambar Avatar',
+            'avatar_image_help' => 'Gambar avatar kustom untuk header obrolan. Biarkan kosong untuk menggunakan ikon default.',
+            'primary_hover_color' => 'Warna Hover',
+            'primary_hover_color_help' => 'Warna saat kursor diarahkan ke tombol obrolan.',
+            'position_bottom_right' => 'Kanan Bawah',
+            'position_bottom_left' => 'Kiri Bawah',
+            'position_center_right' => 'Kanan Tengah',
+            'position_center_left' => 'Kiri Tengah',
+            'offset_x' => 'Offset X (px)',
+            'offset_x_help' => 'Jarak horizontal dari tepi layar dalam piksel.',
+            'offset_y' => 'Offset Y (px)',
+            'offset_y_help' => 'Jarak vertikal dari tepi layar dalam piksel.',
+            'display_on_mobile' => 'Tampilkan di Seluler',
+            'display_on_mobile_help' => 'Kontrol apakah widget obrolan ditampilkan di perangkat seluler.',
+            'display_on_mobile_always' => 'Selalu tampilkan',
+            'display_on_mobile_hide' => 'Sembunyikan di seluler',
+        ],
+    ],
+    'email' => [
+        'title' => 'Live Chat Email',
+        'description' => 'Email notifications for live chat events',
+        'templates' => [
+            'new_conversation_title' => 'New Conversation Notification',
+            'new_conversation_description' => 'Email sent to admin when a visitor starts a new conversation',
+            'new_conversation_subject' => 'New Live Chat Conversation from {{ visitor_name }}',
+            'visitor_name' => 'Visitor name',
+            'visitor_email' => 'Visitor email',
+            'visitor_phone' => 'Visitor phone',
+            'visitor_ip' => 'Visitor IP address',
+            'current_page' => 'Current page URL',
+            'conversation_url' => 'Link to conversation in admin panel',
+        ],
+    ],
+    'email_settings' => [
+        'title' => 'Email Notifications',
+        'description' => 'Configure email notifications for new chat conversations. Only one email is sent when a visitor starts a new conversation.',
+        'enable_email_notification' => 'Enable Email Notifications',
+        'enable_email_notification_help' => 'Send an email notification when a visitor starts a new chat conversation',
+        'notification_emails' => 'Notification Email Addresses',
+        'notification_emails_help' => 'Comma-separated list of email addresses to receive notifications. Leave empty to use the default admin email.',
+    ],
+    'email_templates' => [
+        'new_conversation_title' => 'New Live Chat Conversation',
+        'new_conversation_greeting' => 'A visitor has started a new live chat conversation on your website.',
+        'visitor_details' => 'Visitor Details',
+        'field_name' => 'Name:',
+        'field_email' => 'Email:',
+        'field_phone' => 'Phone:',
+        'field_ip' => 'IP Address:',
+        'field_page' => 'Current Page:',
+        'respond_instruction' => 'Click the button below to respond to this conversation.',
+        'view_conversation_button' => 'View Conversation',
+    ],
+    'webhook' => [
+        'title' => 'Pengaturan Webhook',
+        'description' => 'Konfigurasi webhook untuk menerima notifikasi ketika event chat terjadi. Webhook mengirim permintaan HTTP POST ke URL yang Anda tentukan dengan data event.',
+        'enable_webhooks' => 'Aktifkan Webhook',
+        'enable_webhooks_help' => 'Aktifkan pengiriman notifikasi webhook untuk event live chat',
+        'message_received_url' => 'URL Webhook Pesan Diterima',
+        'message_received_url_help' => 'Dipicu ketika pengunjung mengirim pesan baru di chat',
+        'conversation_started_url' => 'URL Webhook Percakapan Dimulai',
+        'conversation_started_url_help' => 'Dipicu ketika pengunjung memulai percakapan baru',
+        'view_sample_data' => 'Lihat Data Contoh',
+        'test_button' => 'Kirim Webhook Uji Coba',
+        'testing' => 'Mengirim...',
+        'test_success' => 'Webhook berhasil dikirim!',
+        'test_failed' => 'Uji coba webhook gagal.',
+        'status_code' => 'Kode Status',
+        'please_enter_url' => 'Silakan masukkan URL webhook terlebih dahulu',
+        'error_occurred' => 'Terjadi kesalahan saat menguji webhook',
+        'usage_instructions_title' => 'Cara Menggunakan Webhook',
+        'usage_instructions' => '<p><strong>Webhook</strong> memungkinkan Anda menerima notifikasi real-time ketika event terjadi di Live Chat. Ketika event dipicu, permintaan HTTP POST dikirim ke URL yang dikonfigurasi dengan data JSON.</p>
+<h6>HTTP Headers</h6>
+<ul>
+<li><code>Content-Type: application/json</code></li>
+<li><code>X-Webhook-Event</code> - Tipe event (misal <code>message.received</code>, <code>conversation.started</code>)</li>
+<li><code>X-Webhook-Timestamp</code> - Timestamp ISO 8601 saat webhook dikirim</li>
+<li><code>X-Webhook-Test: true</code> - Hanya ada untuk webhook test</li>
+</ul>
+<h6>Persyaratan Endpoint</h6>
+<ul>
+<li>Harus menerima permintaan HTTP POST</li>
+<li>Harus merespons dalam 10 detik (batas timeout)</li>
+<li>Harus mengembalikan kode status HTTP 2xx untuk sukses</li>
+<li>Harus dapat diakses publik (HTTPS direkomendasikan)</li>
+</ul>
+<h6>Tutorial Integrasi</h6>
+<ul>
+<li><strong>Slack:</strong> <a href="https://api.slack.com/messaging/webhooks" target="_blank">Panduan Incoming Webhooks</a></li>
+<li><strong>Discord:</strong> <a href="https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks" target="_blank">Pengenalan Webhooks</a></li>
+<li><strong>Telegram:</strong> <a href="https://core.telegram.org/bots/webhooks" target="_blank">Bot Webhooks</a> (gunakan dengan <a href="https://core.telegram.org/bots/api#sendmessage" target="_blank">sendMessage API</a>)</li>
+<li><strong>n8n:</strong> <a href="https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.webhook/" target="_blank">Webhook Node</a></li>
+<li><strong>Zapier:</strong> <a href="https://zapier.com/apps/webhook/integrations" target="_blank">Webhooks by Zapier</a></li>
+<li><strong>Make (Integromat):</strong> <a href="https://www.make.com/en/help/tools/webhooks" target="_blank">Modul Webhooks</a></li>
+</ul>
+<h6>Contoh Penggunaan</h6>
+<ul>
+<li>Kirim notifikasi ke Slack, Discord, atau Telegram</li>
+<li>Buat tiket di sistem helpdesk (Zendesk, Freshdesk)</li>
+<li>Log percakapan ke CRM eksternal</li>
+<li>Picu respons otomatis via n8n atau Zapier</li>
+</ul>',
+    ],
+    'offline' => 'Offline',
+    'days' => [
+        'monday' => 'Senin',
+        'tuesday' => 'Selasa',
+        'wednesday' => 'Rabu',
+        'thursday' => 'Kamis',
+        'friday' => 'Jumat',
+        'saturday' => 'Sabtu',
+        'sunday' => 'Minggu',
+    ],
+];

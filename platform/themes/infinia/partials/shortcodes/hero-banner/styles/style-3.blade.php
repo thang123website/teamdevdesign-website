@@ -12,7 +12,7 @@
                     @endif
 
                     @if ($title = $shortcode->title)
-                        <h1 class="ds-1 my-3 me-4 lh-1">{!! BaseHelper::clean($title) !!}</h1>
+                        <{{ $titleTag = infinia_title_tag($shortcode, 'h1') }} class="ds-1 my-3 me-4 lh-1">{!! infinia_clean_title($title) !!}</{{ $titleTag }}>
                     @endif
 
                     @if ($description = $shortcode->description)
@@ -73,26 +73,26 @@
                     <div class="col-6 align-self-end">
                         @if ($image4 = $shortcode->main_image_4)
                             <div class="border-5 border-white border rounded-4  mb-4 d-block d-xl-none">
-                                {{ RvMedia::image($image4, __('Image'), attributes: ['class' => 'rounded-4']) }}
+                                {{ RvMedia::image($image4, infinia_image_alt($shortcode), attributes: ['class' => 'rounded-4']) }}
                             </div>
                         @endif
 
                         @if ($image3 = $shortcode->main_image_3)
                             <div class="border-5 border-white border rounded-4 mb-4">
-                                {{ RvMedia::image($image3, __('Image'), attributes: ['class' => 'rounded-4']) }}
+                                {{ RvMedia::image($image3, infinia_image_alt($shortcode), attributes: ['class' => 'rounded-4']) }}
                             </div>
                         @endif
                     </div>
                     <div class="col-6 align-self-end">
                         @if ($image1 = $shortcode->main_image_1)
                             <div class="border-5 border-white border rounded-4 mb-4">
-                                {{ RvMedia::image($image1, __('Image'), attributes: ['class' => 'rounded-4']) }}
+                                {{ RvMedia::image($image1, infinia_image_alt($shortcode), attributes: ['class' => 'rounded-4']) }}
                             </div>
                         @endif
 
                         @if ($image2 = $shortcode->main_image_2)
                             <div class="border-5 border-white border rounded-4">
-                                {{ RvMedia::image($image2, __('Image'), attributes: ['class' => 'rounded-4']) }}
+                                {{ RvMedia::image($image2, infinia_image_alt($shortcode), attributes: ['class' => 'rounded-4']) }}
                             </div>
                         @endif
                     </div>
